@@ -1,0 +1,17 @@
+/* Styles for lists of attachments */
+
+div.componentheading {
+    margin-left: 10px;
+    margin-top: 5px;
+}
+
+div.attachmentsList {
+    margin-left: 10px;
+}
+
+form.attachments {
+    margin-left: 10px;
+    margin-right: 10px;
+}
+
+

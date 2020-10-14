@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="4.5.1" type="mambot" group="content">
+  <name>AlphaContentBot</name>
+  <author>Bernard Gilly</author>
+  <creationDate>22 Feb 2008</creationDate>
+  <copyright>Copyright 2005-2008 by Bernard Gilly</copyright>
+  <license>This component is released under DonationWare License. All rights reserved.</license>
+  <authorEmail>contact@visualclinic.fr</authorEmail>
+  <authorUrl>www.visualclinic.fr</authorUrl>
+  <version>3.0.3</version>
+  <description>Provide tree directory for AlphaContent Component, Ajax rating bar and link to Google Maps Location in your content articles.</description>
+  <files>
+    <filename mambot="alphacontentbot">alphacontentbot.php</filename>
+  </files>
+  <params>    
+    <param name="excludeID" type="text" default="" label="Exclude ID content" description="Exclude specific content items : not display alphabetical bar, directory and rating bar (to specify more than one article, seperate with a comma , )." />
+  </params>
+</mosinstall>

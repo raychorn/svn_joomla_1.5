@@ -1,0 +1,391 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Documentation du composant "Fichiers Joints"</title>
+<link href="../../css/admin.css" type="text/css" rel="stylesheet">
+<link href="help.css" type="text/css" rel="stylesheet">
+</head>
+<body><a name="top" id="top"></a>
+<h1>Documentation du composant "Fichiers Joints"</h1>
+<h3>Version 1.2 - 20 févier 2008</h3>
+<h3>Traduction en Français par : Pascal Adalian</h3>
+
+<ol>
+    <li><a href="#intro">Introduction</a></li>
+    <li><a href="#uploads">Restrictions de transferts (uploads)</a></li>
+    <li><a href="#options">Paramètres des Fichiers Joints</a></li>
+    <li><a href="#display_filename">Affichage des noms de fichiers</a></li>
+    <li><a href="#styling">Changer le style de la liste de fichiers joints</a></li>
+    <li><a href="#icons">Icones de types de fichiers</a></li>
+    <li><a href="#warnings">Avertissements</a></li>
+    <li><a href="#upgrading">Mises à jour</a></li>
+    <li><a href="#acknowledgements">Remerciements</a></li>
+</ol>
+
+<h2><a name="intro"></a>Introduction</h2>
+L'extension pour Joomla! &#039;Fichiers Joints&#039; permet de transférer des fichiers vers le serveur (upload) et d'attacher ces fichiers à des articles spécifiques
+. &#039;Fichiers Joints&#039; inclut un plugin permettant d'afficher les fichiers joints et un composant pour gérer ces fichiers et les transférer vers le serveur.
+Il existe des options pour définir qui est autorisé à les voir
+et qui peut les transférer, ainsi que de nombreuses autres options qui augmentent la flexibilité
+et l'intérêt du composant. Note: Toutes les options sont controlées au moyen du gestionnaire du composant.
+Cette extension fonctionne seulement pour Joomla! 1.5 ou une version supérieure.
+
+<p>
+Cette extension fournit des possibilités de traduction et supporte les langages suivants (autres que l'anglais):
+<ul>
+	<li><b>Chinois:</b> traductions en chinois traditionnel et simplifié par baijianpeng
+        (http://www.joomlagate.com).  (Merci baijaing!)</li>
+    <li><b>Hollandais:</b> Cette traduction a été réalisée par Parvus. (Merci Parvus!)</li>
+    <li><b>Allemand:</b> Cette traduction a été réalisée par Michael Scherer. (Merci Michael!) </li>
+    <li><b>Finlandais:</b> Cette traduction a été réalisée par Tapani Lehtonen. (Merci Tapani!) </li>
+    <li><b>Norvégien:</b> Cette traduction a été réalisée par Espen Gjelsvik. (Merci Espen!) </li>
+    <li><b>Français:</b> Cette traduction a été réalisée par Pascal Adalian. (Merci Pascal!) </li>
+	<li><b>Portuguais/Brésilien:</b> Cette traduction a été réalisée par Arnaldo Giacomitti
+      (www.giacomitti.eng.br) et Cauan Cabral (www.cauancabral.net).
+    <li><b>Espagnol:</b> Cette traduction a été réalisée par Carlos Alfaro. (Merci Carlos!) </li>
+</ul>
+Merci beaucoup aux traducteurs!  Si vous souhaitez aider à traduire cette extension dans d'autres langues,
+ veuillez contacter l'auteur (voir à la fin de ce texte).
+<span class="atop"><a href="#top">[Revenir au début]</a></span>
+
+<h2><a name="uploads"></a>Restrictions de transferts (uploads)</h2>
+Tous les types de fichiers joints ne peuvent pas être transférés vers le serveur.  L'extension &#039;Fichier Joint&#039;
+ne permettra pas le transfert de fichiers qui ne sont pas autorisés par le gestionnaire de médias de Joomla!.
+Pour voir (ou changer) quels types de fichiers sont autorisés, allez dans la page <b>Configuration globale</b>.
+ Dans la zone <i>Paramètres des médias</i>, il y a les options permettant de contrôler
+quels types d'extensions et de types mimes sont autorisés à être transférés vers le serveur.
+ L'extension &#039;Fichiers Joints&#039; respecte ces limitations.  Cependant, la restriction
+sur les &#039;Extensions des images autorisées (types de fichier) &#039; est ignorée.
+<span class="atop"><a href="#top">[Revenir au début]</a></span>
+
+<h2><a name="options"></a>Paramètres des Fichiers Joints</h2>
+Tous les paramètres de l'extension &#039;Fichiers Joints&#039; sont contrôlés via le gestionnaire de composant.
+ Pour accéder à ces paramètres, allez dans l'interface d'administration de Joomla!
+et sélecionnez "Fichiers Joints" sous le menu "Composants".  cliquez
+sur le bouton "Paramètres" à l'extrémité droite de la barre d'outils et vous verrez
+une série de paramètres pour cette extension. Ces paramètres incluent les éléments suivants:<br>
+<ul>
+
+<li><strong>Qui peut voir les fichiers joints:</strong> Ce paramètre contrôle
+qui est autorisé à voir les liens des fichiers joints. Il y a actuellement deux options:
+<ol>
+<li>&#039;<i>Tout le monde</i>&#039; - Si cette option est sélectionnée, les liens vers les fichiers joints seront
+visibles de tous les visiteurs du site web, qu'ils soient identifiés (connectés) ou pas.</li>
+<li>&#039;<i>Tous les utilisateurs identifiés</i>&#039;. - Si cette option est sélectionnée, seuls
+les utilisateurs qui sont connectés et correctement identifiés pourront voir les liens vers les fichiers joints.</li>
+</ol>
+</li>
+
+<li><strong>Qui peut ajouter des fichiers joints:</strong> Ce paramètre contrôle
+qui est autorisé à joindre des fichiers à un article. Il y a deux options:
+<ol>
+<li>&#039;<i>Auteur de l'article seulement</i>&#039; - les liens permettant de transférer un fichier joint
+à un article seront visibles seulement de l'auteur de l'article en question.</li>
+<li>&#039;<i>Tous les utilisateurs identifiés</i>&#039; - Les liens permettant de transférer un fichier joint
+à un article seront visibles de tous les utilisateurs identifiés.</li>
+</ol>
+</li>
+
+<li><strong>Fichiers joints publiés par défaut:</strong> cette possibilité d&#039;auto publication&#039;
+ définit si les nouveaux fichiers joints sont publiés par défaut dès lors qu'ils sont transférés.
+ Si &#039;Oui&#039; est sélectionné, ils seront publiés immédiatement après leur ajout et seront visibles des utilisateurs.
+  Si &#039;Non&#039; est sélectionné, les nouveaux fichiers joints ne seront pas publiés par défaut.
+Un administrateur devra les publier depuis l'interface d'administration afin qu'ils soient disponibles.</li>
+
+<li><strong>Avertissement d'autopublication:</strong> Si l'option d'autopublication est désactivée
+ (voir l'option précédente), vous pourriez vouloir avertir les utilisateurs 
+de la manière dont leurs ajouts peuvent être publiés. Vous pouvez insérer un message approprié dans cette option.
+Si le champ est vide, un message système leur suggèrera de
+contacter leur administrateur système pour que leurs fichiers joints récemment transférés
+soient publiés. </li>
+
+<li><strong>Montrer les titres:</strong> si l'option est sur 'Oui', une ligne de titres
+sera ajoutée au dessus le la liste des fichiers joints pour nommer le contenu de chaque colonne.</li>
+
+<li><strong>Montrer la description du fichier joint:</strong> Ce paramètre définit
+si la description du fichier est affichée dans la liste de fichiers joints.</li>
+
+<li><strong>Montrer la taille du fichier:</strong> Ce paramètre définit si
+la taille du fichier est affichée dans la liste de fichiers joints.</li>
+
+<li><strong>Montrer la date de modification du fichier:</strong> Si ce paramètre est
+ &#039;Oui&#039;, la date de modification du fichier sera ajoutée à la liste des fichiers joints
+à un article. Si &#039;Non&#039; est sélectionné, aucune date ne sera ajoutée à la liste des fichiers joints.</li>
+
+<li><strong>Chaîne de formatage de la date:</strong> Vous pouvez
+sélectionner le format de la date de modification en utilisant le format
+utilisé par la fonction PHP date. Les valeurs par défaut de ce paramètre "M-j-Y&nbsp;g:ia"
+donnent un formatage du type: "Sep-29-2007 5:05pm". Si vous préférez voir seulement la date,
+ enlevez la partie "g:ia" de la chaîne de formatage.</li>
+
+<li><strong>Longueur maximale de nom de fichier:</strong>
+C'est la longueur maximale de nom de fichier affichée dans la liste de fichiers joints.
+ les noms de fichiers plus longs que cette limité seront tronqués (pour des questions d'affichage uniquement,
+  le nom réel du fichier n'étant pas changé).  Une valeur de 0 signifie que la longueur
+ de nom de fichier n'est pas limitée (le champ nom de fichier de la base de données de l'extension &#039;Fichiers Joints&#039;
+est limité à 80 caractères).   Note: Si les noms de fichiers affichés sont tronqués par cette option,
+ les noms des fichiers seront insérés dans "nom de fichier affiché".
+</li>
+
+<li><strong>Style CSS des tableaux de fichiers joints:</strong> Pour passer outre le style CSS
+de la liste de fichiers joints, spécifiez le nom de votre propre style ici.  Le nom de style par défaut est
+ 'attachmentsList'.  Voir la section <a href="#styling">[Changer le style la la liste de fichiers joints]</a>
+ pour plus d'informations.
+</li>
+
+<li><strong>Mode d'ouverture du lien vers le fichier:</strong>
+Ce mode définit la manière dont les fichiers joints sont ouverts.  'Dans la même fenêtre'
+signifie que le fichier sera ouvert dans la même fenêtre du navigateur.  'Dans une nouvelle fenêtre'
+signifie que le fichier sera ouvert dans une nouvelle fenêtre.  Dans certains navigateurs, le fait d'utiliser l'option
+'dans une nouvelle fenêtre' se traduira par l'ouverture du fichier dans un nouvel onglet du navigateur.
+</li>
+
+<li><strong>Préfixer les noms de fichier système:</strong> Ce paramètre définit si
+un préfixe numérique doit être accolé au début du nom d'un fichier image lors de son stockage sur le serveur.
+  Il y a trois options:
+<ol>
+<li>&#039;<i>ID de l'article</i>&#039; - Si cette option est sélectionnée, le numéro ID de l'article sera accolé
+ au nom de fichier joint. Ce choix réduit les chances de conflit dans les noms
+de fichier et assure que les fichiers joints à un article particulier soient triés ensemble
+lors du listing du répertoire.  Notez également que cette option permettra de joindre plusieurs fichiers
+portant le même nom à des articles différents, mais pas au même article.</li>
+<li>&#039;<i>ID du fichier attaché</i>&#039; - Si cette option est sélectionnée,
+le numéro ID du fichier joint sera accolé au début de son nom.  Ce choix éliminera
+les possibilités de conflit de noms puisque chaque fichier attaché se voit attribuer
+un numéro ID unique.  Les fichiers joints seront alors triés par leur ordre d'ajout
+lors du listing du répertoire.</li>
+<li>&#039;<i>Rien</i>&#039; - Si cette option est sélectionnée, le nom de fichier
+sera enregistré sans aucune modification et aucun préfixe ne lui sera accolé.  Cette option
+augmente les chances de conflit dans les noms de fichier puisque chaque fichier transféré
+sur le serveur se devra d'avoir un nom unique.</li>
+</ol>
+</li>
+
+<li><strong>Sous-répertoire pour les transferts:</strong> l'extension &#039;Fichiers Joints&#039;
+placera les fichiers transférés sur le serveur dans ce répertoire juste sous la racine de
+votre site Joomla!. <i>ATTENTION: Si ceci est changé, vous devez créer le nouveau sous-répertoire
+manuellement avant de transférer de nouveaux fichiers vers le serveur.</i>
+Notez que si ce sous-répertoire est changé, seuls les fichiers transférés après le
+changement seront affectés.  Les fichiers transférés avant resteront dans l'ancien sous-répertoire
+et les enregistrements de la base de données des fichiers joints continueront de pointer vers cette destination.</li>
+
+<li><strong>Titre personnalisé pour la liste de fichiers joints:</strong> par défaut,
+l'extension &#039;Fichiers Joints&#039; insère le titre
+"Fichiers Joints:" au dessus de la liste de fichiers joints à un article spécifique (si il existe des
+fichiers joints bien sur). Dans certains cas, vous pourriez préférer d'autres termes
+pour des articles spécifiques.  Vous pouvez spécifier le terme exact que vous souhaitez employer
+article par article. Par exemple, si vous souhaitez que l'article 211
+utilise le terme spécifique de "Téléchargements:", vous pouvez ajouter à ce paramètre:
+&#039;211&nbsp;Téléchargements&#039; (sans les guillemets). Utilisez une instruction de ce type par ligne.</li>
+
+<li><strong>Cacher les fichiers joints pour:</strong>
+Il s'agit d'une liste de mots clés ou de Sections/Catégories d'articles pour lesquels
+la liste de fichiers joints ne doit pas être affichée.  Deux mots clés spéciaux peuvent être utilisés:
+'frontpage' pour supprimer la liste de fichiers joints sur la page d'accueil et
+'all_but_article_views' pour permettre d'afficher la liste de fichiers joints seulement en mode vue d'articles.
+(Entrez ces options de mots clés sans les guillemets.)  Les ID de Section/Catégorie
+doivent être saisis sous forme numérique, séparés par des slash(/):
+Section#/Catégorie#, Section#/Catégorie#.  Spécifiez juste 'Section#' pour couvrir toutes
+les Catégories contenues dans ladite section.  Exemples: 23/10, 23/11, 24
+</li>
+
+<li><strong>Sécuriser le téléchargement de fichiers joints:</strong> Par défaut, l'extension &#039;Fichiers Joints&#039;
+sauvegarde les fichiers dans un répertoire accessible à tous.   Si vous choisissez
+l'option <i>sécuriser</i>, le répertoire dans lequel les fichiers joints seront sauvegardés sera protégé.
+  Les liens de téléchargement de l'interface publique permettront toujours le téléchargement mais
+ne seront plus des liens directs.  Ceci empêchera l'accès aux utilisateurs ne disposant
+pas des autorisations appropriées.  Si les téléchargements <i>sécurisés</i> ne sont pas sélectionnés,
+les liens suivront les options décrites ci-dessus mais les fichiers joints resteront accessibles
+aux utilisateurs qui connaitraient leur adresse URL complète puisque le répertoire de stockage ne serait pas sécurisé.
+ L'option <i>sécuriser</i> empêche l'accès aux fichiers pour les utilisateurs n'ayant
+pas les autorisations appropriées, même s'ils connaissent l'URL, puisque cette option empêche le listing du
+répertoire.  NOTE: En mode <i>sécurisé</i>, la liste de fichiers joints n'est pas affichée
+tant que l'utilisateur ne s'est pas identifié dans l'interface publique de Joomla!.
+
+<li><strong>Mode de téléchargement pour les fichiers sécurisés:</strong>
+Cette option contrôle si les fichiers doivent être téléchargés en tant que fichiers
+indépendants ou affichés dans le navigateur (si le navigateur supporte le type de fichier en question).
+il y a deux options:
+<ul>
+	<li><i>&#039;En ligne&#039;</i>: Dans ce mode, les fichiers qui peuvent être affichés directement par le navigateur
+	le seront (comme les fichiers texte ou image par exemple). </li>
+	<li><i>&#039;Fichier Joint&#039;</i>: Avec ce mode 'fichier joint', les fichiers seront téléchargés en tant que
+	fichiers indépendants. </li>
+</ul><br>
+Dans les deux cas, les fichiers qui ne peuvent pas être affichés par le navigateur
+seront considérés et téléchargés comme des fichiers indépendants.
+</li>
+
+</ul>
+<span class="atop"><a href="#top">[Revenir au début]</a></span>
+
+<h2><a name="display_filename"></a>Afficher le nom de fichier</h2>
+Normalement, lorsque les fichiers sont transférés sur le serveur et stockés dans la lise de fichiers joints,
+le nom de fichier complet est affiché et sert de lien de téléchargement.
+Dans certains cas, les noms de fichiers peuvent être trop longs pour que ceci fonctionne bien.
+Dans le formulaire de transfert vers le serveur, il y a un champ nommé "Nom de fichier affiché"
+dans lequel la personne qui souhaite transférer le fichier peut insérer un titre alternatif
+qui sera affiché à la place du nom de fichier complet.
+Par exemple, un nom de fichier abrégé peut être inséré dans ce champ.
+le champ peut en suite être édité dans l'interface administrateur de Joomla!.
+Note: Il y a une option nommée "Longueur de nom de fichier maximum" dans les options du plugin.
+Elle peut être paramétrée pour tronquer automatiquement l'affichage de noms de fichiers. Dans ce cas,
+le nom de fichier tronqué sera inséré automatiquement dans le champ "Nom de fichier affiché".
+
+<span class="atop"><a href="#top">[Revenir au début]</a></span>
+
+<h2><a name="styling"></a>Changer le style de la liste de fichiers joints</h2>
+Les listes de fichiers joints affichées dans l'interface publique de Joomla! sont créées
+dans un &#039;div&#039; spécial qui contient un tableau pour les fichiers joints.
+ Le tableau a plusieurs classes CSS différentes afin de permettre au développeur du site
+de personnaliser son apparence. 
+Regardez dans le fichiers CSS du plugin 'Fichiers Joints' (plugins/contenu/attachments.css) 
+pour avoir des exemples. Si vous souhaitez changer le style, pensez à copier les styles originaux
+à la fin du même fichier et à renommer 'attachmentsList' dans la section copiée pour lui
+donner le nom de votre choix. Editez les paramètres de fichiers joints
+(dans le gestionnaire de composants) et changez le paramètre <i>Style des tableaux de fichiers joints</i>
+par le nouveau nom de classe. Ensuite modifiez les définitions de classe de manière appropriée dans la section
+que vous avez copiée. Cette approche cous permettra de rapidement revenir au style initial des tableaux
+en changeant le paramètre <i>Style des tableaux de fichiers joints</i>, pour le remettre sur &#039;attachmentList&#039;.
+Ceci a également l'avantage de pouvoir copier les styles modifiés dans un fichier spécifique
+qui pourra facilement être récupéré quand l'extension 'Fichiers Joints' sera mise à jour ou évoluera.
+Ceci peut aussi être fait avec une commande d'import de CSS.
+
+<span class="atop"><a href="#top">[Revenir au début]</a></span>
+
+<h2><a name="icons"></a>Icones de types de fichiers</h2>
+L'extension 'Fichiers Joints' ajoute une icone en face de chaque fichier joint
+dans la liste qui s'affiche en bas de l'article considéré. Si vous souhaitez ajouter une nouvelle icone,
+suivez ces étapes:
+(1) Ajoutez l'icone choisie dans le répertoire 'media/attachments/icons',
+si une icone appropriée n'y est pas déjà; (2) Editez le fichier 'components/com_attachments/file_types.php'
+et ajoutez une ligne au tableau statique $attachments_icon_from_file_extension qui associe
+une icone à une extension de nom de fichier (dans media/attachments/icons directory).
+ Si ceci ne fonctionne pas, vous pourriez avoir besoin d'ajouter une ligne appropriée
+ au tableau $attachments_icon_from_mime_type.
+ (3) N'oubliez pas de faire des copies des fichiers d'icones et de updated file_types.php dans un répertoire
+ en dehors de votre site web afin de pouvoir mettre à jour votre version de l'extension
+ 'Fichiers Joints' dans le futur.
+
+<span class="atop"><a href="#top">[Revenir au début]</a></span>
+
+<h2><a name="warnings"></a>Avertissements</h2>
+<ul>
+<li><strong>Si vous avez des fichiers joints qui sont sensibles ou privés,
+utilisez l'option <i>Sécuriser le téléchargement de fichiers joints</i> !</strong><br>
+Si vous n'utilisez pas l'option sécurisée, les fichiers joints sont enregistrés
+dans un répertoire public et sont de ce fait accessible à toute personne
+qui connaitrait l'adresse URL complète.  L'option <i>sécurisée</i> empêche
+l'accès à toute personne ne disposant pas des autorisations appropriées (ceci étant déterminé par les options précédentes).
+  Voyez la discussion de la section <i>Sécuriser le téléchargement de fichiers joints</i>
+ci-dessus pour de plus amples détails.
+</li>
+
+<li>Chaque fois qu'un fichier est transféré sur le serveur (upload),
+l'existence du répertoire de destination est vérifiée et ce répertoire sera créé s'il n'existe pas.
+Si l'extension &#039;Fichiers Joints&#039; n'arrive pas à créer de répertoire pour les fichiers transférés,
+vous devrez le faire vous-même (et vous pourriez avoir des difficultés à transférer des
+fichiers sur le serveur).  Assurez vous de donner au réperoire les autorisations
+appropriées pour que les transferts puissent se faire.
+  Dans le monde Unix/Linux, c'est probablement quelque chose comme un CHMOD 744.</li>
+
+<li>Si cette extension ne vous permet pas de transférer sur le serveur certains types de fichiers
+spécifiques (comme des fichiers zip), soyez attentif à ce qu'ils respectent les restrictions
+définies dans le gestionniaire de médias de Joomla!. Ceci est fait pour empêcher
+le transfert de types de fichiers potentiellement nuisibles comme des fichiers html ou php.
+ L'administrateur peut modifier les paramètres du gestionnaire de médias
+pour ajouter des types de fichiers spécifiques en allant dans l'item "Paramètres généraux" sous le menu "Site",
+ et en sélectionnant l'onglet "système" pour ajouter le nom de l'extension de fichier souhaitée
+dans la liste présentée dans le partie "gestionnaire de médias".
+</li>
+
+<li>Le second plugin, 'add_attachment_btn_plugin' (appelé 'Button - AddAttachment'
+dans le gestionnaire de plugin) permet de joindre des fichiers à un article
+au moment même ou il est modifié dans l'éditeur d'articles.
+  Ce plugin ajoute un bouton juste en dessous de la zone d'édition d'article intitulée
+ "Ajouter un fichier joint".  Si vous avez installé ce plugin mais que vous ne voyez pas ce bouton,
+ vous devez propablement vérifier la publication de ce plugin dans le gestionnaire de plugin.
+    Note: le bouton n'est pas affiché lorsque les articles sont crées pour la première fois
+dans la mesure ou les articles doivent avoir été enregistrés au moins une fois
+avant qu'un fichier joint puisse leur être associé.
+</li>
+
+<li>Si vous ne pouvez pas voir les fichiers joints dans l'interface publique,
+il y a plusieurs raisons possibles:
+  <ul>
+     <li>Le plugin 'Content - Attachments' n'est pas publié.  Utilisez le gestionnaire de plugin pour le publier. </li>
+     <li>L'option 'Qui peut voir les fichiers joints' est fixée à 'utilisateurs enregistrés' et vous n'êtes pas identifié.
+     Ceci peut être changé dans l'éditeur de paramètres du gestionnaire de composants. </li>
+     <li>Dans 'Content - Attachments' (via le gestionnaire de plugin), le niveau d'accès n'est pas fixé à 'Public'.
+     </li>
+  </ul>
+</li>
+
+</ul>
+<span class="atop"><a href="#top">[Revenir au début]</a></span>
+
+<h2><a name="upgrading"></a>Mises à jour</h2>
+Si vous avez déjà ajouté des fichiers joints et que vous souhaitez les conserver
+lors d'une mise à jour, voici les étapes à suivre:
+<ol>
+<li>Utilisez <a href="http://www.phpmyadmin.net/home_page/index.php">phpMyAdmin</a>
+(ou un autre outil SQL) pour sauvegarder le contenu de la table jos_attachments
+ (en utilisant l'option &#039;Exporter&#039;  et les option de données
+'insertions complètes' mais pas 'insertions étendues').</li>
+<li>Désinstallez le composant &#039;Fichiers Joints&#039;. </li>
+<li>Désinstallez les deux plugins &#039;Fichiers Joints&#039;</li>
+<li>Installez  à présent la nouvelle version en dézippant les fichiers et en
+installant le nouveau composant et les nouveaux plugins.</li>
+<li>Republiez les plugins &#039;Fichiers Joints&#039; dans le gestionnaire de plugins.</li>
+<li>Utilisez phpMyAdmin pour restaurer les données précedemment sauvegardées
+dans la nouvelle table jos_attachments.</li>
+<li>Si vous effectuez une mise à jour depuis une version inférieure à la 1.0 vers une version postérieure à 1.0
+et que vous avez d'anciens fichiers joints, vous devrez ajouter les valeurs appropriées
+au nouveau champ &#039;icon_filename&#039; en vous connectant en tant qu'administrateur
+dans l'interface d'administration et en utilisant l'URL suivante dans votre navigateur: <br>
+<b>/administrator/index.php?option=com_attachments&amp;task=add_icon_filenames</b>
+</li>
+</ol>
+<p>Notez que le fait de désinstaller l'extension &#039;Fichiers Joints&#039; n'efface pas les
+fichiers précédemment transférés sur le serveur mais enlève le table de fichiers joints de
+la base de données. De ce fait, après avoir réinstallé une nouvelle version de
+&#039;Fichiers Joints&#039;, il est seulement nécessaire de restaurer les données dans
+la table adéquate de la base se données pour remettre en place tous les anciens fichiers joints.</p>
+
+<p>
+Si vous choisissez de ne pas restaurer la base de données des fichiers joints, n'oubliez pas de supprimer
+tous les anciens fichiers joints du sous-répertoire afin d'éviter les conflits de noms
+de fichiers dans le futur.
+  <span class="atop"><a href="#top">[Revenir au début]</a></span></p>
+
+<h2><a name="acknowledgements"></a>Remerciements</h2>
+De nombreux remerciements aux contributeurs ou ressources suivants:
+<ul>
+    <li>Le livre <i>Learning Joomla! 1.5 Extension Development: Creating Modules,
+    Components, and Plugins with PHP</i> par Joseph L. LeBlanc a été très utile pour
+    créer l'extension 'Fichiers Joints'.
+    </li>
+    <li>Les icones pour les types de fichiers sont dérivées de plusieurs sources, parmi lesquelles:
+        <ul>
+           <li><a href="http://www.famfamfam.com/lab/icons/silk/">The Silk
+           icons par Mark James (http://www.famfamfam.com/lab/icons/silk/)</a></li>
+           <li><a href="http://www.zap.org.au/documents/icons/file-icons/sample.html">File-Type
+           Icons 1.2 par John Zaitseff (http://www.zap.org.au/documents/icons/file-icons/sample.html)</a></li>
+           <li><a href="http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html">Doctype
+           Icons 2 par Timothy Groves (http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html)</a></li>
+           <li><a href="http://www.catnip.co.uk/opendocument/icons/">OpenDocument icons proposé par
+           Pete Harlow (http://www.catnip.co.uk/opendocument/icons/)</a></li>
+       </ul>
+       <br>
+       Notez que la plupart des icones de 'Fichiers Joints' ont été modifiées à partir
+       des images originales de ces sites web.  Si vous aimez les versions originales,
+       veuillez les télécharger depuis les sites ci-dessus.
+    </li>
+</ul>
+<span class="atop"><a href="#top">[Revenir au début]</a></span>
+
+<p>Merci de transmettre vos suggestions et rapports d'erreurs à <a href="mailto:jmcameron@jmcameron.net">jmcameron@jmcameron.net</a>.</p>
+</body>
+</html>

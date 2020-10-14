@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="module">
+	<name>WidgetBucks Module</name>
+	<author>Information Madness</author>
+	<creationDate>October 22, 2007</creationDate>
+	<copyright>www.informationmadness.com</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>joomla@informationmadness.com</authorEmail>
+	<authorUrl>www.informationmadness.com/cms</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[ Recently launched <a target="_blank" href="http://www.widgetbucks.com/home.page?referrer=4191002">WidgetBucks</a>, a Pay Per Click Program that claims to have a high CTR than AdSense. Publishers can register and can get approved without any problem. <p>The site recently launched a CPM program for international publishers as well. So if you get US traffic, you will get Paid per Click but if you have Traffic outside USA, you will be paid for the impressions.</p><p>This widget will place PPC ads based on your site niche. You can select your category or leave it upto their crawlers to find out the keywords for your site.</p><p>Check out the <a target="_blank" href="http://www.widgetbucks.com/home.page?referrer=4191002">WidgetBucks</a> for more details & video Demo. Register yourself at <a target="_blank" href="http://www.widgetbucks.com/home.page?referrer=4191002">WidgetBucks</a>, get your WidgetBucks container id from the code <strong>script/ads.js?uid=</strong> and enter it in this module. Make sure you only enter the value of <strong>uid</strong></p>
+		]]></description>
+	<files>
+		<filename module="mod_widgetbucks">mod_widgetbucks.php</filename>
+	</files>	
+	<params>
+	    <param name="containerID" type="text" default="your ID" label="WidgetBucks Container ID" description="Find this Container ID within the WidgetBucks Code."/>
+	</params>
+</mosinstall>

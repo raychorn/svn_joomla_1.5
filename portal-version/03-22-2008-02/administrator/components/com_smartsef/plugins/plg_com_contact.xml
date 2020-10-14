@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="smartsef" version="1.5.0">
+	<name>Smartsef plugin - Contact</name>
+	<author>Richard@joomlatwork.com</author>
+	<creationDate>Oct 2007</creationDate>
+	<copyright>(C) 2005 - 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>richard@joomlatwork.com</authorEmail>
+	<authorUrl>www.smartsef.org</authorUrl>
+	<plugin>plg_com_contact</plugin>
+	<version>1.0</version>
+	<description>Smartsef plugin for the contact SEF urls</description>
+	<files>
+		<filename module="plg_com_newsfeeds">plg_com_contact.php</filename>
+		<filename module="plg_com_newsfeeds">plg_com_contact.xml</filename>
+	</files>
+	<params>
+		<param name="url_prefix_path" type="text" default="" label="URL prefix path" description="A URL prefix path for the contact link, leave empty if you don't want to use a prefix path (for example /contact)" />
+	</params>
+</install>

@@ -1,0 +1,324 @@
+/* Mambospan Glass Template: Some css codes are based on third party open source codes */
+HTML {
+	height: 100%;
+	margin-bottom: 1px;
+}
+
+BODY {
+	margin: 0px 0px 0px 0px;
+	height: 100%;
+	background:#fff;
+}
+
+a:link, a:visited {
+	color: #0033CC; 
+	text-decoration: underline;
+	font-weight: normal;
+}
+
+a:hover {
+	color: #0066CC;	text-decoration: none;
+}
+
+td,tr,p,div {
+	font-family: Arial, Helvetica, sans-serif;
+	line-height: 140%;
+	font-size: 11px;
+	color: #333333;
+}
+
+h3, .componentheading {
+	font-family: Arial, Tahoma, Helvetica, sans-serif;
+	font-weight: normal;
+	font-size: 15px;
+	color: #0033CC;
+	line-height: 18px;
+	margin: 5px 0 10px 0;
+	padding-bottom: 3px;
+}
+
+.contentheading {
+  	font-family: Arial, Tahoma, Helvetica, sans-serif;
+  	padding: 0px 0px 5px 0px;
+	font-size: 16px;
+	font-weight: normal;
+	height: 24px;
+	vertical-align: bottom;
+	color: #0033CC;
+	text-align: left;
+	width: 100%;
+}
+
+table.contenttoc {
+	margin: 5px;
+	border:solid 1px #8AAACF;
+}
+
+table.contenttoc th {
+	font-size: 12px;
+	text-align:center;
+	font-weight:bold;
+	color: #333333;
+	background: #0033CC url(../images/bg_b.gif) center;
+	padding: 3px;
+}
+
+table.contenttoc td {
+	font-size: 10px;
+	padding: 2px 8px;
+}
+
+td.sectiontableheader {
+	background: #efefef url(../images/bg_w.png) center;
+	height:23px;
+	color: #333333;
+	font-weight: bold;
+	padding: 4px;
+	border-right: 0px solid #999999;
+	border-left: 1px solid #999999;
+}
+
+tr.sectiontableentry1 td, tr.sectiontableentry2 td {
+  	padding: 4px;
+}
+
+td.sectiontableentry1, td.sectiontableentry2{
+  	padding: 3px;
+}
+
+table.contentpane, table.contentpaneopen {
+  	width: 100%;
+}
+
+div.moduletable {
+  	margin-bottom: 10px;
+}
+
+ul {
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+ul li {
+	line-height: 15px;
+	padding-left: 15px;
+	padding-top: 0px;
+	background: url(../images/arrow.gif);
+	background-repeat: no-repeat;
+	background-position: 0px 1px;
+}
+
+.small {
+	font-size: 10px;
+	color: #999999;
+	font-weight: bold;
+	text-align: left;
+}
+
+#page_bg {
+	height: 100%; 
+	background: #fff;
+	padding: 0;
+	margin-bottom: 1px;
+}
+
+table#main {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+	border-right:1px solid #8AAACF;
+	border-left:1px solid #8AAACF;
+}
+
+table#inner {
+	margin-left: auto;
+	margin-right: auto;
+	text-align: left;
+}
+
+td.bottom {
+	text-align: left;
+	height: 25px;
+	line-height: 23px;
+	text-indent: 20px;
+	vertical-align:middle;
+  	background: #0033CC url(../images/bg_b.gif) center;
+	color:#0033CC;
+	border-top:1px solid #8AAACF;
+}
+
+td.bottom a:link, td.bottom a:visited {
+	color:#0033CC;
+	text-decoration:none;
+}
+
+div#wrapper {
+	background: #ffffff;
+	margin: auto;
+	min-width: 750px;
+	max-width: 1100px;
+	width: expression(document.body.clientWidth > 1100? "1100px": "auto" );
+}
+
+div#title {
+	background: #fff url(../images/mambospan_topbar.png) bottom;
+	height: 74px;
+	color:#0066CC;
+	font-size:36px;
+	line-height:70px;
+	font-weight:bold;
+	text-indent:20px;
+	vertical-align:middle;
+}
+
+div#divider {
+	background: #0033CC url(../images/divider.gif) center repeat-x;
+	height: 5px;
+	line-height:4px;
+}
+
+#topmenu {
+	position: relative;
+	background: #0033CC url(../images/bg_b.gif) bottom;
+	max-width:auto;	
+	padding: 0px;
+	margin: 0px;
+	height: 22px;
+}
+
+#naviglass {
+	font: 10px/12px verdana, arial, georgia, sans-serif;
+	margin: 0px;
+	padding: 0px 0px 0px 0px;
+	width: auto;
+}
+
+/* CSS Horizontal Menu - mycssmenu*/
+
+#naviglass #navlist ul {
+	margin: 0;
+	white-space: nowrap;
+	padding: 0;
+}
+
+#naviglass #navlist li {
+	display: inline;
+	vertical-align:middle;
+	background: transparent;
+	line-height: 24px;
+	padding: 0px;
+}
+
+#naviglass #navlist a {
+	padding: 4px 12px 5px 12px;
+	vertical-align:middle;
+	font-family:Tahoma, Arial, Helvetica, sans-serif;
+	font-size:11px;
+	font-weight:bold;
+	line-height:22px;
+}
+
+#naviglass #navlist a:link, #naviglass #navlist a:visited {
+	color: #ffffff;
+	text-decoration: none;
+}
+
+#naviglass #navlist a:hover {
+	background: #999 url(../images/bg_w.png) bottom;
+	color: #0033CC;
+}
+
+#naviglass #active a:link, #naviglass #active a:visited, #naviglass #active a:hover {
+	background: #FF9900 url(../images/bg_o.gif) bottom;
+	color: #ffffff;
+}
+
+/*End of css menu*/
+
+.invi a:link, .invi a:visited {
+	color: #ffffff; 
+	text-decoration: none;
+	font-weight: normal;
+}
+
+.invi a:hover {
+	color: #ffffff;	text-decoration: none;
+}
+
+div#pathway {
+	height: 20px;
+	background: #ffffff;
+	line-height: 20px;
+	text-indent: 7px;
+	color:#0033CC;
+}
+
+.left {
+	padding-left: 8px;
+	  width: 160px;
+}
+
+#footer {
+	margin-top: 4px;
+	font-family: Tahoma, Helvetica, sans-serif;
+	font-size: 11px;
+	color: #8AAACF;
+	float: right;
+	width: 400px;
+	text-align: center;
+}
+
+a.mainlevel:link, a.sublevel:visited {
+	font-size: 11px;
+	font-weight: normal;
+	color: #0033CC;
+	text-align: left;
+	padding-left: 2px;
+	margin-left: 2px;
+	line-height: 13px;
+}
+
+a.mainlevel:hover {
+	color: #0000FF;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+a.sublevel:link, a.sublevel:visited {
+	font-size: 10px;
+	font-weight: normal;
+	color: #0033CC;
+	text-align: left;
+	padding-left: 5px;
+	margin-left: 5px;
+	line-height: 13px;
+}
+
+a.sublevel:hover {
+	color: #0033CC;
+	font-weight: normal;
+	text-decoration: none;
+}
+
+input.button {
+	border: 1px solid #8AAACF;
+	background: url(../images/bg_b.gif) repeat-x;
+	height: 20px;
+	padding: 0px 5px;
+	font-weight: bold;
+	color: #ffffff;
+	text-transform: uppercase;
+	font-size: 10px;
+	font-family: Arial, Helvetica, sans-serif;
+}
+
+.inputbox {
+	font-family: Arial, Helvetica, sans-serif;
+	font-size: 11px;
+	font-weight: normal;
+	color: #555555;
+	background: #fff;
+	border: 1px solid #8AAACF;
+	text-indent:3px;
+}

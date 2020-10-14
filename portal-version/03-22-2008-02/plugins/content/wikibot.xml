@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+   <name>Content - WikiBot</name>
+   <author>Messiah</author>
+   <creationDate>August 2007</creationDate>
+   <copyright>(C) 2007 The Inevitable One</copyright>
+   <license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+   <authorUrl>http://www.theinevitabledossier.com/wikibot.html</authorUrl>
+   <authorEmail>messiah@theinevitabledossier.com</authorEmail>
+   <version>2.0</version>
+   <description><![CDATA[ <div align="left">
+	<a href="http://www.theinevitabledossier.com/wikibot.html" target="new">
+	<img src="http://www.theinevitabledossier.com/images/wikibot.jpg" alt="Check for updates" title="Check for updates" border="0"></a>
+        <br><br>
+	<img src="http://extensions.joomla.org/components/com_mtree/img/compat_15.png">
+	<br><br>
+	<strong><font face="Verdana, Arial, Helvetica, sans-serif" class="sectionname">
+	WikiBot 2.0 - for Joomla 1.5</strong>
+	<br><br>
+	<font color="red"><i>Configure and publish this plugin to put it into work.</i></font></font>
+	<br><br>
+	<u><b>English:</b></u><br>
+	A simple bot, to create a <i>Wikitagged</i> link to WikiPedia. On a multi-lingual site (<a href="http://forge.joomla.org/sf/sfmain/do/viewProject/projects.joomfish">Fish</a>) take the choosen language into account.
+	<br><br>
+	<u>Example:</u>
+	<br>
+	<b>Article:</b> My nickname is [[Messiah]] 
+	<br>
+	<b>Output:</b> My nickname is <a href="http://en.wikipedia.org/wiki/Special:Search/Messiah" title="Wikipedia : Messiah" target="wikipedia">Messiah</a>.
+	<br>
+	<b>Article:</b> [[The Body (Film)|The Body]] is a good movie.
+	<br>
+	<b>Output:</b> <a href="http://en.wikipedia.org/wiki/Special:Search/The Body (Film)" title="Wikipedia : The Body (Film)" target="wikipedia">The Body</a> is a good movie.
+	<br><br>
+        <b><u>WikiSite examples:</u></b> [[wiktionary:, [[wikiquote:, [[wikisource:, [[wikinews:, [[wikibooks: !!!
+	<br>
+	<b>Article:</b> My nickname is [[wiktionary:Messiah]].
+        <br>
+	<b>Output:</b> My nickname is <a href="http://en.wiktionary.org/wiki/Special:Search/Messiah" title="wiktionary: Messiah" target="wiktionary">Messiah</a>.
+	<br><br>
+        <b><u>New Window examples:</u></b> [[nw: & |nw: !!!
+	<br>
+	<b>Article:</b> My nickname is [[nw:Messiah]].
+	<br>
+	<b>Article:</b> My nickname is [[wiktionary:Messiah|nw:Messiah]].
+        <br>
+	<b>Output:</b> <i>target=_blank is added to the link, which reslt in a new window if clicked.</i>
+	<br><br>
+	<i>- "Wiki rules!"</i>
+	<br><br>
+	\Messiah
+	<br>
+	<a href="http://www.theinevitabledossier.com"><font size=1><i>- Are you ready for the Inevitable..?</i></font></a>
+      </div>
+     	]]></description>
+   <files>
+      <filename plugin="wikibot">wikibot.php</filename>
+   </files>
+    <params>
+	<param name="defaultlang" type="text" default="en" label="Default language" description="Default language for Wikipedia link. Overwritten by the choosen user language if your site is multi-lingual with the Fish."></param>
+	<param name="target" type="list" default="default" label="Target window" description="Open links in the default browser window (same, wikipedia tagged or new window - depending bot usage) or always in a new browser window.">
+		<option value="default">Default browser window</option>
+		<option value="new">New browser window</option>
+	</param>
+	<param name="color" type="text" default="" label="Link Color" description="Set your own wikibot link color using standard HTML colors (example: #00FFFF). If nothing is specified the Joomla template css will rule."></param>
+	<param name="wikipath" type="list" default="search" label="Wiki URL Path" description="Decides if we should search for articles or link directly to the article at the wikisite.">
+		<option value="search">Search</option>
+		<option value="direct">Direct link</option>
+	</param>
+	<param name="ownsite" type="text" default="" label="Own WikiSite" description="Put URL to own wikisite here to override both language and wikipedia in article links (If wikisite is on other webdomain than this Joomlasite please add http://url otherwise just begin with /url )."></param>
+	<param name="ownsitename" type="text" default="" label="Own WikiSite Name" description="Name of own Wiki site (Will title the url links and is only enabled if Own WikiSite is configured)"></param>
+    </params>
+</install>

@@ -1,0 +1,142 @@
+/* Style sheet for TWC Graphics Design template */
+body  { background: #FFF; color: #154A84; font: normal normal 11px Verdana, Arial, sans-serif; }
+input { background: #FFF;color:#42515E; font: normal normal 11px Arial, sans-serif; border-right: 1px solid #607393;
+		border-left: 1px solid #607393;border-top: 1px solid #607393; border-bottom: 1px solid #607393; }
+textarea { background: #FFF; color: #42515E; font: normal normal 11px Arial, sans-serif; border-right: 1px solid #607393;
+			border-left: 1px solid #607393;border-top: 1px solid #607393; border-bottom: 1px solid #607393;}
+select { background: #FFF; color: #42515E; font: normal normal 11px Arial, sans-serif; border: 1px solid #EEAB4B;  }
+form  { background: #FFF; color: #42515E; font: normal normal 11px Arial, sans-serif; }
+		
+h1    { background-image: url('images/design_elements/h1.gif'); background-repeat: no-repeat; 
+	width: 100%; color: #666; font:  normal bold 13px Arial, sans-serif; padding-left: 15px; 
+	border-bottom: 1px solid #607393; padding-bottom: 3px; }
+h2    { color: #607393; font:  normal bold 13px Verdana, Arial, sans-serif;
+	border-bottom: 1px solid #607393; padding-bottom: 3px; width: 85%; }
+h3    { color: #154A84; font:  normal bold 13px Verdana, Arial, sans-serif; margin-bottom: 4px; }
+h4    { color: #607393; font:  normal bold 11px Verdana, Arial, sans-serif; margin-bottom: 4px; }
+h5    { color: #154A84; font:  normal bold 11px Verdana, Arial, sans-serif; margin-bottom: 4px; }
+h6    { color: #607393; font:  normal bold 11px Verdana, Arial, sans-serif; margin-bottom: 4px; }
+ol, ol ol, ol ol ol { color: #154A84; font: normal normal 11px Verdana, Arial, sans-serif; }
+ul       { list-style-image: url('images/design_elements/bullet1.gif'); color: #154A84; 
+	font: normal normal 11px/16px Verdana, Arial, sans-serif; }
+ul ul    { color: #607393; font: normal normal 11px/16px Verdana, Arial, sans-serif; }
+ul ul ul { color: #154A84; font: normal normal 11px/13px Verdana, Arial, sans-serif; }
+
+/* Define include_top area */
+.topleft { background: #CAD4E5; border-left: 1px solid #FFF; padding: 6px; }
+.topright { background: #CAD4E5; background-image: url('images/design_elements/topbox.gif'); background-repeat: no-repeat;
+	color: #000; font: normal normal 11px Verdana, Arial, sans-serif; padding: 10px; }
+
+/* Define top menu banner */
+.topbanner1 { background: #666; color: #FFF; font: normal normal 11px Verdana, Arial, sans-serif; 
+	 line-height: 28px; border-bottom: 1px solid #FFF; padding-left: 10px; }
+.topbanner1 a:link    { color: #FFF; text-decoration: none;   }
+.topbanner1 a:active  { color: #607393; text-decoration: none;   }
+.topbanner1 a:visited { color: #FFF; text-decoration: none;   }
+.topbanner1 a:hover   { color: #CAD4E5; text-decoration: underine;  }
+
+/* Define top 2 menu banner */
+.topbanner2 { background: #607393; color: #FFF; font: normal normal 11px Verdana, Arial, sans-serif; 
+	 height: 28px; border-left: 1px solid #FFF; border-bottom: 1px solid #FFF; padding-right: 10px; }
+.topbanner2 a:link    { color: #FFF; text-decoration: none;   }
+.topbanner2 a:active  { color: #607393; text-decoration: none;   }
+.topbanner2 a:visited { color: #FFF; text-decoration: none;   }
+.topbanner2 a:hover   { color: #CAD4E5; text-decoration: underine;  }
+
+/* Define main sections */
+.leftside { background: #fff; font: normal normal 11px/16px Verdana, Arial, sans-serif; 
+	color: #000; border-left: 1px solid #CAD4E5; padding: 10px; }
+.leftmenu { background: #ECECED; font: normal normal 11px/24px Verdana, Arial, sans-serif; 
+	color: #000;  border: 1px solid #607393;  }
+.leftmenutop { background: #60739C; font: normal normal 11px/16px Verdana, Arial, sans-serif; 
+	color: #FFF;  border: 1px solid #607393; height: 24px; }
+.leftmenu a:link    { color: #000; font-weight: normal;  height: 24px; text-decoration: none;}
+.leftmenu a:active  { color: #000; font-weight: normal;  height: 24px; text-decoration: none;}
+.leftmenu a:visited { color: #000; font-weight: normal;  height: 24px; text-decoration: none;}
+.leftmenu a:hover   { background: #607393; 
+	font-weight: normal; color: #FFF;  height: 24px; width: 100%;text-decoration: none;}
+
+.main { background: #FFF; color: #333; font: normal normal 11px/16px Verdana, Arial, sans-serif; 
+	padding: 10px; border-right: 1px solid #CAD4E5; border-left: 1px solid #CAD4E5; }
+.rightside { background: #FFF; font: normal normal 11px/16px Verdana, Arial, sans-serif; 
+	color: #FXFXFX; border-right: 1px solid #CAD4E5; padding: 10px; }
+.formpage { background: #FFF; font: normal normal 11px/16px Verdana, Arial, sans-serif; 
+	color: #333; padding: 10px; }
+.formfield { background: #FFF; font: normal normal 11px/16px Verdana, Arial, sans-serif; 
+	color: #333;  }
+
+/* Define product page sections */
+.productbox      { background: #EFEFEF; color: #333; font: normal normal 11px/13px Verdana, Arial, sans-serif; 
+	padding-left: 5px; padding-right: 5px; padding-top: 1px; padding-bottom: 1px; 
+	border: 1px solid #607393; }
+.productboxtop   { background: #607393; color: #FFF; font: normal bold 11px/15px Verdana, Arial, sans-serif; 
+	padding-left: 5px; padding-right: 5px; padding-top: 1px; padding-bottom: 1px; 
+	border-top: 1px solid #607393; border-left: 1px solid #607393;  border-right: 1px solid #607393;  }
+.products        { background: #FFF; color: #154A84; border-right: 1px solid #607393;border-bottom: 1px solid #607393;
+ 	border-left: 1px solid #607393; border-top: 1px solid #607393;padding-left: 5px; padding-right: 5px; padding-top: 1px; padding-bottom: 1px; 
+ 	font: normal normal 11px/13px Verdana, Arial, sans-serif;}
+.productssleft   { background: #FFF; color: #154A84; border-left: 1px solid #607393; border-bottom: 1px solid #607393; 
+	padding-left: 5px; padding-right: 5px; padding-top: 1px; padding-bottom: 1px;font: normal normal 11px/13px Verdana, Arial, sans-serif; }
+.productssleftbot   { background: #FFF; color: #154A84; border-left: 1px solid #607393; border-bottom: 1px solid #607393; 
+	padding-left: 5px; padding-right:5px; padding-top: 1px; padding-bottom: 1px;font: normal normal 11px/13px Verdana, Arial, sans-serif; }
+
+.productssright  { background: #FFF; color: #154A84; border-left: 1px solid #607393; padding-left: 5px; padding-right: 5px; padding-top: 1px; padding-bottom: 1px; 
+				   border-right: 1px solid #607393;border-bottom: 1px solid #607393;font: normal normal 11px/13px Verdana, Arial, sans-serif; }
+.productssrightbot  { background: #FFF; color: #154A84; border-left: 1px solid #607393; border-top: 1px solid #607393; 
+	padding-left: 5px; padding-right: 5px; padding-top: 1px; padding-bottom: 1px; border-right: 1px solid #607393;border-bottom: 1px solid #607393;
+	font: normal normal 11px/13px Verdana, Arial, sans-serif; }
+
+
+
+/* Define textbox area */
+
+.textbox      { background: #F1F2F3; color: #333; font: normal normal 10px/14px Verdana, Arial, sans-serif; 
+	padding-left: 10px; padding-right: 10px; padding-top: 8px; padding-bottom: 8px; 
+	border-left: 1px solid #607393; border-bottom: 1px solid #607393;  border-right: 1px solid #607393; }
+.textboxheader { background: #607393; color: #FFF; 
+	font: normal bold 11px/15px Verdana, Arial, sans-serif; 
+	padding-left: 10px; padding-right: 10px; padding-top: 4px; padding-bottom: 4px; }
+	
+
+/* Define horizontal rule */
+HR { height:1px; width: 96%; background:#607393; margin: 0% 2% 0% 2%; }
+
+/* Define footer area */
+.footer { background: #607393; color: #FFF; font: normal normal 11px Verdana, Arial, sans-serif; 
+	 line-height: 28px; border-top: 1px solid #607393; border-bottom: 1px solid #607393; }
+.footer a:link    { color: #FFF; text-decoration: none;   }
+.footer a:active  { color: #607393; text-decoration: none;   }
+.footer a:visited { color: #FFF; text-decoration: none;   }
+.footer a:hover   { color: #CAD4E5; text-decoration: underine;  }
+
+	
+/* Define standard hyperlinks */	
+a:link  { color: #607393; font: normal normal Verdana, Arial, sans-serif; text-decoration: underline; }  
+a:active { color: #607393; font: normal normal Verdana, Arial, sans-serif; text-decoration: underline; }
+a:visited { color: #607393; font: normal normal Verdana, Arial, sans-serif; text-decoration: underline; }
+a:hover { color: #000; font: normal normal Verdana, Arial, sans-serif; text-decoration: none; }
+
+.text {
+	font-family: Verdana, Helvetica, sans-serif;
+	font-size: 11px;
+	background:#EFEFEF;
+	text-decoration:none;
+}
+.text a:link {color: #000; font:  Verdana, Arial, sans-serif; text-decoration: none; }  
+.text a:hover {	color: #FFFFFF; font: Verdana, Arial, sans-serif; text-decoration: none; }  
+.text a:active {color: #000; font: Verdana, Arial, sans-serif; text-decoration: none; }  
+.text a:visited {color: #000; font:  Verdana, Arial, sans-serif; text-decoration: none; }  
+
+.topmenu { background: #336699; font: normal normal 11px/24px Verdana, Arial, sans-serif; 
+	color: #FFF;  border: 1px solid #336699;  }
+.topmenu a:link    { color: #FFF; font-weight: normal;  height: 24px; text-decoration: none;}
+.topmenu a:active  { color: #FFF; font-weight: normal;  height: 24px; text-decoration: none;}
+.topmenu a:visited { color: #FFF; font-weight: normal;  height: 24px; text-decoration: none;}
+.topmenu a:hover   { font-weight: normal; color: #FFF333;  height: 24px; text-decoration: none;}
+
+.topmenu2 { background: #EFEFEF; font: normal normal 11px/20px Verdana, Arial, sans-serif; 
+	color: #154A84;  }
+.topmenu2 a:link    { color: #000; font-weight: normal;  height: 20px; text-decoration: none;}
+.topmenu2 a:active  { color: #000; font-weight: normal;  height: 20px; text-decoration: none;}
+.topmenu2 a:visited { color: #000; font-weight: normal;  height: 20px; text-decoration: none;}
+.topmenu2 a:hover   { font-weight: normal; color: #154A84;  height: 20px; text-decoration: none;}

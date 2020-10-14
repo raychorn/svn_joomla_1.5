@@ -1,0 +1,49 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+  <name>Redirect</name>
+  <creationDate>April 2006</creationDate>
+  <author>Websmurf</author>
+  <copyright>(c) 2006 Joomla-addons.org</copyright>
+  <authorEmail>sales@joomla-addons.org</authorEmail>
+  <authorUrl>www.joomla-addons.org</authorUrl>
+  <version>1.0 beta 1</version>
+  <description>Redirect your old urls to your new ones</description>
+  <files/>
+  <images>
+  </images>
+   <install>
+    <queries>
+      <query>
+        CREATE TABLE IF NOT EXISTS `#__redirect` (
+          `id` int(11) NOT NULL auto_increment,
+          `original` varchar(255) NOT NULL default '',
+          `redirect` varchar(255) NOT NULL default '',
+          `error_code` int(11) NOT NULL default '0',
+          `hits` int(11) NOT NULL default '0',
+          PRIMARY KEY  (`id`)
+        );
+      </query>
+    </queries>
+  </install>
+  <installfile>install.redirect.php</installfile>
+  <uninstallfile>uninstall.redirect.php</uninstallfile>
+  <administration>
+    <menu>Redirect</menu>
+	  <submenu>
+	    <menu act="config">Configuration</menu>
+	  </submenu>
+    <files>
+	  	<filename>icons/16x16_redo.png</filename>
+	  	<filename>icons/32x32_package_system.png</filename>
+	  	<filename>mambot/redirect.php</filename>
+	  	<filename>mambot/redirect.xm</filename>
+	  	<filename>admin.redirect.html.php</filename>
+	  	<filename>admin.redirect.php</filename>
+	  	<filename>configuration.php</filename>
+	  	<filename>redirect.class.php</filename>
+	  	<filename>toolbar.redirect.html.php</filename>
+	  	<filename>toolbar.redirect.php</filename>
+    </files>
+  </administration>
+	<params/>
+</mosinstall>

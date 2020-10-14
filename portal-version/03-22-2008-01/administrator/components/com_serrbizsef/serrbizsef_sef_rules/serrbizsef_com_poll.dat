@@ -1,0 +1,3 @@
+<?php  
+$strSerialize = 'a:1:{s:8:"com_poll";a:2:{s:4:"vars";a:2:{s:10:"poll_title";a:3:{s:4:"type";s:5:"query";s:5:"query";s:96:"SELECT IF(LENGTH(p.title)>10,SUBSTRING(p.title,1,9),p.title) FROM `jos_polls` as p WHERE id={id}";s:5:"empty";s:1:"?";}s:4:"lang";a:3:{s:4:"type";s:6:"string";s:9:"ifpresent";s:4:"lang";s:5:"value";s:7:"/{lang}";}}s:5:"conds";a:1:{i:0;a:2:{s:9:"arguments";a:2:{s:4:"task";s:7:"results";s:2:"id";s:1:"*";}s:3:"tpl";s:25:"{lang}/poll/{poll_title}/";}}}}';
+  ?>

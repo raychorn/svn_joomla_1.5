@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="smartsef" version="1.5.0">
+	<name>Smartsef plugin - search</name>
+	<author>Richard@joomlatwork.com</author>
+	<creationDate>Oct 2007</creationDate>
+	<copyright>(C) 2005 - 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>richard@joomlatwork.com</authorEmail>
+	<authorUrl>www.smartsef.org</authorUrl>
+	<plugin>plg_com_search</plugin>
+	<version>1.0</version>
+	<description>Smartsef plugin for the search SEF urls</description>
+	<files>
+		<filename module="plg_com_search">plg_com_search.php</filename>
+		<filename module="plg_com_search">plg_com_search.xml</filename>
+	</files>
+	<params>
+		<param name="url_prefix_path" type="text" default="search" label="URL prefix path" description="A URL prefix path for the search extenstion, leave empty if you don't want to use a prefix path " />
+	</params>
+	<params group="advanced">
+		<param name="Category numbers allowed in URL" type="list" default="1" label="Caching" description="Remove the numbers from the category links parts">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+</install>

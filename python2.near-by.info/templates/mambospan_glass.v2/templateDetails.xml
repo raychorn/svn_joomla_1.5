@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="4.5.2" type="template">
+    <name>mambospan_glass.v2</name>
+    <version>2.0.</version>
+    <creationDate>08/12/05</creationDate>
+    <author>Shashikiran Umakanth</author>
+	<copyright>This template is released under GNU/GPL License.</copyright>
+    <authorEmail>admin@medspan.info</authorEmail>
+    <authorUrl>http://mambo.medspan.info</authorUrl>
+
+    <description>The second public template release by Mambospan (http://mambo.medspan.info). Simple and professional design for the classy Mambo user. Visit the homepage at <a href="http://mambo.medspan.info" target="_blank">http://mambo.medspan.info</a> for more downloads.</description>
+    <files>
+        <filename>index.php</filename>
+		<filename>index.html</filename>
+        <filename>templateDetails.xml</filename>
+        <filename>template_thumbnail.png</filename>
+		<filename>mycssmenu.php</filename>
+		<filename>images/index.html</filename>
+        <filename>images/arrow.gif</filename>
+    	<filename>images/bg_b.gif</filename>
+    	<filename>images/bg_o.gif</filename>
+    	<filename>images/bg_w.png</filename>
+    	<filename>images/divider.gif</filename>
+    	<filename>images/mambospan_topbar.png</filename>
+        <filename>images/spacer.png</filename>
+		<filename>images/up.png</filename>
+        <filename>css/index.html</filename>
+        <filename>css/template_css.css</filename>
+    </files>
+    <params />
+</mosinstall>

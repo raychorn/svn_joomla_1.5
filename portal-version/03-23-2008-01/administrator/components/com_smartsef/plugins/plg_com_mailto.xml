@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="smartsef" version="1.5.0">
+	<name>Smartsef plugin - mailto</name>
+	<author>Richard@joomlatwork.com</author>
+	<creationDate>Oct 2007</creationDate>
+	<copyright>(C) 2005 - 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>richard@joomlatwork.com</authorEmail>
+	<authorUrl>www.smartsef.org</authorUrl>
+	<plugin>plg_com_mailto</plugin>
+	<version>1.0</version>
+	<description>Smartsef plugin for the mailto SEF urls</description>
+	<files>
+		<filename module="plg_com_mailto">plg_com_mailto.php</filename>
+		<filename module="plg_com_mailto">plg_com_mailto.xml</filename>
+	</files>
+	<params>
+		<param name="url_prefix_path" type="text" default="mailto" label="URL prefix path" description="A URL prefix path for the mailto extenstion, leave empty if you don't want to use a prefix path (for example /mynewsfeeds)" />
+	</params>
+	<params group="advanced">
+		<param name="Category numbers allowed in URL" type="list" default="1" label="Caching" description="Remove the numbers from the category links parts">
+			<option value="1">Use global</option>
+			<option value="0">No caching</option>
+		</param>
+	</params>
+</install>

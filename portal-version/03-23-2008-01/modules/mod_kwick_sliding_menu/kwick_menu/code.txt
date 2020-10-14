@@ -1,0 +1,2 @@
+<script type="text/javascript" src="modules/kwick_menu/js/mootools.js"></script>
+<script type="text/javascript" src="modules/kwick_menu/js/imageMenu.js"></script>

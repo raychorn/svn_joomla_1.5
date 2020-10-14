@@ -1,0 +1,63 @@
+INSTALL HOWTO
+=============
+
+To install the JoomlaWatch, 
+!!! first make sure you have enough space on your hosting, approximately 10 MB !!! 
+
+Joomla 1.5
+==========
+When you're using the new Joomla version 1.5, 
+please enable the >Legacy mode Plug-in< first.
+
+
+Component installation
+======================
+
+1. Log into the joomla administration
+
+2. Choose Installers->Components
+
+3. Click "Browse..."
+
+4. Choose the com_joomlawatch.zip you downloaded
+
+5. Click "Upload File & Install"
+
+6. You should see the Installation procedure and the "Installation finished".
+
+
+Module installation
+===================
+
+This module shows a little monitoring icon with JoomlaWatch logo on your website. 
+This way you can identify a browser of your visitor or whether it's a bot.
+Without this icon there won't be any user-Agent information available.
+
+
+1. Choose Installers->Modules
+
+2. Click "Browse..."
+
+3. Choose the mod_joomlawatch.zip you downloaded
+
+4. Click "Upload File & Install"
+
+5. Choose Modules->Site modules
+
+6. Find JoomlaWatch and click the "X" icon to make it switch from unpublished to published
+
+7. Click the JoomlaWatch link, and choose where this module would appear. 
+   The default are right, left, bottom.. but make sure this position appears in your template.
+   It's also recommended to switch the "Show title" to No.
+   Pages/Items -> MenuItem Link(s) has to be "All".
+
+8. Click the "Save" icon and check whether your site shows the joomlawatch icon. 
+
+
+Enjoy,
+
+Matej Koval
+www.codegravity.com
+
+
+

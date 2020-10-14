@@ -1,0 +1,80 @@
+<?xml version="1.0" ?>
+<mosinstall type="component">
+	<name>blastchatc</name>
+	<creationDate>02/10/2008</creationDate>
+	<copyright>2004 - 2008 BlastChat</copyright>
+	<license>Creative Commons Attribution-Noncommercial-Share Alike 3.0 United States License. http://creativecommons.org/licenses/by-nc-sa/3.0/us/ Permissions beyond the scope of this license may be available at http://www.blastchat.com/client_license.html</license>
+	<author>BlastChat</author>
+	<authorEmail>support@blastchat.com</authorEmail>
+	<authorUrl>www.blastchat.com</authorUrl>
+	<version>2.3</version>
+	<description>BlastChat client 2.3 - Component providing chat functionality to your website using blastchat.com service</description>
+	<installfile>install.blastchatc.php</installfile>
+	<uninstallfile>uninstall.blastchatc.php</uninstallfile>
+	<files>
+		<filename>images/collapseall.png</filename>
+		<filename>images/con_info.png</filename>
+		<filename>images/config.png</filename>
+		<filename>images/credits.png</filename>
+		<filename>images/detach.gif</filename>
+		<filename>images/expandall.png</filename>
+		<filename>images/offline.png</filename>
+		<filename>images/online.png</filename>
+		<filename>images/profiles.gif</filename>
+		<filename>images/somerights20.png</filename>
+		<filename>images/undetach.gif</filename>
+		<filename>images/index.html</filename>
+		<filename>js/common.js</filename>
+		<filename>js/index.html</filename>
+		<filename>languages/arabic.php</filename>
+		<filename>languages/basque.php</filename>
+		<filename>languages/dutch.php</filename>
+		<filename>languages/english.php</filename>
+		<filename>languages/esperanto.php</filename>
+		<filename>languages/farsi.php</filename>
+		<filename>languages/french.php</filename>
+		<filename>languages/german.php</filename>
+		<filename>languages/hungarian.php</filename>
+		<filename>languages/italian.php</filename>
+		<filename>languages/norwegian.php</filename>
+		<filename>languages/russian.php</filename>
+		<filename>languages/simplified_chinese.php</filename>
+		<filename>languages/slovenian.php</filename>
+		<filename>languages/spanish.php</filename>
+		<filename>languages/traditional_chinese.php</filename>
+		<filename>languages/turkish.php</filename>
+		<filename>languages/index.html</filename>
+		<filename>banner.blastchatc.php</filename>
+		<filename>blastchatc.php</filename>
+		<filename>blastchatc.xml</filename>
+		<filename>defaults.blastchatc.php</filename>
+		<filename>dynamic.blastchatc.php</filename>
+		<filename>index.html</filename>
+		<filename>module.blastchatc.php</filename>
+	</files>
+	<administration>
+		<menu>BlastChat client 2.3</menu>
+			<submenu>
+				<menu type="config" task="config" alt="BlastChat client - Configuration">Configuration</menu>
+				<menu type="config" task="users" alt="BlastChat client - Users">Users</menu>
+				<menu type="config" task="register" alt="BlastChat client - Registration">Registration</menu>
+				<menu type="config" task="credits" alt="BlastChat client - Credits">Credits</menu>
+			</submenu>
+		<files>
+			<filename>help/css/help.css</filename>
+			<filename>help/blastchatc.html</filename>
+			<filename>help/index.html</filename>
+			<filename>admin.blastchatc.html.php</filename>
+			<filename>admin.blastchatc.php</filename>
+			<filename>blastchatc.class.php</filename>
+			<filename>index.html</filename>
+			<filename>install.blastchatc.php</filename>
+			<filename>toolbar.blastchatc.html.php</filename>
+			<filename>toolbar.blastchatc.php</filename>
+			<filename>uninstall.blastchatc.php</filename>
+			<filename>updatedb.blastchatc.php</filename>
+			<filename>users.html.php</filename>
+			<filename>users.php</filename>
+		</files>
+	</administration>
+</mosinstall>

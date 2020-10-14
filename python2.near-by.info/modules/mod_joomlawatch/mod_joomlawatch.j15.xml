@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<install type="module" version="1.5.0">
+ 	<name>JoomlaWatch</name>
+	<author>Matej Koval</author>
+	<creationDate>15 Mar 2008</creationDate>
+	<copyright>www.codegravity.com</copyright>
+	<license>http://www.gnu.org/licenses/gpl-3.0.txt GNU/GPLv3</license>
+	<authorEmail>foo@codegravity.com</authorEmail>
+	<authorUrl>www.codegravity.com</authorUrl>
+	<version>1.2.4</version>
+	<description>
+		JoomlaWatch is an AJAX component and module for Joomla CMS that allows you to watch
+		your website visitors and bots in real-time from the administration menu. Specially 
+		their IP addresses, countries they come from, which pages they are viewing, their 
+		browser and operating system, it creates daily and all-time stats from these 
+		information plus unique, pageload and total hits statistics. Furthermore, you can 
+		block harmful IP addresses and see blocked attempts stats.
+	</description>
+	<files>
+	<filename module="mod_joomlawatch">mod_joomlawatch.php</filename>
+	</files>
+</install>

@@ -1,0 +1,3 @@
+<?php  
+$strSerialize = 'a:1:{s:7:"com_rss";a:2:{s:4:"vars";a:2:{s:8:"feedtype";a:2:{s:4:"type";s:6:"string";s:5:"value";s:6:"{feed}";}s:4:"lang";a:3:{s:4:"type";s:6:"string";s:9:"ifpresent";s:4:"lang";s:5:"value";s:7:"/{lang}";}}s:5:"conds";a:1:{i:0;a:2:{s:9:"arguments";a:2:{s:4:"feed";s:1:"*";s:7:"no_html";s:1:"*";}s:3:"tpl";s:22:"{lang}/RSS/{feedtype}/";}}}}';
+  ?>

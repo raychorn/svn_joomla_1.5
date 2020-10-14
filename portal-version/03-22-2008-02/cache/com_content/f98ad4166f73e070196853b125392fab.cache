@@ -1,0 +1,1005 @@
+a:3:{s:4:"body";s:74625:"<div class="componentheading">
+	Welcome to the Frontpage</div>
+<table class="blog" cellpadding="0" cellspacing="0">
+<tr>
+	<td valign="top">
+					<div>
+			<script language="javascript" type="text/javascript">	
+		
+		function countlengthcomment(field, countFieldId, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(countFieldId);
+				if (field.value.length > maxlimit){ // if too long...trim it!
+					field.value = field.value.substring(0, maxlimit);
+					// otherwise, update 'characters left' counter
+				} else {
+					target.innerHTML = "Available characters: " +  (maxlimit - field.value.length);
+				}
+			}
+		}
+
+		
+		function showInputField(field, relative, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(field);	
+				target.style.display = "block";
+				target.innerHTML = "Available characters: " + (maxlimit - relative.value.length);		
+			}		
+		
+		}
+
+	</script>	
+
+<style type="text/css">
+.article_seperator{
+display:none !important;
+}
+</style>
+<table><tr><td class="contentheading" width="100%">pyNewsParser Development Begins !</td></tr></table>		<script language="JavaScript" type="text/JavaScript">	
+		<!--//--><![CDATA[//><!--
+			function mxclightup(imageobject, opacity){
+				 if ((navigator.appName.indexOf("Netscape")!=-1) && (parseInt(navigator.appVersion)>=5)){
+					imageobject.style.MozOpacity=opacity/100;
+				 } else if ((navigator.appName.indexOf("Microsoft")!= -1) && (parseInt(navigator.appVersion)>=4)){
+					imageobject.filters.alpha.opacity=opacity;
+				 }
+			}		
+		//--><!]]>
+		</script>
+		<link href="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/css/bubbles_acid_css.css" rel="stylesheet" type="text/css" />
+<div id="fullarticle">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="contentpaneopen">
+  <tr>
+    <td>
+	    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                <td>                    <p class="writtenby">Written by Admin,
+                                                                        on 21-03-2008 18:49&nbsp;&nbsp;<img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/new.gif" align="middle" alt="" /></p>
+                    </td>
+              </tr>
+                                          <tr>
+                <td><p class="viewshits">Views : 4</p></td>
+              </tr>
+                                          <tr>
+                <td><p class="viewsfavoured">Favoured : 1</p></td>
+              </tr>
+              	
+			                <tr>
+                <td><p class="publishedin_title">Published in : <span class="publishedsection"><a href="/index.php?option=com_content&amp;task=section&amp;id=8">New Projects</a>,</span> <span class="publishedcategory"><a href="/index.php?option=com_content&amp;task=category&amp;sectionid=8&amp;id=43">Python</a></span></p></td>
+              </tr>
+			  			  			  
+            </table>			
+			  <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="background: url(plugins/content/xtypo/icon/sun.gif) center no-repeat; background-color: #E6FFE1; background-position: 15px 50%; text-align: left; padding: 5px 20px 5px 45px; color:#48793F;	border-top: 2px solid #FEABB9 ; border-bottom: 2px solid #FEABB9;">
+	</strong> <strong>We have begun working on pyNewsParser - this package will allow Python News Digests to be consumed and processed into usable blocks of text suitable for publishing via a data-driven Content Management System.</strong> <strong></p><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<blockquote style="margin: 15px 10px;background:#FFFFFF  url(plugins/content/xtypo/icon/quote1.gif) top left no-repeat; padding:10px 20px 10px 60px; 	border-top: 2px dotted #CCCCCC ; 	border-bottom: 2px dotted #CCCCCC;"> <p style="background: url(plugins/content/xtypo/icon/quote2.gif) bottom right no-repeat; padding:10px 30px 15px 0px;font-size:110%; line-height:120%;	color:#0000FF; font-style:italic;"></strong>As part of our commitment to make <strong>Python2.NEAR-BY.INFO</strong> into the one-stop depot for all things Python we are building tools to help us automate the collection of information from around the Interwebs.</p><p>Republishing News Digests is one way we can do this.</p><p>Building pyGoogleHound is another.</p><p>Our goal is to make Python related information available to our community of users through the use of Python where possible.<strong></p></blockquote><!-- End Xtypo --></strong> </p>			  			  <p class="small">Last update : 21-03-2008 18:49</p>
+			  			</td>
+          </tr>
+        </table>	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td>
+		<table border="0" cellspacing="6" cellpadding="0">
+		  <tr>
+		    			
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=135"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/usercomments.gif"  border="0" title="User comments" alt="User comments" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=quote&amp;id=135&amp;lang="><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/quotethis.gif"  border="0" title="Quote this article in website" alt="Quote this article in website" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=favoured&amp;id=135"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/favoured.gif"  border="0" title="Favoured" alt="Favoured" /></a></td>
+						
+						
+						<td><a href="http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzNQ==" target="_blank" onclick="window.open('http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzNQ==','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="Send to friend"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/email.gif" border="0" alt="Send to friend" /></a></td>
+						
+						<td><a href='http://del.icio.us/post?v=2&url=http%3A%2F%2Fpython2.near-by.info%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D135%26amp%3BItemid%3D73&title=pyNewsParser+Development+Begins+%21'><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/delicious.gif" border="0"  title="Save this to del.icio.us" alt="Save this to del.icio.us" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=related&amp;id=135"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/relatedarticles.gif" border="0" title="Related articles" alt="Related articles" /></a></td>
+						
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=135"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/readmore.gif" border="0" title="Read more..." alt="Read more..." /></a></td>
+						
+			
+		  </tr>
+	  </table>
+		</td>
+	</tr>
+	</table>
+	</td>
+  </tr>
+</table>
+</div>
+
+<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+								</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article;&amp;catid=43:python-new-projects&amp;id=135:pynewsparser-begins&amp;format=pdf" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/images/M_images/pdf_button.png" alt="PDF"  /></a>	</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article&amp;catid=43:python-new-projects&amp;id=135:pynewsparser-begins&amp;tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;"><img src="/images/M_images/printButton.png" alt="Print"  /></a>	</td>
+	
+		</tr>
+</table>
+<table class="contentpaneopen">
+
+
+
+
+<tr>
+<td valign="top" colspan="2">
+	</td>
+</tr>
+
+
+
+</table>
+<span class="article_separator">&nbsp;</span>
+		</div>
+		</td>
+</tr>
+
+<tr>
+	<td valign="top">
+		<table width="100%"  cellpadding="0" cellspacing="0">
+		<tr>
+										<td valign="top" width="50%" class="article_column">
+					<script language="javascript" type="text/javascript">	
+		
+		function countlengthcomment(field, countFieldId, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(countFieldId);
+				if (field.value.length > maxlimit){ // if too long...trim it!
+					field.value = field.value.substring(0, maxlimit);
+					// otherwise, update 'characters left' counter
+				} else {
+					target.innerHTML = "Available characters: " +  (maxlimit - field.value.length);
+				}
+			}
+		}
+
+		
+		function showInputField(field, relative, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(field);	
+				target.style.display = "block";
+				target.innerHTML = "Available characters: " + (maxlimit - relative.value.length);		
+			}		
+		
+		}
+
+	</script>	
+
+<style type="text/css">
+.article_seperator{
+display:none !important;
+}
+</style>
+<table><tr><td class="contentheading" width="100%">List Comprehensions - The Fine Details</td></tr></table>		<script language="JavaScript" type="text/JavaScript">	
+		<!--//--><![CDATA[//><!--
+			function mxclightup(imageobject, opacity){
+				 if ((navigator.appName.indexOf("Netscape")!=-1) && (parseInt(navigator.appVersion)>=5)){
+					imageobject.style.MozOpacity=opacity/100;
+				 } else if ((navigator.appName.indexOf("Microsoft")!= -1) && (parseInt(navigator.appVersion)>=4)){
+					imageobject.filters.alpha.opacity=opacity;
+				 }
+			}		
+		//--><!]]>
+		</script>
+		<link href="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/css/bubbles_acid_css.css" rel="stylesheet" type="text/css" />
+<div id="fullarticle">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="contentpaneopen">
+  <tr>
+    <td>
+	    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                <td>                    <p class="writtenby">Written by Admin,
+                                                                        on 20-03-2008 16:09&nbsp;&nbsp;<img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/new.gif" align="middle" alt="" /></p>
+                    </td>
+              </tr>
+                                          <tr>
+                <td><p class="viewshits">Views : 24</p></td>
+              </tr>
+                                          <tr>
+                <td><p class="viewsfavoured">Favoured : 1</p></td>
+              </tr>
+              	
+			                <tr>
+                <td><p class="publishedin_title">Published in : <span class="publishedsection"><a href="/index.php?option=com_content&amp;task=section&amp;id=14">Python</a>,</span> <span class="publishedcategory"><a href="/index.php?option=com_content&amp;task=category&amp;sectionid=14&amp;id=53">Tips and Tricks</a></span></p></td>
+              </tr>
+			  			  			  
+            </table>			
+			  <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="background: url(plugins/content/xtypo/icon/sun.gif) center no-repeat; background-color: #E6FFE1; background-position: 15px 50%; text-align: left; padding: 5px 20px 5px 45px; color:#48793F;	border-top: 2px solid #FEABB9 ; border-bottom: 2px solid #FEABB9;">
+	</strong> Python <a href="http://en.wikipedia.org/wiki/Special:Search/List Comprehensions" title="wikipedia: List Comprehensions" rel="nofollow" target="_blank"><font color=FF0000>List Comprehensions</font></a> allow for fine control over which elements are being considered and how those elements are being handled <strong></p><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div style="float: left; text-transform:uppercase; line-height:80%; padding:0px 8px 4px 0px; display: block;	color:#333333; font-size: 70px; font-family: Georgia, Times New Roman, Trebuchet MS; "></strong>F<strong></div><!-- End Xtypo --></strong>irst we need to take a look at a typical List Comprehension statement to see how it is coded:<strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="	background: #F0F0F0 url(plugins/content/xtypo/icon/_no-image.gif) 10px 5px no-repeat; padding:5px 20px 5px 10px; font-family: Courier New, Courier, mono,times new roman;line-height:150%;	border-left: 5px solid #C3D7EA;	 color:#666666;"></strong><br />foo = [n for n in xrange(0,100)] <br /><strong></p><!-- End Xtypo --></strong> </p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong>This gives us a list of integers from 0 to 99.<br /><strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong> </p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="	background: #F0F0F0 url(plugins/content/xtypo/icon/_no-image.gif) 10px 5px no-repeat; padding:5px 20px 5px 10px; font-family: Courier New, Courier, mono,times new roman;line-height:150%;	border-left: 5px solid #C3D7EA;	 color:#666666;"></strong><br />[0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45, 46, 47, 48, 49, 50, 51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99] <br /><strong></p><!-- End Xtypo --></strong> </p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div style="float: left; text-transform:uppercase; line-height:80%; padding:0px 8px 4px 0px; display: block;	color:#333333; font-size: 70px; font-family: Georgia, Times New Roman, Trebuchet MS; ">N</strong><strong></div><!-- End Xtypo --></strong>ext we need to see if we can control which values appear in the variable "n" while the List Comprehension is being executed.</p><p><strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div style="float: left; text-transform:uppercase; line-height:80%; padding:0px 8px 4px 0px; display: block;	color:#333333; font-size: 70px; font-family: Georgia, Times New Roman, Trebuchet MS; ">C</strong><strong></div><!-- End Xtypo --></strong>onsider the following:</p><p>&nbsp;</p><p><strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="	background: #F0F0F0 url(plugins/content/xtypo/icon/_no-image.gif) 10px 5px no-repeat; padding:5px 20px 5px 10px; font-family: Courier New, Courier, mono,times new roman;line-height:150%;	border-left: 5px solid #C3D7EA;	 color:#666666;"></strong><br />foo = [n for n in xrange(0,100) if n &gt; 50] <br /><strong></p><!-- End Xtypo --></strong> </p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong>This gives us a list of integers from 51 to 99.<strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong> </p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="	background: #F0F0F0 url(plugins/content/xtypo/icon/_no-image.gif) 10px 5px no-repeat; padding:5px 20px 5px 10px; font-family: Courier New, Courier, mono,times new roman;line-height:150%;	border-left: 5px solid #C3D7EA;	 color:#666666;"></strong><br />[51, 52, 53, 54, 55, 56, 57, 58, 59, 60, 61, 62, 63, 64, 65, 66, 67, 68, 69, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99] <br /><strong></p><!-- End Xtypo --></strong> </p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div style="float: left; text-transform:uppercase; line-height:80%; padding:0px 8px 4px 0px; display: block;	color:#333333; font-size: 70px; font-family: Georgia, Times New Roman, Trebuchet MS; ">A</strong><strong></div><!-- End Xtypo --></strong>s we have seen we can control which values appear in the variable "n" by using a conditional statement to the right of the "for" clause.</p><p><strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p>  <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div style="float: left; text-transform:uppercase; line-height:80%; padding:0px 8px 4px 0px; display: block;	color:#333333; font-size: 70px; font-family: Georgia, Times New Roman, Trebuchet MS; ">N</strong><strong></div><!-- End Xtypo --></strong>ow consider the following:</p><p>&nbsp;</p><p><strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p>  <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="	background: #F0F0F0 url(plugins/content/xtypo/icon/_no-image.gif) 10px 5px no-repeat; padding:5px 20px 5px 10px; font-family: Courier New, Courier, mono,times new roman;line-height:150%;	border-left: 5px solid #C3D7EA;	 color:#666666;"></strong><br />foo = [n*2 if n &gt; 50 and n &lt; 70 else n for n in xrange(0,100) if n &gt; 50] <br /><strong></p><!-- End Xtypo --></strong> </p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong>This gives us a list of integers whose values have been multiplied by 2 for all integers that were in the range of 51 through 69 otherwise the value for "n" was left unchanged from the previous statement.<strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong> </p>  <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="	background: #F0F0F0 url(plugins/content/xtypo/icon/_no-image.gif) 10px 5px no-repeat; padding:5px 20px 5px 10px; font-family: Courier New, Courier, mono,times new roman;line-height:150%;	border-left: 5px solid #C3D7EA;	 color:#666666;"></strong><br />[102, 104, 106, 108, 110, 112, 114, 116, 118, 120, 122, 124, 126, 128, 130, 132, 134, 136, 138, 70, 71, 72, 73, 74, 75, 76, 77, 78, 79, 80, 81, 82, 83, 84, 85, 86, 87, 88, 89, 90, 91, 92, 93, 94, 95, 96, 97, 98, 99] <br /><strong></p><!-- End Xtypo --></strong> </p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div style="float: left; text-transform:uppercase; line-height:80%; padding:0px 8px 4px 0px; display: block;	color:#333333; font-size: 70px; font-family: Georgia, Times New Roman, Trebuchet MS; ">A</strong><strong></div><!-- End Xtypo --></strong>s we have seen we can not only control which values appear in the variable "n" by using a conditional statement to the right of the "for" clause but we can also control what is being done with each value that appears in the variable "n".<strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p>   <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<blockquote style="margin: 15px 10px;background:#FFFFFF  url(plugins/content/xtypo/icon/quote1.gif) top left no-repeat; padding:10px 20px 10px 60px; 	border-top: 2px dotted #CCCCCC ; 	border-bottom: 2px dotted #CCCCCC;"> <p style="background: url(plugins/content/xtypo/icon/quote2.gif) bottom right no-repeat; padding:10px 30px 15px 0px;font-size:110%; line-height:120%;	color:#0000FF; font-style:italic;"></strong><strong>This technique also works for Generator Expressions.</p></blockquote><!-- End Xtypo --></strong></p><p>&nbsp;</p><p>&nbsp;</p>			  			  <p class="small">Last update : 20-03-2008 16:38</p>
+			  			</td>
+          </tr>
+        </table>	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td>
+		<table border="0" cellspacing="6" cellpadding="0">
+		  <tr>
+		    			
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=134"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/usercomments.gif"  border="0" title="User comments" alt="User comments" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=quote&amp;id=134&amp;lang="><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/quotethis.gif"  border="0" title="Quote this article in website" alt="Quote this article in website" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=favoured&amp;id=134"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/favoured.gif"  border="0" title="Favoured" alt="Favoured" /></a></td>
+						
+						
+						<td><a href="http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzNA==" target="_blank" onclick="window.open('http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzNA==','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="Send to friend"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/email.gif" border="0" alt="Send to friend" /></a></td>
+						
+						<td><a href='http://del.icio.us/post?v=2&url=http%3A%2F%2Fpython2.near-by.info%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D134&title=List+Comprehensions+-+The+Fine+Details'><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/delicious.gif" border="0"  title="Save this to del.icio.us" alt="Save this to del.icio.us" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=related&amp;id=134"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/relatedarticles.gif" border="0" title="Related articles" alt="Related articles" /></a></td>
+						
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=134"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/readmore.gif" border="0" title="Read more..." alt="Read more..." /></a></td>
+						
+			
+		  </tr>
+	  </table>
+		</td>
+	</tr>
+	</table>
+	</td>
+  </tr>
+</table>
+</div>
+
+<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+								</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article;&amp;catid=53:python-tips-and-tricks&amp;id=134:python-iterator-expressions1&amp;format=pdf" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/images/M_images/pdf_button.png" alt="PDF"  /></a>	</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article&amp;catid=53:python-tips-and-tricks&amp;id=134:python-iterator-expressions1&amp;tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;"><img src="/images/M_images/printButton.png" alt="Print"  /></a>	</td>
+	
+		</tr>
+</table>
+<table class="contentpaneopen">
+
+
+
+
+<tr>
+<td valign="top" colspan="2">
+	</td>
+</tr>
+
+
+
+</table>
+<span class="article_separator">&nbsp;</span>
+	<script language="javascript" type="text/javascript">	
+		
+		function countlengthcomment(field, countFieldId, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(countFieldId);
+				if (field.value.length > maxlimit){ // if too long...trim it!
+					field.value = field.value.substring(0, maxlimit);
+					// otherwise, update 'characters left' counter
+				} else {
+					target.innerHTML = "Available characters: " +  (maxlimit - field.value.length);
+				}
+			}
+		}
+
+		
+		function showInputField(field, relative, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(field);	
+				target.style.display = "block";
+				target.innerHTML = "Available characters: " + (maxlimit - relative.value.length);		
+			}		
+		
+		}
+
+	</script>	
+
+<style type="text/css">
+.article_seperator{
+display:none !important;
+}
+</style>
+<table><tr><td class="contentheading" width="100%">Arthur C. Clarke, 90, Dies</td></tr></table>		<script language="JavaScript" type="text/JavaScript">	
+		<!--//--><![CDATA[//><!--
+			function mxclightup(imageobject, opacity){
+				 if ((navigator.appName.indexOf("Netscape")!=-1) && (parseInt(navigator.appVersion)>=5)){
+					imageobject.style.MozOpacity=opacity/100;
+				 } else if ((navigator.appName.indexOf("Microsoft")!= -1) && (parseInt(navigator.appVersion)>=4)){
+					imageobject.filters.alpha.opacity=opacity;
+				 }
+			}		
+		//--><!]]>
+		</script>
+		<link href="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/css/bubbles_acid_css.css" rel="stylesheet" type="text/css" />
+<div id="fullarticle">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="contentpaneopen">
+  <tr>
+    <td>
+	    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                <td>                    <p class="writtenby">Written by Admin,
+                                                                        on 20-03-2008 03:48&nbsp;&nbsp;<img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/new.gif" align="middle" alt="" /></p>
+                    </td>
+              </tr>
+                                          <tr>
+                <td><p class="viewshits">Views : 35</p></td>
+              </tr>
+                                          <tr>
+                <td><p class="viewsfavoured">Favoured : 3</p></td>
+              </tr>
+              	
+			                <tr>
+                <td><p class="publishedin_title">Published in : <span class="publishedsection"><a href="/index.php?option=com_content&amp;task=section&amp;id=1">News</a>,</span> <span class="publishedcategory"><a href="/index.php?option=com_content&amp;task=category&amp;sectionid=1&amp;id=51">Technology</a></span></p></td>
+              </tr>
+			  			  			  
+            </table>			
+			  <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<blockquote style="margin: 15px 10px;background:#FFFFFF  url(plugins/content/xtypo/icon/quote1.gif) top left no-repeat; padding:10px 20px 10px 60px; 	border-top: 2px dotted #CCCCCC ; 	border-bottom: 2px dotted #CCCCCC;"> <p style="background: url(plugins/content/xtypo/icon/quote2.gif) bottom right no-repeat; padding:10px 30px 15px 0px;font-size:110%; line-height:120%;	color:#0000FF; font-style:italic;"></strong>         Arthur C. Clarke died in his adopted home of Sri Lanka.<strong></p></blockquote><!-- End Xtypo --></strong> </p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong>The science-fiction writer won world-wide acclaim with more than 100 books on space, science and the future. He was 90.…<strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p> <div class="entry-content">     </div>  <div class="meta">     <abbr title="2008-03-18T17:39:14-07:00" class="updated"> 1 day ago</abbr>     in <a href="http://www.technorati.com/publications/online.wsj.com">http://online.wsj.com</a> </div>       <div class="discussion">         <h4>Attention [1]:</h4>         <ul><li class="first-child"><a href="http://www.technorati.com/articles/i6mqFjL9w%2BHPeukMANq70Ffhh4REwJVWq2fLZ9sf%2Bjk%3D?sub=Xy8UNUZYLQv3T6YctJ0pXJQgwfnWa6BsttX4qsHTMP4%3D">Wonkette: The D.C. Gossip</a></li></ul>     </div>       <div class="related">         <h4>Related [23]:</h4>         <ul><li class="first-child">                     <a href="http://www.technorati.com/articles/HF1sFRv3Alf2FMBK6EpbGP5q%2BfHR2bg5gLcbqD3Jn7Q%3D">From our files: Arthur C. Clarke on space exploration</a>                 </li><li>                     <a href="http://www.technorati.com/posts/tFiyeZzCdm%2F0ObB3fo0eLvvlv30zoULr6qTHbEJ3zaE%3D">Arthur C. Clarke, RIP</a>                 </li><li>                     <a href="http://www.technorati.com/posts/eps2L4Ksl1LnUH8JU26fT3HnLXPAg1KWpEZm1OYjdOA%3D">Arthur C. Clarke</a>                 </li></ul>     </div>			  			  <p class="small">Last update : 20-03-2008 03:48</p>
+			  			</td>
+          </tr>
+        </table>	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td>
+		<table border="0" cellspacing="6" cellpadding="0">
+		  <tr>
+		    			
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=131"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/usercomments.gif"  border="0" title="User comments" alt="User comments" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=quote&amp;id=131&amp;lang="><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/quotethis.gif"  border="0" title="Quote this article in website" alt="Quote this article in website" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=favoured&amp;id=131"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/favoured.gif"  border="0" title="Favoured" alt="Favoured" /></a></td>
+						
+						
+						<td><a href="http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzMQ==" target="_blank" onclick="window.open('http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzMQ==','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="Send to friend"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/email.gif" border="0" alt="Send to friend" /></a></td>
+						
+						<td><a href='http://del.icio.us/post?v=2&url=http%3A%2F%2Fpython2.near-by.info%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D131&title=Arthur+C.+Clarke%2C+90%2C+Dies'><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/delicious.gif" border="0"  title="Save this to del.icio.us" alt="Save this to del.icio.us" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=related&amp;id=131"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/relatedarticles.gif" border="0" title="Related articles" alt="Related articles" /></a></td>
+						
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=131"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/readmore.gif" border="0" title="Read more..." alt="Read more..." /></a></td>
+						
+			
+		  </tr>
+	  </table>
+		</td>
+	</tr>
+	</table>
+	</td>
+  </tr>
+</table>
+</div>
+
+<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+								</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article;&amp;catid=51:technology-news&amp;id=131:arthur-c-clarke-dies&amp;format=pdf" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/images/M_images/pdf_button.png" alt="PDF"  /></a>	</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article&amp;catid=51:technology-news&amp;id=131:arthur-c-clarke-dies&amp;tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;"><img src="/images/M_images/printButton.png" alt="Print"  /></a>	</td>
+	
+		</tr>
+</table>
+<table class="contentpaneopen">
+
+
+
+
+<tr>
+<td valign="top" colspan="2">
+	</td>
+</tr>
+
+
+
+</table>
+<span class="article_separator">&nbsp;</span>
+				</td>
+										<td valign="top" width="50%" class="article_column column_separator">
+					<script language="javascript" type="text/javascript">	
+		
+		function countlengthcomment(field, countFieldId, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(countFieldId);
+				if (field.value.length > maxlimit){ // if too long...trim it!
+					field.value = field.value.substring(0, maxlimit);
+					// otherwise, update 'characters left' counter
+				} else {
+					target.innerHTML = "Available characters: " +  (maxlimit - field.value.length);
+				}
+			}
+		}
+
+		
+		function showInputField(field, relative, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(field);	
+				target.style.display = "block";
+				target.innerHTML = "Available characters: " + (maxlimit - relative.value.length);		
+			}		
+		
+		}
+
+	</script>	
+
+<style type="text/css">
+.article_seperator{
+display:none !important;
+}
+</style>
+<table><tr><td class="contentheading" width="100%">pyGoogleHound is Born !</td></tr></table>		<script language="JavaScript" type="text/JavaScript">	
+		<!--//--><![CDATA[//><!--
+			function mxclightup(imageobject, opacity){
+				 if ((navigator.appName.indexOf("Netscape")!=-1) && (parseInt(navigator.appVersion)>=5)){
+					imageobject.style.MozOpacity=opacity/100;
+				 } else if ((navigator.appName.indexOf("Microsoft")!= -1) && (parseInt(navigator.appVersion)>=4)){
+					imageobject.filters.alpha.opacity=opacity;
+				 }
+			}		
+		//--><!]]>
+		</script>
+		<link href="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/css/bubbles_acid_css.css" rel="stylesheet" type="text/css" />
+<div id="fullarticle">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="contentpaneopen">
+  <tr>
+    <td>
+	    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                <td>                    <p class="writtenby">Written by Admin,
+                                                                        on 20-03-2008 03:50&nbsp;&nbsp;<img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/new.gif" align="middle" alt="" /></p>
+                    </td>
+              </tr>
+                                          <tr>
+                <td><p class="viewshits">Views : 37</p></td>
+              </tr>
+                                          <tr>
+                <td><p class="viewsfavoured">Favoured : 3</p></td>
+              </tr>
+              	
+			                <tr>
+                <td><p class="publishedin_title">Published in : <span class="publishedsection"><a href="/index.php?option=com_content&amp;task=section&amp;id=1">News</a>,</span> <span class="publishedcategory"><a href="/index.php?option=com_content&amp;task=category&amp;sectionid=1&amp;id=36">Python News</a></span></p></td>
+              </tr>
+			  			  			  
+            </table>			
+			  <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<blockquote style="margin: 15px 10px;background:#FFFFFF  url(plugins/content/xtypo/icon/quote1.gif) top left no-repeat; padding:10px 20px 10px 60px; 	border-top: 2px dotted #CCCCCC ; 	border-bottom: 2px dotted #CCCCCC;"> <p style="background: url(plugins/content/xtypo/icon/quote2.gif) bottom right no-repeat; padding:10px 30px 15px 0px;font-size:110%; line-height:120%;	color:#0000FF; font-style:italic;"></strong><strong> pyGoogleHound is Born ! </p></blockquote><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="background: url(plugins/content/xtypo/icon/sun.gif) center no-repeat; background-color: #E6FFE1; background-position: 15px 50%; text-align: left; padding: 5px 20px 5px 45px; color:#48793F;	border-top: 2px solid #FEABB9 ; border-bottom: 2px solid #FEABB9;">
+	</strong> <strong>pyGoogleHound exists to hunt-down content from <a href="http://en.wikipedia.org/wiki/Special:Search/Google" title="wikipedia: Google" rel="nofollow" target="_blank"><font color=FF0000>Google</font></a> !</strong> <strong></p><!-- End Xtypo --></strong> </p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com --><div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded1/left.gif) repeat-y left top #3E3E3E; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded1/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded1/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded1/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#FFFFFF;"></strong> Imagine having a faithful hound-dog whose only job in life is to hunt-down the content you want from Google... <strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded1/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded1/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong> Your typical web crawler crawls the web based on links people submit.</p><p><strong>pyGoogleHound is like this except </strong><strong>pyGoogleHound crawls Google based on keywords.</strong> </p><p> <strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com --><div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded1/left.gif) repeat-y left top #3E3E3E; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded1/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded1/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded1/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#FFFFFF;"></strong> Imagine the ability to define a series of keywords that have some relationship to each other.</p><p>When you type these keywords into your Google search entry field and then hit the search button Google responds with a "union" of all those keywords.</p><p>You get to spend your time looking at all that content or all those links to try to see which ones are interesting to you.</p><p>Sure you could use the Advanced search feature but doing that is not all that quick and easy either. </p><p> <strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded1/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded1/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p>  <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong>This is where <strong>pyGoogleHound </strong>comes into the picture<strong>.</strong></p><p> <strong>pyGoogleHound </strong>automatically knows how to crawl Google collecting up all those web addresses as it goes<strong>.</strong></p><p><strong>pyGoogleHound </strong>notices the date/time each web address was noticed and can tell you whenever any new content appears<strong>.</strong> </p><p><strong>pyGoogleHound </strong>knows how to perform set operations to determine which web addresses have commonalities based on how you want to view your keywords<strong>.</strong> </p> <p> <strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<blockquote style="margin: 15px 10px;background:#FFFFFF  url(plugins/content/xtypo/icon/quote1.gif) top left no-repeat; padding:10px 20px 10px 60px; 	border-top: 2px dotted #CCCCCC ; 	border-bottom: 2px dotted #CCCCCC;"> <p style="background: url(plugins/content/xtypo/icon/quote2.gif) bottom right no-repeat; padding:10px 30px 15px 0px;font-size:110%; line-height:120%;	color:#0000FF; font-style:italic;"></strong><strong> Future versions of pyGoogleHound will be able to determine when one keyword appears within the same paragraph as another... </p></blockquote><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com --><div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded1/left.gif) repeat-y left top #3E3E3E; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded1/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded1/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded1/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#FFFFFF;"></strong> Eventually <strong>pyGoogleHound </strong>will use <a href="http://en.wikipedia.org/wiki/Special:Search/Natural Language Processing" title="wikipedia: Natural Language Processing" rel="nofollow" target="_blank"><font color=FF0000>Natural Language Processing</font></a> to determine which specific web addresses most closely matches your desires based on how you specified your keywords for your search. <strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded1/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded1/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<blockquote style="margin: 15px 10px;background:#FFFFFF  url(plugins/content/xtypo/icon/quote1.gif) top left no-repeat; padding:10px 20px 10px 60px; 	border-top: 2px dotted #CCCCCC ; 	border-bottom: 2px dotted #CCCCCC;"> <p style="background: url(plugins/content/xtypo/icon/quote2.gif) bottom right no-repeat; padding:10px 30px 15px 0px;font-size:110%; line-height:120%;	color:#0000FF; font-style:italic;"></strong><strong> Wow, this is very similar to the techniques used by <a href="http://www.seeqpod.com" onclick="window.open('http://www.seeqpod.com','seeqpod','scrollbars=yes,resizable=yes,status=yes,dependent=yes,width=700,height=500,left='+(screen.availWidth/2-350)+',top='+(screen.availHeight/2-250)+'');return false;">SeeqPod.com</a> </p></blockquote><!-- End Xtypo --></strong></p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded2/left.gif) repeat-y left top #FFFFFF; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded2/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded2/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#333333;"></strong> <strong>Rumor has it, the folks at <a href="http://en.wikipedia.org/wiki/Special:Search/SeeqPod.com" title="wikipedia: SeeqPod.com" rel="nofollow" target="_blank"><font color=FF0000>SeeqPod.com</font></a> use a technique that performs Natural Language Processing but their focus is on making it easier to find music and videos. </strong></p><p> <strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded2/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded2/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p><p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com --><div>
+	<div style="width:100%;margin:0px auto;background: url(plugins/content/xtypo/rounded1/left.gif) repeat-y left top #3E3E3E; ">
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded1/topleft.gif) no-repeat left top;">
+			<span style=" display:block;position:relative;	height:20px;background:url(plugins/content/xtypo/rounded1/topright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+		<div style=" position:relative;background:url(plugins/content/xtypo/rounded1/right.gif) repeat-y right top;	padding:1px 20px 1px 25px;	margin:-1px 0 0 0;">
+			<div style=" color:#FFFFFF;"></strong> We want to make it easier for our fellow Python friends find Python content and we believe <strong>pyGoogleHound </strong>will do this very nicely. <strong></div>
+		</div>
+		<div style=" width:100%;height:20px;background:url(plugins/content/xtypo/rounded1/bottomleft.gif) no-repeat left bottom;">
+			<span style=" 	display:block;
+	position:relative;
+	height:20px;
+	background:url(plugins/content/xtypo/rounded1/bottomright.gif) no-repeat right top;">&nbsp;</span>
+		</div>
+	</div>
+</div><!-- End Xtypo --></strong></p> <p><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<blockquote style="margin: 15px 10px;background:#FFFFFF  url(plugins/content/xtypo/icon/quote1.gif) top left no-repeat; padding:10px 20px 10px 60px; 	border-top: 2px dotted #CCCCCC ; 	border-bottom: 2px dotted #CCCCCC;"> <p style="background: url(plugins/content/xtypo/icon/quote2.gif) bottom right no-repeat; padding:10px 30px 15px 0px;font-size:110%; line-height:120%;	color:#0000FF; font-style:italic;"></strong><strong> Unlike SeeqPod.Com we use a very simple technique that leverages the power of Google to make finding content faster and easier. </p></blockquote><!-- End Xtypo --></strong></p> <p>&nbsp;</p>			  			  <p class="small">Last update : 20-03-2008 03:50</p>
+			  			</td>
+          </tr>
+        </table>	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td>
+		<table border="0" cellspacing="6" cellpadding="0">
+		  <tr>
+		    			
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=132"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/usercomments.gif"  border="0" title="User comments" alt="User comments" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=quote&amp;id=132&amp;lang="><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/quotethis.gif"  border="0" title="Quote this article in website" alt="Quote this article in website" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=favoured&amp;id=132"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/favoured.gif"  border="0" title="Favoured" alt="Favoured" /></a></td>
+						
+						
+						<td><a href="http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzMg==" target="_blank" onclick="window.open('http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzMg==','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="Send to friend"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/email.gif" border="0" alt="Send to friend" /></a></td>
+						
+						<td><a href='http://del.icio.us/post?v=2&url=http%3A%2F%2Fpython2.near-by.info%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D132&title=pyGoogleHound+is+Born+%21'><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/delicious.gif" border="0"  title="Save this to del.icio.us" alt="Save this to del.icio.us" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=related&amp;id=132"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/relatedarticles.gif" border="0" title="Related articles" alt="Related articles" /></a></td>
+						
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=132"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/readmore.gif" border="0" title="Read more..." alt="Read more..." /></a></td>
+						
+			
+		  </tr>
+	  </table>
+		</td>
+	</tr>
+	</table>
+	</td>
+  </tr>
+</table>
+</div>
+
+<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+								</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article;&amp;catid=36:python-news&amp;id=132:pygooglehound-is-born&amp;format=pdf" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/images/M_images/pdf_button.png" alt="PDF"  /></a>	</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article&amp;catid=36:python-news&amp;id=132:pygooglehound-is-born&amp;tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;"><img src="/images/M_images/printButton.png" alt="Print"  /></a>	</td>
+	
+		</tr>
+</table>
+<table class="contentpaneopen">
+
+
+
+
+<tr>
+<td valign="top" colspan="2">
+	</td>
+</tr>
+
+
+
+</table>
+<span class="article_separator">&nbsp;</span>
+	<script language="javascript" type="text/javascript">	
+		
+		function countlengthcomment(field, countFieldId, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(countFieldId);
+				if (field.value.length > maxlimit){ // if too long...trim it!
+					field.value = field.value.substring(0, maxlimit);
+					// otherwise, update 'characters left' counter
+				} else {
+					target.innerHTML = "Available characters: " +  (maxlimit - field.value.length);
+				}
+			}
+		}
+
+		
+		function showInputField(field, relative, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(field);	
+				target.style.display = "block";
+				target.innerHTML = "Available characters: " + (maxlimit - relative.value.length);		
+			}		
+		
+		}
+
+	</script>	
+
+<style type="text/css">
+.article_seperator{
+display:none !important;
+}
+</style>
+<table><tr><td class="contentheading" width="100%">Coming Soon !</td></tr></table>		<script language="JavaScript" type="text/JavaScript">	
+		<!--//--><![CDATA[//><!--
+			function mxclightup(imageobject, opacity){
+				 if ((navigator.appName.indexOf("Netscape")!=-1) && (parseInt(navigator.appVersion)>=5)){
+					imageobject.style.MozOpacity=opacity/100;
+				 } else if ((navigator.appName.indexOf("Microsoft")!= -1) && (parseInt(navigator.appVersion)>=4)){
+					imageobject.filters.alpha.opacity=opacity;
+				 }
+			}		
+		//--><!]]>
+		</script>
+		<link href="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/css/bubbles_acid_css.css" rel="stylesheet" type="text/css" />
+<div id="fullarticle">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="contentpaneopen">
+  <tr>
+    <td>
+	    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                <td>                    <p class="writtenby">Written by Admin,
+                                                                        on 19-03-2008 23:30&nbsp;&nbsp;<img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/new.gif" align="middle" alt="" /></p>
+                    </td>
+              </tr>
+                                          <tr>
+                <td><p class="viewshits">Views : 59&nbsp;&nbsp;&nbsp;&nbsp;<img src='http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/icon_popular_1.gif' align='middle' alt='' /></p></td>
+              </tr>
+                                          <tr>
+                <td><p class="viewsfavoured">Favoured : 4</p></td>
+              </tr>
+              	
+			                <tr>
+                <td><p class="publishedin_title">Published in : <span class="publishedsection"><a href="/index.php?option=com_content&amp;task=section&amp;id=11">Articles</a>,</span> <span class="publishedcategory"><a href="/index.php?option=com_content&amp;task=category&amp;sectionid=11&amp;id=50">Announcements</a></span></p></td>
+              </tr>
+			  			  			  
+            </table>			
+			  <br /><strong><!-- Xtypo - Extra Typografi For Joomla Template By http://www.templateplazza.com -->
+<p style="background: url(plugins/content/xtypo/icon/sun.gif) center no-repeat; background-color: #E6FFE1; background-position: 15px 50%; text-align: left; padding: 5px 20px 5px 45px; color:#48793F;	border-top: 2px solid #FEABB9 ; border-bottom: 2px solid #FEABB9;">
+	Your Favorite Python Downloads... we have scoured the internet and found all YOUR favorite Python downloads and we will be making them available here soon !</strong> <br /><p><strong></p><!-- End Xtypo --></strong> </p><p><strong><br /></strong></p><br />			  			  <p class="small">Last update : 19-03-2008 23:30</p>
+			  			</td>
+          </tr>
+        </table>	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td>
+		<table border="0" cellspacing="6" cellpadding="0">
+		  <tr>
+		    			
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=130"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/usercomments.gif"  border="0" title="User comments" alt="User comments" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=quote&amp;id=130&amp;lang="><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/quotethis.gif"  border="0" title="Quote this article in website" alt="Quote this article in website" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=favoured&amp;id=130"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/favoured.gif"  border="0" title="Favoured" alt="Favoured" /></a></td>
+						
+						
+						<td><a href="http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzMA==" target="_blank" onclick="window.open('http://python2.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbjIubmVhci1ieS5pbmZvLy9pbmRleC5waHA/dmlldz1hcnRpY2xlJmlkPTEzMA==','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="Send to friend"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/email.gif" border="0" alt="Send to friend" /></a></td>
+						
+						<td><a href='http://del.icio.us/post?v=2&url=http%3A%2F%2Fpython2.near-by.info%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D130%26amp%3BItemid%3D107&title=Coming+Soon+%21'><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/delicious.gif" border="0"  title="Save this to del.icio.us" alt="Save this to del.icio.us" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=related&amp;id=130"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/relatedarticles.gif" border="0" title="Related articles" alt="Related articles" /></a></td>
+						
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=130"><img src="http://python2.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/readmore.gif" border="0" title="Read more..." alt="Read more..." /></a></td>
+						
+			
+		  </tr>
+	  </table>
+		</td>
+	</tr>
+	</table>
+	</td>
+  </tr>
+</table>
+</div>
+
+<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+								</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article;&amp;catid=50:announcements&amp;id=130:coming-soon-fav-python-downloads&amp;format=pdf" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/images/M_images/pdf_button.png" alt="PDF"  /></a>	</td>
+	
+		<td align="right" width="100%" class="buttonheading">
+	<a href="/index.php?view=article&amp;catid=50:announcements&amp;id=130:coming-soon-fav-python-downloads&amp;tmpl=component&amp;print=1&amp;page=" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;"><img src="/images/M_images/printButton.png" alt="Print"  /></a>	</td>
+	
+		</tr>
+</table>
+<table class="contentpaneopen">
+
+
+
+
+<tr>
+<td valign="top" colspan="2">
+	</td>
+</tr>
+
+
+
+</table>
+<span class="article_separator">&nbsp;</span>
+				</td>
+						</tr>
+		</table>
+	</td>
+</tr>
+<tr>
+	<td valign="top">
+		<div class="blog_more">
+			<div>
+	<strong>More Articles...</strong>
+</div>
+<ul>
+	<li>
+		<a class="blogsection" href="/index.php?option=com_content&amp;view=article&amp;id=128:technorati-newsflash&amp;catid=46:newsflash">
+			We have joined Technorati !</a>
+	</li>
+	<li>
+		<a class="blogsection" href="/index.php?option=com_content&amp;view=article&amp;id=125:new-projects-pygoogle-link-hound&amp;catid=43:python-new-projects&amp;Itemid=106">
+			pyGoogle :: Link Hound</a>
+	</li>
+	<li>
+		<a class="blogsection" href="/index.php?option=com_content&amp;view=article&amp;id=127:article-python-jobs-site&amp;catid=50:announcements&amp;Itemid=107">
+			Python Jobs Site Coming Soon !</a>
+	</li>
+	<li>
+		<a class="blogsection" href="/index.php?option=com_content&amp;view=article&amp;id=95:what-does-it-mean-to-code-for-performance-&amp;catid=31:general&amp;Itemid=46">
+			What does it mean to code for performance ? (Intro)</a>
+	</li>
+</ul>		</div>
+	</td>
+</tr>
+
+<tr>
+	<td valign="top" align="center">
+		<span class="pagination"><span>&laquo;</span><span>Start</span><span>Prev</span><strong><span>1</span></strong><strong><a href="/index.php?limitstart=5" title="2">2</a></strong><strong><a href="/index.php?limitstart=10" title="3">3</a></strong><a href="/index.php?limitstart=5" title="Next">Next</a><a href="/index.php?limitstart=10" title="End">End</a><span>&raquo;</span></span>		<br /><br />
+	</td>
+</tr>
+<tr>
+	<td valign="top" align="center">
+		Page 1 of 3	</td>
+</tr>
+</table>
+";s:4:"head";a:10:{s:5:"title";s:24:"Welcome to the Frontpage";s:11:"description";s:108:"python2.NEAR-BY.INFO (c). Copyright 2007-2008, Hierarchical Applications Limited, Inc., All Rights Reserved.";s:4:"link";s:0:"";s:8:"metaTags";a:2:{s:10:"http-equiv";a:1:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";}s:8:"standard";a:3:{s:6:"robots";s:13:"index, follow";s:8:"keywords";s:128:"python, ruby, microsoft, bigfix, sex, money, boobs, fastest language, php, coldfusion, perl, C#, vb, visual basic, visual studio";s:11:"description";s:0:"";}}s:5:"links";a:2:{i:0;s:107:"<link href="/index.php?format=feed&amp;type=rss" rel="alternate" type="application/rss+xml" title="RSS 2.0"";i:1;s:110:"<link href="/index.php?format=feed&amp;type=atom" rel="alternate" type="application/atom+xml" title="Atom 1.0"";}s:11:"styleSheets";a:0:{}s:5:"style";a:0:{}s:7:"scripts";a:2:{s:28:"/media/system/js/mootools.js";s:15:"text/javascript";s:27:"/media/system/js/caption.js";s:15:"text/javascript";}s:6:"script";a:0:{}s:6:"custom";a:0:{}}s:6:"module";a:0:{}}

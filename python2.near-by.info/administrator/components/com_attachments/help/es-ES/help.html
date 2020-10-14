@@ -1,0 +1,414 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html lang="es-mx">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+<title>Attachments Documentation</title>
+<link href="../../css/admin.css" type="text/css" rel="stylesheet">
+<link href="help.css" type="text/css" rel="stylesheet">
+</head>
+
+<body>
+<h1><a name="top"></a>Documentación de 'Attachments'</h1>
+<h3>Versión 1.2 - Febrero 20, 2008</h3>
+
+<ol>
+<li><a href="#intro">Introducción</a></li>
+<li><a href="#uploads">Restricciones de subida</a></li>
+<li><a href="#options">Ajustes</a></li>
+<li><a href="#display_filename">Desplegar nombre de archivo</a></li>
+<li><a href="#styling">Estilizando la lista de archivos adjuntos</a></li>
+<li><a href="#icons">Iconos por tipo de archivo</a></li>
+<li><a href="#warnings">Advertencias</a></li>
+<li><a href="#upgrading">Actualizando</a></li>
+<li><a href="#acknowledgements">Reconocimientos</a></li>
+</ol>
+
+<h2><a name="intro"></a>Introducción</h2>
+La extensión de 'Attachments' para Joomla! le permite subir archivos y
+adjuntarlos a artículos. 'Attachments' incluye un plugin para
+desplegar la lista de archivos adjuntos y un componente para subir
+y administrar estos archivos. Existen varias opciones para
+controlar quien puede ver y quien puede subir archivos, además de
+muchas más opciones para incrementar la flexibilidad y usabilidad
+del mismo. Nota: todas las opciones son controladas a través
+&nbsp;del administrador de componentes. Esta extensión solo
+funciona con Joomla! 1.5 o mas nuevo.
+
+<p>Esta extensión provee capacidades de traducción y soporta 
+los siguientes lenguajes (además de inglés):</p>
+
+<ul>
+    <li><b>Chino:</b> 
+    Traducción al tradicional y simplificado por baijianpeng
+    (http://www.joomlagate.com). (Gracias baijaing!)</li>
+    <li><b>Holandés:</b> Esta traducción fue realizada por Parvus. (Gracias Parvus!)</li>
+    <li><b>Alemán:</b> Esta traducción fue realizada por Michael Scherer. (Gracias Michael!)</li>
+    <li><b>Finlandés:</b> Esta traducción fue realizada por Tapani Lehtonen. (Gracias Tapani!)</li>
+    <li><b>Noruego:</b> Esta traducción fue realizada por Espen Gjelsvik. (Gracias Espen!)</li>
+    <li><b>Portugues/Brazileño:</b> Esta traducción fue realizada por Arnaldo Giacomitti 
+    (www.giacomitti.eng.br) y Cauan Cabral (www.cauancabral.net).</li>
+    <li><b>Español:</b> Esta traducción fue realizada por Carlos Alfaro. (Gracias Carlos!)</li>
+</ul>
+
+<p>Muchas gracias a los traductores! Si deseas ayudar a traducir esta extensión 
+a cualquier otro lenguaje, por favor contacta al autor.(ver al final). 
+<span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<h2><a name="uploads"></a>Restricciones de subida</h2>
+<p>No todos los tipos de archivos pueden ser subidos. El componente
+de&nbsp;'Attachments' no permitirá subir archivos que no estén
+previamente autorizados por el administrador de medios de
+Joomla!</p>
+
+<p>Para ver (o cambiar) que tipo de archivo están permitidos, vaya a 
+la página de <b>Configuración Global</b> y oprima en la pestaña
+de&nbsp;<b>Sistema</b>. En el área de <i>Ajustes de Medios</i>,
+existen opciones para controlar que extensiones y tipos mime están
+permitidos para subir.&nbsp;'Attachments' respeta estas
+limitaciones, la restricción en 'Extensión de Imagen Legal' es
+ignorada. <span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<h2><a name="options"></a>Ajustes</h2>
+<p>Todos los ajustes para 'Attachments' son controlados vía el
+administrador de componentes. Para accesar estos ajustes, vaya al área de
+administrador y seleccione "Archivos Adjuntos" bajo el menú de
+"Componentes". Presione en el botón de&nbsp;"Parámetros" el cual se
+encuentra en el lado derecho de la barra de herramientas y usted
+verá una serie de parámetros para esta extensión. Entre los
+parámetros podemos encontrar los siguientes:</p>
+<ul>
+<li><b>Quien
+puede ver los archivos adjuntos:</b> Este
+ajuste controla quien podrá ver los vínculos a los archivos.
+Actualmente existen 2 opciones:
+<ol>
+<li>'<i>Todos</i>'
+- Si se selecciona esta opción, los vínculos a los archivos
+adjuntos serán visibles por todos los que visiten el sitio, sin
+importar si están autentificados o no.</li>
+<li>'<i>Cualquier usuario autentificado</i>'. - Si esta opción 
+es seleccionada, solo los usuarios que están autentificados en 
+el sitio podrán ver los vínculos a los archivos adjuntos.</li>
+</ol>
+
+</li>
+<li><b>Quien puede agregar archivos adjuntos:</b> Este
+ajuste controla quien puede agregar archivos a los artículos.
+Existen dos opciones:
+<ol>
+<li>'<i>Solo el autor del artículo</i>' - El vínculo para subir archivos solo
+será visible por el autor del artículo.</li>
+<li>'<i>Cualquier
+usuario autentificado</i>' - Los vínculos para subir archivos será
+visible por cualquier usuario que este autentificado.</li>
+</ol>
+</li>
+<li><b>Archivos adjuntos publicados por defecto:</b> Esta
+característica de&nbsp;'auto publicación' controla si los archivos
+son publicados por defecto al ser subidos. Si se seleccionamos
+'Si', cuando los archivos se adjuntan, serán publicados
+inmediatamente y podrán ser vistos por los demás. Si seleccionamos
+'No', los nuevos archivos no serán publicados por defecto. Un
+administrador tendrá que publicarlos manualmente a través de la
+página de administración.</li>
+<li><b>Advertencia de auto publicación:</b> Si la
+opción de auto publicación está deshabilitada (ver la opción
+anterior), usted deseará informarle al usuario como puede auto
+publicar sus archivos adjuntos. Usted puede insertar un mensaje
+apropiado para hacerlo. Si el campo esta vacio, un mensaje general
+de sistema será agregado el cual indica que se contacte al
+administrador del sistema para publicar cualquier archivo
+recientemente agregado.</li>
+<li><b>Mostrar títulos:</b> Si se
+establece como 'Si', se agregara un renglón de títulos sobre la
+lista de archivos adjuntos, la cual describe que contiene cada
+columna.</li>
+<li><b>Mostrar descripción del archivo:</b> 
+Esta opción controla si se debe de mostrar la descripción en la 
+lista de archivos adjuntos.</li>
+<li><b>Mostrar tamaño de archivo:</b> Esta
+opción controla si el tamaño del archivo será mostrado en la lista
+de archivos adjuntos.</li>
+<li><b>Mostrar fecha de modificación del archivo:</b> Si
+esta opción se establece como&nbsp;'Si', la fecha de modificación
+del archivo será agregada al artículo que cuente con archivos
+adjuntos. Si se selecciona 'No', no se agregara la fecha a la lista
+de archivos adjuntos.</li>
+<li><b>Formato de la cadena para la fecha de modificación:</b> Usted
+puede seleccionar el formato de la fecha de modificación usando el
+formato de la función date de PHP. Este ajuste tiene como defecto
+el formato "M-j-Y&nbsp;g:ia" el cual muestra algo similar a lo
+siguiente: "Sep-29-2007 5:05pm". Si usted prefiere ver solo la
+fecha, elimine la parte "g:ia".</li>
+<li><b>Longitud máxima del nombre de archivo:</b> El
+máximo de longitud del nombre de archivo en la lista. Los nombres
+más largos que el especificado serán truncados (el truncado solo se
+hace para propósitos visuales, el nombre real del archivo no será
+modificado). Un valor de 0 significa que no existe límite en la
+longitud (el campo de base de datos donde se almacena el nombre de
+archivo está limitado a 80 caracteres). Nota: Si al desplegar los
+nombres de archivos estos son truncados, el nombre de archivo
+truncado será insertado en el campo de "desplegar nombre de
+archivo".</li>
+<li><b>Estilo CSS para las tablas de archivos adjuntos:</b> Para
+pasar por alto el estilo CSS de la lista de archivos, especifique
+su propio estilo aquí. El nombre por defecto es 'attachmentsList'.
+Vea la sección de&nbsp; <a href="#styling">[Estilizando la lista de archivos
+adjuntos]</a> para más información.</li>
+<li><b>Modo de apertura del archivo:</b> Esta
+opción controla como serán mostrados los archivos al oprimir el
+vínculo. 'En la misma ventana' significa que el archivo será
+abierto en la misma ventana del navegador. 'En una nueva ventana'
+significa que el archivo será abierto en una nueva ventana de
+navegador. En algunos navegadores, al usar la opción 'En una nueva
+ventana' abrirá el archivo en una nueva pestaña.</li>
+<li><b>Pre agregar al nombre del archivo en el sistema:</b>
+Este ajuste controla si el prefijo numérico debe de ser agregado al
+inicio del archivo, tal y como está asignado en el servidor.
+Existen tres opciones:
+<ol>
+<li>'<i>ID del artículo</i>' - Si se selecciona esta opción, el 
+nombre del archivo será pre fijada con el ID del artículo. Esta 
+selección reducirá la posibilidad de colisión de nombres de archivo y
+asegurara que los archivos adjuntos a un artículo se ordenen en las
+listas de directorios. Esta opción le permitirá diferentes archivos
+con el mismo nombre de archivo, ya que irán adjuntos a diferentes
+artículos, note que no debe de ser el mismo artículo ya que causará
+una colisión.</li>
+<li>'<i>ID del archivo adjunto</i>' - Si se selecciona esta opción, 
+el nombre de archivo será pre fijado con el ID del archivo adjunto. 
+Esta selección eliminara la posibilidad de colisión de nombre de archivo
+ya que cada archivo tendrá un ID único. Los archivos se ordenaran
+por el orden de los archivos adjuntos en la lista de
+directorios..</li>
+<li>'<i>Ninguno</i>'- Si se selecciona esta opción, el nombre de archivo 
+será grabado tal y como el archivo. Esta opción incrementa las oportunidades 
+de colisión de nombre de archivo, ya que, cada archivo necesitara
+tener un nombre único.</li>
+</ol>
+</li>
+<li><b>Subdirectorio para grabar archivos:</b> 
+La extensión de&nbsp;'Attachments' grabará los archivos en este
+subdirectorio del sitio Joomla!.&nbsp;<i>ADVERTENCIA: Si esto es
+cambiado, usted deberá de crear el nuevo subdirectorio manualmente
+antes de poder subir cualquier archivo.</i> Note que si el
+subdirectorio es cambiado, esto solo afectara los archivos
+agregados en un futuro. Los archivos previamente grabados se
+mantendrán en el subdirectorio anterior y los registros en la base
+de datos aún apuntaran a esos archivos.</li>
+<li><b>Títulos personalizados para la lista de archivos adjuntos:</b>
+Por defecto, la extensión de 'Attachments' inserta el título "Archivos
+adjuntos:" sobre la lista de archivos de un artículo (si este
+cuenta con archivos). En algunos casos, usted puede preferir usar
+algun otro termino para artículos específicos. Usted podrá
+especificar el término exacto que desea usar en una base de
+artículo-por-artículo. Por ejemplo, si desea que el artículo 211
+use el título personalizado "Descargas:", entonces agregue lo
+siguiente. '211&nbsp;Descargas' (sin las comillas). Una entrada por
+línea.</li>
+<li><b>Ocultar archivos adjuntos para:</b> Lista de palabras clave separadas por coma or Sección/Categoría de los artículos para los cuales los archivos ocultos serpan ocultados.  Se pueden utilizar dos palabras: 'Página frontal' para suprimir el despliegue de los archivos adjuntos en la página frontal, y 'todo_menos_vista_de_artículos' para permitir el despliegue de los archivos en las vistas de artículo. (Omita las comillas cuando ingrese las opciones de palabra clave) Los ids de Sección/Categoría deben de ser ingresados como id´s numericas de sección y categoría separados con una diagonal(/): Sección#/Categoría#, Sección#/Categoría#.  Especifique solo la 'Sección#' para cubrir todas las categorías dentro de la selección.  Ejemplo: 23/10, 23/11, 24</li>
+<li><b>Descarga segura de archivos:</b> Por
+defecto, la extensión de 'Attachments' graba los archivos en un
+directorio públicamente accesible. Si usted selecciona la opción
+<i>segura</i>, el directorio en el cual se graben los archivos será
+inaccesible públicamente. Los vínculos para los archivos adjuntos
+en el front end descargarán los archivos adjuntos pero no serán
+vínculos directos al archivo en sí. Esto prevendrá el acceso a
+menos que los usuarios tengan los permisos necesarios. Sí las
+descargas <i>seguras</i> no son seleccionadas, los vínculos a los
+archivos adjuntos serán mostrados como la opción previamente
+indicada, pero los archivos serán aún accesibles por cualquiera que
+conozca el URL completo, ya que el directorio es considerado como
+público. La opción <i>segura</i> prevendrá el acceso a usuarios sin
+los permisos adecuados, inclusive cuando el usuario conoce el URL
+completo al archivo, ya que esta opción previene el acceso al
+directorio de archivos adjuntos. NOTA: En el modo <i>seguro</i>, la
+lista de archivos no es desplegada cuando el usuario no está
+autentificado en el sistema, ya que no tiene sentido el usar el
+modo seguro si el usuario no está autentificado.</li>
+<li><b>Modo de descarga segura:</b> Esta
+opción controla si los archivos deben de ser descargados como
+archivos o desplegados por el navegador (si el navegador soporta
+este tipo de archivo). Existen dos opciones:
+<ul>
+<li><i>'en
+línea'</i>: En
+este modo, los archivos que pueden ser desplegados por el
+navegador, serán desplegados en él (tales como archivos de texto e
+imágenes).</li>
+<li><i>'archivo
+adjunto'</i>: Con
+este modo los archivos siempre serán descargados, nunca mostrados
+en el navegador.</li>
+</ul>
+</li>
+</ul>
+
+<p><br>
+Si el archivo no puede ser desplegado por el navegador, será
+descargado como archivo <span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<h2><a name="display_filename"></a>Desplegar nombre de archivo</h2>
+<p>Normalmente, cuando los archivos son subidos y listados en la 
+lista de archivos adjuntos, el nombre completo del archivo es mostrado 
+como un vínculo para descargar el archivo. En algunos casos, el nombre
+puede ser muy largo para que funcione correctamente. En la forma
+para subir archivos, existe otro campo llamado&nbsp;"Desplegar
+nombre de archivo" en el cual la persona que está grabando el
+archivo puede insertar un nombre alternativo o etiqueta para
+desplegar en lugar del nombre de archivo completo. Por ejemplo,
+alguna abreviación del nombre de archivo puede ser utilizada en
+este campo. Este campo puede ser editado en el área de
+administración de Joomla! &nbsp;Nota: Existe una opción en las
+opciones del plugin llamada "Longitud máxima de nombre de archivo".
+Esta puede ser establecida a truncar automáticamente; el nombre de
+archivo resultante será insertado en el campo de&nbsp;"Desplegar
+nombre de archivo". <span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<h2><a name="styling"></a>Estilizando la lista de archivos adjuntos</h2>
+<p>La lista de archivos adjuntos mostrada en el "Front End" usa un 'div'
+especial el cual contiene una tabla para los archivos. La tabla
+tiene diferentes clases CSS asociadas, las cuales permiten al
+desarrollador del sitio la flexibilidad de personalizar la
+apariencia de la tabla. Para ejemplos vea el archivo CSS en el
+directorio del plugin&nbsp; (localizado en
+plugins/content/attachments.css)&nbsp;. Si desea cambiar el estilo,
+considere copiar el estilo original al final del archivo y
+renombre&nbsp;'attachmentsList' al nombre de su elección. 
+Edite el parámetro de Archivos adjuntos (en el administrador de
+componentes) y cambie el parámetro&nbsp; <i>Estilo CSS para las
+tablas de archivos adjuntos</i> por el nuevo nombre de la clase.
+Después modifique la definición de la clase, de acuerdo a sus
+requerimientos. Esto le permitirá fácilmente regresar al estilo
+original cambiando el parámetro <i>Estilo CSS para las tablas de
+archivos adjuntos</i> a su valor por defecto, 'attachmentList'.
+Esto también nos da la opción de copiar los estilos modificados a
+un archivo y así fácilmente restaurarla cuando la versión del
+plugin sea actualizada. Esto también puede ser realizado usando el
+comando de CSS @import. <span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<h2><a name="icons"></a>Iconos por tipo de archivo</h2>
+<p>La extensión de 'Attachments' agrega un icono al inicio de cada
+archivo en la lista de archivos adjuntos. Si desea agregar un nuevo
+tipo de icono, siga los siguientes pasos: (1) Agregar el icono
+apropiado en el directorio 'media/attachments/icons', si no existe
+un icono apropiado; (2) Edite el archivo 'components/com_attachments/file_types.php' 
+y agregue una línea a el arreglo estático $attachments_icon_from_file_extension el cual
+mapea una extensión de archivos a un nombre de archivo (los cuales
+están en el directorio media/attachments/icons). Si esto no
+funciona, usted necesitara una line al arreglo
+$attachments_icon_from_mime_type. (3) No olvide hacer copias de los
+iconos y el archivo&nbsp;file_types.php a algún directorio fuera
+del sitio, esto lo debe de hacer antes de realizar alguna
+actualización al módulo. <span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<h2><a name="warnings"></a>Advertencias</h2>
+<ul>
+<li><b>Si tiene archivos con información confidencial o sensible, use la
+opción de <i>Modo de descarga segura</i>!</b><br>
+Si usted no utiliza la opción segura, los archivos adjuntos son
+grabados en un directorio público y será posible accesarlos por
+cualquier que conozca el URL completo. La opción <i>segura</i>
+previene el acceso de usuarios que no cuenten con los permisos
+adecuados (de acuerdo a lo determinado por la opción previa). Vea
+la discusión de <i>Modo de descarga segura</i> para mayor
+detalle.</li>
+<li>Cada vez que se graba un archivo, se revisa si el subdirectorio donde
+será subido existe y será creado si este no existe. Si la extensión
+de 'Attachments' no puede crear el directorio, usted tendrá que
+crearlo por su cuenta (y puede que tenga problemas al subir
+archivos). Asegúrese de dar los permisos adecuados al directorio.
+Si utiliza Unix/Linux, probablemente necesitara permisos del tipo
+744.</li>
+<li>Si la extensión no le permite subir cierto tipo de archivo (como archivos
+zip), asegúrese que la extensión respeta las restricciones
+colocadas en el Administrador de medios. Esto es para prevenir el
+grabar archivos dañinos tales como html o php. El administrador
+puede actualizar la configuración del Administrador de medios para
+agregar tipos de archivo específicos, esto lo lograra dirigiéndose
+a la "Configuración Global" bajo el menú del "Sitio", seleccione la
+pestaña&nbsp;"Sistema",&nbsp;agregue la extensión y el tipo mime a
+la lista bajo la sección "Administrador de medios".</li>
+<li>El segundo&nbsp;plugin, 'add_attachment_btn_plugin' (llamado 'Button -
+AddAttachment' en el administrador de plugin) permite agregar
+archivos adjuntos &nbsp;a los artículos en el momento de editar
+artículos. Este plugin agrega un botón bajo el área de edición de
+artículos llamado "Agregar archivo adjunto". Si usted ha instalado
+este plugin pero no ve el botón, el plugin del botón de agregar
+archivo adjunto posiblemente necesite ser habilitado en el editor
+de plugins. Nota: El botón no es desplegado cuando los artículos
+están siendo creados, el artículo debe de ser grabado antes de
+poder agregarle archivos adjuntos.</li>
+<li>Esta versión parece funcionar correctamente con SEF con&nbsp;Joomla! 1.5
+RC3 y RC4. La actualización para 'Archivos adjuntos' del RC3 parece
+quebrar el SEF con el RC2.</li>
+</ul>
+<p><span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<h2><a name="upgrading"></a>Actualizando</h2>
+<p>Si usted ha agregado archivos adjuntos y desea preservarlos después de
+una actualización, use los siguientes pasos:</p>
+<ol>
+    <li>Use phpMyAdmin (u otro administrador de SQL) para grabar el contenido
+    de la tabla jos_attachments table (use la opción 'Exportar', intente usar la opción 
+    inserciones 'Completas' pero no del tipo&nbsp;'Extendido').</li>
+    <li>Desinstale el componente 'Attachments'.</li>
+    <li>Desinstale ambos plugins de&nbsp;'Attachments'.</li>
+    <li>Instale la nueva versión del el plugin y ambos componentes.</li>
+    <li>Re habilite el plugin de 'Attachments'.</li>
+    <li>Finalmente use phpMyAdmin para re alimentar los attachments grabados
+    previamente, estos deberán de alimentarse en la tabla
+    jos_attachments.</li>
+    <li>Si usted está actualizando una versión anterior a la 1.0 a una más
+    reciente que la 1.0, y cuenta con attachments antiguos, usted
+    necesitara agregar los valores apropiados al campo 'icon_filename',
+    esto lo podrá hacer autentificándose como administrador en él y
+    dirigiéndose al siguiente URL en su navegador:
+    &nbsp;<b>/administrator/index.php?option=com_attachments&amp;task=add_icon_filenames</b></li>
+</ol>
+
+<p>Note que al desinstalar la extensión de 'Attachments' esta no borra los
+archivos que usted grabo, solamente elimina los registros de la
+base de datos. Así que después de instalar la nueva versión,
+solamente es necesario restaurar la tabla anterior para poder ver
+los archivos adjuntos.</p>
+
+<p>Si desea no restaurar la base de datos, no olvide borrar los archivos
+obsoletos, esto con el propósito de evitar futuros problemas con
+nombres de archivos duplicados. <span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<h2><a name="acknowledgements"></a>Agradecimientos</h2>
+<p>Muchas gracias a los siguientes contribuyentes o recursos:</p>
+<ul>
+<li>El libro <i>Learning Joomla! 1.5 Extension Development: Creating
+Modules, Components, and Plugins with PHP</i> por Joseph L. LeBlanc
+fue de mucha ayuda en la creación de la extensión
+de&nbsp;'Attachments'.</li>
+<li>Los iconos para los tipos de archivos son derivados de las siguientes
+fuentes:
+    <ul>
+        <li><a href="http://www.famfamfam.com/lab/icons/silk/">
+        The Silk icons by Mark James
+        (http://www.famfamfam.com/lab/icons/silk/)</a></li>
+        <li><a href="http://www.zap.org.au/documents/icons/file-icons/sample.html">
+        File-Type Icons 1.2 by John Zaitseff
+        (http://www.zap.org.au/documents/icons/file-icons/sample.html)</a></li>
+        <li><a href="http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html">
+        Doctype Icons 2 by Timothy Groves
+        (http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html)</a></li>
+        <li><a href="http://www.catnip.co.uk/opendocument/icons/">
+        OpenDocument icons proposed by Pete
+        Harlow (http://www.catnip.co.uk/opendocument/icons/)</a></li>
+    </ul>
+</li>
+</ul>
+<p><br>
+Note que la mayoría de los iconos de&nbsp;'Attachments' fueron
+modificados de las versiones originales de los sitios. Si usted
+desea las versiones originales, por favor descárguelos de los
+sitios originales. <span class="atop"><a href="#top">[Regresar]</a></span></p>
+
+<p>Por favor reporte cualquier errora o sugerencia a <a href="mailto:jmcameron@jmcameron.net">jmcameron@jmcameron.net</a>.</p>
+</body>
+</html>

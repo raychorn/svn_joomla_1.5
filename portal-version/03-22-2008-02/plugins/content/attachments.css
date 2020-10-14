@@ -1,0 +1,83 @@
+/* Styles for lists of attachments */
+
+div.attachmentsList table {
+    background-color: transparent;
+    border: 1px solid #CCCCCC;
+}
+
+div.attachmentsList caption {
+    font-size: 110%;
+    font-weight: bold;
+    text-align: left; 
+    margin-top: 4px;
+}
+
+div.attachmentsList thead {
+    font-size: 90%;
+    font-weight: bold;
+    background-color: #F9F9F9;
+}
+
+div.attachmentsList th {
+    border: 1px solid #DDDDDD;
+    padding-left: 3px;
+    padding-right: 3px;
+    padding-top: 0px;
+    padding-bottom: 0px;  
+}
+
+div.attachmentsList td {
+    vertical-align: top;
+    padding-left: 3px;
+    padding-right: 3px;
+}
+
+div.attachmentsList table a { 
+    font-weight: bold; 
+}
+
+div.attachmentsList table img {
+    vertical-align: text-bottom;
+}
+
+div.attachmentsList td.at_file_size {
+    text-align: right;
+}
+
+div.attachmentsList a.at_icon:hover {
+    text-decoration: none;
+}
+
+div.attachmentsList td.at_delete a         { color: red; }
+div.attachmentsList td.at_delete a:link    { color: red; text-decoration: none; }
+div.attachmentsList td.at_delete a:visited { color: red; text-decoration: none; }
+div.attachmentsList td.at_delete a:hover   { color: red; text-decoration: underline; }
+div.attachmentsList td.at_delete a:active  { color: red; text-decoration: none; }
+
+
+/* Style for the 'Add Attachment' link */
+
+div.addattach { margin-top: 4px; }
+
+div.addattach a:link    { color : red; text-decoration: none; }
+div.addattach a:visited { color : red; text-decoration: none; }
+div.addattach a:hover   { color : red; text-decoration: underline; }
+div.addattach a:active  { color : red; text-decoration: none; }
+
+div.addattach a img { vertical-align: text-bottom; }
+
+
+/* Styles for upload form */
+
+input#description { width: 100%; }
+input#upload      { width: 100%; }
+
+form.attachments {
+    margin-top: 6px;
+    margin-left: -2px;
+}
+
+form.attachments legend {
+    font-size: 140%;
+    font-weight: bold;
+}

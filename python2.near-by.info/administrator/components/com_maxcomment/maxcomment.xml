@@ -1,0 +1,382 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="component" version="1.0.0">
+  <name>maxcomment</name>
+  <creationDate>04 Mar 2008</creationDate>
+  <author>Bernard Gilly</author>
+  <license>This component is released under Creative Commons License.</license>
+  <copyright>2007-2008 - Bernard Gilly - Some rights reserved.</copyright>
+  <authorEmail>contact@visualclinic.fr</authorEmail>
+  <authorUrl>www.visualclinic.fr</authorUrl>
+  <version>1.0.7</version>
+  <description>Comment System with rating and more features for Joomla! and Mambo CMS.</description>
+  <files>
+    <filename>maxcomment.php</filename>
+    <filename>maxcomment.html.php</filename>
+	<filename>maxcomment.class.php</filename>	
+	<filename>index.html</filename>
+	<filename>includes/index.html</filename>
+	<filename>includes/maxcomment.utils.php</filename>
+	<filename>includes/ClassMathGuard.php</filename>
+	<filename>includes/ClassMathGuard2.php</filename>
+	<filename>includes/js/index.html</filename>
+	<filename>includes/js/control.textarea.bbcode.js</filename>
+	<filename>includes/js/control.textarea.js</filename>
+	<filename>includes/js/prototype.js</filename>
+	<filename>includes/js/bbcode_icons.gif</filename>	
+	<filename>includes/common/index.html</filename>
+	<filename>includes/common/maxlengthcomment.php</filename>
+	<filename>includes/common/wordwrap.php</filename>	
+	<filename>includes/common/maxcomment.parser.php</filename>
+	<filename>includes/common/newevaluaterating.php</filename>
+	<filename>includes/common/languages.php</filename>
+	<filename>templates/index.html</filename>
+	<filename>templates/default/index.html</filename>
+	<filename>templates/default/full.php</filename>
+	<filename>templates/default/intro.php</filename>
+	<filename>templates/default/usercomment.php</filename>	
+	<filename>templates/default/images/index.html</filename>
+	<filename>templates/default/images/new.gif</filename>
+	<filename>templates/default/images/icon_popular_1.gif</filename>
+	<filename>templates/default/images/editorcomment.gif</filename>
+	<filename>templates/default/images/usercomments.gif</filename>
+	<filename>templates/default/images/email.gif</filename>
+	<filename>templates/default/images/icon_popular_3.gif</filename>
+	<filename>templates/default/images/print.gif</filename>
+	<filename>templates/default/images/quotethis.gif</filename>
+	<filename>templates/default/images/icon_popular_2.gif</filename>
+	<filename>templates/default/images/favoured.gif</filename>
+	<filename>templates/default/images/readmore.gif</filename>
+	<filename>templates/default/images/relatedarticles.gif</filename>
+	<filename>templates/default/images/delicious.gif</filename>
+	<filename>templates/default/images/rating/index.html</filename>
+	<filename>templates/default/images/rating/editor_rating_0.gif</filename>
+	<filename>templates/default/images/rating/editor_rating_1.gif</filename>
+	<filename>templates/default/images/rating/editor_rating_2.gif</filename>
+	<filename>templates/default/images/rating/editor_rating_3.gif</filename>
+	<filename>templates/default/images/rating/editor_rating_4.gif</filename>
+	<filename>templates/default/images/rating/editor_rating_5.gif</filename>
+	<filename>templates/default/images/rating/user_rating_0.gif</filename>
+	<filename>templates/default/images/rating/user_rating_0a.gif</filename>
+	<filename>templates/default/images/rating/user_rating_1.gif</filename>
+	<filename>templates/default/images/rating/user_rating_1a.gif</filename>
+	<filename>templates/default/images/rating/user_rating_2.gif</filename>
+	<filename>templates/default/images/rating/user_rating_2a.gif</filename>
+	<filename>templates/default/images/rating/user_rating_3.gif</filename>
+	<filename>templates/default/images/rating/user_rating_3a.gif</filename>
+	<filename>templates/default/images/rating/user_rating_4.gif</filename>
+	<filename>templates/default/images/rating/user_rating_4a.gif</filename>
+	<filename>templates/default/images/rating/user_rating_5.gif</filename>
+	<filename>templates/default/css/index.html</filename>
+	<filename>templates/default/css/default_css.css</filename>
+	<filename>templates/default/languages/index.html</filename>
+	<filename>templates/default/languages/english.php</filename>
+	<filename>templates/default/languages/french.php</filename>	
+	<filename>templates/default/languages/italian.php</filename>
+	<filename>templates/default/languages/german.php</filename>
+	<filename>templates/default/languages/germanf.php</filename>
+	<filename>templates/default/languages/germani.php</filename>
+	<filename>templates/default/languages/czechutf8.php</filename>
+	<filename>templates/default/languages/dutch.php</filename>
+	<filename>templates/default/languages/finnish.php</filename>
+	<filename>templates/default/languages/spanish.php</filename>
+	<filename>templates/expand/index.html</filename>
+	<filename>templates/expand/full.php</filename>
+	<filename>templates/expand/intro.php</filename>
+	<filename>templates/expand/usercomment.php</filename>	
+	<filename>templates/expand/images/index.html</filename>
+	<filename>templates/expand/images/new.gif</filename>
+	<filename>templates/expand/images/icon_popular_1.gif</filename>
+	<filename>templates/expand/images/editorcomment.gif</filename>
+	<filename>templates/expand/images/usercomments.gif</filename>
+	<filename>templates/expand/images/email.gif</filename>
+	<filename>templates/expand/images/icon_popular_3.gif</filename>
+	<filename>templates/expand/images/print.gif</filename>
+	<filename>templates/expand/images/quotethis.gif</filename>
+	<filename>templates/expand/images/icon_popular_2.gif</filename>
+	<filename>templates/expand/images/favoured.gif</filename>
+	<filename>templates/expand/images/readmore.gif</filename>
+	<filename>templates/expand/images/relatedarticles.gif</filename>	
+	<filename>templates/expand/images/delicious.gif</filename>
+	<filename>templates/expand/images/rating/index.html</filename>
+	<filename>templates/expand/images/rating/editor_rating_0.gif</filename>
+	<filename>templates/expand/images/rating/editor_rating_1.gif</filename>
+	<filename>templates/expand/images/rating/editor_rating_2.gif</filename>
+	<filename>templates/expand/images/rating/editor_rating_3.gif</filename>
+	<filename>templates/expand/images/rating/editor_rating_4.gif</filename>
+	<filename>templates/expand/images/rating/editor_rating_5.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_0.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_0a.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_1.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_1a.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_2.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_2a.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_3.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_3a.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_4.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_4a.gif</filename>
+	<filename>templates/expand/images/rating/user_rating_5.gif</filename>
+	<filename>templates/expand/css/index.html</filename>
+	<filename>templates/expand/css/expand_css.css</filename>
+	<filename>templates/expand/languages/index.html</filename>
+	<filename>templates/expand/languages/english.php</filename>
+	<filename>templates/expand/languages/french.php</filename>
+	<filename>templates/expand/languages/italian.php</filename>	
+	<filename>templates/expand/languages/german.php</filename>
+	<filename>templates/expand/languages/germanf.php</filename>
+	<filename>templates/expand/languages/germani.php</filename>	
+	<filename>templates/expand/languages/czechutf8.php</filename>	
+	<filename>templates/expand/languages/dutch.php</filename>
+	<filename>templates/expand/languages/finnish.php</filename>
+	<filename>templates/expand/languages/spanish.php</filename>	
+	<filename>templates/expand/languages/turkish.php</filename>
+	<filename>templates/bubbles_acid/index.html</filename>
+	<filename>templates/bubbles_acid/full.php</filename>
+	<filename>templates/bubbles_acid/intro.php</filename>
+	<filename>templates/bubbles_acid/usercomment.php</filename>	
+	<filename>templates/bubbles_acid/images/index.html</filename>
+	<filename>templates/bubbles_acid/images/new.gif</filename>
+	<filename>templates/bubbles_acid/images/icon_popular_1.gif</filename>
+	<filename>templates/bubbles_acid/images/editorcomment.gif</filename>
+	<filename>templates/bubbles_acid/images/usercomments.gif</filename>
+	<filename>templates/bubbles_acid/images/email.gif</filename>
+	<filename>templates/bubbles_acid/images/icon_popular_3.gif</filename>
+	<filename>templates/bubbles_acid/images/print.gif</filename>
+	<filename>templates/bubbles_acid/images/quotethis.gif</filename>
+	<filename>templates/bubbles_acid/images/icon_popular_2.gif</filename>
+	<filename>templates/bubbles_acid/images/favoured.gif</filename>
+	<filename>templates/bubbles_acid/images/readmore.gif</filename>
+	<filename>templates/bubbles_acid/images/relatedarticles.gif</filename>	
+	<filename>templates/bubbles_acid/images/delicious.gif</filename>	
+	<filename>templates/bubbles_acid/images/footer1.gif</filename>
+	<filename>templates/bubbles_acid/images/footer2.gif</filename>
+	<filename>templates/bubbles_acid/images/header.gif</filename>	
+	<filename>templates/bubbles_acid/images/rating/index.html</filename>
+	<filename>templates/bubbles_acid/images/rating/editor_rating_0.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/editor_rating_1.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/editor_rating_2.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/editor_rating_3.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/editor_rating_4.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/editor_rating_5.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_0.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_0a.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_1.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_1a.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_2.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_2a.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_3.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_3a.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_4.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_4a.gif</filename>
+	<filename>templates/bubbles_acid/images/rating/user_rating_5.gif</filename>
+	<filename>templates/bubbles_acid/css/index.html</filename>
+	<filename>templates/bubbles_acid/css/bubbles_acid_css.css</filename>
+	<filename>templates/bubbles_acid/languages/index.html</filename>
+	<filename>templates/bubbles_acid/languages/english.php</filename>
+	<filename>templates/bubbles_acid/languages/french.php</filename>
+	<filename>templates/bubbles_acid/languages/italian.php</filename>
+	<filename>templates/bubbles_acid/languages/german.php</filename>
+	<filename>templates/bubbles_acid/languages/germanf.php</filename>
+	<filename>templates/bubbles_acid/languages/germani.php</filename>
+	<filename>templates/bubbles_acid/languages/czechutf8.php</filename>
+	<filename>templates/bubbles_acid/languages/dutch.php</filename>
+	<filename>templates/bubbles_acid/languages/finnish.php</filename>
+	<filename>templates/bubbles_acid/languages/spanish.php</filename>
+	<filename>templates/bubbles_acid/languages/bulgarian.php</filename>
+  </files>
+  <images>
+    <filename>images/index.html</filename>
+	<filename>images/rss.gif</filename>
+	<filename>images/new.gif</filename>
+	<filename>images/smilies/index.html</filename>
+	<filename>images/smilies/sm_bigeek.gif</filename>
+	<filename>images/smilies/sm_biggrin.gif</filename>
+	<filename>images/smilies/sm_confused.gif</filename>
+	<filename>images/smilies/sm_cool.gif</filename>
+	<filename>images/smilies/sm_cry.gif</filename>
+	<filename>images/smilies/sm_dead.gif</filename>
+	<filename>images/smilies/sm_mad.gif</filename>
+	<filename>images/smilies/sm_razz.gif</filename>
+	<filename>images/smilies/sm_rolleyes.gif</filename>
+	<filename>images/smilies/sm_sigh.gif</filename>
+	<filename>images/smilies/sm_sleep.gif</filename>
+	<filename>images/smilies/sm_smile.gif</filename>
+	<filename>images/smilies/sm_upset.gif</filename>
+	<filename>images/smilies/sm_wink.gif</filename>
+	<filename>images/gravatar/generic_gravatar_black.gif</filename>
+	<filename>images/gravatar/generic_gravatar_blue.gif</filename>
+	<filename>images/gravatar/generic_gravatar_green2.gif</filename>
+	<filename>images/gravatar/generic_gravatar_green.gif</filename>
+	<filename>images/gravatar/generic_gravatar_marine.gif</filename>
+	<filename>images/gravatar/generic_gravatar_orange.gif</filename>
+	<filename>images/gravatar/generic_gravatar_purple.gif</filename>
+	<filename>images/gravatar/generic_gravatar_red.gif</filename>
+	<filename>images/gravatar/generic_gravatar_black_grey.gif</filename>
+	<filename>images/gravatar/generic_gravatar_pink.gif</filename>
+	<filename>images/gravatar/generic_gravatar_grey.gif</filename>
+	<filename>images/gravatar/generic_gravatar_brown.gif</filename>
+	<filename>images/gravatar/generic_gravatar_yellow.gif</filename>
+	<filename>images/gravatar/generic_gravatar_red2.gif</filename>	
+	<filename>images/gravatar/index.html</filename>	
+  </images>
+  <administration>
+    <menu>mXcomment</menu>
+	  <submenu>
+	  	<menu task="controlpanel">Control Panel</menu>
+		<menu task="config">Configuration</menu>
+		<menu task="admcomments">Editor comments</menu>
+		<menu task="usercomments">User comments</menu>
+		<menu task="favoured">Favoured</menu>	
+		<menu task="editcss">Edit CSS</menu>
+		<menu task="editlanguage">Edit language</menu>
+		<menu task="badwords">Edit badwords</menu>
+		<menu task="blockip">Edit block IP</menu>
+		<menu task="supportwebsite">Support website</menu>
+		<menu task="about">About</menu>
+      </submenu>	
+	 <files>
+	  	<filename>admin.maxcomment.php</filename>
+	  	<filename>admin.maxcomment.html.php</filename>
+		<filename>maxcomment_config.php</filename>
+		<filename>class.maxcomment.php</filename>
+	  	<filename>toolbar.maxcomment.php</filename>
+	  	<filename>toolbar.maxcomment.html.php</filename>
+		<filename>vars_tpl.html</filename>
+		<filename>version.php</filename>		
+		<filename>index.html</filename>
+		<filename>readme.html</filename>
+		<filename>classes_akismet/index.html</filename>
+		<filename>classes_akismet/php4/index.html</filename>
+		<filename>classes_akismet/php4/Akismet.class.php</filename>
+		<filename>classes_akismet/php5/index.html</filename>
+		<filename>classes_akismet/php5/Akismet.class.php</filename>
+		<filename>languages/index.html</filename>
+		<filename>languages/french.php</filename>		
+		<filename>languages/english.php</filename>
+		<filename>languages/finnish.php</filename>
+		<filename>languages/hungarian.php</filename>
+		<filename>languages/dutch.php</filename>
+		<filename>languages/russian.php</filename>
+		<filename>languages/russian_utf-8.php</filename>
+		<filename>languages/spanish.php</filename>		
+		<filename>languages/italian.php</filename>
+		<filename>languages/german.php</filename>		
+		<filename>languages/germanf.php</filename>		
+		<filename>languages/germani.php</filename>	
+		<filename>languages/brazilian_portuguese.php</filename>			
+		<filename>languages/czechutf8.php</filename>
+		<filename>languages/turkish.php</filename>
+		<filename>languages/bulgarian.php</filename>		
+		<filename>mambots/index.html</filename>		
+		<filename>mambots/content/index.html</filename>		
+		<filename>mambots/content/maxcommentbot.php</filename>
+		<filename>mambots/content/maxcommentbot.txt</filename>
+		<filename>mambots/system/index.html</filename>		
+		<filename>mambots/system/maxcommentsystem.php</filename>
+		<filename>mambots/system/maxcommentsystem.txt</filename>		
+		<filename>mambots/search/index.html</filename>		
+		<filename>mambots/search/maxcomment.searchbot.php</filename>
+		<filename>mambots/search/maxcomment.searchbot.txt</filename>	
+		<filename>contentelements/mxcomment.xml</filename>	
+     </files>
+	 <images>
+	 	<filename>images/index.html</filename>
+	 	<filename>images/maXcomment.png</filename>
+		<filename>images/maxcomment_icon.png</filename>
+		<filename>images/new.gif</filename>
+		<filename>images/akismet.png</filename>
+		<filename>images/cpanel.png</filename>		
+		<filename>images/stars_editor_4.gif</filename>		
+		<filename>images/stars_user_4.gif</filename>
+		<filename>images/bgground_rating.gif</filename>
+		<filename>images/icon_popular_1.gif</filename>
+		<filename>images/icon_popular_2.gif</filename>
+		<filename>images/icon_popular_3.gif</filename>
+		<filename>images/icons/config.png</filename>	
+		<filename>images/icons/favoured.png</filename>	
+		<filename>images/icons/editcss.png</filename>
+		<filename>images/icons/editlanguage.png</filename>	
+		<filename>images/icons/supportwebsite.png</filename>	
+		<filename>images/icons/about.png</filename>
+		<filename>images/icons/adm_comment.png</filename>	
+		<filename>images/icons/user_comment.png</filename>		
+		<filename>images/icons/badwords.png</filename>		
+		<filename>images/icons/blockip.png</filename>
+		<filename>images/icons/index.html</filename>
+	 </images>
+  </administration>
+   <install>
+    <queries>	  
+      <query>
+        CREATE TABLE IF NOT EXISTS `#__mxc_comments` (
+          `id` int(11) NOT NULL auto_increment,
+          `parentid` int(11) NOT NULL default '0',
+          `status` int(11) NOT NULL default '0',
+          `contentid` int(11) NOT NULL default '0',
+          `ip` varchar(15) NOT NULL default '',
+          `name` varchar(30) NOT NULL default '',
+          `web` varchar(255) NOT NULL default '',
+          `email` varchar(255) NOT NULL default '',
+          `title` varchar(50) NOT NULL default '',
+          `comment` text NOT NULL default '',
+          `date` datetime NOT NULL default '0000-00-00 00:00:00',
+          `published` tinyint(1) NOT NULL default '0',
+          `ordering` int(11) NOT NULL default '0',
+		  `iduser` int(11) NOT NULL default '0',
+		  `subscribe` tinyint(1) NOT NULL default '0',
+		  `rating` tinyint(2) NOT NULL default '0',
+		  `currentlevelrating` tinyint(2) NOT NULL default '0',
+		  `lang` varchar(10) NOT NULL default 'en',
+		  `component` varchar(50) NOT NULL default 'com_content',
+          PRIMARY KEY  (`id`)
+        ) TYPE=MyISAM;
+      </query>
+	  <query>
+        CREATE TABLE IF NOT EXISTS `#__mxc_admcomments` (
+          `id` int(11) NOT NULL auto_increment,
+          `contentid` int(11) NOT NULL default '0',
+          `name` varchar(30) NOT NULL default '',
+          `title` varchar(50) NOT NULL default '',
+          `comment` text NOT NULL,
+          `date` datetime NOT NULL default '0000-00-00 00:00:00',
+          `published` tinyint(1) NOT NULL default '0',
+		  `iduser` int(11) NOT NULL default '0',
+		  `rating` tinyint(2) NOT NULL default '0',
+		  `currentlevelrating` tinyint(2) NOT NULL default '0',
+		  `component` varchar(50) NOT NULL default 'com_content',
+          PRIMARY KEY  (`id`)
+        ) TYPE=MyISAM;
+      </query>
+      <query>
+        CREATE TABLE IF NOT EXISTS `#__mxc_favoured` (
+          `id` int(11) NOT NULL auto_increment,
+          `id_content` int(11) NOT NULL default '0',
+          `id_user` int(11) NOT NULL default '0',
+          `ip` varchar(15) NOT NULL default '',
+          `date` datetime NOT NULL default '0000-00-00 00:00:00',
+          PRIMARY KEY  (`id`)
+        ) TYPE=MyISAM;
+      </query>
+      <query>
+        CREATE TABLE IF NOT EXISTS `#__mxc_badwords` (
+          `id` int(11) NOT NULL auto_increment,
+          `badword` varchar(20) NOT NULL default '',
+		  `published` tinyint(1) NOT NULL default '0',
+          PRIMARY KEY  (`id`)
+        ) TYPE=MyISAM;
+      </query>
+      <query>
+        CREATE TABLE IF NOT EXISTS `#__mxc_blockip` (
+          `id` int(11) NOT NULL auto_increment,
+          `ipblock` varchar(15) NOT NULL default '',
+		  `published` tinyint(1) NOT NULL default '1',
+          PRIMARY KEY  (`id`)
+        ) TYPE=MyISAM;
+      </query>
+    </queries>
+  </install> 
+  <installfile>install.maxcomment.php</installfile>
+  <uninstallfile>uninstall.maxcomment.php</uninstallfile>
+  <uninstall>
+  </uninstall>  
+  <params />
+</mosinstall>

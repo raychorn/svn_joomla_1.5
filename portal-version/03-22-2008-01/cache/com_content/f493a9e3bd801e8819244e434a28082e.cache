@@ -1,0 +1,163 @@
+a:3:{s:4:"body";s:15741:"	<script language="javascript" type="text/javascript">	
+		
+		function countlengthcomment(field, countFieldId, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(countFieldId);
+				if (field.value.length > maxlimit){ // if too long...trim it!
+					field.value = field.value.substring(0, maxlimit);
+					// otherwise, update 'characters left' counter
+				} else {
+					target.innerHTML = "Available characters: " +  (maxlimit - field.value.length);
+				}
+			}
+		}
+
+		
+		function showInputField(field, relative, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(field);	
+				target.style.display = "block";
+				target.innerHTML = "Available characters: " + (maxlimit - relative.value.length);		
+			}		
+		
+		}
+
+	</script>	
+
+<style type="text/css">
+.article_seperator{
+display:none !important;
+}
+</style>
+<table class="contentpane" width="100%" border="0" cellspacing="0" cellpadding="0" align="center"><tr><td>
+<div align="center">
+<strong>ALL</strong>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=0-9&amp;section=1&amp;cat=46&amp;Itemid=101' title='0-9'>0-9</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=a&amp;section=1&amp;cat=46&amp;Itemid=101' title='A'>A</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=b&amp;section=1&amp;cat=46&amp;Itemid=101' title='B'>B</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=c&amp;section=1&amp;cat=46&amp;Itemid=101' title='C'>C</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=d&amp;section=1&amp;cat=46&amp;Itemid=101' title='D'>D</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=e&amp;section=1&amp;cat=46&amp;Itemid=101' title='E'>E</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=f&amp;section=1&amp;cat=46&amp;Itemid=101' title='F'>F</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=g&amp;section=1&amp;cat=46&amp;Itemid=101' title='G'>G</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=h&amp;section=1&amp;cat=46&amp;Itemid=101' title='H'>H</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=i&amp;section=1&amp;cat=46&amp;Itemid=101' title='I'>I</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=j&amp;section=1&amp;cat=46&amp;Itemid=101' title='J'>J</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=k&amp;section=1&amp;cat=46&amp;Itemid=101' title='K'>K</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=l&amp;section=1&amp;cat=46&amp;Itemid=101' title='L'>L</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=m&amp;section=1&amp;cat=46&amp;Itemid=101' title='M'>M</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=n&amp;section=1&amp;cat=46&amp;Itemid=101' title='N'>N</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=o&amp;section=1&amp;cat=46&amp;Itemid=101' title='O'>O</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=p&amp;section=1&amp;cat=46&amp;Itemid=101' title='P'>P</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=q&amp;section=1&amp;cat=46&amp;Itemid=101' title='Q'>Q</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=r&amp;section=1&amp;cat=46&amp;Itemid=101' title='R'>R</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=s&amp;section=1&amp;cat=46&amp;Itemid=101' title='S'>S</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=t&amp;section=1&amp;cat=46&amp;Itemid=101' title='T'>T</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=u&amp;section=1&amp;cat=46&amp;Itemid=101' title='U'>U</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=v&amp;section=1&amp;cat=46&amp;Itemid=101' title='V'>V</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=w&amp;section=1&amp;cat=46&amp;Itemid=101' title='W'>W</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=x&amp;section=1&amp;cat=46&amp;Itemid=101' title='X'>X</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=y&amp;section=1&amp;cat=46&amp;Itemid=101' title='Y'>Y</a>
+|<a href='http://python.near-by.info/index.php?option=com_alphacontent&amp;alpha=z&amp;section=1&amp;cat=46&amp;Itemid=101' title='Z'>Z</a>
+</div>
+</td></tr></table>
+<br />
+<table class="contentpane" width="100%" border="0" cellspacing="0" cellpadding="0">
+<tr><td>
+<a href="http://python.near-by.info/index.php?option=com_alphacontent&amp;Itemid=101">Articles</a>  <img src="http://python.near-by.info/templates/rhuk_milkyway/images/arrow.png" border="0" alt="" />  <a href="http://python.near-by.info/index.php?option=com_alphacontent&amp;section=1&amp;Itemid=101">News</a>  <img src="http://python.near-by.info/templates/rhuk_milkyway/images/arrow.png" border="0" alt="" />  News Flash<br /><br /><p>Search by tag : <a href="index.php?option=com_search&searchword=Python&submit=search&searchphrase=any&ordering=newest">Python</a>, <a href="index.php?option=com_search&searchword=jobs&submit=search&searchphrase=any&ordering=newest">jobs</a>, <a href="index.php?option=com_search&searchword=resumes&submit=search&searchphrase=any&ordering=newest">resumes</a>, <a href="index.php?option=com_search&searchword=employers&submit=search&searchphrase=any&ordering=newest">employers</a>, <a href="index.php?option=com_search&searchword=employees&submit=search&searchphrase=any&ordering=newest">employees</a>, <a href="index.php?option=com_search&searchword=contractors&submit=search&searchphrase=any&ordering=newest">contractors</a></p></td></tr>
+</table>
+<br />
+<script type="text/javascript" language="javascript" src="http://python.near-by.info/components/com_alphacontent/js/behavior.js"></script>
+<script type="text/javascript" language="javascript" src="http://python.near-by.info/components/com_alphacontent/js/rating.js"></script><table><tr><td class="contentheading" width="100%">Python Cheese Shop Features !</td></tr></table>		<script language="JavaScript" type="text/JavaScript">	
+		<!--//--><![CDATA[//><!--
+			function mxclightup(imageobject, opacity){
+				 if ((navigator.appName.indexOf("Netscape")!=-1) && (parseInt(navigator.appVersion)>=5)){
+					imageobject.style.MozOpacity=opacity/100;
+				 } else if ((navigator.appName.indexOf("Microsoft")!= -1) && (parseInt(navigator.appVersion)>=4)){
+					imageobject.filters.alpha.opacity=opacity;
+				 }
+			}		
+		//--><!]]>
+		</script>
+		<link href="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/css/bubbles_acid_css.css" rel="stylesheet" type="text/css" />
+<div id="fullarticle">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="contentpaneopen">
+  <tr>
+    <td>
+	    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                <td>                    <p class="writtenby">Written by Admin,
+                                                                        on 16-03-2008 15:35&nbsp;&nbsp;<img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/new.gif" align="middle" alt="" /></p>
+                    </td>
+              </tr>
+                                          <tr>
+                <td><p class="viewshits">Views : 25</p></td>
+              </tr>
+                                          <tr>
+                <td><p class="viewsfavoured">Favoured : 1</p></td>
+              </tr>
+              	
+			                <tr>
+                <td height="20"><p class="publishedin_title">Published in : <span class="publishedsection"><a href="/index.php?option=com_content&amp;task=section&amp;id=1&amp;Itemid=50">News</a>,</span> <span class="publishedcategory"><a href="/index.php?option=com_content&amp;task=category&amp;sectionid=1&amp;id=46&amp;Itemid=50">News Flash</a></span></p></td>
+              </tr>
+			  				            </table>			
+			  <br /><a href="http://pypi.python.org/pypi/pyFargoReports" target="_blank"><span>pyFargoReports</span></a> Report for <a href="http://pypi.python.org/pypi/pyFargo" target="_blank"><span>pyFargo</span></a> - Use this to prove to the IRS where your money went !  Helps to itemize your expenses !<br />			  			  <p class="small">Last update : 16-03-2008 15:35</p>
+			  			</td>
+          </tr>
+		  <tr>
+		  <td><table border="0" cellspacing="6" cellpadding="0">
+            <tr>
+                            <td><a href="/index.php?option=com_maxcomment&amp;task=quote&amp;id=110&amp;lang="><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/quotethis.gif"  border="0" title="Quote this article in website" alt="Quote this article in website" /></a></td>
+                                          <td><a href="/index.php?option=com_maxcomment&amp;task=favoured&amp;id=110"><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/favoured.gif"  border="0" title="Favoured" alt="Favoured" /></a></td>
+                                                        <td><a href="http://python.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbi5uZWFyLWJ5LmluZm8vL2luZGV4LnBocD92aWV3PWFydGljbGUmaWQ9MTEwJm9wdGlvbj1jb21fY29udGVudCZJdGVtaWQ9NTA=" target="_blank" onclick="window.open('http://python.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbi5uZWFyLWJ5LmluZm8vL2luZGV4LnBocD92aWV3PWFydGljbGUmaWQ9MTEwJm9wdGlvbj1jb21fY29udGVudCZJdGVtaWQ9NTA=','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="Send to friend"><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/email.gif" border="0" alt="Send to friend" /></a></td>
+                                          <td><a href="/index.php?option=com_maxcomment&amp;task=related&amp;id=110"><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/relatedarticles.gif" border="0" title="Related articles" alt="Related articles" /></a></td>
+                                          <td><a href='http://del.icio.us/post?v=2&url=http%3A%2F%2Fpython.near-by.info%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D110%26amp%3BItemid%3D50&title=Python+Cheese+Shop+Features+%21'><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/delicious.gif" border="0"  title="Save this to del.icio.us" alt="Save this to del.icio.us" /></a></td>
+                          </tr>
+          </table></td>
+		  </tr>
+        </table>
+				
+		<br />
+	<table width="100%"  border="0" cellspacing="0" cellpadding="0">
+      <tr>
+        <td width="60%"><a name="usercomments"></a><span class="contentheading">Users' Comments&nbsp;&nbsp;<a href='index.php?option=com_maxcomment&task=feed&Itemid=50'><img src='http://python.near-by.info/components/com_maxcomment/images/rss.gif' border='0' style='vertical-align:middle;' alt='RSS feed comment' /></a></span></td>
+        <td width="40%">
+          <div align="right">&nbsp;</div></td>
+      </tr>
+      <tr>
+        <td><p class="titleAverageRating">Average user rating</p>
+          <p class="averageRating"></p></td>
+        <td>&nbsp;</td>
+      </tr>
+    </table>
+				
+		  </td>
+  </tr>
+</table>
+</div><p class='nocomment'>No comment posted</p><p class='linkaddcomment'><a href="http://python.near-by.info/index2.php?option=com_maxcomment&amp;task=addcomment&amp;id=110&amp;pop=1&amp;lang=&amp;Itemid=50" target="_blank" onclick="window.open('http://python.near-by.info/index2.php?option=com_maxcomment&amp;task=addcomment&amp;id=110&amp;pop=1&amp;lang=&amp;Itemid=50','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=700,height=500,directories=no,location=no'); return false;">Add your comment</a></p><br /><div style="clear:both;text-align:center;"><span class="small"><br />mXcomment 1.0.7&nbsp;&copy;&nbsp;2007-2008 - <a href="http://www.visualclinic.fr" target="_blank">visualclinic.fr</a><br />License <a rel="license" href="http://creativecommons.org/licenses/by-nc-nd/3.0/">Creative Commons</a> - Some rights reserved</span></div><table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+								</td>
+						<td align="right" width="100%" class="buttonheading">
+		<a href="/index.php?view=article%3B&amp;catid=46%3Anewsflash&amp;id=110%3Awhats-new-14&amp;format=pdf&amp;option=com_content&amp;Itemid=50" title="PDF" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;" rel="nofollow"><img src="/images/M_images/pdf_button.png" alt="PDF"  /></a>		</td>
+		
+				<td align="right" width="100%" class="buttonheading">
+		<a href="/index.php?view=article&amp;catid=46%3Anewsflash&amp;id=110%3Awhats-new-14&amp;tmpl=component&amp;print=1&amp;page=&amp;option=com_content&amp;Itemid=50" title="Print" onclick="window.open(this.href,'win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=640,height=480,directories=no,location=no'); return false;"><img src="/images/M_images/printButton.png" alt="Print"  /></a>		</td>
+		
+					</tr>
+</table>
+
+<table class="contentpaneopen">
+
+
+
+<tr>
+<td valign="top" colspan="2">
+	<div class="ratingblock"><div id="unit_long110"><div class="ratingbar">  <ul id="unit_ul110" class="unit-rating" style="width:80px;">     <li class="current-rating" style="width:80px;">Currently 5.00/5</li>     <li class="current-rating" style="width:80px;"></li><li><a href="components/com_alphacontent/alphacontent.db.php?j=1&amp;q=110&amp;t=66.249.67.92&amp;c=5&amp;u=16&amp;p=com_content&amp;lang=english&amp;user=0" title="1 out of 5" class="r1-unit rater" rel="nofollow">1</a></li><li><a href="components/com_alphacontent/alphacontent.db.php?j=2&amp;q=110&amp;t=66.249.67.92&amp;c=5&amp;u=16&amp;p=com_content&amp;lang=english&amp;user=0" title="2 out of 5" class="r2-unit rater" rel="nofollow">2</a></li><li><a href="components/com_alphacontent/alphacontent.db.php?j=3&amp;q=110&amp;t=66.249.67.92&amp;c=5&amp;u=16&amp;p=com_content&amp;lang=english&amp;user=0" title="3 out of 5" class="r3-unit rater" rel="nofollow">3</a></li><li><a href="components/com_alphacontent/alphacontent.db.php?j=4&amp;q=110&amp;t=66.249.67.92&amp;c=5&amp;u=16&amp;p=com_content&amp;lang=english&amp;user=0" title="4 out of 5" class="r4-unit rater" rel="nofollow">4</a></li><li><a href="components/com_alphacontent/alphacontent.db.php?j=5&amp;q=110&amp;t=66.249.67.92&amp;c=5&amp;u=16&amp;p=com_content&amp;lang=english&amp;user=0" title="5 out of 5" class="r5-unit rater" rel="nofollow">5</a></li>  </ul> </div>  <p>Rating <strong> 5.0</strong>/5 (1 vote)  </p></div></div></td>
+</tr>
+
+</table>
+<span class="article_separator">&nbsp;</span>
+";s:4:"head";a:10:{s:5:"title";s:29:"Python Cheese Shop Features !";s:11:"description";s:108:"python2.NEAR-BY.INFO (c). Copyright 2007-2008, Hierarchical Applications Limited, Inc., All Rights Reserved.";s:4:"link";s:0:"";s:8:"metaTags";a:2:{s:10:"http-equiv";a:1:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";}s:8:"standard";a:5:{s:6:"robots";s:13:"index, follow";s:8:"keywords";s:128:"python, ruby, microsoft, bigfix, sex, money, boobs, fastest language, php, coldfusion, perl, C#, vb, visual basic, visual studio";s:5:"title";s:29:"Python Cheese Shop Features !";s:6:"author";s:5:"Admin";s:11:"description";s:60:"       Currently 5.00/5     12345     Rating  5.0/5 (1 vote)";}}s:5:"links";a:0:{}s:11:"styleSheets";a:0:{}s:5:"style";a:0:{}s:7:"scripts";a:2:{s:28:"/media/system/js/mootools.js";s:15:"text/javascript";s:27:"/media/system/js/caption.js";s:15:"text/javascript";}s:6:"script";a:0:{}s:6:"custom";a:1:{i:0;s:118:"<link rel="stylesheet" type="text/css" href="http://python.near-by.info/components/com_alphacontent/css/rating.css" />";}}s:6:"module";a:0:{}}

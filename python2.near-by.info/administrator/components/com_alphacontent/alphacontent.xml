@@ -1,0 +1,224 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="component">
+  <name>alphacontent</name>
+  <creationDate>29 Feb 2008</creationDate>
+  <author>Bernard Gilly</author>
+  <copyright>2005-2008 - Bernard Gilly - This component is released under the Donationware License.</copyright>
+  <authorEmail>contact@visualclinic.fr</authorEmail>
+  <authorUrl>www.visualclinic.fr</authorUrl>
+  <version>3.0.3</version>
+  <description>Directory component with alphabetical indexes for Mambo/Joomla's content and weblinks component.</description>
+  <files>
+    <filename>alphacontent.php</filename>
+    <filename>alphacontent.html.php</filename>
+	<filename>alphacontent.class.php</filename>
+	<filename>alphacontent.layout.php</filename>
+	<filename>alphacontent.db.php</filename>
+	<filename>alphacontent.drawrating.php</filename>
+	<filename>alphacontent.rpc.php</filename>	
+	<filename>alphacontent.google_map.php</filename>	
+	<filename>sef_ext.php</filename>
+	<filename>index.html</filename>
+	<filename>includes/index.html</filename>
+	<filename>includes/alphacontent.functions.php</filename>
+	<filename>alphabet/index.html</filename>
+	<filename>alphabet/alpha0.php</filename>
+	<filename>alphabet/alpha1.php</filename>
+	<filename>alphabet/alpha2.php</filename>
+	<filename>alphabet/alpha3.php</filename>
+	<filename>alphabet/alpha3a.php</filename>
+	<filename>alphabet/alpha3b.php</filename>
+	<filename>alphabet/alpha4.php</filename>
+	<filename>alphabet/alpha5.php</filename>
+	<filename>alphabet/alpha6.php</filename>
+	<filename>alphabet/alpha7.php</filename>	
+	<filename>alphabet/alpha8.php</filename>
+	<filename>alphabet/alpha8a.php</filename>	
+	<filename>alphabet/alpha9.php</filename>
+	<filename>alphabet/alpha10.php</filename>
+	<filename>alphabet/alpha11.php</filename>
+	<filename>alphabet/alpha12.php</filename>
+	<filename>js/arc90_linkthumb.js</filename>	
+	<filename>js/litbox.js</filename>
+	<filename>js/prototype.js</filename>
+	<filename>js/index.html</filename>
+	<filename>js/dragdrop.js</filename>
+	<filename>js/effects.js</filename>
+	<filename>js/scriptaculous.js</filename>
+	<filename>js/rating.js</filename>
+	<filename>js/behavior.js</filename>
+	<filename>css/litbox.css</filename>
+	<filename>css/rating.css</filename>
+	<filename>css/index.html</filename>
+  </files>
+	 <images>
+	 	<filename>images/index.html</filename>
+		<filename>images/linkpic_shadow.gif</filename>		
+		<filename>images/closelabel.gif</filename>
+		<filename>images/handle.gif</filename>
+		<filename>images/new_english.gif</filename>
+		<filename>images/hot_english.gif</filename>
+		<filename>images/new_french.gif</filename>
+		<filename>images/hot_french.gif</filename>
+		<filename>images/new_german.gif</filename>
+		<filename>images/hot_german.gif</filename>
+		<filename>images/0-9.gif</filename>
+		<filename>images/0-9_2.gif</filename>
+		<filename>images/A.gif</filename>
+		<filename>images/A_2.gif</filename>
+		<filename>images/B.gif</filename>
+		<filename>images/B_2.gif</filename>
+		<filename>images/C.gif</filename>
+		<filename>images/C_2.gif</filename>
+		<filename>images/D.gif</filename>
+		<filename>images/D_2.gif</filename>
+		<filename>images/E.gif</filename>
+		<filename>images/E_2.gif</filename>
+		<filename>images/F.gif</filename>
+		<filename>images/F_2.gif</filename>
+		<filename>images/G.gif</filename>
+		<filename>images/G_2.gif</filename>
+		<filename>images/H.gif</filename>
+		<filename>images/H_2.gif</filename>
+		<filename>images/I.gif</filename>
+		<filename>images/I_2.gif</filename>
+		<filename>images/J.gif</filename>
+		<filename>images/J_2.gif</filename>
+		<filename>images/K.gif</filename>
+		<filename>images/K_2.gif</filename>
+		<filename>images/L.gif</filename>
+		<filename>images/L_2.gif</filename>
+		<filename>images/M.gif</filename>
+		<filename>images/M_2.gif</filename>
+		<filename>images/N.gif</filename>
+		<filename>images/N_2.gif</filename>
+		<filename>images/O.gif</filename>
+		<filename>images/O_2.gif</filename>
+		<filename>images/P.gif</filename>
+		<filename>images/P_2.gif</filename>
+		<filename>images/Q.gif</filename>
+		<filename>images/Q_2.gif</filename>
+		<filename>images/R.gif</filename>
+		<filename>images/R_2.gif</filename>
+		<filename>images/S.gif</filename>
+		<filename>images/S_2.gif</filename>
+		<filename>images/T.gif</filename>
+		<filename>images/T_2.gif</filename>
+		<filename>images/U.gif</filename>
+		<filename>images/U_2.gif</filename>
+		<filename>images/V.gif</filename>
+		<filename>images/V_2.gif</filename>
+		<filename>images/W.gif</filename>
+		<filename>images/W_2.gif</filename>
+		<filename>images/X.gif</filename>
+		<filename>images/X_2.gif</filename>
+		<filename>images/Y.gif</filename>
+		<filename>images/Y_2.gif</filename>
+		<filename>images/Z.gif</filename>
+		<filename>images/Z_2.gif</filename>
+		<filename>images/starrating.gif</filename>
+		<filename>images/working.gif</filename>
+	 </images>	
+  <administration>
+    <menu task="config">AlphaContent</menu>
+	 <files>
+	  	<filename>admin.alphacontent.php</filename>
+	  	<filename>admin.alphacontent.html.php</filename>
+	  	<filename>toolbar.alphacontent.php</filename>
+	  	<filename>toolbar.alphacontent.html.php</filename>
+		<filename>alphacontent_config.php</filename>
+		<filename>version.php</filename>
+		<filename>index.html</filename>
+		<filename>readme.html</filename>
+		<filename>js/index.html</filename>		
+		<filename>js/AnchorPosition.js</filename>		
+		<filename>js/ColorPicker2.js</filename>		
+		<filename>js/PopupWindow.js</filename>		
+		<filename>mambots/index.html</filename>		
+		<filename>mambots/content/index.html</filename>		
+		<filename>mambots/content/alphacontentbot.php</filename>
+		<filename>mambots/content/alphacontentbot.xml</filename>
+		<filename>languages/index.html</filename>
+		<filename>languages/french.php</filename>		
+		<filename>languages/english.php</filename>		
+		<filename>languages/german.php</filename>
+		<filename>languages/germani.php</filename>
+		<filename>languages/russian.php</filename>
+		<filename>languages/russianutf8.php</filename>
+		<filename>languages/arabic.php</filename>
+		<filename>languages/hungariani.php</filename>
+		<filename>languages/hungarian.php</filename>
+		<filename>languages/spanish.php</filename>	
+		<filename>languages/italian.php</filename>	
+		<filename>languages/brazilian_portuguese.php</filename>
+		<filename>languages/estonian.php</filename>
+		<filename>languages/czech.php</filename>	
+		<filename>languages/trad_chinese.php</filename>	
+		<filename>languages/turkish.php</filename>
+		<filename>languages/finnish.php</filename>
+		<filename>languages/dutch.php</filename>		
+     </files>
+	 <images>
+	 	<filename>images/index.html</filename>
+		<filename>images/warning.png</filename>
+		<filename>images/color.gif</filename>
+		<filename>images/alpha_icon.png</filename>
+	 	<filename>images/alphacontent.jpg</filename>
+	 </images>
+  </administration>
+	<params>
+		<param name="pageclass_sfx" type="text" size="20" default="" label="Page Class Suffix" description="A suffix to be applied to the css classes of the page, this allows individual page styling" />
+		<param name="sefAliasNameComponent" type="text" default="" label="Alias for component" description="Required: Alias for the component name if you use a SEF component. Must be identical to that of the setting SEF component." />
+		<param name="header" type="text" default="" label="Page title" description="Main page title" />
+		<param name="page_title" type="radio" default="1" label="Show title" description="Show/hide title on the main page">
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>
+		<param name="back_button" type="list" default="" label="Back button" description="Show/hide back button">
+			<option value="">Use global</option>
+			<option value="0">Hide</option>
+			<option value="1">Show</option>
+		</param>	
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="content_type" type="list" default="" label="Content" description="Select content">
+			<option value="">- Select content -</option>
+			<option value="0">Content item only</option>
+			<option value="1">Static content only</option>
+			<option value="2">Both</option>
+		</param>	
+		<param name="include_archived" type="radio" default="" label="Archived" description="Include archived item">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="sec_id" type="text" default="" label="Section ID" description="Selects items from a specific Section or set of Sections (to specify more than one Section, seperate with a comma , ). Blank for select all sections" />
+		<param name="cat_id" type="text" default="" label="Category ID" description="Selects items from a specific Category or set of Categories (to specify more than one Category, seperate with a comma , ). Blank for select all categories" />
+		<param name="show_weblinks" type="radio" default="" label="Show Weblinks" description="Show Weblinks as a section">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+   <install>
+    <queries>	  
+      <query>
+        CREATE TABLE IF NOT EXISTS `#__alphacontent_rating` (
+		  `ref` int(11) NOT NULL auto_increment,
+          `id` int(11) NOT NULL default '0',
+          `total_votes` int(11) NOT NULL default '0',
+		  `total_value` int(11) NOT NULL default '0',
+          `used_ips` longtext NOT NULL default '',
+		  `component` varchar(30) NOT NULL default '',
+		  `cid` int(11) NOT NULL default '0',
+		  `rid` int(11) NOT NULL default '0',
+          PRIMARY KEY  (`ref`)
+        ) TYPE=MyISAM;
+      </query>
+    </queries>
+  </install>
+  <installfile>install.alphacontent.php</installfile>
+  <uninstallfile>uninstall.alphacontent.php</uninstallfile>
+  <uninstall>
+    <queries>
+      <query>DELETE FROM `#__menu` WHERE link='index.php?option=com_alphacontent'</query>
+    </queries>
+  </uninstall>
+</mosinstall>

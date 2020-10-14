@@ -1,0 +1,211 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="module">
+<name>AJAX RSS Reader Version 2.2.8</name>
+<creationDate>02/27/2006</creationDate>
+<author>Marc Stroz</author>
+<copyright>This module its released under GNU/GPL license</copyright>
+<authorEmail>marc@stroz.com</authorEmail>
+<authorUrl>http://www.stroz.us</authorUrl>
+<version>2.2.8</version>
+	<description>
+		This is a RSS Reader that fetches the remote URL via PHP and AJAX and can 
+		individually control the refresh and URL.
+		This is version 2.2.8 of the document using simplepie RSS reader and adding some 
+		needed fields for more individual admin controls and tooltips of the descriptions.
+		Last update - 19 Feb 2007
+	</description>
+	<files>
+	<filename module="mod_dbrss2">mod_dbrss2.php</filename>
+	<filename>readRSS.php</filename>
+	<filename>cache/blank.txt</filename>
+	<filename>js/ajax.js</filename>
+	<filename>images/arrow_down.gif</filename>
+	<filename>images/arrow_right.gif</filename>
+	<filename>images/background.gif</filename>
+	<filename>images/background2.gif</filename>
+	<filename>images/bg_heading.gif</filename>
+	<filename>images/refresh.gif</filename>
+	<filename>images/small_arrow.gif</filename>
+	<filename>images/icon_comment.png</filename>
+	<filename>simplepie/simplepie.inc.php</filename>
+	<filename>simplepie/sp_compatibility_test.php</filename>
+	</files>
+	<params>
+		<param name ="columns" type="text" default="1" label="How many columns" description="How many columns?" />
+		<param name ="moveable" type="radio" default = "No" label="Movable Boxes" description= "Check the box to be able to move the boxes">
+	<option value="No">No</option>
+	<option value="Yes">Yes</option>
+	</param>
+		<param name ="cookie" type="radio" default = "0" label="Save Cookie per User (turn off for debuging)" description="Check the box to be able to save the cookie per user. Click no while your setting everything up and if desired yes when everything is working. Turn off for debuging." >
+	<option value="0">No</option>
+	<option value="1">Yes</option>
+	</param>
+	<param name ="pagecookie" type="text" default="ajaxrss" label="Cookie Name for Module" size="30" description="Cookie name. Make this unique if your using the module on multiple pages with different feeds. Just copy the module, change the cookie name and the feeds and cookie will not effect prior modules(EG. cookiename = page1 or page2 or page3"  />
+	<param name ="bannercolor" type="text" default="#E2EBED" label="Header BG Color" description="Header BG Color (eg. #E2EBED)" />
+	<param name ="bannerfont" type="text" default="#FFFFFF" label="Header Font Color" description="Header FONT Color (eg. #FFFFFF" />
+	<param name ="feedfont" type="text" default="#000000" label="Feed Font Color" description="Feed FONT Color (eg. #FFFFFF)" />
+	<param name ="feedbgcolor" type="text" default="#FFFFFF" label="Feed Background color" description="Feed Background Color (eg. #FFFFFF" />
+	<param name ="tooltipx" type="text" default="10" label="Tool Tip X offset" description="Tool Tip X offset. To move left, use a negative number (-20) and right a positive number)" />
+	<param name ="tooltipy" type="text" default="10" label="Tool Tip Y offset" description="Tool Tip Y offset. To move up, use a negative number (-20) and down a positive number)" />
+	<param name ="tooltip" type="radio" default = "No" label="Tool Tip" description= "Click yes if you want tool tip descriptions">
+	<option value="No">No</option>
+	<option value="Yes">Yes</option>
+	</param>
+	<param name ="tooltipconvert" type="radio" default = "No" label="Convert Tool Tip output" description= "If the tooltip is messing up the feed click here to apply htmlentities to it in hopes to fix it">
+	<option value="No">No</option>
+	<option value="Yes">Yes</option>
+	</param>
+	<param name ="addnew" type="radio" default = "No" label="Add new Feed block" description= "Click yes if you want tool display the Add new feed box on the front end for users">
+	<option value="No">No</option>
+	<option value="Yes">Yes</option>
+	</param>
+	<param name ="@spacer" type="spacer" />
+
+	<param name ="target1" type="text" label="URL 1" size="70" description="Type in the XML URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="refresh1" type="list" default="1" label="URL 1 Refresh rate" description ="Enter refresh time (Ex. .5 = 30 second. 5 = 5 min.)">
+	<option value="1">1 Minute</option>
+	<option value="2">2 Minutes</option>
+	<option value="3">3 Minutes</option>
+	<option value="4">4 Minutes</option>
+	<option value="5">5 Minutes</option>
+	<option value="6">6 Minutes</option>
+	<option value="7">7 Minutes</option>
+	<option value="8">8 Minutes</option>
+	<option value="9">9 Minutes</option>
+	<option value="10">10 Minutes</option>
+	<option value="30">30 Minutes</option>
+	</param>
+	<param name ="position1" type="text" default ="1" label="Which column?" description="From left to right. Which column (ie 1 2 3 4 ..)?" />
+	<param name ="height1" type="text" default="50" label="Height 1" size="10" description="Type in the box height in px (ex. if you want 80px put a 80 in the box. IT MUST BE 50 OR GREATER"  />
+	<param name ="item1" type="text" label="How many RSS Items for Box 1" size="10" description="Type in amount of feed items you want." />
+	<param name ="@spacer" type="spacer" />
+	
+	<param name ="target2" type="text" label="URL 2" size='70' description="Type in the XML URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="refresh2" type="list" default="1" label="URL 2 Refresh rate" value ="1" description="Enter refresh time (Ex. .5 = 30 second. 5 = 5 min.)">
+	<option value="1">1 Minute</option>
+	<option value="2">2 Minutes</option>
+	<option value="3">3 Minutes</option>
+	<option value="4">4 Minutes</option>
+	<option value="5">5 Minutes</option>
+	<option value="6">6 Minutes</option>
+	<option value="7">7 Minutes</option>
+	<option value="8">8 Minutes</option>
+	<option value="9">9 Minutes</option>
+	<option value="10">10 Minutes</option>
+	<option value="30">30 Minutes</option>
+	</param>
+	<param name ="position2" type="text" default ="1" label="Which column?" description="From left to right. Which column (ie 1 2 3 4 ..)?" />
+	<param name ="height2" type="text" default="50" label="Height 2" size="10" description="Type in the box height in px (ex. if you want 20px put a 20 in the box. IT MUST BE 50 OR GREATER" />
+	<param name ="item2" type="text" label="How many RSS Items for Box 2" size="10" description="Type in amount of feed items you want." />
+	<param name ="@spacer" type="spacer" />
+	<param name ="target3" type="text" label="URL 3" size='70' description="Type in the XML URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="refresh3" type="list" default="1" label="URL 3 Refresh rate" value ="1" description="Enter refresh time (Ex. .5 = 30 second. 5 = 5 min.)">
+	<option value="1">1 Minute</option>
+	<option value="2">2 Minutes</option>
+	<option value="3">3 Minutes</option>
+	<option value="4">4 Minutes</option>
+	<option value="5">5 Minutes</option>
+	<option value="6">6 Minutes</option>
+	<option value="7">7 Minutes</option>
+	<option value="8">8 Minutes</option>
+	<option value="9">9 Minutes</option>
+	<option value="10">10 Minutes</option>
+	<option value="30">30 Minutes</option>
+	</param>
+	<param name ="position3" type="text" default ="1" label="Which column?" description="FULL URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="height3" type="text" default="50" label="Height 3" size="10" description="Type in the box height in px (ex. if you want 20px put a 20 in the box. IT MUST BE 50 OR GREATER" />
+	<param name ="item3" type="text" label="How many RSS Items for Box 3" size="10" description="Type in amount of feed items you want." />
+	<param name ="@spacer" type="spacer" />
+	<param name ="target4" type="text" label="URL 4" size='70' description="Type in the XML URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="refresh4" type="list" default="1" label="URL 4 Refresh rate" value ="1" description="Enter refresh time (Ex. .5 = 30 second. 5 = 5 min.)">
+	<option value="1">1 Minute</option>
+	<option value="2">2 Minutes</option>
+	<option value="3">3 Minutes</option>
+	<option value="4">4 Minutes</option>
+	<option value="5">5 Minutes</option>
+
+
+	<option value="6">6 Minutes</option>
+	<option value="7">7 Minutes</option>
+	<option value="8">8 Minutes</option>
+	<option value="9">9 Minutes</option>
+	<option value="10">10 Minutes</option>
+	<option value="30">30 Minutes</option>
+	</param>
+	<param name ="position4" type="text" default ="1" label="Which column?" description="From left to right. Which column (ie 1 2 3 4 ..)?" />
+	<param name ="height4" type="text" default="50" label="Height 4" size="10" description="Type in the box height in px (ex. if you want 20px put a 20 in the box. IT MUST BE 50 OR GREATER" />
+	<param name ="item4" type="text" label="How many RSS Items for Box 4" size="10" description="Type in amount of feed items you want." />	
+	<param name ="@spacer" type="spacer" />
+	<param name ="target5" type="text" label="URL 5" size='70' description="Type in the XML URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="refresh5" type="list" default="1" label="URL 5 Refresh rate" value ="1" description="Enter refresh time (Ex. .5 = 30 second. 5 = 5 min.)">
+	<option value="1">1 Minute</option>
+	<option value="2">2 Minutes</option>
+	<option value="3">3 Minutes</option>
+	<option value="4">4 Minutes</option>
+	<option value="5">5 Minutes</option>
+	<option value="6">6 Minutes</option>
+	<option value="7">7 Minutes</option>
+	<option value="8">8 Minutes</option>
+	<option value="9">9 Minutes</option>
+	<option value="10">10 Minutes</option>
+	<option value="30">30 Minutes</option>
+	</param>
+	<param name ="position5" type="text" default ="1" label="Which column?" description="FULL URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="height5" type="text" default="50" label="Height 5" size="10" description="Type in the box height in px (ex. if you want 20px put a 20 in the box. IT MUST BE 50 OR GREATER" />
+	<param name ="item5" type="text" label="How many RSS Items for Box 5" size="10" description="Type in amount of feed items you want." />	
+	<param name ="@spacer" type="spacer" />
+	<param name ="target6" type="text" label="URL 6" size='70' description="Type in the XML URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="refresh6" type="list" default="1" label="URL 6 Refresh rate" value ="1" description="Enter refresh time (Ex. .5 = 30 second. 5 = 5 min.)">
+	<option value="1">1 Minute</option>
+	<option value="2">2 Minutes</option>
+	<option value="3">3 Minutes</option>
+	<option value="4">4 Minutes</option>
+	<option value="5">5 Minutes</option>
+	<option value="6">6 Minutes</option>
+	<option value="7">7 Minutes</option>
+	<option value="8">8 Minutes</option>
+	<option value="9">9 Minutes</option>
+	<option value="10">10 Minutes</option>
+	<option value="30">30 Minutes</option>
+	</param>
+	<param name ="position6" type="text" default ="1" label="Which column?" description="From left to right. Which column (ie 1 2 3 4 ..)?" />
+	<param name ="height6" type="text" default="50" label="Height 6" size="10" description="Type in the box height in px (ex. if you want 20px put a 20 in the box. IT MUST BE 50 OR GREATER" />
+	<param name ="item6" type="text" label="How many RSS Items for Box 6" size="10" description="Type in amount of feed items you want." />
+	<param name ="@spacer" type="spacer" />
+	<param name ="target7" type="text" label="URL 7" size='70' description="Type in the XML URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="refresh7" type="list" default="1" description="Enter refresh time (Ex. .5 = 30 second. 5 = 5 min." >
+	<option value="1">1 Minute</option>
+	<option value="2">2 Minutes</option>
+	<option value="3">3 Minutes</option>
+	<option value="4">4 Minutes</option>
+	<option value="5">5 Minutes</option>
+	<option value="6">6 Minutes</option>
+	<option value="7">7 Minutes</option>
+	<option value="8">8 Minutes</option>
+	<option value="9">3 Minutes</option>
+	<option value="10">10 Minutes</option>
+	<option value="30">30 Minutes</option>
+	</param>
+		<param name ="position7" type="text" default ="1" label="Which column?" description="From left to right. Which column (ie 1 2 3 4 ..)?" />
+	<param name ="height7" type="text" default="50" label="Height 7" size="10" description="Type in the box height in px (ex. if you want 20px put a 20 in the box. IT MUST BE 50 OR GREATER" />
+	<param name ="item7" type="text" label="How many RSS Items for Box 7" size="10" description="Type in amount of feed items you want." />
+	<param name ="@spacer" type="spacer" />
+	<param name ="target8" type="text" size='70' label="URL 8" description="Type in the XML URL (ex. http://rss.yahoo.com/rss/rss.xml)" />
+	<param name ="refresh8" type="list" default="1" description="Enter refresh time (Ex. .5 = 30 second. 5 = 5 min." >
+	<option value="1">1 Minute</option>
+	<option value="2">2 Minutes</option>
+	<option value="3">3 Minutes</option>
+	<option value="4">4 Minutes</option>
+	<option value="5">5 Minutes</option>
+	<option value="6">6 Minutes</option>
+	<option value="7">7 Minutes</option>
+	<option value="8">8 Minutes</option>
+	<option value="9">9 Minutes</option>
+	<option value="10">10 Minutes</option>
+	<option value="30">30 Minutes</option>
+	</param>
+		<param name ="position8" type="text" default ="1" label="Which column?" description="From left to right. Which column (ie 1 2 3 4 ..)?" />
+		<param name ="height8" type="text" default="50" label="Height 8" size="10" description="Type in the box height in px (ex. if you want 20px put a 20 in the box. IT MUST BE 50 OR GREATER" />
+	<param name ="item8" type="text" label="How many RSS Items for Box 8" size="10" description="Type in amount of feed items you want." />
+	</params>
+</mosinstall>

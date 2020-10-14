@@ -1,0 +1,581 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<install version="1.5.0" type="component">
+	<name>JoomlaWatch</name>
+	<creationDate>15 Mar 2008</creationDate>
+	<author>Matej Koval</author>
+	<copyright>Copyright 2007 by Matej Koval</copyright>
+	<authorEmail>foo@codegravity.com</authorEmail>
+	<authorUrl>http://www.codegravity.com</authorUrl>
+	<version>1.2.4</version>
+	<license>http://www.gnu.org/licenses/gpl-3.0.txt GNU/GPLv3</license>
+	<description>
+		JoomlaWatch is an AJAX component and module for Joomla CMS that allows you to watch
+		your website visitors and bots in real-time from the administration menu. Specially 
+		their IP addresses, countries they come from, which pages they are viewing, their 
+		browser and operating system, it creates daily and all-time stats from these 
+		information plus unique, pageload and total hits statistics. Furthermore, you can 
+		block harmful IP addresses and see blocked attempts stats.
+	</description>
+	<files>
+		<filename>class.ip2country.php</filename>
+		<filename>class.joomlawatch.php</filename>
+		<filename>class.joomlawatch.html.php</filename>
+		<filename>config.php</filename>
+		<filename>img.php</filename>
+		<filename>stats.php</filename>
+		<filename>visits.php</filename>
+		<filename>block.php</filename>
+
+		<filename>index.html</filename>
+
+		<filename>INSTALL.txt</filename>
+		<filename>LICENSE.txt</filename>
+		<filename>README.txt</filename>
+
+		<filename>js/fade.js</filename>
+
+		<filename>icons/blank.gif</filename>
+		<filename>icons/bsd.gif</filename>
+		<filename>icons/calendar.gif</filename>
+		<filename>icons/collapse.gif</filename>
+		<filename>icons/expand.gif</filename>
+		<filename>icons/explorer.gif</filename>
+		<filename>icons/firefox.gif</filename>
+		<filename>icons/joomlawatch-logo-16x16.gif</filename>
+		<filename>icons/joomlawatch-logo-16x16-blank.gif</filename>
+		<filename>icons/joomlawatch-logo-32x32.gif</filename>
+		<filename>icons/linux.gif</filename>
+		<filename>icons/mac.gif</filename>
+		<filename>icons/mozilla.gif</filename>
+		<filename>icons/opera.gif</filename>
+		<filename>icons/palm.gif</filename>
+		<filename>icons/progress_bar.gif</filename>
+		<filename>icons/progress_bar_hits.gif</filename>
+		<filename>icons/progress_bar_loads.gif</filename>
+		<filename>icons/progress_bar_unique.gif</filename>
+		<filename>icons/safari.gif</filename>
+		<filename>icons/sun.gif</filename>
+		<filename>icons/tab-none.gif</filename>
+		<filename>icons/tab-off.gif</filename>
+		<filename>icons/tab-on.gif</filename>
+		<filename>icons/unknown-os.gif</filename>
+		<filename>icons/windows.gif</filename>
+		<filename>icons/windows98.gif</filename>
+		<filename>icons/windowsnt.gif</filename>
+		<filename>icons/windowsvista.gif</filename>
+		<filename>icons/windowsxp.gif</filename>
+
+
+		<filename>flags/none.png</filename>
+		<filename>flags/ad.png</filename>
+		<filename>flags/ae.png</filename>
+		<filename>flags/af.png</filename>
+		<filename>flags/ag.png</filename>
+		<filename>flags/ai.png</filename>
+		<filename>flags/al.png</filename>
+		<filename>flags/am.png</filename>
+		<filename>flags/an.png</filename>
+		<filename>flags/ao.png</filename>
+		<filename>flags/aq.png</filename>
+		<filename>flags/ar.png</filename>
+		<filename>flags/as.png</filename>
+		<filename>flags/at.png</filename>
+		<filename>flags/au.png</filename>
+		<filename>flags/aw.png</filename>
+		<filename>flags/ax.png</filename>
+		<filename>flags/az.png</filename>
+		<filename>flags/ba.png</filename>
+		<filename>flags/bb.png</filename>
+		<filename>flags/bd.png</filename>
+		<filename>flags/be.png</filename>
+		<filename>flags/bf.png</filename>
+		<filename>flags/bg.png</filename>
+		<filename>flags/bh.png</filename>
+		<filename>flags/bi.png</filename>
+		<filename>flags/bj.png</filename>
+		<filename>flags/bm.png</filename>
+		<filename>flags/bn.png</filename>
+		<filename>flags/bo.png</filename>
+		<filename>flags/br.png</filename>
+		<filename>flags/bs.png</filename>
+		<filename>flags/bt.png</filename>
+		<filename>flags/bv.png</filename>
+		<filename>flags/bw.png</filename>
+		<filename>flags/by.png</filename>
+		<filename>flags/bz.png</filename>
+		<filename>flags/ca.png</filename>
+		<filename>flags/cc.png</filename>
+		<filename>flags/cd.png</filename>
+		<filename>flags/cf.png</filename>
+		<filename>flags/cg.png</filename>
+		<filename>flags/ch.png</filename>
+		<filename>flags/ci.png</filename>
+		<filename>flags/ck.png</filename>
+		<filename>flags/cl.png</filename>
+		<filename>flags/cm.png</filename>
+		<filename>flags/cn.png</filename>
+		<filename>flags/co.png</filename>
+		<filename>flags/cr.png</filename>
+		<filename>flags/cs.png</filename>
+		<filename>flags/cu.png</filename>
+		<filename>flags/cv.png</filename>
+		<filename>flags/cx.png</filename>
+		<filename>flags/cy.png</filename>
+		<filename>flags/cz.png</filename>
+		<filename>flags/de.png</filename>
+		<filename>flags/dj.png</filename>
+		<filename>flags/dk.png</filename>
+		<filename>flags/dm.png</filename>
+		<filename>flags/do.png</filename>
+		<filename>flags/dz.png</filename>
+		<filename>flags/ec.png</filename>
+		<filename>flags/ee.png</filename>
+		<filename>flags/eg.png</filename>
+		<filename>flags/eh.png</filename>
+		<filename>flags/er.png</filename>
+		<filename>flags/es.png</filename>
+		<filename>flags/et.png</filename>
+		<filename>flags/fi.png</filename>
+		<filename>flags/fj.png</filename>
+		<filename>flags/fk.png</filename>
+		<filename>flags/fm.png</filename>
+		<filename>flags/fo.png</filename>
+		<filename>flags/fr.png</filename>
+		<filename>flags/fx.png</filename>
+		<filename>flags/ga.png</filename>
+		<filename>flags/gb.png</filename>
+		<filename>flags/gd.png</filename>
+		<filename>flags/ge.png</filename>
+		<filename>flags/gf.png</filename>
+		<filename>flags/gg.png</filename>
+		<filename>flags/gh.png</filename>
+		<filename>flags/gi.png</filename>
+		<filename>flags/gl.png</filename>
+		<filename>flags/gm.png</filename>
+		<filename>flags/gn.png</filename>
+		<filename>flags/gp.png</filename>
+		<filename>flags/gq.png</filename>
+		<filename>flags/gr.png</filename>
+		<filename>flags/gs.png</filename>
+		<filename>flags/gt.png</filename>
+		<filename>flags/gu.png</filename>
+		<filename>flags/gw.png</filename>
+		<filename>flags/gy.png</filename>
+		<filename>flags/hk.png</filename>
+		<filename>flags/hm.png</filename>
+		<filename>flags/hn.png</filename>
+		<filename>flags/hr.png</filename>
+		<filename>flags/ht.png</filename>
+		<filename>flags/hu.png</filename>
+		<filename>flags/id.png</filename>
+		<filename>flags/ie.png</filename>
+		<filename>flags/il.png</filename>
+		<filename>flags/in.png</filename>
+		<filename>flags/io.png</filename>
+		<filename>flags/iq.png</filename>
+		<filename>flags/ir.png</filename>
+		<filename>flags/is.png</filename>
+		<filename>flags/it.png</filename>
+		<filename>flags/je.png</filename>
+		<filename>flags/jm.png</filename>
+		<filename>flags/jo.png</filename>
+		<filename>flags/jp.png</filename>
+		<filename>flags/ke.png</filename>
+		<filename>flags/kg.png</filename>
+		<filename>flags/kh.png</filename>
+		<filename>flags/ki.png</filename>
+		<filename>flags/km.png</filename>
+		<filename>flags/kn.png</filename>
+		<filename>flags/kp.png</filename>
+		<filename>flags/kr.png</filename>
+		<filename>flags/kw.png</filename>
+		<filename>flags/ky.png</filename>
+		<filename>flags/kz.png</filename>
+		<filename>flags/la.png</filename>
+		<filename>flags/lb.png</filename>
+		<filename>flags/lc.png</filename>
+		<filename>flags/li.png</filename>
+		<filename>flags/lk.png</filename>
+		<filename>flags/lr.png</filename>
+		<filename>flags/ls.png</filename>
+		<filename>flags/lt.png</filename>
+		<filename>flags/lu.png</filename>
+		<filename>flags/lv.png</filename>
+		<filename>flags/ly.png</filename>
+		<filename>flags/ma.png</filename>
+		<filename>flags/mc.png</filename>
+		<filename>flags/md.png</filename>
+		<filename>flags/me.png</filename>
+		<filename>flags/mg.png</filename>
+		<filename>flags/mh.png</filename>
+		<filename>flags/mk.png</filename>
+		<filename>flags/ml.png</filename>
+		<filename>flags/mm.png</filename>
+		<filename>flags/mn.png</filename>
+		<filename>flags/mo.png</filename>
+		<filename>flags/mp.png</filename>
+		<filename>flags/mq.png</filename>
+		<filename>flags/mr.png</filename>
+		<filename>flags/ms.png</filename>
+		<filename>flags/mt.png</filename>
+		<filename>flags/mu.png</filename>
+		<filename>flags/mv.png</filename>
+		<filename>flags/mw.png</filename>
+		<filename>flags/mx.png</filename>
+		<filename>flags/my.png</filename>
+		<filename>flags/mz.png</filename>
+		<filename>flags/na.png</filename>
+		<filename>flags/nc.png</filename>
+		<filename>flags/ne.png</filename>
+		<filename>flags/nf.png</filename>
+		<filename>flags/ng.png</filename>
+		<filename>flags/ni.png</filename>
+		<filename>flags/nl.png</filename>
+		<filename>flags/no.png</filename>
+		<filename>flags/np.png</filename>
+		<filename>flags/nr.png</filename>
+		<filename>flags/nu.png</filename>
+		<filename>flags/nz.png</filename>
+		<filename>flags/om.png</filename>
+		<filename>flags/pa.png</filename>
+		<filename>flags/pe.png</filename>
+		<filename>flags/pf.png</filename>
+		<filename>flags/pg.png</filename>
+		<filename>flags/ph.png</filename>
+		<filename>flags/pk.png</filename>
+		<filename>flags/pl.png</filename>
+		<filename>flags/pm.png</filename>
+		<filename>flags/pn.png</filename>
+		<filename>flags/pr.png</filename>
+		<filename>flags/ps.png</filename>
+		<filename>flags/pt.png</filename>
+		<filename>flags/pw.png</filename>
+		<filename>flags/py.png</filename>
+		<filename>flags/qa.png</filename>
+		<filename>flags/re.png</filename>
+		<filename>flags/ro.png</filename>
+		<filename>flags/rs.png</filename>
+		<filename>flags/rs.woa.png</filename>
+		<filename>flags/ru.png</filename>
+		<filename>flags/rw.png</filename>
+		<filename>flags/sa.png</filename>
+		<filename>flags/sb.png</filename>
+		<filename>flags/sc.png</filename>
+		<filename>flags/sd.png</filename>
+		<filename>flags/se.png</filename>
+		<filename>flags/sg.png</filename>
+		<filename>flags/sh.png</filename>
+		<filename>flags/si.png</filename>
+		<filename>flags/sj.png</filename>
+		<filename>flags/sk.png</filename>
+		<filename>flags/sl.png</filename>
+		<filename>flags/sm.png</filename>
+		<filename>flags/sn.png</filename>
+		<filename>flags/so.png</filename>
+		<filename>flags/sr.png</filename>
+		<filename>flags/st.png</filename>
+		<filename>flags/sv.png</filename>
+		<filename>flags/sy.png</filename>
+		<filename>flags/sz.png</filename>
+		<filename>flags/tc.png</filename>
+		<filename>flags/td.png</filename>
+		<filename>flags/tf.png</filename>
+		<filename>flags/tg.png</filename>
+		<filename>flags/th.png</filename>
+		<filename>flags/tj.png</filename>
+		<filename>flags/tk.png</filename>
+		<filename>flags/tl.png</filename>
+		<filename>flags/tm.png</filename>
+		<filename>flags/tn.png</filename>
+		<filename>flags/to.png</filename>
+		<filename>flags/tp.png</filename>
+		<filename>flags/tr.png</filename>
+		<filename>flags/tt.png</filename>
+		<filename>flags/tv.png</filename>
+		<filename>flags/tw.png</filename>
+		<filename>flags/tz.png</filename>
+		<filename>flags/ua.png</filename>
+		<filename>flags/ug.png</filename>
+		<filename>flags/um.png</filename>
+		<filename>flags/us.png</filename>
+		<filename>flags/uy.png</filename>
+		<filename>flags/uz.png</filename>
+		<filename>flags/va.png</filename>
+		<filename>flags/vc.png</filename>
+		<filename>flags/ve.png</filename>
+		<filename>flags/vg.png</filename>
+		<filename>flags/vi.png</filename>
+		<filename>flags/vn.png</filename>
+		<filename>flags/vu.png</filename>
+		<filename>flags/wf.png</filename>
+		<filename>flags/ws.png</filename>
+		<filename>flags/ye.png</filename>
+		<filename>flags/yt.png</filename>
+		<filename>flags/yu.png</filename>
+		<filename>flags/za.png</filename>
+		<filename>flags/zm.png</filename>
+		<filename>flags/zw.png</filename>
+
+		<filename>sql/joomlawatch-1.sql</filename>
+		<filename>sql/joomlawatch-2.sql</filename>
+		<filename>sql/joomlawatch-3.sql</filename>
+		<filename>sql/joomlawatch-4.sql</filename>
+		<filename>sql/joomlawatch-5.sql</filename>
+		<filename>sql/joomlawatch-6.sql</filename>
+		<filename>sql/joomlawatch-7.sql</filename>
+		<filename>sql/joomlawatch-8.sql</filename>
+		<filename>sql/joomlawatch-9.sql</filename>
+
+		<filename>sql/joomlawatch-10.sql</filename>
+		<filename>sql/joomlawatch-11.sql</filename>
+		<filename>sql/joomlawatch-12.sql</filename>
+		<filename>sql/joomlawatch-13.sql</filename>
+		<filename>sql/joomlawatch-14.sql</filename>
+		<filename>sql/joomlawatch-15.sql</filename>
+		<filename>sql/joomlawatch-16.sql</filename>
+		<filename>sql/joomlawatch-17.sql</filename>
+		<filename>sql/joomlawatch-18.sql</filename>
+		<filename>sql/joomlawatch-19.sql</filename>
+
+		<filename>sql/joomlawatch-20.sql</filename>
+		<filename>sql/joomlawatch-21.sql</filename>
+		<filename>sql/joomlawatch-22.sql</filename>
+		<filename>sql/joomlawatch-23.sql</filename>
+		<filename>sql/joomlawatch-24.sql</filename>
+		<filename>sql/joomlawatch-25.sql</filename>
+		<filename>sql/joomlawatch-26.sql</filename>
+		<filename>sql/joomlawatch-27.sql</filename>
+		<filename>sql/joomlawatch-28.sql</filename>
+		<filename>sql/joomlawatch-29.sql</filename>
+
+		<filename>sql/joomlawatch-30.sql</filename>
+		<filename>sql/joomlawatch-31.sql</filename>
+		<filename>sql/joomlawatch-32.sql</filename>
+		<filename>sql/joomlawatch-33.sql</filename>
+		<filename>sql/joomlawatch-34.sql</filename>
+		<filename>sql/joomlawatch-35.sql</filename>
+		<filename>sql/joomlawatch-36.sql</filename>
+		<filename>sql/joomlawatch-37.sql</filename>
+		<filename>sql/joomlawatch-38.sql</filename>
+		<filename>sql/joomlawatch-39.sql</filename>
+
+		<filename>sql/joomlawatch-40.sql</filename>
+		<filename>sql/joomlawatch-41.sql</filename>
+		<filename>sql/joomlawatch-42.sql</filename>
+		<filename>sql/joomlawatch-43.sql</filename>
+		<filename>sql/joomlawatch-44.sql</filename>
+		<filename>sql/joomlawatch-45.sql</filename>
+		<filename>sql/joomlawatch-46.sql</filename>
+		<filename>sql/joomlawatch-47.sql</filename>
+		<filename>sql/joomlawatch-48.sql</filename>
+		<filename>sql/joomlawatch-49.sql</filename>
+
+		<filename>sql/joomlawatch-50.sql</filename>
+		<filename>sql/joomlawatch-51.sql</filename>
+		<filename>sql/joomlawatch-52.sql</filename>
+		<filename>sql/joomlawatch-53.sql</filename>
+		<filename>sql/joomlawatch-54.sql</filename>
+		<filename>sql/joomlawatch-55.sql</filename>
+		<filename>sql/joomlawatch-56.sql</filename>
+		<filename>sql/joomlawatch-57.sql</filename>
+		<filename>sql/joomlawatch-58.sql</filename>
+		<filename>sql/joomlawatch-59.sql</filename>
+
+		<filename>sql/joomlawatch-60.sql</filename>
+		<filename>sql/joomlawatch-61.sql</filename>
+		<filename>sql/joomlawatch-62.sql</filename>
+		<filename>sql/joomlawatch-63.sql</filename>
+		<filename>sql/joomlawatch-64.sql</filename>
+		<filename>sql/joomlawatch-65.sql</filename>
+		<filename>sql/joomlawatch-66.sql</filename>
+		<filename>sql/joomlawatch-67.sql</filename>
+		<filename>sql/joomlawatch-68.sql</filename>
+		<filename>sql/joomlawatch-69.sql</filename>
+
+		<filename>sql/joomlawatch-70.sql</filename>
+		<filename>sql/joomlawatch-71.sql</filename>
+		<filename>sql/joomlawatch-72.sql</filename>
+		<filename>sql/joomlawatch-73.sql</filename>
+		<filename>sql/joomlawatch-74.sql</filename>
+		<filename>sql/joomlawatch-75.sql</filename>
+		<filename>sql/joomlawatch-76.sql</filename>
+		<filename>sql/joomlawatch-77.sql</filename>
+		<filename>sql/joomlawatch-78.sql</filename>
+		<filename>sql/joomlawatch-79.sql</filename>
+
+		<filename>sql/joomlawatch-80.sql</filename>
+
+	</files>
+
+	<install>
+		<queries>
+			<query>
+				DROP TABLE IF EXISTS `#__joomlawatch`;
+			</query>
+
+			<query>
+				CREATE TABLE `#__joomlawatch` (
+				`id` int auto_increment primary key,
+				`ip` varchar(255) default NULL,
+				`country` varchar(2) default NULL,
+				`browser` varchar(255) default NULL
+				);
+			</query>
+
+			<query>
+				alter table `#__joomlawatch` add INDEX (`ip`);
+			</query>
+
+			<query>
+				alter table `#__joomlawatch` add INDEX (`browser`);
+			</query>
+
+			<query>
+				DROP TABLE IF EXISTS `#__joomlawatch_config`;
+			</query>
+
+
+			<query>
+				CREATE TABLE `#__joomlawatch_config` (
+				`id` int auto_increment primary key,				
+				`name` varchar(255) default NULL,
+				`value` int default NULL
+				);
+			</query>
+			
+			<query>
+				alter table `#__joomlawatch_config` add INDEX (`name`);
+			</query>
+
+
+			<query>
+				DROP TABLE IF EXISTS `#__joomlawatch_info`;
+			</query>
+
+			<query>
+				CREATE TABLE `#__joomlawatch_info` (
+				`id` int auto_increment primary key,
+				`group` varchar(255) default NULL,
+				`date` varchar(255) default NULL,
+				`name` varchar(255) default NULL,
+				`value` int default NULL
+				);
+			</query>
+
+			<query>
+				alter table `#__joomlawatch_info` add INDEX (`group`);
+			</query>
+
+			<query>
+				alter table `#__joomlawatch_info` add INDEX (`name`);
+			</query>
+
+			<query>
+				alter table `#__joomlawatch_info` add INDEX (`date`);
+			</query>
+
+			<query>
+				DROP TABLE IF EXISTS `#__joomlawatch_ip2c`;
+			</query>
+
+			<query>
+				CREATE TABLE `#__joomlawatch_ip2c` (
+				`start` int(10) unsigned NOT NULL default '0',
+				`end` int(10) unsigned NOT NULL default '0',
+				`a2` char(2) NOT NULL default '',
+				`a3` char(3) NOT NULL default '',
+				`country` varchar(100) NOT NULL default ''
+				);
+			</query>
+
+			<query>
+				alter table `#__joomlawatch_ip2c` add PRIMARY KEY  (`start`,`end`);
+			</query>
+
+			<query>
+				DROP TABLE IF EXISTS `#__joomlawatch_uri`;
+			</query>
+
+
+			<query>
+				CREATE TABLE `#__joomlawatch_uri` (
+				`id` int auto_increment primary key,
+				`fk` int default NULL,
+				`timestamp` int default NULL,
+				`uri` varchar(255) default NULL,
+				`title` varchar(255) default NULL
+				);
+			</query>
+
+			<query>
+				ALTER TABLE `#__joomlawatch_uri` ADD INDEX ( `timestamp` );
+			</query>
+
+			<query>
+				DROP TABLE IF EXISTS `#__joomlawatch_blocked`;
+			</query>
+			
+			<query>
+				CREATE TABLE `#__joomlawatch_blocked` (
+				`id` int auto_increment primary key,
+				`ip` varchar(255) default NULL,
+				`hits` int default NULL
+				);
+			</query>
+
+			<query>
+				ALTER TABLE `#__joomlawatch_blocked` ADD INDEX ( `ip` );
+			</query>
+
+		</queries>
+	</install>
+
+	<installfile>install.joomlawatch.php</installfile>
+	<uninstallfile>uninstall.joomlawatch.php</uninstallfile>
+
+	<administration>
+		<menu>JoomlaWatch</menu>
+		<files>
+			<filename>admin.joomlawatch.php</filename>
+			<filename>admin.joomlawatch.html.php</filename>
+		</files>
+	</administration>
+</install>
+
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+			
+
+
+
+
+
+
+
+
+
+
+
+
+

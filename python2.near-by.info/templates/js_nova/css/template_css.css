@@ -1,0 +1,168 @@
+body, html { margin: 0;padding: 0;font: 14px/140% "Trebuchet MS", Tahoma, Verdana, Helvetica;color: #666;background-color: #eae5d6; }
+body { background: #FFF url(../images/body_bg.png) repeat-x center bottom;margin: 0;padding:0; }
+
+/* Basic link styles */
+
+a:link, a:visited { color: #2685c7; }
+
+/* @end Basic link styles */
+
+/* @group top menu bar */
+
+.topbar { background: url(../images/top_bg.png) repeat-x top;height: 162px;margin: 0;padding: 0; }
+#navcontainer { width:760px;margin: 0px auto; }
+ul#mainlevel-nav { list-style: none;margin: 0;padding: 0;height: 42px;border-left: 1px solid #0F6092; }
+ul#mainlevel-nav li { float: left;list-style: none;height: 42px;border-right: 1px solid #0F6092; }
+ul#mainlevel-nav li a { float: left;list-style: none;height: 42px;padding: 0px 20px;color: #fff;text-decoration: none;font: bold 14px/42px Arial, Helvetica, Geneva, sans-serif; }
+ul#mainlevel-nav li a:hover { float: left;list-style: none;height: 42px;padding: 0px 20px;color: #fff;text-decoration: none;font: bold 14px/42px Arial, Helvetica, Geneva, sans-serif;background: #000 url(../images/mainlevel_over.png) repeat-x 0 top; }
+
+/* @end group top menu bar */
+
+/* @group Header area & logo area */
+
+#header { background: url(../images/top_round.png) no-repeat center top;margin-top: 9px;height: 108px;width:760px; }
+
+#header h1 a { display: block;text-indent: -5000em;text-decoration: none;float: left;
+/* Adjust this line to change the size and position of the clickable logo (hot spot) area */
+margin: 10px 0px 0px 15px;height: 76px;width: 147px;
+/* End size adjustment line */
+background: url(../images/header.png) no-repeat center top; }
+
+#header h2 { margin: 0px 0px 0px 180px;padding-top: 10px;color: #206fa7;font: bold 26px "Lucida Grande", Lucida, Verdana, sans-serif; }
+#header h3 { margin: 0px 0px 0px 180px;padding: 0px;color: #333;font: bold 20px "Lucida Grande", Lucida, Verdana, sans-serif; }
+
+/* @end group Header area & logo area */
+
+/* @group Main content area*/
+
+.wrapper { width: 100%;margin: 0px;padding-bottom: 88px;background: url(../images/bottom_bg.png) no-repeat center bottom; }
+#mainbody { width: 760px;margin: 0px auto; }
+#mainbody .inside { padding:10px; }
+
+/* @end group Main content area */
+
+/*footer*/
+
+.footer { clear:both;text-align: center;position: relative;top: 50px;color: #939393;font: 11px Arial, Helvetica, Geneva, sans-serif; }
+
+/* @end footer */
+
+/* @group CONTENT HEADINGS */
+
+td.buttonheading a img { padding: 0px 0px 0px 4px;}
+
+/* @group Bottom teaser modules */
+div#user1_count1, div#user1_count2, div#user1_count3 { background: #eae5d6 url('../images/modcorner_user1.png') left top no-repeat; }
+div#user1_count2, div#user2_count2, div#user2_count3 { background: #ccc url('../images/modcorner_user2.png') left top no-repeat; }
+div#user3_count1, div#user3_count2, div#user3_count3 { background: #2685c7 url('../images/modcorner_user3.png') left top no-repeat; }
+div#user1_count1 h3, div#user1_count2 h3, div#user1_count3 h3,
+div#user2_count1 h3, div#user2_count2 h3, div#user2_count3 h3,
+div#user3_count1 h3, div#user3_count2 h3, div#user3_count3 h3 { text-indent:33px;padding:0 0 8px 0; }
+	
+div#user1_count1 { width:100%;float:left; }
+div#user2_count1 { width:100%;float:left; }
+div#user3_count1 { width:100%;float:left; }
+
+div#user1_count2 { width:50%;float:left; }
+div#user2_count2 { width:50%;float:left; }
+div#user3_count2 { width:50%;float:left; }
+
+div#user1_count3 { width:32%;float:left;margin-right:1%; }
+div#user2_count3 { width:32%;float:left;margin-right:1%; }
+div#user3_count3 { width:33%;float:left; }
+
+div.moduletablelight { padding: 5px; }
+div.moduletablelight .mostreadlight li a, div.moduletablelight .latestnewslight li a, div.moduletablelight p, div.moduletablelight a { color:#333;}
+div.moduletablelight li.mostreadlight { list-style:none; padding-bottom:3px; }
+div.moduletablelight li.latestnewslight { list-style:none; padding-bottom:3px; }
+div.moduletablelight ul.latestnewslight { list-style:none; margin:0; padding:0px 0px 0px 5px; }
+div.moduletablelight ul.mostreadlight { list-style:none; margin:0; padding:0px 0px 0px 5px; }
+div.moduletablelight h3 { color: #625E4F;padding: 0;margin: 0; }
+
+div.moduletablemid { padding: 5px; }
+div.moduletablemid .mostreadmid li a, div.moduletablemid .latestnewsmid li a, div.moduletablemid p, div.moduletablemid a { color:#333;}
+div.moduletablemid li.mostreadmid { list-style:none; padding-bottom:3px; }
+div.moduletablemid li.latestnewsmid { list-style:none; padding-bottom:3px; }
+div.moduletablemid ul.latestnewsmid { list-style:none; margin:0; padding:0px 0px 0px 5px; }
+div.moduletablemid ul.mostreadmid { list-style:none; margin:0; padding:0px 0px 0px 5px; }
+div.moduletablemid h3 {	color: #666;padding: 0;margin: 0; }
+
+div.moduletabledark { padding: 5px; }
+div.moduletabledark, div.moduletabledark .mostreaddark li a, div.moduletabledark .latestnewsdark li a, div.moduletabledark p, div.moduletabledark a { color:#fff;}
+div.moduletabledark li.mostreaddark { list-style:none; padding-bottom:3px;}
+div.moduletabledark li.latestnewsdark { list-style:none; padding-bottom:3px;}
+div.moduletabledark ul.latestnewsdark { list-style:none; margin:0; padding:0px 0px 0px 5px;}
+div.moduletabledark ul.mostreaddark { list-style:none; margin:0; padding:0px 0px 0px 5px;}
+div.moduletabledark h3 { color: #FFF;padding: 0;margin: 0; }
+
+/* @end group Bottom teaser modules */
+
+.right { display:none }/*end rounded modules*/
+
+/* @end group CONTENT HEADINGS */
+
+/* @group Joomla Styles */
+
+td.contentheading {	font: 1.5em "Lucida Grande", Lucida, Verdana, sans-serif;letter-spacing: -1px;color: #0093E3;width: 100%;overflow: hidden;}
+.componentheading {	font: 1.75em Helvetica, Arial, Verdana, serif;letter-spacing: -1px;color: #aaa38d;margin-bottom: 15px;}
+a.contentpagetitle, .contentpagetitle a, .contentpagetitle a:visited { color: #0093E3;letter-spacing: -1px;text-decoration: none;} 
+a.contentpagetitle:hover, .contentpagetitle a:hover { color: #333;letter-spacing: -1px;text-decoration: none;}
+.small, .modifydate, .createdate { color: #b6b6b6;font: .85em/.85em "Trebuchet MS", Tahoma, Verdana, Helvetica;}
+td.createdate { text-indent: 20px;line-height: 20px;background: url(../images/clock_edit.png) no-repeat left center;}
+td.modifydate { text-indent: 20px;line-height: 20px;background: url(../images/page_edit.png) no-repeat left center;border-top: 1px dotted #f2f2f2;}
+form { padding: 0;margin: 0;}
+a.readon {display: block;float: right;line-height: 12px;background: url(../images/readon.gif) no-repeat left center;text-indent: 16px;text-decoration: underline;}
+a.readon:hover { display: block;float: right;line-height: 12px;background: url(../images/readon.gif) no-repeat left center;text-indent: 16px;text-decoration: none;}
+div.syndicate div { padding: 1px;}
+td.buttonheading a img { padding: 0px 0px 0px 4px;}
+span.content_rating { color: #888;font-size: 10px;text-transform: uppercase;position: relative;top: 5px;}
+label { color: #8e8e8e;}
+div.mosimage { border: 1px solid #eaeaea;margin: 7px;}
+div.mosimage_caption { padding: 2px;background-color: #f7f7f7;border-top: 1px solid #eee;}
+span.content_rating img { padding-bottom: 10px;margin: 0px;}
+div.back_button a { color: #7f7f7f;background-color: #eaeaea;padding: 0px;position: relative;top: 10px;float: none;margin: 20px;height: 16px;display: block;width: 50px;text-align: center;line-height: 16px;text-transform: uppercase;font-variant: small-caps;font-size: 11px;border: 1px solid #c0c0c0;}
+th.pagenav_prev a { text-indent: -5000px;display: block;background: url(../images/next_prev.png) no-repeat 0px -44px;width: 94px;height: 22px;border: none;}
+th.pagenav_prev a:hover { text-indent: -5000px;display: block;background: url(../images/next_prev.png) no-repeat 0px -66px;width: 94px;height: 22px;border: none;}
+th.pagenav_next a { text-indent: -5000px;display: block;background: url(../images/next_prev.png) no-repeat 0px 0px;width: 94px;height: 22px;border: none;}
+th.pagenav_next a:hover { text-indent: -5000px;display: block;background: url(../images/next_prev.png) no-repeat 0px -22px;width: 94px;height: 22px;border: none;}
+input.button { color: #74AC00;padding: 4px;margin: 10px;font-size: 10px;background: url(../images/but_bg.png) repeat-x center center;border:1px solid #ccc;}
+div.message { color: #cd2800;font-size: 18px;font-weight: bold;}
+.inputbox { border: 1px solid #999;}
+.moduletable .inputbox { border: 1px solid #999;height: 14px;font: 11px Arial, Helvetica, Geneva, sans-serif;color: #333;}
+
+/* @end group Joomla Styles */
+
+/* @group Newsfeed Hacks */
+
+form table.contentpane tbody tr td ul { list-style: none;}
+form table.contentpane tbody tr td ul li { background: url(../images/feed.png) no-repeat;padding-left: 20px;line-height: 20px;text-decoration: none;color: #74AC00;}
+form table.contentpane tbody tr td ul li a:hover { color: #333;background: #fff;}
+#mainbody .inside form table.contentpane tbody tr td { width: auto;}
+
+/* @end group Newsfeed Hacks*/
+
+/* @group Joomla Tables */
+
+table.blog td { padding: 0;margin: 0;}
+table.contentpaneopen { margin: 0;padding: 0;width: 100%;}
+table table.contentpaneopen td, table table.contentpane td { margin: 0px 8px;padding: 0;width: 100%;}
+div.contentpane, div.contentpaneopen { width: 100%;}
+table.contentpaneopen, table.contentpane, table.blog, table.contentpaneopen td { border-collapse: collapse;padding: 3px;width: 99%;}
+body.contentpane { background: #fff;margin: 25px;}
+td.sectiontableheader { background: #0E5199 url(../images/sectblhdr.png) repeat-x top;color: #FFF;font-weight: bold;height: 22px;padding: 4px;}
+tr.sectiontableentry1 td { padding: 2px;background-color: #fbfbfb;text-align: left;border-bottom: 1px solid #fff;border-top: 1px solid #dfdfdf;}
+tr.sectiontableentry2 td { padding: 2px;background-color: #f3f3f3;text-align: left;border-top: 1px solid #dfdfdf;border-bottom: 1px solid #fff;}
+td.sectiontableentry1 { padding: 2px;background-color: #f8f8f8;}
+td.sectiontableentry2 { padding: 2px;background-color: #F2F2F2;}
+.sectiontableentry2 a, .sectiontableentry1 a, .sectiontableentry2 a.category, .sectiontableentry1 a.category { padding-left: 4px;text-decoration: none; }
+.sectiontableentry2 a:hover, .sectiontableentry1 a:hover, .sectiontableentry2 a.category:hover, .sectiontableentry1 a.category:hover { color: #333333;background: none;text-decoration: none; }
+span.pagenav { color: #ccc;}
+table.pollstableborder td { padding: 0;text-align: left;}
+.pollstableborder td, .pollstableborderS2 td, .pollstableborderS1 td, .pollstableborderS3 td { text-align: left;font: 0.87em/0.92em Arial, Helvetica, sans-serif;padding: 3px 0px 3px 5px;vertical-align: middle;}
+
+/* @end group Joomla Tables*/
+
+.designer {
+	color: #0E5199;
+	text-align: center;
+}

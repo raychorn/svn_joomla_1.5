@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="template" version="1.0.x">
+	<name>js_nova</name>
+	<creationDate></creationDate>
+	<author>Casey Lee :: Joomlashack.com</author>
+	<copyright>(C) JoomlaShack 2007</copyright>
+	<authorEmail>team@joomlashack.com</authorEmail>
+	<authorUrl>www.joomlashack.com</authorUrl>
+	<version>1.0</version>
+	<description>Free Joomla! template by joomlashack.</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>js/matching_columns.js</filename>
+		<filename>js/template.css.php</filename>
+		<filename>templateDetails.xml</filename>
+	</files>
+	<images>
+		<filename>images/arrow_right.gif</filename>
+		<filename>images/body_bg.png</filename>
+		<filename>images/bottom_bg.png</filename>
+		<filename>images/clock_edit.png</filename>
+		<filename>images/dark_box_bl.png</filename>
+		<filename>images/dark_box_br.png</filename>
+		<filename>images/dark_box_tl.png</filename>
+		<filename>images/dark_box_tr.png</filename>
+		<filename>images/emailButton.png</filename>
+		<filename>images/feed.png</filename>
+		<filename>images/header.png</filename>
+		<filename>images/indent1.png</filename>
+		<filename>images/indent2.png</filename>
+		<filename>images/indent3.png</filename>
+		<filename>images/light_box_bl.png</filename>
+		<filename>images/light_box_br.png</filename>
+		<filename>images/light_box_tl.png</filename>
+		<filename>images/light_box_tr.png</filename>
+		<filename>images/mainlevel_over.png</filename>
+		<filename>images/mid_box_bl.png</filename>
+		<filename>images/mid_box_br.png</filename>
+		<filename>images/mid_box_tl.png</filename>
+		<filename>images/mid_box_tr.png</filename>
+		<filename>images/mod_dark.png</filename>
+		<filename>images/mod_light.png</filename>
+		<filename>images/mod_mid.png</filename>
+		<filename>images/new.png</filename>
+		<filename>images/next_prev.png</filename>
+		<filename>images/nova.png</filename>
+		<filename>images/page_edit.png</filename>
+		<filename>images/pdf_button.png</filename>
+		<filename>images/printButton.png</filename>
+		<filename>images/rating_off.gif</filename>
+		<filename>images/rating_on.gif</filename>
+		<filename>images/rating_star.png</filename>
+		<filename>images/rating_star_blank.png</filename>
+		<filename>images/readon.gif</filename>
+		<filename>images/tick.png</filename>
+		<filename>images/top_bg.png</filename>
+		<filename>images/top_round.png</filename>
+		<filename>images/modcorner_user1.png</filename>
+		<filename>images/modcorner_user2.png</filename>
+		<filename>images/modcorner_user3.png</filename>
+		<filename>images/world.png</filename>
+		<filename>template_thumbnail.png</filename>
+	</images>
+	<css>
+		<filename>css/template_css.css</filename>
+	</css>
+</mosinstall>

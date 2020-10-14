@@ -1,0 +1,542 @@
+<?xml version="1.0"?>
+<mosinstall version="1.0.0" type="mambot" group="editors">
+	<name>joomlafck2</name>
+	<version>1.0.9</version>
+	<creationDate>26th October 2007</creationDate>
+	<author>Nick Miles - Database Developments Ltd</author>
+	<authorUrl>http://www.databasedevelopments.com/content/view/42/67/</authorUrl>
+	<authorEmail>nick@databasedevelopments.com</authorEmail>
+	<license>GPL</license>
+	<description><![CDATA[
+	FCKeditor for Joomla - <a href="http://www.databasedevelopments.com/content/view/42/67/" target="_blank">Click here for latest information</a>.
+	]]></description>
+	<files>
+<filename mambot="joomlafck2">joomlafck2.php</filename>
+<filename>joomlafck2.xml</filename>
+<filename>joomlafck2.js.php</filename>
+<filename>joomlafck2templates.xml.php</filename>
+<filename>joomlafck2styles.xml.php</filename>
+<filename>joomlafck2/fckconfig.js</filename>
+<filename>joomlafck2/fckeditor.js</filename>
+<filename>joomlafck2/fckpackager.xml</filename>
+<filename>joomlafck2/fckstyles.xml</filename>
+<filename>joomlafck2/fcktemplates.xml</filename>
+<filename>joomlafck2/license.txt</filename>
+<filename>joomlafck2/editor/fckdebug.html</filename>
+<filename>joomlafck2/editor/fckdialog.html</filename>
+<filename>joomlafck2/editor/fckeditor.html</filename>
+<filename>joomlafck2/editor/fckeditor.original.html</filename>
+<filename>joomlafck2/editor/css/fck_editorarea.css</filename>
+<filename>joomlafck2/editor/css/fck_internal.css</filename>
+<filename>joomlafck2/editor/css/fck_showtableborders_gecko.css</filename>
+<filename>joomlafck2/editor/css/behaviors/disablehandles.htc</filename>
+<filename>joomlafck2/editor/css/behaviors/showtableborders.htc</filename>
+<filename>joomlafck2/editor/css/images/block_address.png</filename>
+<filename>joomlafck2/editor/css/images/block_blockquote.png</filename>
+<filename>joomlafck2/editor/css/images/block_div.png</filename>
+<filename>joomlafck2/editor/css/images/block_h1.png</filename>
+<filename>joomlafck2/editor/css/images/block_h2.png</filename>
+<filename>joomlafck2/editor/css/images/block_h3.png</filename>
+<filename>joomlafck2/editor/css/images/block_h4.png</filename>
+<filename>joomlafck2/editor/css/images/block_h5.png</filename>
+<filename>joomlafck2/editor/css/images/block_h6.png</filename>
+<filename>joomlafck2/editor/css/images/block_p.png</filename>
+<filename>joomlafck2/editor/css/images/block_pre.png</filename>
+<filename>joomlafck2/editor/css/images/fck_anchor.gif</filename>
+<filename>joomlafck2/editor/css/images/fck_flashlogo.gif</filename>
+<filename>joomlafck2/editor/css/images/fck_hiddenfield.gif</filename>
+<filename>joomlafck2/editor/css/images/fck_pagebreak.gif</filename>
+<filename>joomlafck2/editor/dialog/fck_about.html</filename>
+<filename>joomlafck2/editor/dialog/fck_anchor.html</filename>
+<filename>joomlafck2/editor/dialog/fck_button.html</filename>
+<filename>joomlafck2/editor/dialog/fck_checkbox.html</filename>
+<filename>joomlafck2/editor/dialog/fck_colorselector.html</filename>
+<filename>joomlafck2/editor/dialog/fck_docprops.html</filename>
+<filename>joomlafck2/editor/dialog/fck_find.html</filename>
+<filename>joomlafck2/editor/dialog/fck_flash.html</filename>
+<filename>joomlafck2/editor/dialog/fck_form.html</filename>
+<filename>joomlafck2/editor/dialog/fck_hiddenfield.html</filename>
+<filename>joomlafck2/editor/dialog/fck_image.html</filename>
+<filename>joomlafck2/editor/dialog/fck_link.html</filename>
+<filename>joomlafck2/editor/dialog/fck_listprop.html</filename>
+<filename>joomlafck2/editor/dialog/fck_paste.html</filename>
+<filename>joomlafck2/editor/dialog/fck_radiobutton.html</filename>
+<filename>joomlafck2/editor/dialog/fck_replace.html</filename>
+<filename>joomlafck2/editor/dialog/fck_select.html</filename>
+<filename>joomlafck2/editor/dialog/fck_smiley.html</filename>
+<filename>joomlafck2/editor/dialog/fck_source.html</filename>
+<filename>joomlafck2/editor/dialog/fck_specialchar.html</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages.html</filename>
+<filename>joomlafck2/editor/dialog/fck_table.html</filename>
+<filename>joomlafck2/editor/dialog/fck_tablecell.html</filename>
+<filename>joomlafck2/editor/dialog/fck_template.html</filename>
+<filename>joomlafck2/editor/dialog/fck_textarea.html</filename>
+<filename>joomlafck2/editor/dialog/fck_textfield.html</filename>
+<filename>joomlafck2/editor/dialog/common/fck_dialog_common.css</filename>
+<filename>joomlafck2/editor/dialog/common/fck_dialog_common.js</filename>
+<filename>joomlafck2/editor/dialog/common/images/locked.gif</filename>
+<filename>joomlafck2/editor/dialog/common/images/reset.gif</filename>
+<filename>joomlafck2/editor/dialog/common/images/unlocked.gif</filename>
+<filename>joomlafck2/editor/dialog/fck_about/logo_fckeditor.gif</filename>
+<filename>joomlafck2/editor/dialog/fck_about/logo_fredck.gif</filename>
+<filename>joomlafck2/editor/dialog/fck_docprops/fck_document_preview.html</filename>
+<filename>joomlafck2/editor/dialog/fck_flash/fck_flash.js</filename>
+<filename>joomlafck2/editor/dialog/fck_flash/fck_flash_preview.html</filename>
+<filename>joomlafck2/editor/dialog/fck_image/fck_image.js</filename>
+<filename>joomlafck2/editor/dialog/fck_image/fck_image_preview.html</filename>
+<filename>joomlafck2/editor/dialog/fck_link/fck_link.js</filename>
+<filename>joomlafck2/editor/dialog/fck_select/fck_select.js</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/blank.html</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/controls.html</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/controlWindow.js</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/spellchecker.html</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/spellChecker.js</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/spellerStyle.css</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/wordWindow.js</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.cfm</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.php</filename>
+<filename>joomlafck2/editor/dialog/fck_spellerpages/spellerpages/server-scripts/spellchecker.pl</filename>
+<filename>joomlafck2/editor/dialog/fck_template/images/tempbluered.gif</filename>
+<filename>joomlafck2/editor/dialog/fck_template/images/template1.gif</filename>
+<filename>joomlafck2/editor/dialog/fck_template/images/template2.gif</filename>
+<filename>joomlafck2/editor/dialog/fck_template/images/template3.gif</filename>
+<filename>joomlafck2/editor/dialog/fck_template/images/tempredblue.gif</filename>
+<filename>joomlafck2/editor/dtd/fck_dtd_test.html</filename>
+<filename>joomlafck2/editor/dtd/fck_xhtml10strict.js</filename>
+<filename>joomlafck2/editor/dtd/fck_xhtml10transitional.js</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/browser.css</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/browser.html</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/frmactualfolder.html</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/frmcreatefolder.html</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/frmfolders.html</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/frmresourceslist.html</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/frmresourcetype.html</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/frmupload.html</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/ButtonArrow.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/Folder.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/Folder32.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/FolderOpened.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/FolderOpened32.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/FolderUp.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/spacer.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/ai.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/avi.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/bmp.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/cs.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/default.icon.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/dll.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/doc.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/exe.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/fla.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/gif.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/htm.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/html.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/jpg.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/js.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/mdb.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/mp3.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/pdf.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/png.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/ppt.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/rdp.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/swf.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/swt.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/txt.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/vsd.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/xls.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/xml.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/zip.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/ai.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/avi.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/bmp.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/cs.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/default.icon.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/dll.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/doc.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/exe.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/fla.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/gif.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/htm.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/html.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/jpg.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/js.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/mdb.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/mp3.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/pdf.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/png.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/ppt.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/rdp.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/swf.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/swt.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/txt.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/vsd.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/xls.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/xml.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/images/icons/32/zip.gif</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/js/common.js</filename>
+<filename>joomlafck2/editor/filemanager/browser/default/js/fckxml.js</filename>
+<filename>joomlafck2/editor/filemanager/connectors/test.html</filename>
+<filename>joomlafck2/editor/filemanager/connectors/uploadtest.html</filename>
+<filename>joomlafck2/editor/filemanager/connectors/php/basexml.php</filename>
+<filename>joomlafck2/editor/filemanager/connectors/php/commands.php</filename>
+<filename>joomlafck2/editor/filemanager/connectors/php/config.php</filename>
+<filename>joomlafck2/editor/filemanager/connectors/php/connector.php</filename>
+<filename>joomlafck2/editor/filemanager/connectors/php/io.php</filename>
+<filename>joomlafck2/editor/filemanager/connectors/php/phpcompat.php</filename>
+<filename>joomlafck2/editor/filemanager/connectors/php/upload.php</filename>
+<filename>joomlafck2/editor/filemanager/connectors/php/util.php</filename>
+<filename>joomlafck2/editor/images/anchor.gif</filename>
+<filename>joomlafck2/editor/images/arrow_ltr.gif</filename>
+<filename>joomlafck2/editor/images/arrow_rtl.gif</filename>
+<filename>joomlafck2/editor/images/spacer.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/angel_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/angry_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/broken_heart.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/cake.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/confused_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/cry_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/devil_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/embaressed_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/envelope.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/heart.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/kiss.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/lightbulb.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/omg_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/regular_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/sad_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/shades_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/teeth_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/thumbs_down.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/thumbs_up.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/tounge_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/whatchutalkingabout_smile.gif</filename>
+<filename>joomlafck2/editor/images/smiley/msn/wink_smile.gif</filename>
+<filename>joomlafck2/editor/js/fckeditorcode_gecko.js</filename>
+<filename>joomlafck2/editor/js/fckeditorcode_ie.js</filename>
+<filename>joomlafck2/editor/lang/af.js</filename>
+<filename>joomlafck2/editor/lang/ar.js</filename>
+<filename>joomlafck2/editor/lang/bg.js</filename>
+<filename>joomlafck2/editor/lang/bn.js</filename>
+<filename>joomlafck2/editor/lang/bs.js</filename>
+<filename>joomlafck2/editor/lang/ca.js</filename>
+<filename>joomlafck2/editor/lang/cs.js</filename>
+<filename>joomlafck2/editor/lang/da.js</filename>
+<filename>joomlafck2/editor/lang/de.js</filename>
+<filename>joomlafck2/editor/lang/el.js</filename>
+<filename>joomlafck2/editor/lang/en-au.js</filename>
+<filename>joomlafck2/editor/lang/en-ca.js</filename>
+<filename>joomlafck2/editor/lang/en-uk.js</filename>
+<filename>joomlafck2/editor/lang/en.js</filename>
+<filename>joomlafck2/editor/lang/eo.js</filename>
+<filename>joomlafck2/editor/lang/es.js</filename>
+<filename>joomlafck2/editor/lang/et.js</filename>
+<filename>joomlafck2/editor/lang/eu.js</filename>
+<filename>joomlafck2/editor/lang/fa.js</filename>
+<filename>joomlafck2/editor/lang/fi.js</filename>
+<filename>joomlafck2/editor/lang/fo.js</filename>
+<filename>joomlafck2/editor/lang/fr.js</filename>
+<filename>joomlafck2/editor/lang/gl.js</filename>
+<filename>joomlafck2/editor/lang/he.js</filename>
+<filename>joomlafck2/editor/lang/hi.js</filename>
+<filename>joomlafck2/editor/lang/hr.js</filename>
+<filename>joomlafck2/editor/lang/hu.js</filename>
+<filename>joomlafck2/editor/lang/it.js</filename>
+<filename>joomlafck2/editor/lang/ja.js</filename>
+<filename>joomlafck2/editor/lang/km.js</filename>
+<filename>joomlafck2/editor/lang/ko.js</filename>
+<filename>joomlafck2/editor/lang/lt.js</filename>
+<filename>joomlafck2/editor/lang/lv.js</filename>
+<filename>joomlafck2/editor/lang/mn.js</filename>
+<filename>joomlafck2/editor/lang/ms.js</filename>
+<filename>joomlafck2/editor/lang/nb.js</filename>
+<filename>joomlafck2/editor/lang/nl.js</filename>
+<filename>joomlafck2/editor/lang/no.js</filename>
+<filename>joomlafck2/editor/lang/pl.js</filename>
+<filename>joomlafck2/editor/lang/pt-br.js</filename>
+<filename>joomlafck2/editor/lang/pt.js</filename>
+<filename>joomlafck2/editor/lang/ro.js</filename>
+<filename>joomlafck2/editor/lang/ru.js</filename>
+<filename>joomlafck2/editor/lang/sk.js</filename>
+<filename>joomlafck2/editor/lang/sl.js</filename>
+<filename>joomlafck2/editor/lang/sr-latn.js</filename>
+<filename>joomlafck2/editor/lang/sr.js</filename>
+<filename>joomlafck2/editor/lang/sv.js</filename>
+<filename>joomlafck2/editor/lang/th.js</filename>
+<filename>joomlafck2/editor/lang/tr.js</filename>
+<filename>joomlafck2/editor/lang/uk.js</filename>
+<filename>joomlafck2/editor/lang/vi.js</filename>
+<filename>joomlafck2/editor/lang/zh-cn.js</filename>
+<filename>joomlafck2/editor/lang/zh.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/ChangeLog</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/config.inc.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/editor.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/editorFrame.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/fckplugin.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/icon.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/images.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/manager.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/newFolder.html</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/README.txt</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/thumbs.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/blank.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/dialog.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/editor.css</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/editor.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/EditorContent.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/editorFrame.css</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/editorFrame.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/hover.htc</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/ImageEditor.css</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/imagelist.css</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/images.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/manager.css</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/manager.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/pngbehavior.htc</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/popup.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/slider.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/wz_dragdrop.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/assets/wz_jsgraphics.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/api.watermark.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/Files.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/GD.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/IM.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/ImageEditor.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/ImageManager.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/NetPBM.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/package.xml</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/Thumbnail.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/Classes/Transform.php</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/2x2.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/2x2_w.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/backgroundGrid.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/btnFolderNew.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/btnFolderUp.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/btn_cancel.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/btn_ok.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/crop.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/default.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/div.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/dots.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/edit_active.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/edit_pencil.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/edit_trash.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/folder.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/hand.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/islocked2.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/locked.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/measure.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/noimages.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/replace.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/rotate.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/save.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/scale.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/spacer.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/transparentpixel.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/t_black.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/t_white.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/unlocked.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/unlocked2.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/watermark.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/watermarkAlign.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/watermarkColor.gif</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/watermark/devshed.png</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/watermark/imageManager.jpg</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/watermark/imageManager.png</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/img/watermark/natureWatermark.png</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/lang/de.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/lang/en.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/lang/fr.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/lang/nl.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/lang/no.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/lang/pl.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/lang/ru.js</filename>
+<filename>joomlafck2/editor/plugins/ImageManager/lang/sv.js</filename>
+<filename>joomlafck2/editor/plugins/JoomlaContent/fckplugin.js</filename>
+<filename>joomlafck2/editor/plugins/JoomlaContent/fck_joomlacontent.php</filename>
+<filename>joomlafck2/editor/plugins/JoomlaContent/joomlacontent.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/fck_dialog.css</filename>
+<filename>joomlafck2/editor/skins/aluminium/fck_editor.css</filename>
+<filename>joomlafck2/editor/skins/aluminium/fck_strip.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/background.dark.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/background.light.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/contextmenu.background.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/toolbar.arrowright.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/toolbar.background.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/toolbar.buttonarrow.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/toolbar.collapse.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/toolbar.end.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/toolbar.expand.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/toolbar.separator.gif</filename>
+<filename>joomlafck2/editor/skins/aluminium/images/toolbar.start.gif</filename>
+<filename>joomlafck2/editor/skins/default/fck_dialog.css</filename>
+<filename>joomlafck2/editor/skins/default/fck_editor.css</filename>
+<filename>joomlafck2/editor/skins/default/fck_strip.gif</filename>
+<filename>joomlafck2/editor/skins/default/images/toolbar.arrowright.gif</filename>
+<filename>joomlafck2/editor/skins/default/images/toolbar.buttonarrow.gif</filename>
+<filename>joomlafck2/editor/skins/default/images/toolbar.collapse.gif</filename>
+<filename>joomlafck2/editor/skins/default/images/toolbar.end.gif</filename>
+<filename>joomlafck2/editor/skins/default/images/toolbar.expand.gif</filename>
+<filename>joomlafck2/editor/skins/default/images/toolbar.separator.gif</filename>
+<filename>joomlafck2/editor/skins/default/images/toolbar.start.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/fck_dialog.css</filename>
+<filename>joomlafck2/editor/skins/office2003/fck_editor.css</filename>
+<filename>joomlafck2/editor/skins/office2003/fck_strip.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/images/toolbar.arrowright.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/images/toolbar.bg.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/images/toolbar.buttonarrow.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/images/toolbar.collapse.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/images/toolbar.end.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/images/toolbar.expand.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/images/toolbar.separator.gif</filename>
+<filename>joomlafck2/editor/skins/office2003/images/toolbar.start.gif</filename>
+<filename>joomlafck2/editor/skins/silver/fck_dialog.css</filename>
+<filename>joomlafck2/editor/skins/silver/fck_editor.css</filename>
+<filename>joomlafck2/editor/skins/silver/fck_strip.gif</filename>
+<filename>joomlafck2/editor/skins/silver/images/toolbar.arrowright.gif</filename>
+<filename>joomlafck2/editor/skins/silver/images/toolbar.buttonarrow.gif</filename>
+<filename>joomlafck2/editor/skins/silver/images/toolbar.buttonbg.gif</filename>
+<filename>joomlafck2/editor/skins/silver/images/toolbar.collapse.gif</filename>
+<filename>joomlafck2/editor/skins/silver/images/toolbar.end.gif</filename>
+<filename>joomlafck2/editor/skins/silver/images/toolbar.expand.gif</filename>
+<filename>joomlafck2/editor/skins/silver/images/toolbar.separator.gif</filename>
+<filename>joomlafck2/editor/skins/silver/images/toolbar.start.gif</filename>
+	</files>
+	<params>
+		<param name="@spacer" type="spacer" default="" label="Toolbar:" description="" />
+		<param name="wwidth" type="text" default="100%" label="Width" description="The width of editor, % or pixels" />
+		<param name="hheight" type="text" default="400" label="Height" description="The height of editor, % or pixels" />
+		<param name="skin" type="list" default="silver" label="Toolbar Skin" description="Choose your toolbar skin">
+			<option value="default">Default</option>
+			<option value="office2003">Office 2003</option>
+			<option value="silver">Silver</option>
+			<option value="aluminium">Aluminium</option>
+		</param>
+		<param name="toolbar" type="list" default="Default" label="Toolbar Buttons" description="Choose your toolbar button configuration">
+			<option value="Default">Default</option>
+			<option value="Basic">Basic</option>
+			<option value="Custom">Custom</option>
+		</param>
+		<param name="custom_line_1" type="textarea" rows="2" cols="85" label="Custom Toolbar Line 1" description="Only applies if you set the 'Toolbar Buttons' to 'Custom'. &lt;p&gt;IF YOU GET THIS WRONG YOU WILL GET JAVASCRIPT ERRORS.&lt;/p&gt;" default="['Source','Templates','Preview'], ['Cut','Copy','Paste','PasteText','PasteWord','-','Print','SpellCheck'], ['Undo','Redo','-','Find','Replace','-','SelectAll','RemoveFormat']" />
+		<param name="custom_line_2" type="textarea" rows="2" cols="85" label="Custom Toolbar Line 2" description="IF YOU GET THIS WRONG YOU WILL GET JAVASCRIPT ERRORS." default="['Bold','Italic','Underline','StrikeThrough','-','Subscript','Superscript'], ['OrderedList','UnorderedList','-','Outdent','Indent'], ['JustifyLeft','JustifyCenter','JustifyRight','JustifyFull'], ['JoomlaContent','Link','Unlink','Anchor'], ['Image','ImageManager','Flash','Table','Rule','Smiley','SpecialChar','PageBreak']" />
+		<param name="custom_line_3" type="textarea" rows="2" cols="85" label="Custom Toolbar Line 3" description="IF YOU GET THIS WRONG YOU WILL GET JAVASCRIPT ERRORS." default="['Style','FontFormat','FontName','FontSize'], ['TextColor','BGColor'], ['FitWindow','ShowBlocks','-','About']" />
+		<param name="@spacer" type="spacer" default="" label="Functionality:" description="" />
+		<param name="enter" type="list" default="br" label="Enter" description="New lines created by Enter will use this tag">
+ 			<option value="br">BR</option>
+			<option value="p">P</option>
+			<option value="div">DIV</option>
+ 		</param>
+		<param name="shift_enter" type="list" default="br" label="Shift Enter" description="New lines created by Shift-Enter will use this tag">
+ 			<option value="br">BR</option>
+			<option value="p">P</option>
+			<option value="div">DIV</option>
+ 		</param>
+		<param name="@spacer" type="spacer" default="" label="Styles:" description="Styles in the editor style list are now loaded from the specified CSS file.  Probably best to create a editor_content.css based on your template_css.css that just contains styles required for the editor.  Make sure any you don't have any styles in the editor CSS that aren't in the template CSS or they won't work when the content is viewed." />
+		<param name="content_css" type="radio" default="0" label="Use Template CSS?" description="First trys to find 'editor_content.css' from your current templates CSS folder, if that fails it trys 'template_css.css' from the same location.  Set to 'No' if setting a specific CSS file below.">
+ 			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+ 		<param name="content_css_custom" size="100" type="text" default="" label="Custom CSS file" description="Relative path to the css file you want loaded e.g. 'templates/your_template_name/css/css_file_name.css'."/>
+		<param name="text_direction" type="list" default="ltr" label="Text Direction" description="Change the text display direction">
+ 			<option value="ltr">Left to Right</option>
+ 			<option value="rtl">Right to Left</option>
+ 		</param>
+		<param name="@spacer" type="spacer" default="" label="Paths:" description="The defaults should match a standard Joomla installation" />
+		<param name="file_path" size="50" type="text" label="File Path" default="files/" description="File relative path, utilized in the 'Insert/Edit Link' dialog" />
+		<param name="image_path" size="50" type="text" label="Image Path" default="images/stories/" description="File relative path, utilized in the 'Insert/Edit Image' dialog" />
+		<param name="flash_path" size="50" type="text" label="Flash Path" default="flash/" description="Flash relative path, utilized in the 'Insert/Edit Flash' dialog" />
+		<param name="@spacer" type="spacer" default="" label="Language:" description="" />
+		<param name="auto_lang" default="1" type="radio" label="Autodetect language" description="Set to yes and FCKeditor will auto detect the users browser language">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="def_lang" type="list" default="en" label="Default language" description="Choose your default language, used if autodetect fails or if auto detect turned off.">
+			<option value="af">af</option>
+			<option value="ar">ar</option>
+			<option value="bg">bg</option>
+			<option value="bn">bn</option>
+			<option value="bs">bs</option>
+			<option value="ca">ca</option>
+			<option value="cs">cs</option>
+			<option value="da">da</option>
+			<option value="de">de</option>
+			<option value="el">el</option>
+			<option value="en-au">en-au</option>
+			<option value="en-ca">en-ca</option>
+			<option value="en-uk">en-uk</option>
+			<option value="en">en</option>
+			<option value="eo">eo</option>
+			<option value="es">es</option>
+			<option value="et">et</option>
+			<option value="eu">eu</option>
+			<option value="fa">fa</option>
+			<option value="fi">fi</option>
+			<option value="fo">fo</option>
+			<option value="fr">fr</option>
+			<option value="gl">gl</option>
+			<option value="he">he</option>
+			<option value="hi">hi</option>
+			<option value="hr">hr</option>
+			<option value="hu">hu</option>
+			<option value="it">it</option>
+			<option value="ja">ja</option>
+			<option value="km">km</option>
+			<option value="ko">ko</option>
+			<option value="lt">lt</option>
+			<option value="lv">lv</option>
+			<option value="mn">mn</option>
+			<option value="ms">ms</option>
+			<option value="nb">nb</option>
+			<option value="nl">nl</option>
+			<option value="no">no</option>
+			<option value="pl">pl</option>
+			<option value="pt-br">pt-br</option>
+			<option value="pt">pt</option>
+			<option value="ro">ro</option>
+			<option value="ru">ru</option>
+			<option value="sk">sk</option>
+			<option value="sl">sl</option>
+			<option value="sr-latn">sr-latn</option>
+			<option value="sr">sr</option>
+			<option value="sv">sv</option>
+			<option value="th">th</option>
+			<option value="tr">tr</option>
+			<option value="uk">uk</option>
+			<option value="vi">vi</option>
+			<option value="zh-cn">zh-cn</option>
+			<option value="zh">zh</option>
+		</param>
+		<param name="process_html_entities" default="1" type="radio" label="Convert Special Chars to HTML?" description="Specifies that the editor must convert all special characters available in the text to their relative HTML entities.  You can use the 'Include Latin Entities' and 'Include Greek Entities' settings to exclude some characters for the conversion.">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="include_latin_entities" default="1" type="radio" label="Include Latin Chars?" description="This setting tells the editor to convert accented Latin letters to their relative HTML entities. It is dependent on the 'Convert Special Chars to HTML' setting.">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="include_greek_entities" default="1" type="radio" label="Include Greek Chars?" description="This setting tells the editor to convert Greek letters to their relative HTML entities.  It is dependent on the 'Convert Special Chars to HTML' setting.">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="force_simple_ampersand" default="0" type="radio" label="Force Simple Ampersand?" description="Forces the editor to output simple ampersands (&) on attributes (like 'href' on links) instead of its relative HTML entity.">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="@spacer" type="spacer" default="" label="Templates:" description="Upload 100x70 preview images to siteroot/mambots/editors/joomlafck2/editor/dialog/fck_template/images" />
+		<param name="use_custom_templates" default="0" type="radio" label="Use custom templates?" description="Set to yes and the templates below will be used instead of the default ones.">
+			<option value="0">No</option>
+ 			<option value="1">Yes</option>
+ 		</param>
+		<param name="temp1_title" size="50" type="text" label="Template 1 Title" default="" description="Title for template 1" />
+		<param name="temp1_desc" size="100" type="text" label="Template 1 Desc" default="" description="Description for template 1" />
+		<param name="temp1_image" type="imagelist" directory="/mambots/editors/joomlafck2/editor/dialog/fck_template/images" default="" label="Template 1 Image" description="Preview image for template 1" hide_default="1"/>
+		<param name="temp1_html" type="textarea" cols="85" rows="5" label="Template 1 HTML" description="'br /' tags will be removed, use just 'br' or 'br/'" default="" />
+		<param name="temp2_title" size="50" type="text" label="Template 2 Title" default="" description="Title for template 2" />
+		<param name="temp2_desc" size="100" type="text" label="Template 2 Desc" default="" description="Description for template 2" />
+		<param name="temp2_image" type="imagelist" directory="/mambots/editors/joomlafck2/editor/dialog/fck_template/images" default="" label="Template 2 Image" description="Preview image for template 2" hide_default="1"/>
+		<param name="temp2_html" type="textarea" cols="85" rows="5" label="Template 2 HTML" description="'br /' tags will be removed, use just 'br' or 'br/'" default="" />
+		<param name="temp3_title" size="50" type="text" label="Template 3 Title" default="" description="Title for template 3" />
+		<param name="temp3_desc" size="100" type="text" label="Template 3 Desc" default="" description="Description for template 3" />
+		<param name="temp3_image" type="imagelist" directory="/mambots/editors/joomlafck2/editor/dialog/fck_template/images" default="" label="Template 3 Image" description="Preview image for template 3" hide_default="1"/>
+		<param name="temp3_html" type="textarea" cols="85" rows="5" label="Template 3 HTML" description="'br /' tags will be removed, use just 'br' or 'br/'" default="" />
+	</params>
+</mosinstall>

@@ -1,0 +1,18 @@
+<?xml version="1.0"?>
+<mosinstall type="module">
+	<name>Fireboard_latest</name>
+	<creationDate>22-May-2007</creationDate>
+	<author>MetZ</author>
+	<copyright>This module is released under the GNU/GPL License</copyright>    
+	<authorEmail>metz80@gmail.com</authorEmail>
+	<authorUrl>http://www.football-supporter.net</authorUrl>
+	<version>1.0</version>
+	<description>
+	Fireboard Latest Posts Module. This module uses the recentposts function built in to fireboard. Simply add it to a center position, and activate without title. To deside how many posts to show, go to fireboard component configuration under plugin, and recent posts. The module will use the same template you use on your forum. 
+	</description>
+	<files>
+	  <filename module="mod_fireboard_latest">mod_fireboard_latest.php</filename>
+	</files>
+	<params>					
+	</params>
+</mosinstall>

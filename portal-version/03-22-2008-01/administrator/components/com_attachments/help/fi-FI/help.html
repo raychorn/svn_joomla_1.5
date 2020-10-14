@@ -1,0 +1,236 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<title>Attachments Dokumentaatio</title>
+<link href="../../css/admin.css" type="text/css" rel="stylesheet">
+<link href="help.css" type="text/css" rel="stylesheet">
+</head>
+<body><a name="top" id="top"></a>
+<h1>Attachments Dokumentaatio</h1>
+<h3>Versio 1.2 - February 20, 2008</h3>
+<ol>
+<li><a href="#intro">Esittely</a></li>
+<li><a href="#uploads">Rajoitukset tallennuksessa</a></li>
+<li><a href="#options">Asetukset</a></li>
+<li><a href="#display_filename">Näytä tiedostojen nimet</a></li>
+<li><a href="#styling">Liitelistojen muotoilu</a></li>
+<li><a href="#icons">Tiedosto tyyppien kuvakkeet</a></li>
+<li><a href="#warnings">Varoitukset</a></li>
+<li><a href="#upgrading">Päivittäminen</a></li>
+<li><a href="#acknowledgements">Kiitokset</a></li>
+</ol>
+
+<h2><a name="intro"></a>Esittely</h2>
+<p>The &#039;Attachments&#039; - laajennus Joomla!:lle mahdollistaa tiedostojen liittämisen artikkeleihin.
+&#039;Attachments&#039; sisältää liitännäisen liitteiden näyttämiseksi ja komponentin liitteiden lataamista ja hallintaa varten.
+Asetuksista voi määrittää ketkä näkevät ja kuka voi lisätä liitteitä sekä monia muita käytettävyyttä parantavia valintoja.
+Huom!: Kaikki valinnat tehdään komponenttien hallinnan kautta. Tämä laajennus toimii vain Joomla! 1.5:ssa tai sitä uudemmassa versiossa.
+Tämä laajennus sisältää käännöksen sekä tukee englannin lisäksi seuraavia kieliä:</p>
+<ul>
+	<li>
+		<b>Kiina:</b> Perinteinen ja yksinkertaistettu kiina. Kääntäjä: baijianpeng (http://www.joomlagate.com). (Kiitos baijianpeng)
+	</li>
+    	<li>
+		<b>Hollanti:</b> Kääntäjä: Parvus. (Kiitos Parvus!)
+	</li>
+	<li>
+		<b>Suomi:</b> Kääntäjä: Tapani Lehtonen (www.tapanilehtonen.info). (Kiitos Tapani!)
+	</li>
+	<li>
+		<b>Norja:</b> Kääntäjä: Espen Gjelsvik. (Kiitos Espen!)
+	</li>
+	<li>
+		<b>Portugali/Brasilia:</b> Kääntäjät: Arnaldo Giacomitti (www.giacomitti.eng.br) ja Cauan Cabral (www.cauancabral.net).
+	</li>
+	<li>
+		<b>Espanja:</b> Kääntäjä: Carlos Alfaro. (Kiitos Carlos!)
+	</li>
+</ul>
+<p>Kiitos käännösten tekijöille! Jos haluat auttaa kääntämisessä muille kielille, ota yhteyttä tekijään (tiedot lopussa).</p>
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+
+<h2><a name="uploads">Rajoitukset latauksissa</a></h2>
+<p>Ihan mitä tahansa ei palvelimelle voi ladata. The &#039;Attachments&#039; ei salli Joomla! Media Managerissa määrittelemättömien tiedostojen lataamista palvelimelle.
+Muuttaaksesi asetuksia mene <b>Sivuston asetukset</b>-sivulla ja valitse <b>Järjestelmä</b>-välilehti.
+<i>Mediatiedostojen asetukset</i>-alueella voit hallita mitä tiedostotyyppejä ja MIME-tyylisiä tiedostoja voi palvelimelle ladata.
+The &#039;Attachments&#039; huomioi edellä asetettuja arvoja, mutta sallitut kuvatiedostotyypit-kenttää ei huomioida.</p>
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+
+<h2><a name="options">Asetukset</a></h2>
+<p>Kaikkia &#039;Attachments&#039;:n asetuksia säädetään komponentin oman hallinnan kautta. Tämä sijaitsee "Komponentit"-valikon alla sijaitsevassa "Liitetiedostot" nimisessä kohdassa. Valitse oikeassa reunassa oleva asetukset-nappi ja pääset muokkaamaan seuraavia komponentin asetuksia:</p>
+<ul>
+	<li>
+		<strong>Kenellä on oikeus nähdä liitteet:</strong> Tämä asetus määrittää kenellä on oikeus nähdä artikkelien liitetiedostot. Tällä hetkellä käytössä on kaksi vaihtoehtoa:
+		<ol>
+			<li>
+				&#039;<i>Kaikki</i>&#039; - Tämä tarkoittaa sitä että liitetiedostot näkyvät kaikille riippumatta siitä onko kirjautunut vai vieras.
+			</li>
+			<li>
+				&#039;<i>Kirjautuneet</i>&#039;. - Tämä tarkoittaa että käyttäjän tulee olla kirjautunut järjestelmään nähdäkseen liitetiedostot.
+			</li>
+		</ol>
+	</li>
+	<li>
+			<strong>Kenellä on oikeus lisätä liitteitä:</strong> Tämä asetus määrittää kenellä on oikeus lisätä liitetiedostoja artikkeleihin. Tällä hetkellä käytössä on kaksi vaihtoehtoa:
+		<ol>
+			<li>
+				&#039;<i>Vain artikkelin kirjoittaja</i>&#039; - Liitteiden lisäämistä varten esitettävät linkit näkyvät vain artikkelin kirjoittajalle.</li>
+			<li>
+				&#039;<i>Kuka vain kirjautunut</i>&#039; - Liitteiden lisäämistä varten esitettävät linkit näkyvät kaikille jotka ovat kirjautuneet järjestelmään.</li>
+		</ol>
+	</li>
+<li>
+	<strong>Liitteiden julkaisun oletusarvo:</strong>
+	Tämä valinta määrittää julkaistaanko uudet liitetiedostot automaattisesti lisäämisen jälkeen. Jos valintana on &#039;Kyllä&#039;, artikkelit ovat heti lisäämisen jälkeen näkyvissä käyttäjille. Jos valintana on &#039;Ei&#039;, tulee ylläpitäjän hyväksyä liitteen julkaisu hallintasivustolta ennen kuin tiedosto tulee näkyviin.
+</li><li>
+	<strong>Automaattisen julkaisun varoitus:</strong>
+	Jos liitteiden automaattinen julkaisu on oletusarvoisesti pois päältä (ylempi valinta), voit informoida liitteen lisääjää ettei liite näy ennen kuin ylläpito sen julkaisee. Jos kenttä jätetään tyhjäksi, näytetään järjestelmän oletusviesti jossa kehotetaan ottamaan yhteyttä ylläpitoon liitteen julkaisemiseksi.
+</li><li>
+	<strong>Näytä otsikot:</strong> Jos asetus on 'Kyllä', lisätään liitteen kuvauksien yläpuolelle otsikkorivi, joka kuvaa mitä sarakkeet tarkoittavat.
+</li><li>
+	<strong>Näytä liitteen kuvaus:</strong> Tämä asetus määrittää näytetäänkö liitteen kuvausta liitelistassa.
+</li><li>
+	<strong>Näytä liitteen koko:</strong> Tämä asetus määrittää näytetäänkö tiedoston kokoa liitelistassa.
+</li><li>
+	<strong>Näytä muutosten päivämäärä:</strong> Tämä asetus määrittää näytetäänkö viimeisimpien muutosten teon päivämäärä liitelistauksessa.
+</li><li>
+	<strong>Muutoksen päivän muoto:</strong> Tämä asetus määrittää näytettävän muutospäivämäärän muodon. Muoto määräytyy PHP:n date funktion mukaan. Tämä asetus on oletusarvoisesti muotoa "M-j-Y&nbsp;g:ia", joka näyttää suunnilleen: "Sep-29-2007 5:05pm" Jos haluat näyttää pelkän päivän, poista "g:ia" muodon lopusta. Suomessa tyypillisen formaatin saat laittamalla asetukseksi "j.n.y&nbsp;G.i", joka näyttää "24.12.07 16.01".
+	Lisätietoja: <a href="http://php.net/manual/en/function.date.php">http://php.net/manual/en/function.date.php</a>
+</li><li>
+	<strong>Tiedoston nimen suurin pituus:</strong>
+	Määrittää kuinka pitkä tiedoston nimi voi olla liitelistassa. Pidemmät nimet
+	typistetään ja typistetystä nimestä tulee näytettävä nimi (todellisuudessa tiedoston nimeä ei muuteta). 0-arvo merkitsee ettei tiedoston nimeä ole tässä rajoitettu. (tietokannassa tiedoston nimelle on varattu 80 merkkiä). Huom: Jos tiedoston nimeä lyhennetään tämän säännön vuoksi, lyhennetty tiedoston nimi tulee "näytettävä tiedoston nimi"-kenttään.
+</li><li>
+	<strong>Liitelistan CSS-tyyli:</strong> Tällä asetuksella voidaan ohittaa oletusarvoinen tyyli. Oletusarvoinen tyylin nimi on 'attachmentList'. Katso Lisätietoja:<a href="#styling">[Liitetiedostojen muotoilu]</a>.
+</li><li>
+	<strong>Liitetiedoston avaustyyli:</strong>
+	Tämä asetus määrittää kuinka liitetiedostot avataan. 'Samassa ikkunassa' tarkoittaa että liite avataan samaan selainikkunaan kuin itse linkki on. 'Uuteen ikkunaan' tarkoittaa että liitettä varten selain avaa uuden ikkunan tai välilehden.
+</li><li>
+	<strong>Lisää etuliite tiedoston nimeen:</strong> Asetus määrittää laitetaanko tiedoston nimen alkuun numeerinen etuliite kun se tallennetaan palvelimelle. Vaihtoehtoja tälle asetukselle on kolme:
+<ol>
+	<li>
+		&#039;<i>Artikkelin ID</i>&#039; - Tämä valinta lisää tiedoston nimen alkuun artikkelin tunnistenumeron. Tämän valinnan etuina ovat eri puolilla esiintyvien saman nimisten artikkelien erottuminen sekä liitteitä listattaessa saman artikkelin liitteiden esiintyminen peräkkäin. Huomioi että tämä mahdollistaa saman nimisten artikkeleiden käytön eri artikkeleissa (samassa artikkelissa ei kuitenkaan voi olla saman tiedostonimen omaavia liitteitä).</li>
+	<li>
+		&#039;<i>Liitteen ID</i>&#039; - Tämä valinta lisää tiedoston nimen alkuun liitetiedoston tunnistenumeron. Tämä estää ristiriidat saman nimisten tiedostojen välillä koska kaikilla liitetiedostoilla on yksilöllinen tunnistenumero. Listattaessa liitteet asettuvat tunnistenumeron mukaiseen järjestykseen.</li>
+	<li>
+		&#039;<i>Ei mitään</i>&#039; - Jos tämä valitaan, tiedoston nimen eteen ei lisätä tunnistetta vaan tallennetaan sellaisenaan. Tämä aiheuttaa ristiriidan jos kaksi saman nimistä tiedostoa esiintyy. Kaikilla liitetiedostoilla tulee olla  ainutlaatuinen nimi.
+	</li>
+</ol>
+</li>
+
+<li>
+	<strong>Latauksien alihakemisto:</strong> &#039;Attachments&#039; laajennus tallettaa llitteet tähän alihakemistoon, joka sijaitsee Joomla!:n päähakemistossa. <i>VAROITUS: Jos tätä muutetaan, tulee uusi hakemisto luoda manuaalisesti ennen kuin seuraava liite lisätään.</i> Tämä ei vaikuta jo tehtyihin siirtoihin. Vanhat liitteet säilyvät vanhassa hakemistossa ja tietokannan viittaukset säilyvät muuttumattomina.
+</li><li>
+	<strong>Muokatut otsikot liitelistoille:</strong>
+	Oletusarvoisesti &#039;Attachments&#039;-laajennus otsikoi liitelistauksen tekstillä "Liitteet:". Jos tarve vaatii, voidaan tämä otsikko vaihtaa joksikin sopivammaksi, kuten: "Lataukset:". Tämän voi tehdä esimerkiksi artikkeliin 211 lisäämällä asetuksiin (ilman lainausmerkkejä): &#039;211&nbsp;Lataukset&#039;. Yksi sääntö riviä kohden.
+</li><li>
+	<strong>Piilota liitteet seuraavista:</strong>
+Pilkuin eroteltu lista avainsanoista ja pääryhmistä/ryhmistä joiden liitelistat tulisi piilottaa. Käytössä on kaksi erityista avainsanaa: 'frontpage' estää liitteiden näkymisen etusivulla ja 'all_but_article_views' näyttää liitteet vain artikkelinäkymässä. (Älä käytä lainausmerkkejä näiden avainsanojen yhteydessä.) Pääryhmien ja ryhmien tunnisteet tulee kirjoittaa numeerisessa muodossa ja kenolla (/= erotettuina: Pääryhmä#/ryhmä#, pääryhmä#/ryhmä#. Käytä pelkkää pääryhmän tunnistetta kattaaksesi kaikki pääryhmän liitteet. Esimerkiksi: 23/10, 23/11, 24
+</li><li>
+	<strong>Turvattu liitteiden lataus:</strong>
+	Oletusarvoisesti liitetiedostot tallennetaan julkisesti käytettävään alihakemistoon. Jos valittuna on <i>Turvattu</i> vaihtoehto, alihakemisto ei ole julkinen ja tiedostojen latauspolku on eri kuin mitä käyttäjät näkevät. Tämä estää tiedostojen joutumisen niiden käsiin, joilla ei ole oikeutta siihen. Jos <i>Turvattu</i> vaihtoehto ei ole valittuna, tiedostoihin pääsee käsiksi kaikki jotka tietävät oikean URL-osoitteen, koska alihakemisto on suojaamaton.
+	HUOM!: Turvatussa tilassa liitteiden listaus ei ole käytössä ellei käyttäjä ole kirjautuneena järjestelmään.
+</li><li>
+	<strong>Turvattujen tiedostojen lataamistapa:</strong>
+	Tämä määrittää tuleeko tiedostojen olla ladattavissa tiedostoina vai selainikkunassa (jos selain osaa käsitellä tiedostotyyppiä). Vaihtoehtoja on kaksi:
+	<ul>
+		<li><i>&#039;Selaimessa&#039;</i>: Tässä tilassa liitteet jotka voidaan, näytetään selaimessa. Jos selain ei osaa näyttää, tiedosto ladataan erillisenä tiedostona! </li>
+		<li><i>&#039;Tiedostona&#039;</i>: Liitteet ladataan aina erillisenä tiedostoina. </li>
+	</ul>
+</li>
+</ul>
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+
+<h2><a name="display_filename"></a>Näytettävä tiedoston nimi</h2>
+<p>Yleensä kun liitteet on ladattu palvelimelle, näkyy liitelistassa liitetiedoston koko nimi. Joissain tapauksissa liitetiedostojen nimi saattaa olla liian pitkä näytettäväksi. Latauslomakkeessa on erillinen 'Näytettävä tiedoston nimi'-kenttä, johon liitettä palvelimelle siirtävä voi kirjoittaa oikean tiedoston nimen sijaan näytettävän nimen tai otsikon.
+Esimerkiksi, tiedoston nimeen liittyviä lyhenteitä voidaan käyttää tässä. Ylläpitäjät voivat muokata arvoa jälkikäteen ylläpitonäkymässä.
+Huom!: Asetuksissa voidaan määrittää kuinka pitkä näytettävän tiedoston nimi voi olla. Tätä arvoa pidemmät nimet lyhennetään automaattisesti ja lyhennetty nimi tulee näytettäväksi nimeksi.</p>
+
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+
+<h2><a name="styling"></a>Liitelistojen tyyli</h2>
+<p>Liitelistaukset käyttöliittymässä tehdään käyttämällä erityisiä &#039;div&#039;:jä jotka sisältävät taulukon liitteitä varten. Taulukkoon on kytketty useita eri CSS luokkia jotka mahdollistavat ulkoasun helpon muokkauksen sivuston ylläpitäjän toimesta. Katso Attachments liitännäisen tyylitiedostosta (löytyy: plugins/content/attachments.css) mallia. Jos haluat muuttaa tyyliä, harkitse alkuperäisten tyylien kopioimista tiedoston loppuun eri nimellä muuttamalla 'attachmentList' joksikin muuksi. Liitännäisten hallinnassa vaihda Attachment liitännäisen <i>Liitetaulukon muoto</i> parametriin uusi nimi. Sitten muokkaa luokan määritteitä sopivaksi kopioimastasi osasta. Tämä mahdollistaa sen että voit nopeasti palauttaa alkuperäisen ulkoasun vaihtamalla aiemmin muuttamasi parametrin takaisin alkuperäiseen arvoonsa, &#039;attachmentList&#039;.
+Etuna on myös se että voit kopioida muokatut tyylit eri tiedostoon ja palauttaa ne kun päivität Attachment laajennuksen uuteen versioon. Tämän voi toteuttaa myös käyttämällä CSS:n komentoa @import.</p>
+
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+
+<h2><a name="icons"></a>Tiedostotyyppien kuvakkeet</h2>
+<p>'Attachments' laajennus lisää liitelistoissa kunkin tiedoston eteen kuvakkeen. Jos haluat lisätä uuden kuvaketyypin toimi seuraavasti:
+(1) Lisää sopiva kuvake hakemistoon 'media/attachments/icons' ellei se ole jo siellä.
+(2) Muokkaa tiedostoa 'components/com_attachments/file_types.php' ja lisää soveltuva rivi jonoon
+ $attachments_icon_from_file_extension joka osoittaa tiedoston päätteen kuvakkeen nimeen (kaikki media/attachments/icons hakemistossa). Jos tämä ei toimi suoraan, tulee matriisiin $attachments_icon_from_mime_type. lisätä sopiva rivi.
+(3) Ota kopiot kuvaketiedostosta ja päivitetystä file_types.php:sta ennenkuin päivität 'Attachment' laajennusta!</p>
+
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+
+<h2><a name="warnings"></a>Varoitukset</h2>
+<ul>
+<li>
+	<strong>Mikäli sinulla on arkaluonteisia tai yksityisiä tiedostoja, käytä <i>Turvattu lataus valintaa!</i></strong><br> Mikäli et tee näin, tallentuu tiedostot julkisesti avoimeen hakemistoon josta kuka tahansa, joka tietää oikean URL-osoitteen, voi sen ladata. <i>Turvattu</i> vaihtoehto suojaa tiedostoa niiltä joilla ei siihen ole oikeutta (määritelty yllä). Katso lisätietoja 'Turvattu tiedoston siirto'-valinnasta yläpuolelta.
+</li><li>
+	Joka kerta kun tiedostoa siirretään palvelimelle, lataushakemiston olemassaolo tarkistetaan ja luodaan tarvittaessa. Jos &#039;Attachments&#039; laajennus ei voi luoda lataushakemistoa automaattisesti se tulee luoda manuaalisesti (ja tämä voi aiheuttaa ongelmia tiedostojen siirrossa palvelimelle). Varmista että annat lataushakemistolle soveltuvat oikeudet tiedostojen tallettamiseen. Unix/Linux ympäristössä 744 pitäisi toimia.
+</li><li>
+	Jos tämä laajennus ei salli sinun tallettaa tietyn tyylisiä tiedostoja palvelimelle (esimerkiksi zip-tiedostoja), huomioi että Media Manageriin asetetut rajoitukset tiedostoille ovat voimassa. Tämä siksi että näin voidaan estää vahingollisten tiedostotyyppien, kuten html ja php, lisäämisen suoraan artikkeliin. Ylläpitäjillä on oikeus muuttaa asetuksia hyväksyttävistä tiedostotyypeistä hallintapaneelin kautta. Sivusto -> sivuston asetukset -> järjestelmä -> Mediatiedostojen asetukset.
+</li><li>
+	Toinen lisäosa, 'add_attachment_btn_plugin' (nimetty 'Button - AddAttachment':ksi lisäosien hallinnassa) mahdollistaa liitteiden lisäämisen artikkeli teko- ja editointivaiheessa. Tämä lisäosa luo muokkausikkunan alapuolelle painikkeen jolla komponenttia voidaan käyttää. Jos olet asentanut lisäosan ja komponentin oikein, mutta painiketta ei näy, tarkista että se on kytketty käyttöön lisäosien hallinnasta. Huom! Painike tulee näkyviin vasta kun artikkeli on ensimmäisen kerran tallennettu, koska lisääminen poistaa tallentamattomat muutokset.
+</li><li>
+	Tämä versio näyttää toimivan oikein hakukoneystävällisten url-osoitteiden (SEF) kanssa Joomla! 1.5:n RC3 ja RC4 versioiden kanssa. Päivitykset aiempien versioiden kanssa eivät välttämättä toimi oikein.
+</li>
+</ul>
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+
+<h2><a name="upgrading"></a>Päivittäminen</h2>
+Mikäli haluat päivittää 'Attachment'-lisäosan siten että liitteet säilyvät, toimi seuraavasti:
+<ol>
+	<li>
+		Käytä phpMyAdmin:ia (tai jotain muuta SQL työkalua) tallentaaksesi jos_attachments taulukon sisällön (käytä &#039;vienti&#039;-toimintoa (export)).
+	</li><li>
+		Poista vanha &#039;Attachments&#039; komponentin asennus.
+	</li><li>
+		Poista vanha &#039;Attachments&#039; lisäosan asennus.
+	</li><li>
+		Asenna uusi versio purkamalla paketti ja asentamalla ensin lisäosat ja sitten komponentti.
+	</li><li>
+		Ota &#039;Attachments&#039; lisäosat uudelleen käyttöön.
+	</li><li>
+		Palauta aiemmin phpMyAdmin:lla (tai muulla SQL-työkalulla) tallentamasi tiedot uudelleen luotuun jos_attachments taulukkoon.
+	</li><li>
+		Jos päivität vanhemmasta versiosta kuin 1.0 uudempaan ja sinulla on vanhoja liitteitä, tulee sopivat arvot lisätä uuteen &#039;icon_filename&#039; -kenttään kirjautumalla järjestelmään ylläpitoon ylläpitäjän tunnuksin ja menemällä selaimella seuraavaan osoitteeseen: <br>
+		<b>/administrator/index.php?option=com_attachments&amp;task=add_icon_filenames</b>
+	</li>
+</ol>
+<p>Huomioi että poistaessasi &#039;Attachments&#039; laajennuksen poistat viitteet tietokannasta, mutta itse tiedostot säilyvät tallennushakemistossa. Tämän vuoksi päivitettäessä tulee sovellukseen liittyvä tietokannan taulukko kopioida ja palauttaa jotta viitteet vanhoihin liitetiedostoihin säilyy. Mikäli viittauksia vanhoihin liitteisiin ei haluta säilyttää, ei viitetietoja tarvitse tallettaa.</p>
+
+<p>Mikäli päätät olla säilyttämättä viitteitä, poista kaikki vanhat liitetiedostot lataushakemistosta myöhempien nimiristiriitojen välttämiseksi.</p>
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+
+<h2><a name="acknowledgements"></a>Kiitokset:</h2>
+Kiitos seuraaville osanottajille ja tietolähteille:
+<ul>
+    <li>
+	Kirja <i>Learning Joomla! 1.5 Extension Development: Creating Modules, Components, and Plugins with PHP</i>; Kirjoittajana: Joseph L. LeBlanc - Paljon apua 'Attachments' laajennuksen luomisessa.
+    </li>
+    <li>Tiedostotyyppien kuvakkeet ovat peräisi seuraavista lähteistä::
+       <ul>
+	<li>
+		<a href="http://www.famfamfam.com/lab/icons/silk/">Mark James:n The Silk icons (http://www.famfamfam.com/lab/icons/silk/)</a>
+	</li><li>
+		<a href="http://www.zap.org.au/documents/icons/file-icons/sample.html">John Zaitseff:n File-Type Icons 1.2  (http://www.zap.org.au/documents/icons/file-icons/sample.html)</a>
+	</li><li>
+		<a href="http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html">Timothy Groves:n Doctype Icons 2  (http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html)</a>
+	</li><li>
+		<a href="http://www.catnip.co.uk/opendocument/icons/">Pete Harlow:n OpenDocument kuvakkeet (http://www.catnip.co.uk/opendocument/icons/)</a>
+	</li></ul>
+       <br>
+    </li>
+</ul>
+<p>Huomioitavaa on että useimpia 'Attachments':n kuvakkeista on muokattu yllä olevista lähteistä peräisin olevista kuvakkeista. Alkuperäisiä kuvakkeita hakiessasi, vieraile yllä mainituissa osoitteissa.</p>
+<span class="atop"><a href="#top">[Takaisin yläosaan]</a></span>
+<p>Ole hyvä ja lähetä palautteet ja havaitsemasi virheet (englanniksi): <a href="mailto:jmcameron@jmcameron.net">jmcameron@jmcameron.net</a>.</p>
+<p>
+    <a href="http://validator.w3.org/check?uri=referer"><img src="http://www.w3.org/Icons/valid-html401" alt="Valid HTML 4.01 Transitional" height="31" width="88"></a>
+</p>
+</body>
+</html>

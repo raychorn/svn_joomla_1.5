@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mosinstall type="component" version="1.0.0">
+	<name>serrbizvmcookiepatch</name>
+	<author>SerrBiz</author>
+	<creationDate>Oct 2007</creationDate>
+	<copyright>(c) 2007 SerrBiz.</copyright>
+	<license>GPL</license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0. beta</version>
+	<description>This component is patch for virtue mart 1.0.12 cookie issue.</description>
+
+  <install>
+  </install>
+  <uninstall>
+  </uninstall>
+  
+  <administration>
+    <files>      
+		<filename>ps_session.php</filename>
+		<filename>install.serrbizvmcookiepatch.php</filename>  
+		<filename>uninstall.serrbizvmcookiepatch.php</filename>  
+		<filename>serrbiz_vm_cookie_patch.php</filename>
+		<filename>serrbizvmcookiepatch.xml</filename>
+    </files>
+  </administration>
+  <installfile>install.serrbizvmcookiepatch.php</installfile>
+  <uninstallfile>uninstall.serrbizvmcookiepatch.php</uninstallfile>  
+</mosinstall>

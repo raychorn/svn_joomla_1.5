@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="module">
+	<name>BlogRush Widget Module</name>
+	<author>Information Madness</author>
+	<creationDate>Septemeber 19, 2007</creationDate>
+	<copyright>www.informationmadness.com</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>joomla@informationmadness.com</authorEmail>
+	<authorUrl>http://www.informationmadness.com/cms</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[ Recently launched <a target="_blank" href="http://www.blogrush.com/r11519775">BlogRush</a>, a content syndication network that claims to be capable of sending free, targeted traffic to your blog. <p>This widget will get links to related articles from other blogs in your niche. But don't get affraid, the links will open up in a new window so you will not loose your visitor. <p>Similarly, your blog's links will be displayed on other blog's widgets. So if you have 100 pageviews/day, your link will be displayed 100 times/day on other websites.</p><p>Check out the <a target="_blank" href="http://www.blogrush.com/r11519775">BlogRush website</a> for more details & video Demo. Register yourself at <a target="_blank" href="http://www.blogrush.com/r11519775">BlogRush</a>, get your blogrush_feed ID and enter it in this module. Make sure you change the BlogRush ID before publishing your module </p>
+		]]></description>
+	<files>
+		<filename module="mod_blogrush">mod_blogrush.php</filename>
+	</files>	
+	<params>
+	    <param name="blogrushId" type="text" default="14262087" label="BlogRush ID" description="Enter the ID given by BlogRush Widget Code."/>
+	</params>
+</mosinstall>

@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="content">
+    <name>Content - autoMetaDescSEO</name>
+    <author>Dao By Design</author>
+    <creationDate>January 2008</creationDate>
+    <copyright>Copyright (C) 2008 Dao By Design</copyright>
+    <license>GNU/GPL</license>
+    <authorEmail>info@daobydesign.com</authorEmail>
+    <authorUrl>www.daobydesign.com</authorUrl>
+    <version>1.0</version>
+    <description>This plugin automatically generates description meta tags from content to help with SEO. Currently the only parameter is the ability to set how long the description should be.</description>
+    <files>
+        <filename plugin="autoMetaDescSEO_1.0">autoMetaDescSEO_1.0.php</filename>
+    </files>
+	<params>
+        <param name="length" type="text" size="5" default="200" label="Length" description="The length of the description (in characters)"/>        
+    </params>
+</install>

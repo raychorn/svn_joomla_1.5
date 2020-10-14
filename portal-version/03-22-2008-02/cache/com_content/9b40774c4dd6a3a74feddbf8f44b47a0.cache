@@ -1,0 +1,123 @@
+a:3:{s:4:"body";s:6781:"	<script language="javascript" type="text/javascript">	
+		
+		function countlengthcomment(field, countFieldId, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(countFieldId);
+				if (field.value.length > maxlimit){ // if too long...trim it!
+					field.value = field.value.substring(0, maxlimit);
+					// otherwise, update 'characters left' counter
+				} else {
+					target.innerHTML = "Available characters: " +  (maxlimit - field.value.length);
+				}
+			}
+		}
+
+		
+		function showInputField(field, relative, maxlimit) {
+			if (document.getElementById){
+				target = document.getElementById(field);	
+				target.style.display = "block";
+				target.innerHTML = "Available characters: " + (maxlimit - relative.value.length);		
+			}		
+		
+		}
+
+	</script>	
+
+<style type="text/css">
+.article_seperator{
+display:none !important;
+}
+</style>
+<table><tr><td class="contentheading" width="100%">What's New at this Site ?</td></tr></table>		<script language="JavaScript" type="text/JavaScript">	
+		<!--//--><![CDATA[//><!--
+			function mxclightup(imageobject, opacity){
+				 if ((navigator.appName.indexOf("Netscape")!=-1) && (parseInt(navigator.appVersion)>=5)){
+					imageobject.style.MozOpacity=opacity/100;
+				 } else if ((navigator.appName.indexOf("Microsoft")!= -1) && (parseInt(navigator.appVersion)>=4)){
+					imageobject.filters.alpha.opacity=opacity;
+				 }
+			}		
+		//--><!]]>
+		</script>
+		<link href="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/css/bubbles_acid_css.css" rel="stylesheet" type="text/css" />
+<div id="fullarticle">
+<table width="100%" border="0" cellpadding="0" cellspacing="0" class="contentpaneopen">
+  <tr>
+    <td>
+	    <table width="100%"  border="0" cellspacing="0" cellpadding="0">
+          <tr>
+            <td width="100%" valign="top"><table width="100%" border="0" cellpadding="0" cellspacing="0">
+                            <tr>
+                <td>                    <p class="writtenby">Written by Admin,
+                                                                        on 16-03-2008 15:14&nbsp;&nbsp;<img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/new.gif" align="middle" alt="" /></p>
+                    </td>
+              </tr>
+                                          <tr>
+                <td><p class="viewshits">Views : 23</p></td>
+              </tr>
+                                          <tr>
+                <td><p class="viewsfavoured">Favoured : 1</p></td>
+              </tr>
+              	
+			                <tr>
+                <td><p class="publishedin_title">Published in : <span class="publishedsection"><a href="/index.php?option=com_content&amp;task=section&amp;id=1&amp;Itemid=50">News</a>,</span> <span class="publishedcategory"><a href="/index.php?option=com_content&amp;task=category&amp;sectionid=1&amp;id=46&amp;Itemid=50">News Flash</a></span></p></td>
+              </tr>
+			  			  			  
+            </table>			
+			  <br />We have a new <a href="index.php?option=com_alphacontent&Itemid=101"><span>Articles</span></a> Section - show an index of all <a href="index.php?option=com_alphacontent&Itemid=101"><span>Articles</span></a> with easy navigation.<br />			  			  <p class="small">Last update : 16-03-2008 15:14</p>
+			  			</td>
+          </tr>
+        </table>	
+	<table width="100%" border="0" cellpadding="0" cellspacing="0">
+	<tr>
+	  <td>
+		<table border="0" cellspacing="6" cellpadding="0">
+		  <tr>
+		    			
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=97&amp;Itemid=50"><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/usercomments.gif"  border="0" title="User comments" alt="User comments" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=quote&amp;id=97&amp;lang="><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/quotethis.gif"  border="0" title="Quote this article in website" alt="Quote this article in website" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=favoured&amp;id=97"><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/favoured.gif"  border="0" title="Favoured" alt="Favoured" /></a></td>
+						
+						
+						<td><a href="http://python.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbi5uZWFyLWJ5LmluZm8vL2luZGV4LnBocD92aWV3PWFydGljbGUmaWQ9OTcmb3B0aW9uPWNvbV9jb250ZW50Jkl0ZW1pZD01MA==" target="_blank" onclick="window.open('http://python.near-by.info/index.php?option=com_mailto&tmpl=component&link=index.php?option=com_mailto&tmpl=component&link=aHR0cDovL3B5dGhvbi5uZWFyLWJ5LmluZm8vL2luZGV4LnBocD92aWV3PWFydGljbGUmaWQ9OTcmb3B0aW9uPWNvbV9jb250ZW50Jkl0ZW1pZD01MA==','win2','status=no,toolbar=no,scrollbars=yes,titlebar=no,menubar=no,resizable=yes,width=400,height=250,directories=no,location=no'); return false;" title="Send to friend"><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/email.gif" border="0" alt="Send to friend" /></a></td>
+						
+						<td><a href='http://del.icio.us/post?v=2&url=http%3A%2F%2Fpython.near-by.info%2Findex.php%3Foption%3Dcom_content%26amp%3Btask%3Dview%26amp%3Bid%3D97%26amp%3BItemid%3D50&title=What%27s+New+at+this+Site+%3F'><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/delicious.gif" border="0"  title="Save this to del.icio.us" alt="Save this to del.icio.us" /></a></td>
+						
+						<td><a href="/index.php?option=com_maxcomment&amp;task=related&amp;id=97"><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/relatedarticles.gif" border="0" title="Related articles" alt="Related articles" /></a></td>
+						
+						<td><a href="/index.php?option=com_content&amp;task=view&amp;id=97&amp;Itemid=50"><img src="http://python.near-by.info/components/com_maxcomment/templates/bubbles_acid/images/readmore.gif" border="0" title="Read more..." alt="Read more..." /></a></td>
+						
+			
+		  </tr>
+	  </table>
+		</td>
+	</tr>
+	</table>
+	</td>
+  </tr>
+</table>
+</div>
+<table class="contentpaneopen">
+<tr>
+		<td class="contentheading" width="100%">
+								</td>
+				<td align="right" width="100%" class="buttonheading">
+		<a href="#" onclick="window.print();return false;"><img src="/images/M_images/printButton.png" alt="Print"  /></a>		</td>
+	</tr>
+</table>
+
+<table class="contentpaneopen">
+
+
+
+<tr>
+<td valign="top" colspan="2">
+	</td>
+</tr>
+
+</table>
+<span class="article_separator">&nbsp;</span>
+";s:4:"head";a:10:{s:5:"title";s:25:"What's New at this Site ?";s:11:"description";s:108:"python2.NEAR-BY.INFO (c). Copyright 2007-2008, Hierarchical Applications Limited, Inc., All Rights Reserved.";s:4:"link";s:0:"";s:8:"metaTags";a:2:{s:10:"http-equiv";a:1:{s:12:"Content-Type";s:24:"text/html; charset=utf-8";}s:8:"standard";a:5:{s:6:"robots";s:13:"index, follow";s:8:"keywords";s:128:"python, ruby, microsoft, bigfix, sex, money, boobs, fastest language, php, coldfusion, perl, C#, vb, visual basic, visual studio";s:5:"title";s:25:"What's New at this Site ?";s:6:"author";s:5:"Admin";s:11:"description";s:0:"";}}s:5:"links";a:0:{}s:11:"styleSheets";a:0:{}s:5:"style";a:0:{}s:7:"scripts";a:2:{s:28:"/media/system/js/mootools.js";s:15:"text/javascript";s:27:"/media/system/js/caption.js";s:15:"text/javascript";}s:6:"script";a:0:{}s:6:"custom";a:0:{}}s:6:"module";a:0:{}}

@@ -1,0 +1,68 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Kwick Sliding Menu</name>
+	<author>AndySikumbang</author>
+	<creationDate>March 2007</creationDate>
+	<copyright>GNU GPL</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>plazza@templateplazza.com</authorEmail>
+	<authorUrl>www.templateplazza.com</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[<img src="../modules/kwick_menu/logo.gif" alt="" /><p><strong>The Kwick Sliding Menu</strong> is a GPL Joomla module from <strong><a href="http://www.templateplazza.com" target="_blank" >TemplatePlazza.com</a></strong><br/> This module will displays your menu in a nice sliding effect based on <strong><a href="http://www.mootools.net/" target="_blank">mootools</a></strong> and <strong><a href="http://www.phatfusion.net" target="_blank">Sam Birch</a></strong> script<br/><strong>INSTRUCTION :</strong> <br/>Before using the module, you need to insert <strong><a href="../modules/kwick_menu/code.txt">this code</a></strong> into HEAD section of your template index.php<br><br>]]></description>	
+	<files>
+	<filename module="mod_kwick_sliding_menu">mod_kwick_sliding_menu.php</filename>
+	<filename>kwick_menu/js/imageMenu.js</filename>
+	<filename>kwick_menu/js/mootools.js</filename>
+	<filename>kwick_menu/js/index.html</filename>
+	<filename>kwick_menu/index.html</filename>
+	<filename>kwick_menu/code.txt</filename>
+	<filename>kwick_menu/images/1.png</filename>
+	<filename>kwick_menu/images/2.png</filename>
+	<filename>kwick_menu/images/3.png</filename>
+	<filename>kwick_menu/images/4.png</filename>
+	<filename>kwick_menu/images/5.png</filename>
+	<filename>kwick_menu/images/6.png</filename>
+	<filename>kwick_menu/images/index.html</filename>
+	<filename>kwick_menu/logo.gif</filename>
+	</files>
+	<params> 
+
+<param name="widthmenu" type="text" default="120" label="Menu Width" description="Fill with any decimal number" />
+<param name="widthmenuhover" type="text" default="320" label="Hover Menu Width" description="Menu width when mouse place over the menu. Fill with any decimal number" />
+<param name="menuheight" type="text" default="100" label="Menu Height" description="Fill with any decimal number" />
+<param name="separator_width" type="text" default="2" label="Menu Separator width" description="Separator line width" />
+<param name="separator_color" type="text" default="#FFFFFF" label="Menu Separator color" description="Separator line color" />
+
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+<param name="menutitle1" type="text" default="Menu 1" label="Menu 1 Title" description="Your menu 1 title" />
+<param name="menuurl1" type="text" default="http://www.templateplazza.com" label="Menu 1 Url" description="Type any link here" />
+<param name="menuimg1" type="imagelist" directory="/modules/kwick_menu/images" default="1.png" label="Menu 1 image" description="Image for 1st Menu" />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+<param name="menutitle2" type="text" default="Menu 2" label="Menu 2 Title" description="Your menu 2 title" />
+<param name="menuurl2" type="text" default="http://www.templateplazza.com" label="Menu 2 Url" description="Type any link here" />
+<param name="menuimg2" type="imagelist" directory="/modules/kwick_menu/images" default="2.png" label="Menu 2 image" description="Image for 2nd Menu" />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+<param name="menutitle3" type="text" default="Menu 3" label="Menu 3 Title" description="Your menu 3 title" />
+<param name="menuurl3" type="text" default="http://www.templateplazza.com" label="Menu 3 Url" description="Type any link here" />
+<param name="menuimg3" type="imagelist" directory="/modules/kwick_menu/images" default="3.png" label="Menu 3 image" description="Image for 3th Menu" />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+<param name="menutitle4" type="text" default="Menu 4" label="Menu 4 Title" description="Your menu 4 title" />
+<param name="menuurl4" type="text" default="http://www.templateplazza.com" label="Menu 4 Url" description="Type any link here" />
+<param name="menuimg4" type="imagelist" directory="/modules/kwick_menu/images" default="4.png" label="Menu 4 image" description="Image for 4th Menu" />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+<param name="menutitle5" type="text" default="Menu 5" label="Menu 5 Title" description="Your menu 5 title" />
+<param name="menuurl5" type="text" default="http://www.templateplazza.com" label="Menu 5 Url" description="Type any link here" />
+<param name="menuimg5" type="imagelist" directory="/modules/kwick_menu/images" default="5.png" label="Menu 5 image" description="Image for 5th Menu" />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+
+<param name="menutitle6" type="text" default="Menu 6" label="Menu 6 Title" description="Your menu 6 title" />
+<param name="menuurl6" type="text" default="http://www.templateplazza.com" label="Menu 6 Url" description="Type any link here" />
+<param name="menuimg6" type="imagelist" directory="/modules/kwick_menu/images" default="6.png" label="Menu 6 image" description="Image for 6th Menu" />
+
+	</params>
+</mosinstall>

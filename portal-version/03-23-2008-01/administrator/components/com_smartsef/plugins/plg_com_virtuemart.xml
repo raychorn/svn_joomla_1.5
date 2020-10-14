@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="smartsef" version="1.5.0">
+	<name>Smartsef plugin - virtuemart</name>
+	<author>Richard@joomlatwork.com</author>
+	<creationDate>Oct 2007</creationDate>
+	<copyright>(C) 2005 - 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>richard@joomlatwork.com</authorEmail>
+	<authorUrl>www.smartsef.org</authorUrl>
+	<plugin>plg_com_virtuemart</plugin>
+	<version>1.0</version>
+	<description>Smartsef plugin for the virtuemart SEF urls</description>
+	<files>
+		<filename module="plg_com_virtuemart">plg_com_virtuemart.php</filename>
+		<filename module="plg_com_virtuemart">plg_com_virtuemart.xml</filename>
+	</files>
+	<params>
+		<param name="url_prefix_path" type="text" default="" label="1. URL prefix path" description="A URL prefix path for the virtuemart extenstion, leave empty if you don't want to use a prefix path (for example /mynewsfeeds)" />
+		<param name="page_alias_browse" type="text" default="" label="2. Alias for page: shop.browse" description="Set the alias for the default virtuemart shop.browse parameter. Leave empty if you don't want to use this path setting in the URL" />
+		<param name="page_alias_product_details" type="text" default="" label="3. Alias for page: shop.product_details" description="Set the alias for the default virtuemart shop.product_details parameter. Leave empty if you don't want to use this path setting in the URL" />
+		<param name="page_alias_flypage" type="text" default="" label="4. Alias for flypage: shop.flypage" description="Set the alias for the default virtuemart flypage: shop.flypage parameter. Leave empty if you don't want to use this path setting in the URL" />
+		<param name="page_alias_ask" type="text" default="question" label="Alias for page: shop.ask" description="Set the alias for the default virtuemart page: shop.ask parameter. (note: this parameter cann't be empty)" />
+		<param name="page_alias_manufacturer" type="text" default="" label="Alias for page: shop.manufacturer_page" description="Set the alias for the default virtuemart page: shop.manufacturer_page. Leave empty if you don't want to use this path setting in the URL" />
+		<param name="page_alias_vendor" type="text" default="" label="Alias for page: shop.vendor_page" description="Set the alias for the default virtuemart page: shop.vendor_page. Leave empty if you don't want to use this path setting in the URL" />
+		<param name="page_alias_shop_cart" type="text" default="cart" label="Alias for page: shop.cart" description="Set the alias for the default virtuemart page: shop.cart. (note: this parameter cannot be empty)"/>
+		<param name="page_alias_checkout" type="text" default="checkout" label="Alias for page: checkout.index" description="Set the alias for the default virtuemart page: checkout.index. (note: this parameter cannot be empty)"/>
+
+		<param name="print_alias" type="text" default="print" label="Alias for Print / poup page" description="Set the alias for the print / popup message (note: this parameter cann't be empty" />
+
+
+		<param name="url_append_itemid" type="list" default="0" label="Append item id to URL" description="Append the item id to the SEF URL" >
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="url_structure_product" type="list" default="1" label="URL structure for product" description="Select the URL structure for the product">
+			<option value="1">URL Prefix/category/product</option>
+			<option value="2">URL Prefix/product</option>
+			<option value="3">URL Prefix/category/3. alias product_details/product</option>
+			<option value="4">URL Prefix/category/4. alias flypage/product</option>
+		</param>
+
+	</params>
+
+
+
+</install>

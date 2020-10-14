@@ -1,0 +1,36 @@
+INSTALLATION INSTRUCTIONS
+
+To install the article attachments extension package, one component and two 
+plugins need to be installed.  Follow these steps:
+
+* Unzip this file (to some directory on your system that you can find).
+  You have probably already done this.
+
+* If your are upgrading to Attachments 1.2 and wish to keep your attachments, 
+  read the file UPGRADE.txt first!
+  
+* Using the "Install/Uninstall" menu item under "Extensions"
+
+     1. Install 'attachments_plugin.zip'
+
+     2. Install 'add_attachment_btn_plugin.zip'
+
+     3. Install 'attachments_component.zip'.
+                
+        Please note the usage suggestions!
+
+     4. Enable the attachments plugin by going to the plugin manager 
+        and enabling the 'Content - Attachments' plugin.  
+        
+     5. Enable the add attachments button plugin by enabling the 
+        'Button - AddAttachment' plugin.
+
+When installing, you may see complaints that some of the language files
+were not installed.  Please ignore these complaints; they are harmless.
+
+NOTE: Don't forget: By default, attachments must be changed to 
+      published status by an administrator before they are visible!
+
+Please read the README.txt for a few more usage notes.
+          
+Enjoy!

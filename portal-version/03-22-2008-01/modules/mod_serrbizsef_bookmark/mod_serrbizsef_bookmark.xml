@@ -1,0 +1,162 @@
+<?xml version="1.3" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>SerrBizSEF Social Bookmark</name>
+	<author>Serr.Biz</author>
+	<creationDate>August 2007</creationDate>
+	<copyright>(c) 2007 SerrBiz.</copyright>
+	<license></license>
+	<authorEmail></authorEmail>
+	<authorUrl></authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[Allows administrator to add popular social bookmarking website icons.<br>The css path for this module is <strong>modules/mod_serrbizsef_bookmark/css</strong>. You can edit this css to give the preview window a customized look.<br>
+	<strong><font color=red>Important: This module is compatible with SerrBizSEF only. If you uninstall SerrBizSEF, this module will not work.</font></strong> ]]></description> 
+	<files>
+			<filename module="mod_serrbizsef_bookmark">mod_serrbizsef_bookmark.php</filename>
+			<filename>mod_serrbizsef_bookmark/sites.php</filename>
+			<filename>mod_serrbizsef_bookmark/images/bookmark.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/digg.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/delicious.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/google.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/live.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/facebook.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/slashdot.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/netscape.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/technorati.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/stumbleupon.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/spurl.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/wists.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/simpy.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/newsvine.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/blinklist.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/furl.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/reddit.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/fark.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/blogmarks.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/yahoo.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/smarking.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/netvouz.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/shadows.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/rawsugar.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/magnolia.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/plugim.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/squidoo.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/blogmemes.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/feedmelinks.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/blinkbits.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/tailrank.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/linkagogo.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/patrickswesey.png</filename>
+			<filename>mod_serrbizsef_bookmark/images/top_right.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/top_left.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/top_center.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/minimize.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/middle_right.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/middle_left.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/maximize.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/close.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/bottom_right.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/bottom_left.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/bottom_center.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/bottom_bg.gif</filename>
+			<filename>mod_serrbizsef_bookmark/images/serrbizbookmark.gif</filename>
+			<filename>mod_serrbizsef_bookmark/js/floating-window.js</filename>
+			<filename>mod_serrbizsef_bookmark/css/floating-window.css</filename>
+
+	</files>
+	<params>
+		<param name="win_position" type="list" default="right"  label="Set Preview Window Position" description="Set the position of window to open in left, right, top or bottom of bookmark icon. ">
+			<option value="top">top</option>
+ 		    <option value="right">right</option>
+			<option value="bottom">bottom</option>
+			<option value="left">left</option>
+		</param>
+		<param name="digg" type="list" default="1"  label="Digg" description="Add Digg icon ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="reddit" type="list" default="1" label="Reddit" description="Add Reddit icon ?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="delicious" type="list" default="1" label="Del.icio.us" description="Add Del.icio.us icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="technorati" type="list" default="1" label="Technorati" description="Add Technorati icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="stumbleupon" type="list" default="0" label="StumbleUpon" description="Add StumbleUpon icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="newsvine" type="list" default="0" label="Newsvine" description="Add Newsvine icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="spurl" type="list" default="0" label="Spurl" description="Add Spurl icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="wists" type="list" default="0" label="Wists" description="Add Wists icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="simpy" type="list" default="0" label="Simpy" description="Add Simpy icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="blinklist" type="list" default="0" label="BlinkList" description="Add BlinkList icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="furl" type="list" default="1" label="Furl" description="Add Furl icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="fark" type="list" default="1" label="Fark" description="Add Fark icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="yahoo" type="list" default="1" label="Yahoo! Bookmarks" description="Add Yahoo! Bookmarks icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="smarking" type="list" default="0" label="Smarking" description="Add Smarking icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="netvouz" type="list" default="0" label="Netvouz" description="Add Netvouz icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="shadows" type="list" default="1" label="Shadows" description="Add Shadows icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="rawsugar" type="list" default="0" label="RawSugar" description="Add Raw Sugar icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="magnolia" type="list" default="1" label="Ma.gnolia" description="Add Ma.gnolia icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="feedmelinks" type="list" default="0" label="FeedMeLinks" description="Add FeedMeLinks icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="blinkbits" type="list" default="0" label="BlinkBits" description="Add BlinkBits icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="tailrank" type="list" default="0" label="TailRank" description="Add TailRank icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="linkagogo" type="list" default="0" label="linkaGoGo" description="Add linkaGoGo icon?">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+	</params>
+</mosinstall>

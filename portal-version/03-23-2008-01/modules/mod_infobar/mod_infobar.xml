@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>Infobar</name>
+	<author>MetZ</author>
+	<creationDate>June 2007</creationDate>
+	<copyright>(C) 2005 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>metz80@gmail.com</authorEmail>
+	<authorUrl>www.football-supporter.com</authorUrl>
+	<version>1.0.1</version>
+	<description>
+	<![CDATA[
+	<p>The Infobar module shows an informationbar at the top of the page to unregistered users.</p>
+	<p>You'll have to edit your template <b>index.php</b> file, and insert</p>
+	<p>mosLoadModules('header', -1);</p>
+	<p>directly below the body tag. You can use whatever module position you want here. header position is just an example.</p>
+	<ul>
+	<li>Display a "activeX" lookalike informationbar at the top of the page</li>
+	<li>Boost your user registrations</li>
+	<li>Edit the text to display in backend module configuration</li>
+	<li>Edit register link in backend module configuration</li>
+	</ul>
+	<p><b>If you like this module, please make a Donation!</b></p>
+	<p><a href="http://www.webme.no/dl/download.php" target="_blank"><image src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="Make donations with PayPal - it's fast, free and secure!" /></a></p>
+<p><br />Thanks <b>;)</b></p>]]>
+	</description>
+	<files>
+		<filename module="mod_infobar">mod_infobar.php</filename>
+		<filename>mod_infobar/style.css</filename>
+		<filename>mod_infobar/warning.gif</filename>
+		<filename>mod_infobar/warning2.gif</filename>
+	</files>
+	<params>
+		<param name="infobar" type="text" default="It appears you have not yet registered with our community. To register please click here..." label="Display Text" description="Enter the infobar text here" />
+		<param name="link" type="text" default="index.php?option=com_comprofiler&task=registers" label="Registration Link" description="Enter the registration link here" />
+	</params>
+</mosinstall>

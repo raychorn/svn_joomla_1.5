@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<mosinstall type="module">
+	<name>Google AJAX News Bar</name>
+	<author>Information Madness</author>
+	<creationDate>Septemeber 6, 2007</creationDate>
+	<copyright>www.informationmadness.com</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>joomla@informationmadness.com</authorEmail>
+	<authorUrl>http://www.informationmadness.com/cms</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[ Google Ajax News bar. Embed a news bar on your web page and let your users see headlines. The News Bar is a Google AJAX Search API  application that lets you easily add application and page-controled news search results to your web pages or blog. This control, which provides search-driven bars of news results, is highly customizable: you can specify the news bar's orientation, the number of results it displays, the list of search expressions that drive it, etc. <p>You can get your site key by visiting <a href="http://www.google.com/uds/solutions/newsbar/index.html" target="new">Google News Bar</a> and click "Start Wizard". Enter your site name where you want to display this news bar and click "Generate Code". The generated code will give you the key. Look for this code within script tag.<br/> http://www.google.com/uds/api?file=uds.js&v=1.0&source=uds-nbw&<font='red'>key=ABQIAAAAB_FuhJv1FQxoW2RDAgz1QBSxDTxvxmE5MD4aQZyoKnMkwrGYzRR3hoOw4SOLwO-ZuyR1ShgPna3lwA</font></p><p>Please visit <a href="http://www.informationmadness.com/cms" target="_blank">Information Madness</a> to see the live demo of this module. This module is designed to put your Google News Bar on your website with ease and no programming experience. If you have any questions, please contact <a href="mailto:joomla@informationmadness.com">joomla@informationmadness.com</a>.</p>
+		]]></description>
+	<files>
+		<filename module="mod_google_newsbar">mod_google_newsbar.php</filename>
+	</files>	
+	<params>
+	    <param name="sitekey" type="text" default="Enter Your Key" label="Site Key" description="Enter the key given by Google."/>
+	    <param name="newsTitle" type="text" default="Your News Title" label="Title" description="Enter the Title of the news bar that you want to display above your news bar."/>
+		<param name="alignment" type="list" default="horizontal" label="Alignment" description="Choose Your news bar alignment">
+			<option value="horizontal">Horizontal</option>
+			<option value="verticle">Verticle</option>
+		</param>
+		<param name="linktarget" type="list" default="new" label="Link Target" description="Open links in New window or same window">
+			<option value="new">New Window</option>
+			<option value="same">Same Window</option>
+		</param>
+		<param name="searchWords" type="text" default="Apple,Microsoft,Google,Technology" label="Search Words" description="Enter Your Search Words with comma seperated values. Check the default values for example. Do Not include space after comma."/>
+	</params>
+</mosinstall>

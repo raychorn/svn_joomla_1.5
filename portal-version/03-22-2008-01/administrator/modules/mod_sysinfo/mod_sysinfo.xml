@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module"  version="1.5.0" client="administrator">
+	<name>System Stats</name>
+	<author>Axel Sauerhoefer</author>
+	<creationDate>05.10.2007</creationDate>
+	<copyright>(C) 2007 Axel Sauerhoefer. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>axel@willcodejoomlaforfood.de</authorEmail>
+	<authorUrl>www.willcodejoomlaforfood.org</authorUrl>
+	<version>1.5.0</version>
+	<description>System Health State</description>
+	<files>
+		<filename module="mod_sysinfo">mod_sysinfo.php</filename>
+		<filename>patSysinfo.php</filename>
+	</files>
+</install>

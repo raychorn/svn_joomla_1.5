@@ -1,0 +1,46 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="mambot" group="content" version="1.4">
+  <name>Amazon Associates</name>
+  <creationDate>April 2006</creationDate>
+  <author>Stephan Craane</author>
+  <copyright>(C) 2006 Q-Square</copyright>
+  <license>http://www.gnu.org/copyleft/gpl.HTML GNU/GPL</license>
+  <authorUrl>www.q-square.com</authorUrl>
+  <authorEmail>stephan.craane@gmail.com</authorEmail>
+  <description>
+  <![CDATA[
+  Use {amazon id='########' align='####'} where the id is the amazon id of the product.<br />
+  You can find the id by searching amazon.com for a product and looking at the url.<br /><br />
+  The url will look something like this:<br />
+  http://www.amazon.com/gp/product/<font color=red>B00005RIY5</font>/ref=pd_kar_gw_1/002-5997680-7114400?%5Fencoding=UTF8&v=glance&n=130<br />
+  where the highligted part is the id that you use.<br />
+  <br />
+  The aligment is optional and will overwrite the default aligment. You can use LEFT or RIGHT<br />
+  <br />
+  Make sure that you set the Amazon Associates ID or else it will use my Amazon Associates ID (no problem with that ;) )<br />
+  <br>
+  ]]>  
+  </description>
+  <version>1.2</version>
+  <files>
+    <filename mambot="mosamazon">mosamazon.php</filename>
+  </files>
+  <params>
+   <param name="AFid" type="text" default="qsquare06-21" label="Amazon ID" description="Your Amazon Associates ID"/>
+   <param name="site" type="radio" default="rcm-uk.amazon.co.uk" label="Select your Amazon" description="Select the Amazon that you are Associates to.">
+        <option value="rcm.amazon.com">.com (United States)</option>
+        <option value="rcm-uk.amazon.co.uk">.co.uk (United Kingdom)</option>
+        <option value="rcm-de.amazon.de">.de (Germany)</option>
+        <option value="rcm-ca.amazon.ca">.ca (Canada)</option>
+        <option value="rcm-fr.amazon.fr">.fr (France)</option>
+     </param>
+   <param name="align" type="radio" default="left" label="Align left or right" description="Allowes you to set the default aligment">
+        <option value="left">Left</option>
+        <option value="right">Right</option>
+    </param>
+   <param name="background" type="text" default="FFFFFF" label="Background color" description="Type the background color. If your not sure, leave default. (FFFFFF)"/>
+   <param name="text" type="text" default="000000" label="Text color" description="Type the text color. If your not sure, leave default. (000000)"/>
+   <param name="link" type="text" default="0000FF" label="Link color" description="Type the link color. If your not sure, leave default. (0000FF)"/>
+ </params>
+  
+</mosinstall>

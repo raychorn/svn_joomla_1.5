@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>Aurora</name>
+	<version>1.0.1</version>
+	<creationDate>8th November 07</creationDate>
+	<author>NukeDesign</author>
+	<authorEmail>info@nukedesign.co.uk</authorEmail>
+	<authorUrl>http://www.nukedesign.co.uk</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<description>NukeDesign presents Aurora</description>
+	<files>
+		<filename>favicon.ico</filename>
+		<filename>index.html</filename>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>pngfix.js</filename>
+		<filename>templateDetails.xml</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>html/mod_login/default.php</filename>
+		<filename>html/mod_poll/default.php</filename>
+		<filename>html/com_newsfeeds/newsfeed/default.php</filename>
+	</files>
+	<css>
+		<filename>css/blue.css</filename>
+		<filename>css/green.css</filename>
+		<filename>css/ie6.css</filename>
+		<filename>css/ie7.css</filename>
+		<filename>css/red.css</filename>
+		<filename>css/template.css</filename>
+		<filename>css/yellow.css</filename>
+	</css>
+	<images>
+<filename>images/arrow.png</filename>
+<filename>images/content_h3.png</filename>
+<filename>images/emailButton.png</filename>
+<filename>images/pdf_button.png</filename>
+<filename>images/printButton.png</filename>
+<filename>images/blue/background.png</filename>
+<filename>images/blue/bg_h3.png</filename>
+<filename>images/blue/content_h3.png</filename>
+<filename>images/blue/footer_bg.png</filename>
+<filename>images/blue/grey_bg.png</filename>
+<filename>images/blue/headimg_blue.jpg</filename>
+<filename>images/blue/head_bg.png</filename>
+<filename>images/blue/list.png</filename>
+<filename>images/blue/login_bg.png</filename>
+<filename>images/blue/login_hover.png</filename>
+<filename>images/blue/logo.png</filename>
+<filename>images/blue/menubg.png</filename>
+<filename>images/blue/menubg_hover.png</filename>
+<filename>images/blue/newsbg.png</filename>
+<filename>images/blue/readon.png</filename>
+<filename>images/blue/submenu.png</filename>
+<filename>images/green/background.png</filename>
+<filename>images/green/bg_h3.png</filename>
+<filename>images/green/content_h3.png</filename>
+<filename>images/green/footer_bg.png</filename>
+<filename>images/green/grey_bg.png</filename>
+<filename>images/green/headimg_.jpg</filename>
+<filename>images/green/headimg_green.jpg</filename>
+<filename>images/green/head_bg.png</filename>
+<filename>images/green/list.png</filename>
+<filename>images/green/login_bg.png</filename>
+<filename>images/green/login_hover.png</filename>
+<filename>images/green/logo.png</filename>
+<filename>images/green/menubg.png</filename>
+<filename>images/green/menubg_hover.png</filename>
+<filename>images/green/newsbg.png</filename>
+<filename>images/green/readon.png</filename>
+<filename>images/green/submenu.png</filename>
+<filename>images/red/background.png</filename>
+<filename>images/red/bg_h3.png</filename>
+<filename>images/red/content_h3.png</filename>
+<filename>images/red/footer_bg.png</filename>
+<filename>images/red/grey_bg.png</filename>
+<filename>images/red/headimg_red.jpg</filename>
+<filename>images/red/head_bg.png</filename>
+<filename>images/red/list.png</filename>
+<filename>images/red/login_bg.png</filename>
+<filename>images/red/login_hover.png</filename>
+<filename>images/red/logo.png</filename>
+<filename>images/red/menu.png</filename>
+<filename>images/red/menubg.png</filename>
+<filename>images/red/menubg_hover.png</filename>
+<filename>images/red/newsbg.png</filename>
+<filename>images/red/readon.png</filename>
+<filename>images/red/submenu.png</filename>
+<filename>images/yellow/background.png</filename>
+<filename>images/yellow/bg_h3.png</filename>
+<filename>images/yellow/content_h3.png</filename>
+<filename>images/yellow/footer_bg.png</filename>
+<filename>images/yellow/grey_bg.png</filename>
+<filename>images/yellow/headimg_.jpg</filename>
+<filename>images/yellow/headimg_yellow.jpg</filename>
+<filename>images/yellow/head_bg.png</filename>
+<filename>images/yellow/list.png</filename>
+<filename>images/yellow/login_bg.png</filename>
+<filename>images/yellow/login_hover.png</filename>
+<filename>images/yellow/logo.png</filename>
+<filename>images/yellow/menubg.png</filename>
+<filename>images/yellow/menubg_hover.png</filename>
+<filename>images/yellow/newsbg.png</filename>
+<filename>images/yellow/readon.png</filename>
+<filename>images/yellow/submenu.png</filename>
+	</images>
+	
+	<languages>
+	<language tag="en-GB">en-GB.tpl_nd_aurora.ini</language>
+</languages>
+<administration>
+	<languages folder="admin">
+		<language tag="en-GB">en-GB.tpl_nd_aurora.ini</language>
+	</languages>
+</administration>
+	
+	<positions>
+		<position>left</position>
+		<position>right</position>
+		<position>top</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>footer</position>
+		<position>debug</position>
+		<position>syndicate</position>
+	</positions>
+	<params>
+	
+	<param name="templateColour" type="list" default="blue" label="Template Colour" description="Completely change the colour of the template">
+				<option value="blue">Blue</option>
+				<option value="red">Red</option>
+				<option value="green">Green</option>
+				<option value="yellow">Yellow</option>
+		</param>
+		<param name="banner" type="radio" default="1" label="BANNER" description="Show/hide the banner image">
+				<option value="0">Hide</option>
+				<option value="1">Show</option>
+		</param>
+	</params>
+</install>

@@ -1,0 +1,62 @@
+/* CSS Document */
+
+
+
+/* common all template*/
+
+.linkmorecomments, .nocomment, .linkaddcomment {color: #333333;font: 12px Arial, Helvetica, sans-serif; font-weight: normal; margin:4px 0px 0px 0px;}
+.commentclosed {color: #000000;font: 12px Arial, Helvetica, sans-serif; font-weight: normal;}
+
+
+/* full.php  ------------------------------------------------------------------------------------------------ */
+
+#fullarticle p.writtenby {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:4px 0px 2px 0px;}
+#fullarticle p.viewshits {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:4px 0px 2px 0px;}
+#fullarticle p.viewsfavoured {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:4px 0px 2px 0px;}
+
+#fullarticle p.publishedin_title {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:2px 0px 2px 0px;}
+#fullarticle span.publishedsection, #fullarticle span.publishedcategory {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal;}
+#fullarticle span.publishedsection a, #fullarticle span.publishedcategory a{color: #333333;font: 11px Arial, Helvetica, sans-serif; font-weight: normal;text-decoration:underline;}
+#fullarticle span.publishedsection a:hover, #fullarticle span.publishedcategory a:hover{color: #666666;font: 11px Arial, Helvetica, sans-serif; font-weight: normal;text-decoration:underline;}
+
+#fullarticle p.keywords_title{color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:2px 0px 2px 0px;}
+#fullarticle span.keywords{color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal;}
+#fullarticle span.keywords a{color: #333333;font: 11px Arial, Helvetica, sans-serif; font-weight: normal;text-decoration:underline;}
+#fullarticle span.keywords a:hover{color: #666666;font: 11px Arial, Helvetica, sans-serif; font-weight: normal;text-decoration:none;}
+
+
+#fullarticle p.titleAverageRating {color: #333333;font: 12px Arial, Helvetica, sans-serif; font-weight: bold;margin:8px 0px 0px 0px;}
+#fullarticle p.averageRating {margin:5px 0px 12px 0px;}
+#fullarticle p.displayXcomment {color: #333333;font: 12px Arial, Helvetica, sans-serif; font-weight: bold;margin:5px 0px 0px 0px;}
+
+/* comments */
+#commentbubble {margin-top:10px;width:500px;font-family:Geneva, Arial, Helvetica, sans-serif;font-size:12px;}
+
+#commentheader {padding-left:14px;padding-top:2px;height:28px;color:#333333;font-size:11px;font-weight:normal;background: url(../images/header.gif) no-repeat;}
+#commentheader p{padding-bottom:6px;line-height:6px;}
+
+.commentnumber {font-size:14px;font-weight:bold;color:#333333;}
+
+#commentbody1{padding-left:14px;padding-top:0;padding-bottom:1px;padding-right:14px;font-weight:normal;color:#333333;background-color:#CCCCDD;}
+
+#commentbody2{padding-left:14px;padding-top:0;padding-bottom:1px;padding-right:14px;font-weight:normal;color:#333333;background-color:#C6ECC6;}
+
+#commentrating {padding-top:8px;}
+
+#commenttitle {padding-top:8px;font-size:14px;font-weight:bold;}
+
+#commenttext {padding-top:8px;padding-bottom:8px;border-bottom:1px dotted #999999;}
+.avatar {float:left;text-align:center;position:relative;padding:4px 6px 0 0;height:1%;width:1%;height:auto;width:auto;}
+
+#commentusertype {padding-top:2px;font-size:9px;color:#999999;line-height:12px;text-align:right;}
+
+#commentreport {font-size:9px;color:#999999;line-height:12px;}
+
+#commentreply {font-size:9px;color:#999999;line-height:12px;}
+
+#commentseeallreplies {font-size:9px;color:#999999;line-height:12px;}
+
+#commentfooter1{height:34px;font-size:14px;text-align:right;font-family:Verdana, Arial, Helvetica, sans-serif;font-style:normal;padding:38px 74px 0px 0px;background: url(../images/footer1.gif) no-repeat;color:#666666;font-weight:bold;}
+
+#commentfooter2{height:34px;font-size:14px;text-align:left;font-family:Verdana, Arial, Helvetica, sans-serif;font-style:normal;padding:38px 0px 0px 74px;background: url(../images/footer2.gif) no-repeat;color:#666666;font-weight:bold;}
+

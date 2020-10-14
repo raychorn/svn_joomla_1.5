@@ -1,0 +1,46 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN"
+"http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en_US" xml:lang="en_US">
+<head>
+<title>BlastChat client 2.3</title>
+<link href="css/help.css" rel="stylesheet" type="text/css" />
+<meta name="copyright" content="(C) 2005 Open Source Matters. All Rights Reserved." />
+<meta name="license" content="http://www.gnu.org/copyleft/gpl.html GNU/GPL" />
+</head>
+<body>
+<h1>BlastChat client 2.3</h1>
+
+<p>Welcome to BlastChat client 2.3 admin backend.<br /></p>
+<p>BlastChat menus "Configuration", "Users", "Registration" and "Credits" will allow you to administer your client side of BlastChat service.</p>
+<p>After successful installation of BlastChat client 2.3 component you should proceed to registration and register your website with BlastChat service.</p>
+<p>If you already registered your website, you should create PUBLIC menu item pointing to BlastChat component, which will allow your website visitors to enter chat from frontend.</p>
+
+<h2>Examples of creating url link to access blastchat client from your website frontend</h2>
+
+<p><span style="font-weight: bold;">Menu item url link</span> - load client with parameters defined in admin backend for BlastChat component:
+<br /><span style="font-style: italic;">Use admin backend to create new menu item url link to BlastChat component</span></p>
+
+<p><span style="font-weight: bold;">Default url link</span> - load client with parameters defined in admin backend for BlastChat component:
+<br /><span style="font-style: italic;">http://www.yourwebsite.com/index.php?option=com_blastchatc</span></p>
+
+<p><span style="font-weight: bold;">UnDetached url link:</span>
+<br />(open chat as a standard component in area designated for components, this will overwrite configuration in admin backend concerning detach option)
+<br /><span style="font-style: italic;">http://www.yourwebsite.com/index.php?option=com_blastchatc&d=0</span></p>
+<p><span style="font-weight: bold;">Detached url link</span>
+<br />(if user has pop-up windows blocked, he will get prompt to load chat Undetached, this will overwrite configuration in admin backend concerning detach option)
+<br /><span style="font-style: italic;">http://www.yourwebsite.com/index.php?option=com_blastchatc&d=1</span></p>
+
+<p><span style="font-weight: bold;">Room id</span>
+<br />(Force user to go directly to room with id value of "rid")
+<br /><span style="font-style: italic;">http://www.yourwebsite.com/index.php?option=com_blastchatc&rid=123</span></p>
+
+<h2>Need other adjustments? Customize blastchat component files</h2>
+<p><span style="font-weight: bold;">default.blastchatc.php</span>
+<br /><span style="font-style: italic;">bc_getUserGroup</span> - returns group id of current member; if you use other system to assign groups to your members, adjust this function to let blastchat server which group this member belongs to.
+<br /><span style="font-style: italic;">bc_getSessionData</span> - returns session data of current visitor.
+<br /><span style="font-style: italic;">bc_getLiveSite</span> - returns full URL of your website.
+</p>
+<p>Feel free to adjust and build upon BlastChat client, read license if you need more information or contact <a href="http://ww.blastchat.com" title="BlastChat - free chat for your website" target="_blank">BlastChat support</a>.
+</p>
+</body>
+</html>

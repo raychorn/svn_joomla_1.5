@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install type="module" version="1.5.0">
+	<name>Banner Slider</name>
+	<author>VietNQ [aFeLiOn]</author>
+	<creationDate>2008-02-12</creationDate>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>v@s.vnn.vn</authorEmail>
+	<authorUrl>www.azelectronics.org</authorUrl>
+	<version>0.1.2</version> 
+	<description>Banner Slider for Joomla v1.5. The javascript is based on Featured Content Slider script at DynamicDrive.com</description> 
+
+	<files>
+		<filename module="mod_bannerslider">mod_bannerslider.php</filename> 
+		<filename module="mod_bannerslider">helper.php</filename> 
+		<filename module="mod_bannerslider">mod_bannerslider.js</filename> 
+		<filename module="mod_bannerslider">mod_bannerslider.css</filename> 
+	</files>
+
+	<params>
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="PARAMMODULECLASSSUFFIX" />
+
+		<param name="banners" type="text" default="" size="15" label="Banner ID(s)" description="Banner ID of the pictures you wish this module to display. You can display multiple items by seperating the ids by a comma (,)" />
+		<param name="categories" type="text" default="" size="15" label="Category ID(s)" description="Category ID of the pictures you wish this module to display. You can display multiple items by seperating the ids by a comma (,)" />
+		<param name="clients" type="text" default="" size="15" label="Client ID(s)" description="Client ID of the pictures you wish this module to display. You can display multiple items by seperating the ids by a comma (,)" />
+
+		<param name="type" type="list" default="1" label="Display only" description="Type for displaying.**Image: Display only Banners which Image is slelected. **Custom Banner Code: Display only Banners which Custom Code is not empty. **Both: Display the Image of Banners, if it is not setted, display the Custom Code.">
+			<option value="1">Image</option>
+			<option value="2">Custom Banner Code</option>
+			<option value="3">Both</option>
+		</param>
+
+		<param name="width" type="text" default="180" size="5" label="Width" description="The width of the slide show (px)" />
+		<param name="height" type="text" default="150" size="5" label="Height" description="The height of the slide show (px)" />
+		<param name="delay" type="text" default="5000" size="5" label="Delay" description="Delay between image change, in milliseconds (ie: 5000 = 5 seconds)." />
+
+		<param name="random" type="radio" default="1" label="Random Display" description="An optional parameter specifying whether to 'randomize' the display order of the images.">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="fadein" type="radio" default="1" label="Fade-in Effect" description="Fade-in Effect">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="window" type="radio" default="1" label="Open In New Window" description="When the image is clicked should it pop up in a new window?">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+		<param name="cache" type="radio" default="0" label="Cache" description="Using Joomla cache (even if it’s turned off)">
+			<option value="1">Yes</option>
+			<option value="0">No</option>
+		</param>
+	</params>
+</install>

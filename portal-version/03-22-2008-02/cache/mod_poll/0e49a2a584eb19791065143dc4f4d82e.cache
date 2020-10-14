@@ -1,0 +1,114 @@
+a:2:{s:6:"output";s:0:"";s:6:"result";s:3549:"		<div class="moduletable">
+					<h3>Polls</h3>
+					<form action="index.php" method="post" name="form2">
+
+<table width="95%" border="0" cellspacing="0" cellpadding="1" align="center" class="poll">
+<thead>
+	<tr>
+		<td style="font-weight: bold;">
+			Which language is the fastest ?		</td>
+	</tr>
+</thead>
+	<tr>
+		<td align="center">
+			<table class="pollstableborder" cellspacing="0" cellpadding="0" border="0">
+							<tr>
+					<td class="sectiontableentry2" valign="top">
+						<input type="radio" name="voteid" id="voteid13" value="13" alt="13" />
+					</td>
+					<td class="sectiontableentry2" valign="top">
+						<label for="voteid13">
+							Ruby						</label>
+					</td>
+				</tr>
+											<tr>
+					<td class="sectiontableentry1" valign="top">
+						<input type="radio" name="voteid" id="voteid14" value="14" alt="14" />
+					</td>
+					<td class="sectiontableentry1" valign="top">
+						<label for="voteid14">
+							Python						</label>
+					</td>
+				</tr>
+											<tr>
+					<td class="sectiontableentry2" valign="top">
+						<input type="radio" name="voteid" id="voteid15" value="15" alt="15" />
+					</td>
+					<td class="sectiontableentry2" valign="top">
+						<label for="voteid15">
+							Perl						</label>
+					</td>
+				</tr>
+											<tr>
+					<td class="sectiontableentry1" valign="top">
+						<input type="radio" name="voteid" id="voteid16" value="16" alt="16" />
+					</td>
+					<td class="sectiontableentry1" valign="top">
+						<label for="voteid16">
+							C++						</label>
+					</td>
+				</tr>
+											<tr>
+					<td class="sectiontableentry2" valign="top">
+						<input type="radio" name="voteid" id="voteid17" value="17" alt="17" />
+					</td>
+					<td class="sectiontableentry2" valign="top">
+						<label for="voteid17">
+							Lua						</label>
+					</td>
+				</tr>
+											<tr>
+					<td class="sectiontableentry1" valign="top">
+						<input type="radio" name="voteid" id="voteid18" value="18" alt="18" />
+					</td>
+					<td class="sectiontableentry1" valign="top">
+						<label for="voteid18">
+							Erlang						</label>
+					</td>
+				</tr>
+											<tr>
+					<td class="sectiontableentry2" valign="top">
+						<input type="radio" name="voteid" id="voteid19" value="19" alt="19" />
+					</td>
+					<td class="sectiontableentry2" valign="top">
+						<label for="voteid19">
+							LISP						</label>
+					</td>
+				</tr>
+											<tr>
+					<td class="sectiontableentry1" valign="top">
+						<input type="radio" name="voteid" id="voteid20" value="20" alt="20" />
+					</td>
+					<td class="sectiontableentry1" valign="top">
+						<label for="voteid20">
+							Smalltalk						</label>
+					</td>
+				</tr>
+											<tr>
+					<td class="sectiontableentry2" valign="top">
+						<input type="radio" name="voteid" id="voteid21" value="21" alt="21" />
+					</td>
+					<td class="sectiontableentry2" valign="top">
+						<label for="voteid21">
+							ColdFusion						</label>
+					</td>
+				</tr>
+										</table>
+		</td>
+	</tr>
+	<tr>
+		<td>
+			<div align="center">
+				<input type="submit" name="task_button" class="button" value="Vote" />
+				&nbsp;
+				<input type="button" name="option" class="button" value="Results" onclick="document.location.href='/index.php?option=com_poll&amp;id=15:which-language-is-fastest'" />
+			</div>
+		</td>
+	</tr>
+</table>
+
+	<input type="hidden" name="option" value="com_poll" />
+	<input type="hidden" name="task" value="vote" />
+	<input type="hidden" name="id" value="15" />
+	<input type="hidden" name="e0db47bd1c4a19f41e1ada4f8f2d54e8" value="1" /></form>		</div>
+	";}

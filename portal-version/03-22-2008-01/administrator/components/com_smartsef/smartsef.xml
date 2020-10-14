@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!DOCTYPE install SYSTEM "http://dev.joomla.org/xml/1.5/component-install.dtd">
+<install type="component" version="1.5.0">
+	<name>smartsef</name>
+	<author>Development team - Joomlatwork</author>
+	<creationDate>2007 11 01</creationDate>
+	<authorEmail>noreply@smartsef.org</authorEmail>
+	<authorUrl>http://www.smartsef.org</authorUrl>
+	<copyright>Copyright: smartsef.org</copyright>
+	<license>GNU/GPL</license>
+	<version>1.5.0</version>
+	<description>Smartsef: Joomla 1.5 URL rewriting extension</description>
+	<installfile>install.smartsef.php</installfile>
+	<uninstallfile>uninstall.smartsef.php</uninstallfile>
+	<install>
+		<sql>
+			<file charset="utf8" driver="mysql">install.sql</file>
+		</sql>
+	</install>
+	<uninstall>
+		<sql>
+			<file charset="utf8" driver="mysql">uninstall.sql</file>
+		</sql>
+	</uninstall>
+	<files>
+	</files>
+	<administration>
+		<languages folder="languages">
+			<language tag="en-GB">en-GB.com_smartsef.ini</language>
+		</languages>
+		<menu img="">SmartSEF</menu>
+		<files>
+			<filename>index.html</filename>
+			<filename>admin.smartsef.php</filename>
+			<filename>changelog.php</filename>
+			<filename>install.smartsef.php</filename>
+			<filename>uninstall.smartsef.php</filename>
+			<filename>install.sql</filename>
+			<filename>smartsef.xml</filename>
+			<filename>uninstall.sql</filename>
+			<filename writable="yes">config/configuration.php</filename>
+			<filename>config/index.html</filename>
+			<filename>controllers/index.html</filename>
+			<filename>controllers/config.php</filename>
+			<filename>controllers/cpannel.php</filename>
+			<filename>controllers/plugins.php</filename>
+			<filename>controllers/purge.php</filename>
+			<filename>controllers/routes_settings.php</filename>
+			<filename>controllers/url_edit.php</filename>
+			<filename>controllers/url_repos.php</filename>
+			<filename>images/box_smartsef.jpg</filename>
+			<filename>images/box_devstudio3.jpg</filename>
+			<filename>images/config.png</filename>
+			<filename>images/empty.png</filename>
+			<filename>images/index.html</filename>
+			<filename>images/jaw.png</filename>
+			<filename>images/pluggins.png</filename>
+			<filename>images/routers.png</filename>
+			<filename>images/url_repos.png</filename>
+			<filename>includes/functions.php</filename>
+			<filename>includes/priority.php</filename>
+			<filename>includes/404handler.php</filename>
+			<filename>includes/index.html</filename>
+			<filename>includes/mainrouter.php</filename>
+			<filename>includes/smartsef.css</filename>
+			<filename>install/index.html</filename>
+			<filename>install/plugins/index.html</filename>
+			<filename>install/plugins/smartsef.php</filename>
+			<filename>install/plugins/smartsef.xml</filename>
+			<filename>models/config.php</filename>
+			<filename>models/index.html</filename>
+			<filename>models/plugins.php</filename>
+			<filename>models/purge.php</filename>
+			<filename>models/routes_settings.php</filename>
+			<filename>models/url_edit.php</filename>
+			<filename>models/url_repos.php</filename>
+			<filename>plugins/index.html</filename>
+			<filename>plugins/plg_com_newsfeeds.php</filename>
+			<filename>plugins/plg_com_newsfeeds.xml</filename>
+			<filename>plugins/plg_com_contact.php</filename>
+			<filename>plugins/plg_com_contact.xml</filename>
+			<filename>plugins/plg_com_user.php</filename>
+			<filename>plugins/plg_com_user.xml</filename>
+			<filename>plugins/plg_com_weblinks.php</filename>
+			<filename>plugins/plg_com_weblinks.xml</filename>
+			<filename>plugins/plg_com_mailto.php</filename>
+			<filename>plugins/plg_com_mailto.xml</filename>
+			<filename>plugins/plg_com_search.php</filename>
+			<filename>plugins/plg_com_search.xml</filename>
+			<filename>plugins/plg_com_virtuemart.php</filename>
+			<filename>plugins/plg_com_virtuemart.xml</filename>
+			<filename>tables/index.html</filename>
+			<filename>tables/smartsef_plugins.php</filename>
+			<filename>tables/smartsef_urls.php</filename>
+			<filename>/views/config/view.html.php</filename>
+			<filename>/views/config/tmpl/default.php</filename>
+			<filename>/views/desktop/cpannel.php</filename>
+			<filename>views/plugins/view.edit.php</filename>
+			<filename>views/plugins/view.html.php</filename>
+			<filename>views/plugins/view.install.php</filename>
+			<filename>views/plugins/tmpl/default.php</filename>
+			<filename>views/plugins/tmpl/plugin_edit.php</filename>
+			<filename>views/plugins/tmpl/plugin_install.php</filename>
+			<filename>/views/routes_settings/view.html.php</filename>
+			<filename>/views/routes_settings/tmpl/default.php</filename>
+			<filename>/views/url_edit/view.html.php</filename>
+			<filename>/views/url_edit/tmpl/default.php</filename>
+			<filename>/views/url_repos/view.html.php</filename>
+			<filename>/views/url_repos/tmpl/default.php</filename>
+		</files>
+	</administration>
+</install>

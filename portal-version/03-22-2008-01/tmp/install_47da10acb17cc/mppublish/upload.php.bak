@@ -1,0 +1,73 @@
+<?php
+
+$user = $_GET['user'];
+
+ //-------------------------------------------------------------
+$_file_ = $_FILES['Filedata']['name'];
+		$errStr = "";
+		$_name_ = $_FILES['Filedata']['name'];
+		$_type_ = $_FILES['Filedata']['size'];
+		$_tmp_name_ = $_FILES['Filedata']['tmp_name'];
+		$_size_ = $_FILES['Filedata']['size'];
+//-----------------------------------------------------------------
+$flv = $_name_ ;
+$size = $_size_ ;
+$date = date("F j, Y, g:i a");
+$type = strtolower(substr($flv,strrpos($flv,".")));
+$summary = "Summary- Submitted by: ".$submittedby." URL ".$_SERVER["HTTP_REFERER"]." IP: ".$_SERVER["REMOTE_ADDR"]."<br> File: ".$flv." Type: ".$type ;
+//---------------------------------------------------------
+//path to storage
+
+$storage = '../media/clips';
+
+//path name of file for storage
+$uploadfile = "$storage/" . basename( $_FILES['Filedata']['name'] );
+
+//if the file is moved successfully
+if ( move_uploaded_file( $_FILES['Filedata']['tmp_name'] , $uploadfile ) ) {
+	echo( '1 ' . $_FILES['Filedata']['name']);
+//-------------------------------------------
+
+//file failed to move
+}else{
+	echo( '0');
+}
+
+// Include ezSQL core ==========================================
+include_once "../configuration.php";
+include_once "shared/ez_sql_core.php";
+// Include ezSQL database specific component
+include_once "ez_sql_mysql.php";
+
+//db settings ==================================================
+$db_user = $mosConfig_user;
+$db_password = $mosConfig_password;
+$db_name = $mosConfig_db;
+$db_host = $mosConfig_host;
+// Initialise database object and establish a connection
+// at the same time - db_user / db_password / db_name / db_host
+$db = new ezSQL_mysql($db_user,$db_password,$db_name,$db_host);
+//	---------------------------------------------
+//	Pure PHP Upload version 1.1
+//	-------------------------------------------
+//===========================================================
+/*
+ *
+ *
+ */
+ if ($_FILES['Filedata']['name']) {
+ //---------------------INSERT DATA INTO THE DB-----------------
+
+
+
+ //-----------------------------------------------------------------
+  //If you are nto useeing the default db prefix "jos_" for you joomla tables 
+ //change line "jos_clipboxtv" to your dbprefix E.G  my_clipbox
+$db->query("insert into jos_clipboxtv  (id,flv_file,movie_summary,submitted_by,date_sub,views,size,published,type) values ( NULL,'$flv','$summary','$user','$date',NULL,'$size',NULL,'$type')");
+//------------------------------------------------------------------
+if ($_FILES['Filedata']['name']) {
+ echo "success=SUCCESS" ;
+}
+}
+?>
+

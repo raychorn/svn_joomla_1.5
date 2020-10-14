@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">
+	<name>System - Smartsef</name>
+	<author>Richard -at- Smartsef</author>
+	<creationDate>November 2007</creationDate>
+	<copyright>(C) 2005 - 2007 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/licenses/gpl-2.0.html GNU/GPL</license>
+	<authorEmail>richard@joomlatwork.com</authorEmail>
+	<authorUrl>www.smartsef.org</authorUrl>
+	<version>1.5</version>
+	<description>Provides a custom URL rewriting class</description>
+	<files>
+		<filename plugin="smartsef">smartsef.php</filename>
+	</files>
+	<params>
+	</params>
+</install>

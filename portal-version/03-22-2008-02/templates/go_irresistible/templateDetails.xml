@@ -1,0 +1,80 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="template">
+	<name>go_irresistible</name>
+	<version>1.0</version>
+	<creationDate>01/15/2008</creationDate>
+	<author>Ryan de Mulder</author>
+	<authorEmail>Ryan.deMulder@gameon.be</authorEmail>
+	<authorUrl>http://www.gameon.be</authorUrl>
+	<copyright></copyright>
+	<license>GNU/GPL</license>
+	<description><![CDATA[
+		Template by <a href="http://www.gameon.be/design">GO designs</a>.<br />
+		Please keep a link back to us, as this design cost a lot of work and we distribute it for free...<br /><br />
+		Positions:<br />
+		----------<br />
+		breadcrumbs (CAN be shown in middle column title (set in template menu))<br />
+		left (self-explanatory)<br />
+		right (self-explanatory)<br />
+		footer (self-explanatory)<br />
+		user1 (=GOmenu, in menu settings, set 'always show sub-menus' to 'yes' and 'show title' to 'no')<br />
+		user2 (in header part)<br />
+		user3 (above content, whole width)<br />
+		user4 (=SEARCH, shown in middle menu title (don't put anything else here, it'll be fucked up :))<br />
+		user5 (= above content, half-size, left)<br />
+		user6 (= above content, half-size, right)<br />
+		user7 (underneath content, above footer)<br />
+		]]>
+	</description>
+	<files>
+		<filename>index.php</filename>
+		<filename>params.ini</filename>
+		<filename>template_thumbnail.png</filename>
+		<filename>index.html</filename>
+		<filename>css/template.css</filename>
+		<filename>css/index.html</filename>
+		<filename>images/active.gif</filename>
+		<filename>images/arrow.gif</filename>
+		<filename>images/button.gif</filename>
+		<filename>images/header.gif</filename>
+		<filename>images/hover.gif</filename>
+		<filename>images/link.gif</filename>
+		<filename>images/menubg.png</filename>
+		<filename>images/menumain.gif</filename>
+		<filename>images/index.html</filename>
+		<filename>images/shadow/bottom.gif</filename>
+		<filename>images/shadow/bottomleft.gif</filename>
+		<filename>images/shadow/bottomright.gif</filename>
+		<filename>images/shadow/left.gif</filename>
+		<filename>images/shadow/right.gif</filename>
+		<filename>images/shadow/top.gif</filename>
+		<filename>images/shadow/topleft.gif</filename>
+		<filename>images/shadow/topright.gif</filename>
+		<filename>images/shadow/index.html</filename>
+		<filename>html/modules.php</filename>
+		<filename>html/pagination.php</filename>
+		<filename>html/index.html</filename>
+	</files>
+	<positions>
+		<position>breadcrumbs</position>
+		<position>left</position>
+		<position>right</position>
+		<position>footer</position>
+		<position>user1</position>
+		<position>user2</position>
+		<position>user3</position>
+		<position>user4</position>
+		<position>user5</position>
+		<position>user6</position>
+		<position>user7</position>
+	</positions>
+	<params>
+		<param name="leftMenuTitle" type="text" default="Menu" label="Left Menu Title" description="Give a title for the left menu"></param>
+		<param name="rightMenuTitle" type="text" default="More" label="Right Menu Title" description="Give a title for the right menu"></param>
+		<param name="middleMenu" type="list" default="breadcrumbs" label="Middle Title" description="Show BreadCrumbs or Own Text in middle">
+			<option value="breadcrumbs">BreadCrumbs</option>
+			<option value="owntext">Own Text</option>
+		</param>
+		<param name="middleMenuTitle" type="text" default="welcome" label="Middle Title: own text" description="Give a title for the middle menu"></param>
+	</params>
+</install>

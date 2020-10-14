@@ -1,0 +1,54 @@
+/* CSS Document */
+
+
+
+/* common all template*/
+
+.linkmorecomments, .nocomment, .linkaddcomment {color: #333333;font: 12px Arial, Helvetica, sans-serif; font-weight: normal; margin:4px 0px 0px 0px;}
+.commentclosed {color: #000000;font: 12px Arial, Helvetica, sans-serif; font-weight: normal;}
+
+
+/* intro and full.php  ------------------------------------------------------------------------------------------------ */
+
+#fullarticle p.writtenby {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:4px 0px 2px 0px;}
+#fullarticle p.viewshits {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:4px 0px 2px 0px;}
+#fullarticle p.viewsfavoured {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:4px 0px 2px 0px;}
+
+#fullarticle p.publishedin_title {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal; margin:2px 0px 2px 0px;}
+#fullarticle span.publishedsection, #fullarticle span.publishedcategory {color: #818181;font: 11px Arial, Helvetica, sans-serif; font-weight: normal;}
+
+#fullarticle p.keywordstitle {color: #333333;font: 12px Arial, Helvetica, sans-serif; font-weight: bold;margin:8px 0px 8px 0px;}
+#fullarticle span.keywords {color: #818181;font: 12px Arial, Helvetica, sans-serif; font-weight: normal;}
+
+#fullarticle p.titleAverageRating {color: #333333;font: 12px Arial, Helvetica, sans-serif; font-weight: bold;margin:8px 0px 0px 0px;}
+#fullarticle p.averageRating {margin:5px 0px 12px 0px;}
+#fullarticle p.displayXcomment {color: #333333;font: 12px Arial, Helvetica, sans-serif; font-weight: bold;margin:5px 0px 0px 0px;}
+
+#fullarticle .usrcomment {border: 0; padding: 6px 6px 0; margin:0px 0px 8px 0px;}
+#fullarticle .usrcomment-expand {display:none;border: 1px solid #CECECE; padding: 6px 6px 0; margin:10px 0px 0px 0px;}
+
+#fullarticle .expand-collapse {float: left; font: 11px Verdana, Arial, Helvetica, sans-serif;text-decoration:none; margin:0px 0px 6px 0px;}
+#fullarticle .expand-collapse a {text-decoration:none;}
+
+
+/* usercomment.php ------------------------------------------------------------------------------------------ */
+
+#usercomment .usrcomment {border: 1px solid #CECECE; padding: 10px 10px 0; margin:5px 0px 4px 0px;}
+#usercomment .usrcomment-expand {display:none;border: 1px solid #CECECE; padding: 10px 10px 0; margin:5px 0px 4px 0px;}
+
+#usercomment .expand-collapse {float: right; font: 11px Verdana, Arial, Helvetica, sans-serif;text-decoration:none;}
+#usercomment .expand-collapse a {text-decoration:none;}
+
+#usercomment .usrcomment p, #usercomment .usrcomment-expand p {font: 12px Arial, Helvetica, sans-serif;}
+#usercomment .usrcomment p.rating, #usercomment .usrcomment-expand p.rating {color: #818181;font: 10px Arial, Helvetica, sans-serif; font-weight: bold; margin:0px 0px 2px 0px;}
+#usercomment .usrcomment p.title, #usercomment .usrcomment-expand p.title {color: #818181;font: 15px Arial, Helvetica, sans-serif; font-weight: bold; margin:4px 0px 2px 0px;}
+#usercomment .usrcomment p.author, #usercomment .usrcomment-expand p.author {color: #818181;font: 11px Verdana, Arial, Helvetica, sans-serif;margin:0px 0px 6px 0px;}
+
+#usercomment .usrcomment-expand p.comment {font: 12px Arial, Helvetica, sans-serif;margin:0px 0px 0px 0px;}
+#usercomment .avatar {float:left;text-align:center;position:relative;padding:4px 6px 0 0;height:1%;width:1%;height:auto;width:auto;}
+
+#separat {width:100%; border-bottom-style:dotted; border-bottom-width:1px; border-bottom-color:#818181; margin:0px 0px 10px 0px;}
+#usercomment .usrcomment-expand p.report {font: 10px Verdana, Arial, Helvetica, sans-serif;line-height:12px;margin:0px 0px 4px 0px;}
+#usercomment .usrcomment-expand p.reply {font: 10px Verdana, Arial, Helvetica, sans-serif;line-height:12px;margin:0px 0px 4px 0px;}
+#usercomment .usrcomment-expand p.seeallreplies {font: 10px Verdana, Arial, Helvetica, sans-serif;line-height:12px;margin:0px 0px 4px 0px;}
+

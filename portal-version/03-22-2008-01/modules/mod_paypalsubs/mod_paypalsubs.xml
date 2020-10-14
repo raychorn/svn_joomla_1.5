@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="4.5.2">
+	<name>paypalsubs</name>
+	<author>Shawn Sandy</author>
+	<creationDate>04/24/2006</creationDate>
+	<copyright>Copyright 2006 - Shawn Sandy</copyright>
+	<license>GPL</license>
+	<authorEmail>shawnsandy04@gmail.com</authorEmail>
+	<authorUrl>http://www.sstreamtv.com</authorUrl>
+	<version>1.0 beta</version>
+	<description><![CDATA[<div style="font-size:10px ; font-weight:bold ;">Thank you for Installing Shawn Sandy's paypalsubs Component...<br/>
+If you have any questions, please contact Shawn Sandy at <a href="mailto:shawnsandy04@gmail.com">shawnsandy04@gmail.com</a><br/>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_s-xclick">
+<input type="image" src="http://www.sstreamtv.com/images/stories/donationwarebtn.png" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+<input type="hidden" name="encrypted" value="-----BEGIN PKCS7-----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-----END PKCS7-----
+">
+</form><br />
+DONATE & SUPPORT
+<br/>
+<a href="http://www.sstreamtv.com">http://www.sstreamtv.com</a></div>]]> </description>
+	<files>
+		<filename module="mod_paypalsubs">mod_paypalsubs.php</filename>
+	</files>
+	<params>
+      <param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module (table.moduletable), this allows individual module styling" />
+<param name="@spacer" type="spacer" default="" label="" description="" />
+<param name="action" type="list" default="https://www.paypal.com/cgi-bin/webscr" label="Testing" description="Use for testing or Live store">
+<option value="https://www.paypal.com/cgi-bin/webscr">Paypal</option>
+<option value="https://www.sandbox.paypal.com/cgi-bin/webscr">Paypal Dev</option>
+</param>
+<param name="business" type="text" size="20" default="" label="" description="This is your PayPal ID, or email address." />
+<param name="item_name" type="text" size="20" default="" label="" description="Description of item being sold " />
+
+<param name="currency_code" type="list" default="USD" label="CURENCY" description="SELECT YOU CURRENCY">
+<option value="USD">USD</option>
+<option value="CAD">CAD</option>
+<option value="GBP">GBP</option>
+<option value="AUD">AUD</option>
+<option value="JPY">JPY</option>
+<option value="EUR">EUR</option>
+</param>
+<param name="rn" type="text" default="" label="RN behavior" description="Return URL behavior. If set to 1and if a return value is submitted, upon completion of the payment the buyer will be sent back to the return URL using a GET method, and no transaction variables will be submitted. If set to 2 and if a return value is submitted, the buyer will be sent back to the return URL using a POST method," />
+<param name="@spacer" type="spacer" default="" label="SET 6 SUBSCRIPTIONS RATES for list MENU" description="" />
+<param name="a3_1" type="text" default="$2.00" label="SUB RATE" size="20" description="Regular rate. This is the price of the subscription" />
+<param name="a3_2" type="text" default="" label="RATE 2" size="20" description="Regular rate. This is the price of the subscription" />
+<param name="a3_3" type="text" default="" label="RATE 3" size="20" description="Regular rate. This is the price of the subscription" />
+<param name="a3_4" type="text" default="" label="RATE 4" size="20" description="Regular rate. This is the price of the subscription" />
+<param name="a3_5" type="text" default="" label="RATE 5" size="20" description="Regular rate. This is the price of the subscription" />
+<param name="a3_6" type="text" default="" label="RATE 6"  size="20" description="Regular rate. This is the price of the subscription" />
+<param name="return" type="text" default="" label="" size="20" description="An internet URL where the user will be returned after completing the payment." />
+<param name="cancel_return" type="text" default="" label="" size="20" description="An internet URL where the user will be returned if payment is cancelled." />
+<param name="subnotes" type="textarea" default="" label="Sucscriptions Notes" rows="5" cols="40" description="Subscriptions notes..." />
+</params>
+</mosinstall>
+

@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="4.5.1" type="mambot" group="system">
+  <name>mXcommentSystem</name>
+  <author>Bernard Gilly</author>
+  <creationDate>04 Mar 2008</creationDate>
+  <copyright>Copyright 2007-2008 by Bernard Gilly</copyright>
+  <license>This component is released under Creative Commons License. All rights reserved.</license>
+  <authorEmail>contact@visualclinic.fr</authorEmail>
+  <authorUrl>www.visualclinic.fr</authorUrl>
+  <version>1.0.7</version>
+  <description>Bot system for maXcomment</description>
+  <files>
+    <filename mambot="maxcommentsystem">maxcommentsystem.php</filename>
+  </files>
+</mosinstall>

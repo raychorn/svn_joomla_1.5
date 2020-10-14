@@ -1,0 +1,146 @@
+
+body.mainbody {
+background: #1E5922  url(../images/green/background.png) repeat-x;
+}
+
+.contentheading {
+color:#fff;
+}
+
+.small, .createdate, .modifydate {
+color:#005302;
+}
+
+a {
+color:#6CFF70;
+}
+
+a:hover {
+color:#FFF;
+
+}
+
+h3, .componentheading, table.moduletable th, legend  {
+background:url(../images/green/bg_h3.png) repeat-x;
+color:#fff;
+}
+
+#wrapper {
+background:url(../images/green/grey_bg.png) repeat-y 0 0;
+}
+
+
+#mainhead1 {
+background:url(../images/green/head_bg.png) repeat-x;
+}
+
+#mainhead0 {
+background:url(../images/green/head_bg.png) repeat-x;
+}
+
+
+#flash {
+color:#6CFF70;
+}
+
+#flash h3 {
+background:inherit;
+}
+
+
+#topmenu a:link, #topmenu a:visited {
+color:#F0F5F8;
+}
+
+#topmenu li:hover {
+background-color:#368530;
+}
+#topmenu a:hover {
+background-color:#368530;
+border-top-color:#368530;
+
+}
+
+/* body */
+
+ul {
+list-style-image:url(../images/green/list.png); 
+}
+
+
+
+#leftmenu a {
+color:#F0F5F8;
+}
+
+#leftmenu li{
+background:url(../images/green/menubg.png) no-repeat;
+}
+
+#leftmenu li a:hover{
+background:url(../images/green/menubg_hover.png) no-repeat;
+}
+
+#leftmenu li.active a {
+background:url(../images/green/menubg_hover.png) no-repeat;
+}
+
+
+
+#leftmenu ul ul a:link, #leftmenu ul ul a:visited {
+background:  url(../images/green/submenu.png) no-repeat;
+}
+
+#loginbox {
+background: url(../images/green/login_bg.png) no-repeat;
+color:#FFF;
+}
+
+#loginbox:hover {
+background: url(../images/green/login_hover.png) no-repeat; 
+}
+
+#usermodLR {
+background: #011E30 url(../images/green/newsbg.png) repeat-x ;
+}
+#usermodL {
+background: #011E30 url(../images/green/newsbg.png) repeat-x ;
+}
+
+
+#usermodR {
+background: #011E30 url(../images/green/newsbg.png) repeat-x ;
+}
+
+
+#usermod0{
+background: #011E30 url(../images/green/newsbg.png) repeat-x ;
+}
+
+#contentLR h3, #contentLR .componentheading {
+background: url(../images/green/content_h3.png) repeat-x;
+}
+
+
+#contentL h3, #contentL .componentheading {
+background: url(../images/green/content_h3.png) repeat-x;
+}
+
+
+
+#contentLR h3, #contentR .componentheading {
+background: url(../images/green/content_h3.png) repeat-x;
+}
+
+
+#content0 h3, #content0 .componentheading {
+background: url(../images/green/content_h3.png) repeat-x;
+}
+
+a.readon {
+background: url(../images/green/readon.png) no-repeat 0 5px;
+}
+
+#footer {
+background:url(../images/green/footer_bg.png) repeat-x;
+}

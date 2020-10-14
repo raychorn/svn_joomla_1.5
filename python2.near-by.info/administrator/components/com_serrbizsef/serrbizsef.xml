@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<mosinstall type="component" version="1.0.0">
+	<name>serrbizsef</name>
+	<author>Serr.Biz</author>
+	<creationDate>July 2007</creationDate>
+	<copyright>(c) 2007 SerrBiz.</copyright>
+	<license>GPL</license>
+    <authorEmail>help@serr.biz</authorEmail>
+    <authorUrl>www.serr.biz</authorUrl>
+	<version>1.0. complete</version>
+	<description>This component is for Search Engine Optimization (SEO). Creates Search Engine Friendly URL.</description>
+  <install>
+    <queries>
+	  <query>DROP TABLE IF EXISTS `#__serrbizsef_config`;</query>
+	  <query>DROP TABLE IF EXISTS `#__serrbizsef_sef`;</query>
+	  <query>DROP TABLE IF EXISTS `#__serrbizsef_components`;</query>
+      <query>
+			CREATE TABLE IF NOT EXISTS `#__serrbizsef_config` (
+			`active` int(11) NOT NULL default '0',
+			`override_meta` int(11) NOT NULL default '0',
+		   `sef_status` int(11) NOT NULL default '0',
+		   `allow_redirect` int(11) NOT NULL default '0',
+			`custom_error_page` varchar(150) default NULL
+        );
+      </query>      
+      <query>
+			CREATE TABLE IF NOT EXISTS `#__serrbizsef_sef` (
+			  `id` int(10) unsigned NOT NULL auto_increment,
+			  `joom_original` varchar(250) NOT NULL default '',
+			  `sb_sef` varchar(250) NOT NULL default '',
+			  `title` varchar(250) NOT NULL default '',
+			  `meta_title` varchar(250) NOT NULL default '',
+			  `meta_description` varchar(250) NOT NULL default '',
+			  `meta_keywords` varchar(250) NOT NULL default '',
+			  `component` varchar(60) NOT NULL default 'com_frontpage',
+			  `type` enum('2','1','0','-1') NOT NULL default '-1',
+			  `sbz_id` int(11) NOT NULL default '0',
+			  `link_priority` enum('2','1','0') NOT NULL default '1',
+			  `rob_index` tinyint(4) NOT NULL default '0',
+			  `follow` tinyint(4) NOT NULL default '0',
+			  `is_sef` tinyint(4) NOT NULL default '0',
+			  `is_import_sef` tinyint(4) NOT NULL default '0',
+			  `import_from` varchar(100) default NULL,
+			  `sef_type` enum('0','1','2') NOT NULL default '0',
+			  `status` tinyint(4) NOT NULL default '1',
+			  PRIMARY KEY  (`id`)
+		);	  
+	  </query>    	  
+	  <query>INSERT INTO `#__serrbizsef_config` (`active`,`override_meta`,`sef_status`,`allow_redirect`) VALUES ('0','0','0','0');</query>
+	  <query>
+			CREATE TABLE IF NOT EXISTS `#__serrbizsef_components` (
+			`id` INT NOT NULL AUTO_INCREMENT PRIMARY KEY ,
+			`com_name` VARCHAR( 100 ) NOT NULL ,
+			`format` VARCHAR( 50 ) NOT NULL ,
+			`user_specific_name` VARCHAR( 50 ) NOT NULL ,
+			`default_name` VARCHAR( 50 ) NOT NULL ,
+			`status` TINYINT NOT NULL DEFAULT '0'
+			);
+	  </query>
+	   <query>INSERT INTO `#__serrbizsef_components` VALUES ('1', 'DeepPockets', 'com_deeppockets', '', '','0');</query>
+	   <query>INSERT INTO `#__serrbizsef_components` VALUES (2, 'Hotproperties', 'com_hotproperty', '', 'properties', 0);</query> 
+	   <query>INSERT INTO `#__serrbizsef_components` VALUES (3, 'VirtueMart', 'com_virtuemart', '', 'market', 0);</query> 
+	   <query>INSERT INTO `#__serrbizsef_components` VALUES (4, 'CommunityBuilder', 'com_comprofiler', '', 'profile', 0);</query>
+    </queries>
+  </install>
+  
+  <uninstall>
+    <queries>
+      <query>DROP TABLE IF EXISTS `#__serrbizsef_config`;</query>
+      <query>DROP TABLE IF EXISTS `#__serrbizsef_sef`;</query>
+       <query>DROP TABLE IF EXISTS `#__serrbizsef_components`;</query>
+    </queries>
+  </uninstall>
+  
+  <administration>
+    <menu>SerrBizSEF</menu>
+		<submenu>
+			<menu task="config">Configuration</menu>
+			<menu task="sef_list">SEF URLs</menu>
+		</submenu>    
+    <files>      
+		<filename>admin.serrbizsef.class.php</filename>
+		<filename>admin.serrbizsef.html.php</filename>
+		<filename>admin.serrbizsef.php</filename>
+		<filename>install.serrbizsef.php</filename>  
+		<filename>sef.php</filename>
+		<filename>serrbizsef.config.php</filename>
+		<filename>serrbizsef.redirect.class.php</filename>
+		<filename>serrbizsef.sef.class.php</filename>  
+		<filename>serrbizsef.sef.php</filename>  
+		<filename>toolbar.serrbizsef.html.php</filename>
+		<filename>toolbar.serrbizsef.php</filename>
+		<filename>uninstall.serrbizsef.php</filename>  
+		
+		<filename>serrbizsef_sef_rules/serrbizsef.patches.php</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_akocomment.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_banners.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_comprofiler.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_contact.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_content.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_deeppockets.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_fireboard.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_frontpage.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_hotproperty.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_login.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_newsfeeds.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_poll.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_registration.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_rss.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_search.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_virtuemart.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_weblinks.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_com_wrapper.dat</filename>
+		<filename>serrbizsef_sef_rules/serrbizsef_ds-syndicate.dat</filename>
+		
+		<filename>modules/mod_serrbizsefTags.php</filename>
+		<filename>modules/mod_serrbizsefTags.tmp</filename>
+		<filename>modules/mod_serrbizsef_tags/mod_serrbizsef_tags_data.php</filename>
+		<filename>modules/mod_serrbizsef_tags/css/floating-window.css</filename>
+		<filename>modules/mod_serrbizsef_tags/image/serrbiz_logo25x25.jpg</filename>
+		<filename>modules/mod_serrbizsef_tags/js/floating-window.js</filename>
+		
+    </files>
+    <images>
+		<filename>images/add_url.gif</filename>
+		<filename>images/apply.png</filename>
+		<filename>images/cancel.png</filename>
+		<filename>images/config.gif</filename> 
+		<filename>images/controlpanel.png</filename>
+		<filename>images/delete.png</filename>
+		<filename>images/edit.png</filename>
+		<filename>images/header-OpenSEF-bk.jpg</filename>
+		<filename>images/header-configuration-bk.jpg</filename>
+		<filename>images/header-redirects-manage.jpg</filename>		
+		<filename>images/header-redirets-add.jpg</filename>		
+		<filename>images/header-SEFURLS-bk.jpg</filename>
+		<filename>images/icons-16x16-i.jpg</filename>		
+		<filename>images/icons-16x16-R.jpg</filename>		
+		<filename>images/menu_comp.gif</filename>
+		<filename>images/module.png</filename>
+		<filename>images/nav-icon-redirect.gif</filename>
+		<filename>images/opensef.gif</filename>
+		<filename>images/question_mark.gif</filename>
+		<filename>images/save.png</filename>
+		<filename>images/sbz_info.png</filename>
+		<filename>images/sef.png</filename>
+		<filename>images/serrbiz.gif</filename>
+		<filename>images/status_a.png</filename>
+		<filename>images/status_r.png</filename>
+		<filename>images/status_x.png</filename>
+		<filename>images/support.png</filename>		
+    </images>    
+  </administration>
+  <installfile>install.serrbizsef.php</installfile>
+  <uninstallfile>uninstall.serrbizsef.php</uninstallfile>  
+</mosinstall>

@@ -1,0 +1,76 @@
+
+
+#leftmenu h3 {
+width:167px;
+}
+h3, .componentheading, table.moduletable th, legend  {
+padding: 10px 0 4px 10px;
+margin-left:-1px;
+}
+
+#mainhead0 {
+overflow:hidden;
+}
+
+table.contentpaneopen {
+margin:7px;
+}
+
+#flash {
+padding-top:0px;
+overflow:hidden;
+}
+
+#flash h3 {
+overflow:hidden
+}
+
+#flash table.contentpaneopen {
+margin:1px;
+}
+
+#topmenu a:hover {
+border-top-style:solid;
+border-top-width:2px;
+margin-top:0px
+}
+
+
+#content0 {
+width:900px;
+margin-top:0;
+padding-left:1px;
+}
+
+#contentL {
+margin-top:0;
+}
+#contentR {
+margin-top:0;
+}
+
+#contentLR {
+margin-top:0;
+}
+
+#rightcol {
+width:200px;
+margin-left:0;
+padding-left:7px;
+}
+
+#leftmenu ul ul a:link, #leftmenu ul ul a:visited {
+margin-top:0px;
+margin-left:49px;
+margin-bottom:0px;
+}
+
+#leftmenu ul ul a:hover{
+}
+
+
+table.contentpaneopen {
+width:97%;
+padding:0px;
+}
+

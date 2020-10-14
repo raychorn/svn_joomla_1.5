@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.0" type="mambot" group="search">
+	<name>mXcomment searchbot</name>
+	<author>Bernard Gilly</author>
+	<creationDate>04 Mar 2008</creationDate>
+	<copyright>(C) 2007-2008 Bernard Gilly. All rights reserved.</copyright>
+	<license>Creative Commons</license>
+	<authorEmail>contact@visualclinic.fr</authorEmail>
+	<authorUrl>www.visualclinic.fr</authorUrl>
+	<version>1.0.7</version>
+	<description>Allows Searching of maXcomment Component</description>
+	<files>
+		<filename mambot="maxcomment.searchbot">maxcomment.searchbot.php</filename>
+	</files>
+	<params>
+		<param name="search_limit" type="text" size="5" default="50" label="Search Limit" description="Number of Search items to return"/>		
+	</params>
+</mosinstall>

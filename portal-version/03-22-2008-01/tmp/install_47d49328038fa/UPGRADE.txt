@@ -1,0 +1,62 @@
+UPGRADING
+=========
+
+If you decide to upgrade to a later version of 'Attachments', please see 
+the section on upgrading in the help page in the administrative back end.
+Look under the "Component" menu item, select "Article Attachments" and then 
+click on the Help button (it looks like a lifesaver ring).  Also see the
+following additional instructions:
+
+* Before upgrading, it is prudent to backup your entire MySQL database!
+
+NORMAL UPGRADING
+================
+
+* Back up the attachments MySQL table (eg, jos_attachments) using phpMyAdmin
+  Select the attachments table (usually jos_attachments), and do EXPORT.
+  Do not export the table (structure), only export the attachments table
+  data using 'Complete' inserts (but not 'Extended' inserts).  This
+  simplifies re-installation of the attachments data.  Save the resulting
+  SQL code to a file.
+  
+* Uninstall and re-install all three Attachments components and plugins.
+
+* Use phpMyAdmin to restore your attachments using the SQL file previously
+  created.
+
+
+UPGRADING FROM ATTACHMENTS 1.1 TO 1.2
+=====================================
+
+* If you wish to retain your existing attachments, edit the file:
+
+    administrator/components/com_attachments/uninstall.mysql.sql
+    
+  Place a # at the beginning of the line to disable deleting the attachments
+  table.  Note that unistalling the Attachments component deletes this
+  file and reinstalling the component adds a new version of this file
+  in which the statements to delete the table are not commented out.
+  
+* Unininstall and reinstall all three components and plugins normally.
+
+  
+UPGRADING FROM ATTACHMENTS 1.0 TO 1.2
+=====================================
+
+* If you wish to retain your existing attachments, edit the file:
+
+    administrator/components/com_attachments/uninstall.mysql.sql
+
+  Place a # at the beginning of the line to disable deleting the attachments
+  table.
+  
+* Unininstall and reinstall all three components and plugins normally.
+
+* After re-installation, if you did the modification above to not delete
+  the Attachments table, it is necessary to update the Attachments table
+  before the Attachments extension will work properly.  In your phpMyAdmin,
+  select the Joomla! database and execute the following SQL statement:
+  
+    ALTER TABLE jos_attachments ADD `display_filename` VARCHAR(80) NOT NULL;
+    
+  where the 'jos_' prefix should be adjusted to match your configuration.

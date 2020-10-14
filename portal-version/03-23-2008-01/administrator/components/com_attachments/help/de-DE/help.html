@@ -1,0 +1,276 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=iso-8859-1">
+<title>Dokumentation der Joomla Erweiterung &#039;Attachments&#039; (Anlagen)</title>
+<link href="../../css/admin.css" type="text/css" rel="stylesheet">
+<link href="help.css" type="text/css" rel="stylesheet">
+</head>
+<body><a name="top"></a>
+<h1>Dokumentation der Joomla Erweiterung &#039;Attachments&#039; (Anlagen)</h1>
+<h3>Version 1.2 - 20. Februar 2008</h3>
+
+<ol>
+    <li><a href="#intro">Einleitung</a></li>
+    <li><a href="#uploads">Beschränkungen beim Upload (Hoch laden)</a></li>
+    <li><a href="#options">Einstellungen für &#039;Attachments&#039;</a></li>
+    <li><a href="#display_filename">Dateinamen anzeigen</a></li>
+    <li><a href="#styling">Formatierung der Anlagen-Liste</a></li>
+    <li><a href="#icons">Icons für Dateitypen</a></li>
+    <li><a href="#warnings">Warnhinwise</a></li>
+    <li><a href="#upgrading">Aktualisieren ältere Versionen (Upgrade)</a></li>
+    <li><a href="#acknowledgements">Danksagungen</a></li>
+</ol>
+
+<h2><a name="intro"></a>Einleitung</h2>
+<p>Die &#039;Attachments&#039; Erweiterung ermöglicht es Dateien auf den Server 
+zu laden und als Anlage für Beiträge zu verwenden. Die &#039;Attachments&#039; 
+Erweiterung beinhaltet ein Plugin um die Anlagen anzuzeigen und eine Komponente
+um die Anlagen hoch zu laden und zu verwalten. Es gibt neben Einstellungen um festzulegen
+wer die Anlagen sehen kann und wer sie hoch laden darf noch etliche weitere Einstellungen 
+um die Flexibilität und Nützlichkeit zu Erhöhen. Beachten Sie: Alle Einstellungen werden
+durch den Komponenten Manager gesteuert. Die Erweiterung funktioniert nur unter Joomla! 1.5 
+oder höher. </p>
+
+Diese Erweiterung bietet Sprachversionierung an und unterstützt (neben Englisch) folgende 
+Sprachen:
+<ul>
+	<li><b>Chinesisch:</b> Traditionelle und vereinfachte chinesische Übersetzung von
+	    baijianpeng (http://www.joomlagate.com).  <br>(Danke, baijaing!)</li>
+    <li><b>Holländisch:</b> Übersetzt von Parvus. (Danke, Parvus!)</li>
+    <li><b>Deutsch:</b> Übersetzt von Michael Scherer. (Danke, Michael!)</li>
+    <li><b>Finnisch:</b> Übersetzt von Tapani Lehtonen. (Danke, Tapani!) </li>
+    <li><b>Norwegisch:</b> Übersetzt von Espen Gjelsvik. (Danke, Espen!) </li>
+	<li><b>Portugiesisch/Brasilianisch:</b> Übersetzt von Arnaldo Giacomitti
+      (www.giacomitti.eng.br) und Cauan Cabral (www.cauancabral.net).</li>
+    <li><b>Spanisch:</b> Übersetzt von Carlos Alfaro. (Danke, Carlos!) </li>
+    
+</ul>
+Vielen Dank an die Übersetzer! Wenn Sie bei der Übersetzung der Erweiterung in weitere Sprachen helfen wollen, nehmen Sie bitte Kontakt mit dem Autor auf (siehe unten).
+<span class="atop"><a href="#top">[An den Anfang]</a></span>
+
+<h2><a name="uploads"></a>Beschränkungen beim Upload (Hoch laden)</h2>
+Es können nicht alle Typen von Anlage Dateien hoch geladen werden. &#039;Attachments&#039; 
+lässt es nicht zu Dateien hoch zu laden, die nicht vom Joomla! Media Manager zugelassen sind.
+Um zu sehen (oder zu ändern) welche Dateitypen erlaubt sind, öffnen Sie die <b>Konfiguration</b> 
+der Site und wählen Sie die <b>System</b> Registerkarte. Im Bereich <i>Medien</i> finden Sie 
+Einstellungen um die Dateierweiterungen und MIME-Typen zu kontrollieren, die für Uploads erlaubt 
+sind. &#039;Attachments&#039; hält sich an diese Beschränkungen. Die &#039;Erlaubten Erweiterungen für Bilder (Dateitypen)&#039; werden jedoch nicht beachtet.
+<span class="atop"><a href="#top">[An den Anfang]</a></span>
+
+<h2><a name="options"></a>Einstellungen für &#039;Attachments&#039;</h2>
+Alle Einstellungen für &#039;Attachments&#039; werden über den Komponenten Manager gesteuert.
+Um zu den Einstellungen zu gelangen, gehen Sie in den Adminbereich und wählen Sie im <b>Erweiterungen</b> Menü den Punkt <b>Plugins</b> aus. Wählen Sie &#039;Content-Attachments&#039; zum Bearbeiten aus. Dort finden Sie auf der rechten Seite eine Reihe von Einstellungen. Diese Einstellungen umfassen folgende Punkte:<br>
+<ul>
+
+<li><strong>Wer kann die Anlage sehen?</strong> Diese Einstellung
+legt fest, wer Links zu Anlagen sehen kann. Es gibt derzeit zwei Möglichkeiten:
+<ol>
+<li>&#039;<i>Jeder</i>&#039; - Wenn dies ausgewählt wird, sind die Links für jeden sichtbar, der die Seite besucht, ob er angemeldet ist oder nicht.</li>
+<li>&#039;<i>Jeder angemeldete Nutzer</i>&#039;. - Wenn dies ausgewählt wird, können nur Besucher der Seite, die auch angemeldet sind, die Links zu den Anlagen sehen.</li>
+</ol>
+</li>
+
+<li><strong>Wer kann Anlagen hinzufügen?</strong> Diese Einstellung legt fest, wer Anlagen zu einem Artikel hinzufügen darf. Es gibt zwei Möglichkeiten:
+<ol>
+<li>&#039;<i>Nur der Autor des Artikels</i>&#039; - Die Links um Anlagen hoch zu laden werden nur dem Autor eines Artikels angezeigt.</li>
+<li>&#039;<i>Jeder angemeldete Nutzer</i>&#039; - Die Links um Anlage hoch zu laden werden jedem angemeldeten Nutzer angezeigt.</li>
+</ol>
+</li>
+
+<li><strong>Anlagen standardmäßig veröffentlichen?</strong> Diese &#039;automatisch veröffentlichen&#039; Eigenschaft steuert es, ob Anlagen standardmäßig veröffentlicht werden, wenn Sie angefügt werden oder nicht. Wenn Anlagen hinzugefügt werden und es ist hier &#039;Ja&#039; ausgewählt, dann werden sie umgehend veröffentlicht und sind für jeden Nutzer sichtbar. Wenn &#039;Nein&#039; ausgewählt ist, werden neue Anlagen nicht automatisch veröffentlicht. Ein Administrator muss diese Anlagen vom Backend (Administrationsbereich) aus veröffentlichen um sie für die Nutzer sichtbar zu machen.
+</li>
+
+<li><strong>Warnmeldung zur standardmäßigen Veröffentlichung:</strong> Sie können die Autoren informieren, die, bei abgeschalteter &#039;automatisch veröffentlichen&#039; Eigenschaft (siehe vorangegangene Einstellung), Anlagen hinzufügen, wie sie ihre Anlagen freischalten lassen können. Eine entsprechende Meldung können Sie hier eingeben. Wenn das Feld leer ist, wird eine allgemeine System-Nachricht ausgegeben, unter der Annahme, dass der Systemadministrator wegen jeder neu hoch geladenen Anlage kontaktiert werde muss. </li>
+
+<li><strong>Überschriften anzeigen:</strong> Wenn 'Ja' aktiviert ist, wird eine Reihe mit Überschriften über der Liste der Anlagen angezeigt, mit einer Beschreibung, was in jeder Spalte zu sehen ist.</li>
+
+<li><strong>Beschreibung der Anlage anzeigen?</strong> Diese Einstellung legt fest, ob die Beschreibung von jeder Anlage angezeigt werden soll.</li>
+
+<li><strong>Dateigröße der Anlage anzeigen?</strong> Diese Einstellung legt fest, ob für jede Anlage die Dateigröße angezeigt werden soll.</li>
+
+<li><strong>Änderungsdatum anzeigen?</strong> Diese Einstellung legt fest, ob das Änderungsdatum für eine Anlage-Datei angezeigt werden (&#039;Ja&#039;) soll oder nicht (&#039;Nein&#039;).</li>
+
+<li><strong>Formatierung für das Änderungsdatum der Anlage:</strong> 
+Sie können ein Format für das Datum bestimmen, indem Sie eine Formatierung entsprechend der PHP date Funktion verwenden. Diese Einstellung ist standardmäßig mit &#039;M-j-Y&nbsp;g:ia&#039; vorbelegt, was folgender Ausgabe entspricht: &#039;Sep-29-2007 5:05pm&#039;. Wenn Sie nur das Datum ohne Uhrzeit sehen wollen, dann entfernen Sie folgenden Teil der Formatierung: &#039;g:ia&#039;</li>
+
+<li><strong>Maximale Länge des Dateinamens:</strong>
+Maximale Länge des Dateinamens für die Anlagen-Liste.  Dateinamen die länger sind werden gekürzt und unter "display filename" in der Datenbank gespeichert (nur zur Darstellung, der tatsächliche Dateinamen wird nicht geändert).  Ein Wert von 0 heißt, dass die Länge des Dateinamens durch diese Einstellung nicht beschränkt wird (Das Feld in der attachments Datenbanktabelle ist auf 80 Zeichen limitiert). </li>
+
+<li><strong>CSS style für Anlagen Tabelle:</strong> Um vorhandene CSS styles der Anlagen-Liste (Tabellen) zu überschreiben, geben Sie bitte hier Ihren eigenen style-Namen an.  Der standardmäßige style-Name ist 'attachmentsList'.  Beachten Sie den Abschnitt <a href="#styling">[Formatierung der Anlagen-Liste]</a> für weitere Informationen.
+</li>
+
+<li><strong>Modus zum Öffnen der Datei:</strong> 
+Legt fest wie der Link zu Anlagen-Dateien geöffnet wird.  &#039;Im gleichen Fenster&#039; heißt, dass die Datei im gleichen Browserfenster geöffnet wird. &#039;In einem neuen Fenster&#039; heißt, dass die Datei in einem neuen Browserfenster geöffnet wird. In einigen Browsern führt die Einstellung &#039;In einem neuen Fenster&#039; dazu, dass ein neuer Tab geöffnet wird.</li>
+
+<li><strong>Dem System-Dateinamen voranstellen:</strong> Diese Einstellung legt fest, ob dem gespeicherten Anlagen-Dateinamen auf dem Server ein numerisches Präfix vorangestellt werden soll oder nicht.
+Es gibt drei Möglichkeiten:
+<ol>
+<li>&#039;<i>ID des Artikels</i>&#039; - Wenn diese Einstellung ausgewählt ist, bekommt der Dateiname die Artikel Id Nummer vorangestellt. Diese Auswahl reduziert die Wahrscheinlichkeit von Dateinamenskonflikten und gewährleisten, dass die Anlagen-Dateien für einen speziellen Artikel in der Ordneransicht zusammen sortiert werden. 
+Beachten Sie auch, dass mit dieser Einstellung unterschiedliche Dateien mit dem <em>gleichen</em> Dateinamen an <em>verschiedene</em> Artikel angehängt werden können, aber nicht an den <em>selben</em> Artikel</li>
+
+<li>&#039;<i>ID der Anlage</i>&#039; - Wenn diese Einstellung ausgewählt ist, bekommt der Dateiname die Anlagen Id Nummer vorangestellt. 
+Diese Auswahl verhindert jeden Dateinamenskonflikt, da jede Anlagendatei eine eindeutige ID-Nummer erhält. Die Dateien werden in der Ordneransicht in der Reihenfolge der Anlagen(-ID) sortiert.</li>
+
+<li>&#039;<i>Nichts</i>&#039; - Wenn diese Einstellung ausgewählt ist, wird der Dateiname so gespeichert, wie er übergeben wurde und erhält keinerlei Präfix. Diese Auswahl erhöht die Wahrscheinlichkeit von Dateinamenskonflikten, da jede hoch geladene Datei einen eindeutigen Dateinamen haben muss.</li>
+</ol>
+</li>
+
+<li><strong>Unterverzeichnis für hoch geladenen Dateien:</strong> 
+Die Programmierung der &#039;Attachments&#039; Erweiterung legt Dateien
+in dieses Unterverzeichnis unter der obersten Eben der Joomla! Site.
+<i>WARNUNG: Bei Änderungen müssen Sie das neue Unterverzeichnis per Hand erzeugen, bevor Sie weitere Anlagen hoch laden.</i>
+Beachten Sie, dass ein verändertes Unterverzeichnis nur die kommenden Uploads betrifft. Vor der Änderung hoch geladene Dateien bleiben im alten Unterverzeichnis und die Einträge in der attachments Datenbank verweisen weiterhin auf diese Dateien.</li>
+
+<li><strong>Angepasste Überschriften für Anlagen-Listen:</strong> 
+Standardmäßig fügt &#039;Attachments&#039; die Überschrift &#039;Anlagen:&#039;
+über der Liste der Anlagen eines Artikels ein (wenn der Artikel Anlagen hat).
+In manchen Fällen könnte es sein, dass sie für bestimmte Artikel eine andere Überschrift wählen möchten. Sie können den exakten Ausdruck, den Sie verwenden möchten, auf einer Artikel-zu-Artikel Basis angeben. Wenn Sie z.B. für den Artikel 211 die angepasste Überschrift &#039;Downloads:&#039; verwenden möchten, dann fügen Sie folgendes
+zu dieser Einstellung hinzu: &#039;211&nbsp;Downloads&#039; (ohne die Anführungsstriche).
+Verwenden Sie pro Eintrag eine Zeile.</li>
+
+
+<li><strong>Blende Anlagen aus für</strong> 
+Durch Kommas getrennte Liste von Schlüsselwörtern oder Bereiche/Kategorien von Artikeln für die die Liste der Anlagen nicht angezeigt werden soll. Zwei besondere Schlüsselwörter können verwendet werden: 'frontpage' um die Anzeige von Anlagen auf der Startseite zu verhindern und 'all_but_article_views' um Anlagen nur in der Artikelansicht darzustellen. (Lassen Sie die Anführungszeichen weg, wenn Sie die Schlüsselwörter in das Feld für die Schlüsselwörter[keywords options] eingeben.) Die Bereichs/Kategorie Ids sollten, getrennt durch einen Schrägstrich(/), als numerische Bereichs und Kategorie IDs eingegeben werden: Bereichs#/Kategorie#, Bereichs#/Kategorie#. Geben Sie nur 'Bereichs#' an um alle Kategorien dieses Bereichs mit einzuschließen. Beispiel: 23/10, 23/11, 24.
+</li>
+
+<li><strong>Sicherer Anlagen Download:</strong> 
+Standardmäßig speichert die &#039;Attachments&#039; Erweiterung Dateien in einem  öffentlich zugängliches Unterverzeichnis. Wenn Sie die <i>sichere</i> Art des Download wählen werden die Anlage-Dateien in einem geschützten Unterverzeichnis abgelegt. Die Links im Frontend zum Herunterladen (Downloadlinks) der Anlagen laden zwar die Dateien herunter, sind jedoch keine direkten Links. Das schützt vor unberechtigtem Zugriff, wenn die Nutzer nicht die entsprechende Rechte besitzen. Wenn die <i>sichere</i> Art des Download nicht ausgewählt ist, werden die Links zu den Anlagen entsprechend den obigen Einstellungen angezeigt, die Dateien sind jedoch für jeden abrufbar, der die komplette URL kennt, da das Unterverzeichnis öffentlich ist. Die <i>sichere</i> Einstellung verhindert den Zugriff von Unberechtigten, selbst wenn diese die komplette URL kennen, da diese Einstellung den öffentlichem Zugriff auf das Unterverzeichnis der Anlagen verhindert.
+ANMERKUNG: Im <i>sicheren</i> Modus wird die Anlagenliste nicht angezeigt, wenn der Nutzer nicht angemeldet ist, weil es keinen Sinn macht den sicheren Modus zu nutzen außer die Nutzer sind angemeldet.
+
+<li><strong>Modus für den sicheren Download:</strong> 
+Diese Einstellung steuert, ob Anlage-Dateien als separate Dateien herunter geladen oder im Browserfenster dargestellt werden (wenn der Browser mit dem Dateityp umgehen kann). Es gibt zwei Möglichkeiten:
+<ul>
+    <li><i>&#039;eingebettet&#039;</i>: In diesem Modus werden Dateien, die vom Browser angezeigt werden können (wie Textdateien und Bilder), im Browser angezeigt.</li>
+    <li><i>&#039;angehängt&#039;</i>: In diesem Modus werden Anlagen immer als separate Dateien heruntergeladen.</li>
+</ul><br />
+In jedem Fall werden Anlagen, die nicht im Browser dargestellt werden können als externe Dateien heruntergeladen.
+</li>
+
+</ul>
+<span class="atop"><a href="#top">[An den Anfang]</a></span>
+
+<h2><a name="display_filename"></a>Dateinamen anzeigen</h2>
+In der Regel wird der volle Dateiname als Link zum Herunterladen der Anlage angezeigt,
+wenn Dateien hoch geladen wurden und eine Liste der Anlagen angezeigt wird. In einigen 
+Fällen könnte der Dateiname zu lang sein um gut dargestellt zu werden. Im Formular zum
+Hoch laden gibt es ein weiteres Feld mit der Bezeichnung &quot;Dateinamen anzeigen&quot; in welches 
+die Person, welche die Datei hoch lädt einen alternativen Dateinamen oder eine Bezeichnung angeben kann,
+der/die anstatt des vollen Dateinamens angezeigt wird.
+Es könnte z.B. eine Abkürzung des Dateinamens in dieses Feld eingegeben werden.
+Das Feld kann, beim Bearbeiten einer Anlage über den Administrationsbereich (Backend), verändert werden.
+ANMERKUNG: Es gibt in den Plugin-Einstellungen eine Einstellung &quot;Maximale Länge des Dateinamens&quot;.
+Es kann verwendet werden um automatisch die Dateinamen hoch geladener Anlagen verkürzt darzustellen; der 
+dabei entstehende verkürzte Dateinamen wird in das &quot;Dateinamen anzeigen&quot; Feld eingetragen.
+<span class="atop"><a href="#top">[An den Anfang]</a></span>
+
+<h2><a name="styling"></a>Formatierung der Anlagen-Liste</h2>
+Die Liste der Anlagen wird im Frontend in ein spezielles &#039;div&#039; eingebunden, welches eine Tabelle für die Anlagen enthält. Die Tabelle ist mit mehreren unterschiedlichen CSS Klassen verknüpft, die dem Webentwickler eine flexible Anpassung der Darstellung der Tabelle erlauben. Schauen Sie in die &#039;Attachments&#039; Plugin CSS Datei (in plugins/content/attachments.css) um Beispiele zu sehen.
+Wenn Sie die Styles ändern wollen, überlegen Sie, ob Sie nicht die originalen Styles an das Ende der gleichen Datei kopieren und &#039;attachmentsList&#039; im kopierten Bereich in eine eigene Klasse umbenennen. Ändern Sie im Komponenten Manager für die &#039;Attachments&#039; Komponente (&#039;Artikel Anlagen&#039;) die Einstellung <i>CSS style für Anlagen Tabelle</i> um in den neuen Klassennamen.
+Dann ändern Sie die Klassendefinitionen in Ihrem kopierten Bereich passend ab. Dieses Vorgehen erlaubt Ihnen schnell in den Ursprungszustand zurück zu kehren, indem Sie <i>CSS style für Anlagen Tabelle</i> wieder in den Standard &#039;attachmentList&#039; umbenennen.
+Es hat außerdem den Vorteil, dass der Bereich der geänderten Styles schnell in eine Datei kopiert werden kann und nach einer Aktualisierung von &#039;Attachments&#039; wieder zurück. Dies kann ebenfalls mittels CSS @import Anweisung gelöst werden.
+
+<span class="atop"><a href="#top">[An den Anfang]</a></span>
+
+<h2><a name="icons"></a>Icons für Dateitypen</h2>
+Die &#039;Attachments&#039; Erweiterung stellt in der Liste der Anlagen jeder Anlage ein Icon voran.
+Folgen Sie diesen Schritten, wenn Sie ein neues Icon hinzufügen wollen:
+(1) Fügen Sie im Verzeichnis 'media/attachments/icons' ein passendes Icon hinzu, wenn noch kein passendes vorhanden ist; 
+(2) Öffnen Sie die Datei 'components/com_attachments/file_types.php' und fügen Sie eine passende Zeile zu dem 
+static array $attachments_icon_from_file_extension welches eine Dateierweiterung einem Iconnamen zuordnet (alle aus dem Verzeichnis 
+media/attachments/icons directory). Wenn dies nicht funktioniert, müssen Sie eine passende Zeile zu dem array $attachments_icon_from_mime_type hinzufügen.
+(3) Vergessen Sie nicht Kopien von der Icon-Datei und der geänderten file_types.php in ein Verzeichnis außerhalb der Website zu machen, bevor Sie in der Zukunft die Version von &#039;Attachments&#039; aktualisieren.
+
+<span class="atop"><a href="#top">[An den Anfang]</a></span>
+
+<h2><a name="warnings"></a>Warnhinweise</h2>
+<ul>
+<li><strong>Benutzen Sie die <i>Sicherer Anlagen Download</i> Einstellung, wenn Sie sensible oder private Anlagen haben!</strong><br>
+Wenn Sie nicht die sichere Einstellung wählen, werden die Anlagen Dateien in eine öffentliches Unterverzeichnis geladen und sind für
+jeden erreichbar, der die komplette URL kennt. Die <i>sichere</i> Einstellung verhindert den Zugriff durch jeden, der nicht die entsprechenden Rechte besitzt (wie in den oberen Einstellungen festgelegt). Beachten Sie die obige Besprechung der <i>Sicherer Anlagen Download</i> Einstellung für weitere Details.</li>
+
+<li>Jedes Mal, wenn eine Datei hoch geladen wird, wird die Existenz des upload
+Unterverzeichnisses überprüft. Das Verzeichnis wird angelegt, wenn es nicht existiert.
+Wenn der &#039;Attachments&#039; Erweiterung nicht möglich ist, das Unterverzeichnis
+für den Upload zu erstellen, müssen Sie es selber anlegen (und Sie könnten Probleme
+haben Dateien hoch zu laden). Stellen Sie sicher, dass Sie dem Unterverzeichnis passende
+Rechte geben um Dateien hoch zu laden. In der Unix/Linux Welt, ist das vermutlich etwas wie 744.</li>
+
+
+<li>Wenn diese Erweiterung es Ihnen nicht erlaubt bestimmte Dateitypen hoch zu laden
+(solche wie zip-Dateien), dann seien Sie sich bewusst, dass diese Erweiterung die Einschränkungen vom Medien Manager für den Upload von Dateitypen berücksichtigt. Dies geschieht um das hoch laden von potentiell gefährlichen Dateitypen wie html oder php Dateien zu verhindern.
+Der Administrator kann die Einstellungen des Medien Managers verändern um spezielle Dateitypen hinzuzufügen, indem er zu &quot;Konfiguration&quot; unter dem &quot;Site&quot; Menü geht und die &quot;System&quot; Registerkarte auswählt. Hier kann er die gewünschten Dateierweiterungen und MIME Typen zu der Liste im &quot;Medien&quot; Bereich hinzufügen.</li>
+
+<li>Das zweite Plugin &#039;add_attachment_btn_plugin&#039; (im Plugin Manager &#039;Button - AddAttachment&#039; genannt)
+erlaubt es Anlagen zu Artikeln hinzuzufügen während diese im Artikeleditor bearbeitet werden. Das Plugin fügt direkt unter dem 
+Eingabebereich für den Artikel eine Schaltfläche (Button) mit der Aufschrift &quot;Anlage Hinzufügen&quot; ein. Wenn Sie dieses Plugin
+installiert haben, aber die Schaltfläche nicht sehen, dann müssen sie möglicherweise das Button Plugin im Plugin Manager aktivieren.
+ANMERKUNG: Die Schaltfläche wird nicht angezeigt, wenn der Artikel das erste Mal erstellt wird, da ein Artikel zumindest einmal gespeichert werden muss, bevor Dateien an ihn angefügt werden können.</li>
+
+<li>Diese Version scheint korrekt mit SEF (Suchmaschinen-Freundliche URLs) mit JOOMLA! 1.5 RC3 und RC4 zu arbeiten. Die Aktualisierung 
+von &#039;Attachments&#039; für RC3 scheint SEF mit RC2 zu zerstören.
+</li>   
+
+</ul>
+<span class="atop"><a href="#top">[An den Anfang]</a></span>
+
+<h2><a name="upgrading"></a>Aktualisieren ältere Versionen (Upgrade)</h2>
+Wenn Sie bereits Anlagen hoch geladen haben, die sie über eine Aktualisierung hinaus erhalten möchten, 
+dann gehen Sie bitte folgendermaßen vor:
+<ol>
+<li>Verwenden Sie phpMyAdmin (ein anderes SQL Dumping Tool) um die 
+Inhalte der jos_attachments Tabelle zu sichern (Verwenden Sie die &#039;Export&#039; Option und wählen Sie &quot;'Complete' inserts&quot; (Vollständige 'INSERT's) aber nicht &quot;'Extended' inserts&quot; (Erweiterte 'INSERT's) für die Daten.).</li>
+<li>Deinstallieren Sie die &#039;Attachments&#039; Komponente. </li>
+<li>Deinstallieren Sie die &#039;Attachments&#039; Plugins</li>
+<li>Installieren Sie nun das neue Release, indem Sie die Release-Datei entpacken und dann
+das neue Plugin installieren und anschließende die neue Komponente.</li>
+<li>Reaktivieren Sie das &#039;Attachments&#039; Plugin.</li>
+<li>Zum Schluss verwenden sie phpMyAdmin um die vorher gesicherten Daten wieder in die neu erstellte
+jos_attachments Tabelle zu laden.</li>
+<li>Wenn Sie von einer früheren Version als 1.0 auf eine Version nach 1.0 aktualisieren und alte Anlagen
+besitzen, müssen Sie passenden Werte in das neue &#039;icon_filename&#039; eintragen. Sie müssen sich
+dazu als Administrator am Backend anmelden und folgende URL in Ihren Browser eingeben: <br>
+<b>/administrator/index.php?option=com_attachments&amp;task=add_icon_filenames</b>
+</li>
+</ol>
+<p>
+Beachten Sie, dass die Deinstallation der &#039;Attachments&#039; Erweiterung nicht die
+bereits hoch geladenen Anlage-Dateien löscht, jedoch die Anlagen Tabelle (attachments
+table) aus der Datenbank entfernt. Deshalb ist es nach der (erneuten) Installation einer neuen Version von 
+&#039;Attachments&#039; nur notwendig die Anlagen Tabelle (attachments 
+table) wieder herzustellen um alle alten Anlagen wieder zu erhalten.</p>
+
+<p>Wenn Sie sich entscheiden die Anlagen Datenbank nicht wieder herzustellen, dann 
+vergessen Sie bitte nicht, alle unnötigen Dateien aus dem Unterverzeichnis der 
+Anlagen zu löschen um im Weiteren Dateinamenskonflikte zu vermeiden.
+<span class="atop"><a href="#top">[An den Anfang]</a></span> </p>
+
+<h2><a name="acknowledgements"></a>Danksagungen</h2>
+Vielen Dank an folgende Mitwirkende oder Quellen:
+<ul>
+    <li>Das Buch <i>Learning Joomla! 1.5 Extension Development: Creating Modules, 
+    Components, and Plugins with PHP</i> von Joseph L. LeBlanc war sehr Hilfreich 
+    bei der Erstellung der 'Attachments' Erweiterung.
+    </li>
+    <li>Die Icons für die Dateitypen stammen aus unterschiedlichen Quellen, u.a.:
+        <ul>
+           <li><a href="http://www.famfamfam.com/lab/icons/silk/">The Silk 
+           icons von Mark James (http://www.famfamfam.com/lab/icons/silk/)</a></li>
+           <li><a href="http://www.zap.org.au/documents/icons/file-icons/sample.html">File-Type 
+           Icons 1.2 von John Zaitseff (http://www.zap.org.au/documents/icons/file-icons/sample.html)</a></li>
+           <li><a href="http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html">Doctype 
+           Icons 2 von Timothy Groves (http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html)</a></li>
+           <li><a href="http://www.catnip.co.uk/opendocument/icons/">OpenDocument icons vorgeschlagen von 
+           Pete Harlow (http://www.catnip.co.uk/opendocument/icons/)</a></li>
+       </ul>
+       <br>
+       Beachten Sie, dass die meisten Icons der 'Attachments' Erweiterung von den original Icons abgeänderte Versionen sind. Wenn Sie die Originalversionen verwenden möchten, laden Sie diese bitte von den entsprechenden Websites herunter.
+    </li>
+</ul>
+<span class="atop"><a href="#top">[An den Anfang]</a></span> 
+
+<p>
+Bitte melden Sie Fehler und Anregungen (in englisch) an <a href="mailto:jmcameron@jmcameron.net">jmcameron@jmcameron.net</a>.</p>
+</body>
+</html>

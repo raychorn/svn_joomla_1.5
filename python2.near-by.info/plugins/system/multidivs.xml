@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5" type="plugin" group="system">	
+	<name>System - MultiDivs!</name>
+	<description>MultiDivs! ...easily create divs in Joomla!</description>
+	<version>1.1.1</version>
+	<creationDate>October 2007</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright (C) 2008-2010 - NoNumber! - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	
+	<files>		  
+		<filename plugin="multidivs">multidivs.php</filename>
+		
+		<filename>multidivs/logo.png</filename>
+		<filename>multidivs/index.html</filename>
+		
+		<filename>multidivs/elements/adminpopups_1.inc.php</filename>
+		<filename>multidivs/elements/adminpopups_2.inc.php</filename>
+		<filename>multidivs/elements/help.html.php</filename>
+		<filename>multidivs/elements/help.php</filename>
+		<filename>multidivs/elements/index.html</filename>
+	</files>
+	
+	<params addpath="/plugins/system/multidivs/elements">
+		<param name="" type="help" default="" label="" description="" />
+		<param name="default_classname" type="text" default="quote" label="Default Classname" description="The Classname to be used if no Classname is given in the tag." />
+		<param name="class_delimiter" type="text" default="_" label="Class Delimiter" description="The Delimiter to be placed between the Classname and the div count, like:&lt;br /&gt;classname_1, classname-1, classname1" />
+	</params>
+</install>

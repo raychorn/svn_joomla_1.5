@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<install version="1.5.0" type="plugin" group="content">
+	<name>Content - AnyTags!</name>
+	<description>AnyTags! ...place special tags in Joomla!</description>
+	<version>2.1.2</version>
+	<creationDate>December 2007</creationDate>
+	<author>NoNumber! (Peter van Westen)</author>
+	<authorEmail>peter@nonumber.nl</authorEmail>
+	<authorUrl>http://www.nonumber.nl</authorUrl>
+	<copyright>Copyright (C) 2008-2010 - NoNumber! - All Rights Reserved</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	
+	<files>		  
+		<filename plugin="anytags">anytags.php</filename>
+		
+		<filename>anytags/logo.png</filename>
+		<filename>anytags/index.html</filename>
+		
+		<filename>anytags/elements/adminpopups_1.inc.php</filename>
+		<filename>anytags/elements/adminpopups_2.inc.php</filename>
+		<filename>anytags/elements/grouplevel.php</filename>
+		<filename>anytags/elements/help.html.php</filename>
+		<filename>anytags/elements/help.php</filename>
+		<filename>anytags/elements/index.html</filename>
+	</files>
+	
+	<params addpath="/plugins/content/anytags/elements">
+		<param name="" type="help" default="" label="" description="" />
+		<param name="use_asterisk" type="radio" default="1" label="Use Asterisk Syntax" description="If enabled, you can also use the syntax:&lt;br /&gt;{* ...}.&lt;br /&gt;The normal syntax will still work:&lt;br /&gt;{anytags ...}.">
+			<option value="0">No</option>
+			<option value="1">Yes</option>
+		</param>
+		<param name="security_level" type="grouplevel" default="23" label="Security Level" description="Set the level of security. AnyTags! won't work on content items with owners below this level." />
+		<param name="security_level_php" type="grouplevel" default="25" label="PHP Security Level" description="Set the level of security for PHP. AnyTags! won't work on content items with owners below this level. If this Level is set lower than the overall Security Level, the PHP Security Level will be ignored." />
+	</params>
+</install>

@@ -1,0 +1,51 @@
+[14-Mar-2008 23:51:56] PHP Warning:  require(/home/nearbyin/public_html/python2/templates/mambospan_glass/mycssmenu.php) [<a href='function.require'>function.require</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/templates/mambospan_glass.v2/index.php on line 3
+[14-Mar-2008 23:51:56] PHP Fatal error:  require() [<a href='function.require'>function.require</a>]: Failed opening required '/home/nearbyin/public_html/python2/templates/mambospan_glass/mycssmenu.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nearbyin/public_html/python2/templates/mambospan_glass.v2/index.php on line 3
+[15-Mar-2008 08:09:21] PHP Warning:  fopen(/home/nearbyin/public_html/python2/cache/comments.xml) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/libraries/bitfolge/feedcreator.php on line 863
+[15-Mar-2008 10:07:14] PHP Warning:  fopen(/home/nearbyin/public_html/python2/cache/comments.xml) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/libraries/bitfolge/feedcreator.php on line 863
+[15-Mar-2008 10:08:37] PHP Warning:  fopen(/home/nearbyin/public_html/python2/cache/comments.xml) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/libraries/bitfolge/feedcreator.php on line 863
+[15-Mar-2008 10:11:25] PHP Warning:  fopen(/www/python2/components/com_forme/forme_php.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/components/com_forme/forme.php on line 277
+[15-Mar-2008 10:11:25] PHP Warning:  fwrite(): supplied argument is not a valid stream resource in /home/nearbyin/public_html/python2/components/com_forme/forme.php on line 278
+[15-Mar-2008 10:11:25] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/nearbyin/public_html/python2/components/com_forme/forme.php on line 279
+[15-Mar-2008 10:11:25] PHP Warning:  fopen(/www/python2/components/com_forme/forme_html_php.txt) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/components/com_forme/forme.html.php on line 156
+[15-Mar-2008 10:11:25] PHP Warning:  fwrite(): supplied argument is not a valid stream resource in /home/nearbyin/public_html/python2/components/com_forme/forme.html.php on line 157
+[15-Mar-2008 10:11:25] PHP Warning:  fclose(): supplied argument is not a valid stream resource in /home/nearbyin/public_html/python2/components/com_forme/forme.html.php on line 158
+[15-Mar-2008 10:15:07] PHP Warning:  Invalid argument supplied for foreach() in /home/nearbyin/public_html/python2/components/com_content/views/category/view.feed.php on line 41
+[15-Mar-2008 10:16:58] PHP Warning:  Invalid argument supplied for foreach() in /home/nearbyin/public_html/python2/components/com_content/views/category/view.feed.php on line 41
+[15-Mar-2008 10:26:42] PHP Warning:  fopen(/home/nearbyin/public_html/python2/cache/comments.xml) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/libraries/bitfolge/feedcreator.php on line 863
+[15-Mar-2008 10:34:03] PHP Parse error:  syntax error, unexpected ')' in /home/nearbyin/public_html/python2/components/com_forme/forme.php(282) : eval()'d code on line 1
+[15-Mar-2008 10:35:43] PHP Parse error:  syntax error, unexpected T_CONSTANT_ENCAPSED_STRING in /home/nearbyin/public_html/python2/components/com_forme/forme.php on line 278
+[15-Mar-2008 10:39:31] PHP Parse error:  syntax error, unexpected $end in /home/nearbyin/public_html/python2/components/com_forme/forme.php(282) : eval()'d code on line 1
+[15-Mar-2008 10:40:33] PHP Parse error:  syntax error, unexpected $end in /home/nearbyin/public_html/python2/components/com_forme/forme.php(282) : eval()'d code on line 1
+[15-Mar-2008 10:41:04] PHP Parse error:  syntax error, unexpected $end in /home/nearbyin/public_html/python2/components/com_forme/forme.php(282) : eval()'d code on line 1
+[15-Mar-2008 10:41:09] PHP Parse error:  syntax error, unexpected $end in /home/nearbyin/public_html/python2/components/com_forme/forme.php(282) : eval()'d code on line 1
+[15-Mar-2008 10:41:13] PHP Parse error:  syntax error, unexpected $end in /home/nearbyin/public_html/python2/components/com_forme/forme.php(282) : eval()'d code on line 1
+[15-Mar-2008 10:47:59] PHP Parse error:  syntax error, unexpected ';' in /home/nearbyin/public_html/python2/components/com_forme/forme.php on line 7
+[15-Mar-2008 10:53:03] PHP Parse error:  syntax error, unexpected ';' in /home/nearbyin/public_html/python2/components/com_forme/forme.php on line 277
+[15-Mar-2008 11:12:37] PHP Warning:  Invalid argument supplied for foreach() in /home/nearbyin/public_html/python2/components/com_content/views/category/view.feed.php on line 41
+[15-Mar-2008 11:13:01] PHP Warning:  Invalid argument supplied for foreach() in /home/nearbyin/public_html/python2/components/com_content/views/category/view.feed.php on line 41
+[15-Mar-2008 11:13:50] PHP Warning:  fopen(/home/nearbyin/public_html/python2/cache/comments.xml) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/libraries/bitfolge/feedcreator.php on line 863
+[15-Mar-2008 11:48:24] PHP Parse error:  syntax error, unexpected T_VARIABLE in /home/nearbyin/public_html/python2/libraries/joomla/version.php on line 43
+[15-Mar-2008 13:25:46] PHP Fatal error:  Class 'ContentHelperRoute' not found in /home/nearbyin/public_html/python2/modules/mod_minifrontpage/helper.php on line 183
+[15-Mar-2008 13:42:31] PHP Warning:  fopen(/home/nearbyin/public_html/python2/cache/comments.xml) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/libraries/bitfolge/feedcreator.php on line 863
+[15-Mar-2008 13:44:53] PHP Fatal error:  Class 'ContentHelperRoute' not found in /home/nearbyin/public_html/python2/modules/mod_minifrontpage/helper.php on line 183
+[15-Mar-2008 15:06:46] PHP Warning:  fopen(/home/nearbyin/public_html/python2/cache/comments.xml) [<a href='function.fopen'>function.fopen</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/libraries/bitfolge/feedcreator.php on line 863
+[15-Mar-2008 15:06:46] PHP Fatal error:  Class 'ContentHelperRoute' not found in /home/nearbyin/public_html/python2/modules/mod_minifrontpage/helper.php on line 183
+[15-Mar-2008 18:23:27] PHP Fatal error:  Class 'ContentHelperRoute' not found in /home/nearbyin/public_html/python2/modules/mod_minifrontpage/helper.php on line 183
+[15-Mar-2008 19:52:44] PHP Fatal error:  Class 'ContentHelperRoute' not found in /home/nearbyin/public_html/python2/modules/mod_minifrontpage/helper.php on line 183
+[15-Mar-2008 20:02:12] PHP Fatal error:  Class 'ContentHelperRoute' not found in /home/nearbyin/public_html/python2/modules/mod_minifrontpage/helper.php on line 183
+[15-Mar-2008 21:40:09] PHP Fatal error:  Uncaught exception 'Exception' with message 'Invalid API key.  Please obtain one from http://wordpress.com/api-keys/' in /home/nearbyin/public_html/python2/administrator/components/com_maxcomment/classes_akismet/php5/Akismet.class.php:111
+Stack trace:
+#0 /home/nearbyin/public_html/python2/components/com_maxcomment/maxcomment.php(633): Akismet->__construct('http://python2....', '')
+#1 /home/nearbyin/public_html/python2/components/com_maxcomment/maxcomment.php(83): savecomment('com_maxcomment')
+#2 /home/nearbyin/public_html/python2/libraries/joomla/application/component/helper.php(162): require_once('/home/nearbyin/...')
+#3 /home/nearbyin/public_html/python2/includes/application.php(124): JComponentHelper->renderComponent('com_maxcomment')
+#4 /home/nearbyin/public_html/python2/index.php(68): JSite->dispatch('com_maxcomment')
+#5 /home/nearbyin/public_html/python2/index2.php(15): include('/home/nearbyin/...')
+#6 {main}
+  thrown in /home/nearbyin/public_html/python2/administrator/components/com_maxcomment/classes_akismet/php5/Akismet.class.php on line 111
+[15-Mar-2008 22:02:06] PHP Fatal error:  Class 'ContentHelperRoute' not found in /home/nearbyin/public_html/python2/modules/mod_minifrontpage/helper.php on line 183
+[15-Mar-2008 22:23:57] PHP Fatal error:  Class 'ContentHelperRoute' not found in /home/nearbyin/public_html/python2/modules/mod_minifrontpage/helper.php on line 183
+[16-Mar-2008 13:13:18] PHP Fatal error:  Unsupported operand types in /home/nearbyin/public_html/python2/includes/router.php on line 141
+[16-Mar-2008 13:18:53] PHP Fatal error:  Unsupported operand types in /home/nearbyin/public_html/python2/includes/router.php on line 142
+[19-Mar-2008 18:47:20] PHP Warning:  require_once(/home/nearbyin/public_html/python2/includes/Cache/Lite/Function.php) [<a href='function.require-once'>function.require-once</a>]: failed to open stream: No such file or directory in /home/nearbyin/public_html/python2/plugins/content/autoarchive.php on line 30
+[19-Mar-2008 18:47:20] PHP Fatal error:  require_once() [<a href='function.require'>function.require</a>]: Failed opening required '/home/nearbyin/public_html/python2/includes/Cache/Lite/Function.php' (include_path='.:/usr/lib/php:/usr/local/lib/php') in /home/nearbyin/public_html/python2/plugins/content/autoarchive.php on line 30

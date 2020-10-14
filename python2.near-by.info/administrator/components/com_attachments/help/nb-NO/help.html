@@ -1,0 +1,288 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN"
+"http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+<title>Attachments Documentation</title>
+<link href="../../css/admin.css" type="text/css" rel="stylesheet">
+<link href="help.css" type="text/css" rel="stylesheet">
+</head>
+<body><a name="top"></a>
+<h1>Attachments Documentation</h1>
+<h3>Version 1.2 - February 20, 2008</h3>
+<h3>Norwegian Bokmaal (nb-NO) translation by: Espen Gjelsvik - www.get-web.no / espen@get-web.no</h3>
+
+<ol>
+    <li><a href="#intro">Introduksjon</a></li>
+    <li><a href="#uploads">Opplastings begrensninger</a></li>
+    <li><a href="#options">Innstillinger</a></li>
+    <li><a href="#display_filename">Vis filnavn</a></li>
+    <li><a href="#styling">Endre utseendet på vedleggslisten</a></li>
+    <li><a href="#icons">Ikoner for filtyper</a></li>
+    <li><a href="#warnings">Advarsler</a></li>
+    <li><a href="#upgrading">Oppdatering</a></li>
+    <li><a href="#acknowledgements">Bekjennelser</a></li>
+</ol>
+
+<h2><a name="intro"></a>Introduksjon</h2>
+Programutvidelsen &#039;Attachments&#039; til Joomla! gjør det mulig å legge ved filer til artikkler.
+Inkludert er en plugin for å vise vedlegg, i tilegg til en komponent for opplasting og administrasjon av vedlegg.
+Det er mulighet for å kontrollere hvem som skal ha tilgang til å se vedlegg, og hvem som skal ha tilgang til å laste dem opp,
+ i tilegg er det flere andre muligheter for å øke fleksibilitet og bruksområde.
+Merk: alle instillinger styres fra komponent manageren. Denne programutvidelsen fungerer kun med Joomla! 1.5 eller nyere.
+
+<p>
+Dette tilegget har muligheter for språkpakker, og støtter følgende språk (i tilegg til Engelsk):
+<ul>
+	<li><b>Kinesisk:</b> Tradisjonell og forenklet kinesisk, oversatt av 
+	 baijianpeng (http://www.joomlagate.com).  <br>(Hjelp filen er ikke oversatt enda.)</li>
+    <li><b>Nederlandsk:</b> Oversatt av Parvus. (Takk Parvus!)</li>
+	<li><b>Portugisisk/Brasiliansk:</b> Oversatt av Arnaldo Giacomitti
+      (www.giacomitti.eng.br) og Cauan Cabral (www.cauancabral.net).
+	</li>
+	<li><b>German:</b> Oversatt av Michael Scherer. (Takk Michael!) </li>
+    <li><b>Finnish:</b> Oversatt av Tapani Lehtonen. (Takk Tapani!) </li>
+    <li><b>Spanish:</b> Oversatt av Carlos Alfaro. (Takk Carlos!) </li>
+	</li>
+	
+	<li><b>Norsk (bokmål):</b> Oversatt av Espen Gjelsvik (www.get-web.no)
+</ul>
+Mange takk til oversetterne! Har du lyst til å hjelpe til ned å oversette til et språk som enda ikke er støttet? Ta kontakt med forfatteren (se nederst).
+<span class="atop"><a href="#top">[Til toppen]</a></span>
+
+<h2><a name="uploads"></a>Opplastings begrensninger</h2>
+Ikke alle filtyper kan lastet opp. &#039;Attachments&#039; vil kun tillate filtyper som er definert i Joomla!`s Media manager.
+For å se (og endre) tilatte filtyper naviger til <b>Global konfigurasjon</b> og klikk på fanen <b>System</b>.
+Under mediainstillinger kan du kontrollere hvilke filendelser og mime typer som er tillatt for opplasting. 
+&#039;Attachments&#039; tar hensyn til disse begrensningene, med unntak &#039;Tillatte filendelser for bilder (filtyper)&#039; da disse blir ignorert.
+
+<span class="atop"><a href="#top">[Til toppen]</a></span>
+
+<h2><a name="options"></a>Innstillinger</h2>
+Alle innstillinger for &#039;Attachments&#039; kan endres i kontrollpanelet til komponenter.
+For å endre på disse, gå til administrasjonssiden, velg "Artikkel Vedlegg" under "Komponenter" menyen. 
+Klikk på "Parametre" i enden av verktøylinjen og du vil nå se alle parametre du kan endre.
+Disse parametrene er som følger::<br>
+<ul>
+
+<li><strong>Hvem kan se vedlegg:</strong> Denne instillingen styrer hvem som kan se listen over vedlegg i en artikkel.
+Det er to valg for denne instillingen:
+<ol>
+<li>&#039;<i>alle</i>&#039;. - Dette valget lar vedleggene være synlige for alle besøkende, uansett om de er innlogget eller ikke.</li>
+<li>&#039;<i>innlogget bruker</i>&#039;. - Dette valget lar vedleggene kun være synlig for brukere som er innlogget.</li>
+</ol>
+</li>
+
+<li><strong>Hvem som kan legge til vedlegg:</strong> Dette valget kontrollerer hvem som skal ha tilgang til å kunne legge ved et vedlegg til en artikkel. 
+Her har man to valg:
+<ol>
+<li>&#039;<i>Artikkelens forfatter</i>&#039; - Link for å legge til vedlegg vil kun være synlig for forfatteren av artikkelen.</li>
+<li>&#039;<i>Innlogget bruker</i>&#039; - Link for å legge til vedlegg vil være synlige for alle innloggede brukere.</li>
+</ol>
+</li>
+
+<li><strong>Vedlegg publiseres automatisk:</strong> Denne &#039;auto 
+publiser&#039; muligheten lar deg kontrollere om vedleggene skal publiseres automatisk med en gang de er lastet opp.
+Hvis du velger &#039;Ja&#039; vil vedleggene være synlige for brukere umiddelbart etter opplasting. Velger du 
+&#039;Nei&#039; vil de ikke bli publisert. De må manuelt publiseres av en Administrator.</li>
+
+<li><strong>Advarsel for automatisk publisering:</strong> Hvis du velger å deaktivere automatisk publisering, har du her muligheten til å 
+legge til en melding som forklarer fremgangsmåten for manuell publisering. 
+Hvis du lar dette feltet stå tomt vil de få en generell feilmelding som foreslår at de skal kontakte en administrator for å få hjelp til publisering.
+</li>
+
+<li><strong>Vis titler:</strong> Hvis denne settes til 'Ja' vil en rad med titler legges til i toppen av vedleggslisten, 
+som beskriver hva hver kolonne inneholder.
+</li>
+
+<li><strong>Vis vedleggs beskrivele:</strong> Dette valget kontrollerer om vedleggets beskrivelse skal vises.</li>
+
+<li><strong>Vis filstørrelse:</strong> Dette valget kontrollerer om filstørrelsen vises i listen over vedlegg.</li>
+
+<li><strong>Vis dato for endring:</strong> Hvis denne settes til 
+&#039;Ja&#039;, så vil dato for siste endring av filen vises i listen over vedlegg.</li>
+
+<li><strong>Dato format for endringsdato:</strong> Du kan 
+selv velge format for visning av endringsdatoen. Dette gjøres ved bruk av 'date' funksjonen i PHP.
+Som standard er følgende format valgt "M-j-Y&nbsp;g:ia" 
+Dette vil gi følgende resultat "Sep-29-2007 5:05pm". Vil du vise kun dato, ikke klokkeslett så kan du fjerne 'g:ia' delen.
+</li>
+
+<li><strong>Maks lengde for filnavn:</strong>
+Her kontrolleres makslengden for filnavn som skal vises i vedleggslisten. 
+Filnavn lenger enn maksgrensen vil bli beskåret. (av kosmetiske årsaker vil det faktiske filnavnet ikke endres.)
+Verdi 0 betyr at filnavnet kan være uendelig (filnavn feltet i vedleggsdatabase er begrenset til 80 tegn.) 
+Merk: Hvis filnavn er beskåret, vil det fulle filnavnet fortsatt vises i feltet "visnings navn"
+</li>
+
+<li><strong>CSS stil for vedleggs listen:</strong>For å overstyre 
+CSS stilen til vedleggslisten så kan du definere en egen stil her. 
+Standar stilnavnet er 'attachmensList'. Se <a href="#stuling">[Endre utseendet på vedleggslisten]</a> for mer informasjon.
+</li>
+
+<li><strong>Metode for vedleggs link:</strong> 
+Her kan du velge hvordan linken til et vedleggs skal åpnes. 
+'I samme vindu' vil åpne linken i samme vindu. 'I nytt vindu' vil åpne et nytt vindu, i noen nettlesere vil det åpnes i en ny fane.
+</li>
+
+<li><strong>Styring av filnavn:</strong> Denne innstillingen 
+lar deg kontrollere et prefiks som settes inn i forkant av filnavnet. 
+Du har tre valg.
+<ol>
+<li>&#039;<i>Artikkel ID</i>&#039; - Her settes ID til artikkelen i forkant av filnavnet. Dette vil kunne forhindre konflikter der flere vedlegg har samme navn.</li>
+<li>&#039;<i>Vedleggets ID</i>&#039; - Som over, bare at her velges ID`n fra vedlegget. </li>
+<li>&#039;<i>Ingenting</i>&#039; - Hvis du velger dette alternativet vil filnavnet ikke endres. Du må selv passe på at det ikke oppstår konflikter med filnavn.</li>
+</ol>
+</li>
+
+<li><strong>Undermappe for opplasting:</strong> &#039;Attachments&#039;
+programutvidelsen vil legge filer i denne undermappen i topnivået for din Joomla! installaskon.
+<i>Advarsel: Hvis du endrer denne instillingen må du selv opprette den nye mappen manuelt før du laster opp nye vedlegg.</i>
+Merk at om denne mappen endres så har dette ikke tilbakevirkende kraft, vedlegg lastet opp før endringen vil fortsatt ligge i den gamle mappen.</li>
+
+<li><strong>Egdendefinert tittel for vedleggsliste:</strong>Som 
+Standard så setter &#039;Attachments&#039; teksten "Vedlegg:" som overskrift på vedleggslisten. 
+I noen tilfeller ønsker du kanskje å benytte en annen overskrift. Du har her muligheten til å spesifisere 
+overskriften pr artikkel. For eksempel hvis du ønsker at vedleggslisten i artikkel 211 skal ha overskriften "Downloads:" 
+så kan du gjøre følgende:
+&#039;211&nbsp;Downloads&#039; (uten annførselstegn). En overskrift pr linje.</li>
+
+<li><strong>Skjul vedlegg for:</strong> 
+Kommasepparert liste over nøkkelord eller Seksjoner/Kategorier der vedleggslisten ikke skal vises. To spesial nøkkelsord kan brukes: 'frontpage' for å fjerne vedleggslisten på forsiden. og 'all_but_article_views' for kun å vise vedlegg i artikkelvisning. (Fjern anførselstegnene når du legger inn nøkkelord.) Seksjon/Kategori ID`ene må oppgis som en nummerisk verdi separert med en skråstrek(/): Seksjon#/Kategori#, Seksjon#/Kategori#, Bruk bare 'Seksjon#' for å definere alle kategorier for en gitt seksjon. F.eks: 23/10, 23/11, 24. Som vil fjerne vedleggslisten for kategiri med ID 10 og 11 i Seksjon med ID 23, samt at alle kategorier i seksjon med ID 24 vil være uten vedleggsliste.
+</li>
+
+<li><strong>Sikre nedlastninger:</strong> &#039;Attachments&#039; 
+lagrer som standard alle vedlegg i en fritt tilgjengelig undermappe. Hvis du velger  <i>sikre</i>
+nedlastinger så vil mappen vedleggs lagres i gjøres utilgjengelig .
+Nedlastningslinkene i frontend vil la deg laste ned vedleggene, men de vil ikke være direkte linker. 
+Dette vil forhindre tilgang til filene hvis ikke brukeren har de korrekte tilgangene. 
+Hvis <i>sikre</i> nedlastninger ikke velges, vil nedlastningslinkene fortsatt ikke være direkte linker, men filene vil være tilgjengelig for alle som kan 
+den fulle URL adressen til undermappen, da den fortsatt vil være fritt tilgjengelig. 
+Velger du <i>sikre</i> nedlastninger vil tilgangen til filer bli forhindret selv om noen skulle vite den fulle URL adressen, dette fordi undermappen nå vil beskyttes. 
+Merk: i <i>sikre</i> modus vil ikke vedleggslisten vises til brukere som ikke er logget inn.
+
+<li><strong>Nedlastningsmodus for sikre nedlastninger:</strong> 
+Dette valget kontrollerer om vedleggene skal lastes ned som separate filer, eller om de skal vises i nettleser 
+(om nettleseren støtter gitt filtype). Det er to alternativer her:
+
+<ul>
+	<li><i>&#039;integrert&#039;</i>:Vedlegg vil åpnes i nettleseren hvis det er støtte for det, (slik som bilder og tekst). </li>
+	<li><i>&#039;vedlegg&#039;</i>:Vedlegg vil lastes ned som en separat fil. </li>
+</ul><br>
+Uansett, filer som ikke støttes av nettleseren vil i begge tilfeller bli lastet ned som en separat fil.
+</li>
+
+</ul>
+<span class="atop"><a href="#top">[Til toppen]</a></span>
+
+<h2><a name="display_filename"></a>Visning av filnavn</h2>
+Normalt når filer lastes opp og vises i en vedleggsliste så vil hele filnavnet vises som en nedlastnings link. 
+I noen tilfeller vil filnavnet være for langt for at dette skal fungere smertefritt. I opplasningsskjemaet 
+har man et felt kalt "visnings navn", her kan man velge et alternativt filnavn som skal vises i stedet for det hele filnavnet. 
+
+Merk: Det er en parameter som heter 'Maks lengde for filnavn' her settes begrensningen på filnavnet, er filnavnet lenger enn denne begrensningen så vil resten av 
+filnavnet vises i feltet for visnings navn. 
+
+<span class="atop"><a href="#top">[Til toppen]</a></span>
+
+<h2><a name="styling"></a>Endre utseendet på vedleggslisten</h2>
+Vedleggslisten som vises i artiklene bruker en spesiell &#039;div&#039;
+som inneholder en tanell for vedleggene. 
+Tabellen har flere forskjellige CSS klasser tilknyttet, dette forenkler jobben til webansvarlig og forbedrer fleksibiliteten. 
+Se i CSS filen for programutvidelsen for eksempler (plugins/content/attachments.css). 
+Ønsker du å endre stilen, så kan du kopiere den orginale stilen inn i slutten av den samme filen og gi nytt navn til 'attachmensList' til noe du selv velger. 
+I kontrolpanelet til Attachments programutvidelsen så endrer du parameteren for <i>CSS stil for vedleggs listen:</i> til å inneholde den nye stilen du har deifnert i bunn av CSS filen. 
+På denne måten kan du enkelt skifte mellom utseendet, vil du ha tilbake det orginale utseendet så sett parametren til &#039;attachmentList&#039;.
+
+<span class="atop"><a href="#top">[Til toppen]</a></span>
+
+<h2><a name="icons"></a>Ikoner for filtyper</h2>
+'Attachments' programutvidelsen legger til ikoner forran hver fil i vedleggslisten. 
+Ønsker du å legge til en filtype gjør følgende: 
+(1) Legg til ønsket ikon i mappen 'media/attachments/icons', hvis det ikke allerede finnes et passende ikon der. 
+(2) Åpne og rediger følgende fil: 'components/com_attachments/file_types.php' legg til en passende linje til det 
+statiske array`et $attachments_icon_from_file_extension som kobler et ikon til en filtype. 
+Skulle ikke dette fungere må du kanskje legge til en ny linje i arrayet $attachments_icon_from_mime_type. 
+(3) Husk å ta kopi av ikon filen og av file_types.php filen før du foretar en oppdatering av programutvidelsen, slik at de ikke blir overskrevet.
+
+
+<span class="atop"><a href="#top">[Til toppen]</a></span>
+
+<h2><a name="warnings"></a>Advarsler</h2>
+<ul>
+<li><strong>Hvis du har sensitive eller private vedlegg bruk sikkerhetsfunksjonen til å forhindre tilgang til vedleggene.
+</strong><br> 
+Bruker du ikke denne funksjonen, så vil vedleggene bli lagret i en fritt tilgjengelig mappe som alle kan åpne forutsatt at de kjenner til URL`n. 
+<i>Sikre</i> funksjonen forhindrer tilgang til alle som ikke har rettigheter.
+</li>
+
+<li>Hver gang en fil blir lastet opp så sjekkes det om opplastingsmappen finnes, gjør den ikke det vil den opprettes automatisk. 
+Hvis &#039;Attachments&#039; ikke lykkes med å opprette mappen, må du opprette den selv. Husk å sette riktige rettigheter på mappen som tillater opplastning til den. 
+I unix/linus verdenen kan du sette chmod 744.</li>
+
+<li>Skulle du få problemer med å laste opp visse filtyper så husk at denne programutvidelsen 
+henter listen over tillatte filtyper fra Media behandleren. Kun en administrator kan administrere hvilke filtyper som er tillatt. 
+</li>
+
+<li>Det er en plugin som heter 'add_attachment_btn_plugin' (I plugin manageren heter den 'Button - AddAttachment') 
+Denne legger til en knapp i bunn av redigerings bildet for artikkler. 
+Har du installert denne plugin, men får ikke opp knappen, så sjekk at plugin er aktivert. 
+Merk: Denne knappen er ikke aktiv i bildet der du legger til ny artikkel, den er kun tilgjengelig når du redigerer en eksisterende artikkel.
+</li>
+
+<li>Denne versjonen ser ut til å fungere med SEF sammen med Joomla! 1.5 
+RC3 og RC4 utgivelser.  Oppdateringen av &#039;Attachments&#039; til RC3 ser ut til å ødelegge for SEF med RC2. 
+</li>
+
+</ul>
+<span class="atop"><a href="#top">[Back to top]</a></span>
+
+<h2><a name="upgrading"></a>Oppdatering</h2>
+Har du vedlegg lastet opp med en tidligere versjon som du ønsker å overføre til en ny versjon så følg disse stegene: 
+<ol>
+<li>Bruk phpMyAdmin (eller lignende verktøy for SQL dumping) for å lagre innholdet av tabellen jos_attachments (ved bruk av export funksjonen, bruk "complete insert" ikke "extended).</li>
+<li>Avinstaller &#039;Attachments&#039; komponenten. </li>
+<li>Avinstaller &#039;Attachments&#039; programutvidelsen. </li>
+<li>Installer så den nye versjonen ved å pakke ut zip filen. Installer programutvidelsen først, deretter komponenten</li>
+<li>Aktiver &#039;Attachments&#039; programutvidelsen.</li>
+<li>Bruk så phpMyAdmin til å legge tilbake dataene inn i den nye tabellen jos_attachments.</li>
+<li>Oppgraderer du fra en versjon før 1.0 til en versjon etter 1.0 må du gå inn i administrasjonssiden å legge til de korrekte verdiene for feltet 
+&#039;icon_filename&#039; dette gjøres ved å logge inn i administrasjonssiden og så gå til følgende url <br>
+<b>/administrator/index.php?option=com_attachments&amp;task=add_icon_filenames</b>
+</li>
+</ol>
+<p>Merk at avinstallering av &#039;Attachments&#039; programutvidelsen ikke fjerner tidligere opplastede filer, 
+men den fjerner vedleggs tabellen i databasen. Så etter å ha reinstallert en ny versjon av &#039;Attachments&#039;, er det kun nødvendig å legge tilbake 
+vedleggstabellen for å gjenopprette alle tidligere vedlegg.</p>
+
+<p>
+Ønsker du ikke å gjenopprette tidligere vedlegg så ikke glem å slette filene manuelt fra opplastingsmappen. 
+Dette vil forhindre at det oppstår konflikter der to filer har samme navn.
+<span class="atop"><a href="#top">[Til toppen]</a></span></p>
+
+<h2><a name="acknowledgements"></a>Bekjennelser</h2>
+Mange takk til de følgende bidragsytere og resurser:
+<ul>
+    <li>Boken <i>Learning Joomla! 1.5 Extension Development: Creating Modules, 
+    Components, and Plugins with PHP</i> by Joseph L. LeBlanc denne var veldig nyttig under arbeidet med 'Attachments'.  
+    </li>
+    <li>Ikoner for filtyper kommer fra flere kilder, deriblandt:
+        <ul>
+           <li><a href="http://www.famfamfam.com/lab/icons/silk/">The Silk 
+           icons by Mark James (http://www.famfamfam.com/lab/icons/silk/)</a></li>
+           <li><a href="http://www.zap.org.au/documents/icons/file-icons/sample.html">File-Type 
+           Icons 1.2 by John Zaitseff (http://www.zap.org.au/documents/icons/file-icons/sample.html)</a></li>
+           <li><a href="http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html">Doctype 
+           Icons 2 by Timothy Groves (http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html)</a></li>
+           <li><a href="http://www.catnip.co.uk/opendocument/icons/">OpenDocument icons proposed by 
+           Pete Harlow (http://www.catnip.co.uk/opendocument/icons/)</a></li>
+       </ul>
+       <br>
+       Merk at de fleste ikonene er modifisert og redigert for å passe inn. Ønsker du laste ned orginalene så hent de fra sidene ovenfor. 
+    </li>
+</ul>
+<span class="atop"><a href="#top">[Back to top]</a></span>
+
+<p>Vennligst rapporter alle feil og øsnker til  <a href="mailto:jmcameron@jmcameron.net">jmcameron@jmcameron.net</a>.</p>
+</body>
+</html>

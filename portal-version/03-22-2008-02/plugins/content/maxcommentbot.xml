@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="4.5.1" type="mambot" group="content">
+  <name>mXcommentBot</name>
+  <author>Bernard Gilly</author>
+  <creationDate>04 Mar 2008</creationDate>
+  <copyright>Copyright 2007-2008 by Bernard Gilly</copyright>
+  <license>This component is released under Creative Commons License. All rights reserved.</license>
+  <authorEmail>contact@visualclinic.fr</authorEmail>
+  <authorUrl>www.visualclinic.fr</authorUrl>
+  <version>1.0.7</version>
+  <description>Replaces {mxc} tag in content item or load mXcomment in automatic mode</description>
+  <files>
+    <filename mambot="maxcommentbot">maxcommentbot.php</filename>
+  </files>
+  <params>    
+    <param name="notShowOnFrontEnd" type="radio" default="0" label="Disabled on front-end" description="Not show mXcomment on front-end, just in content." >
+      <option value="0">No</option>
+      <option value="1">Yes</option>	  
+    </param>
+    <param name="notShowOnIntro" type="radio" default="0" label="Disabled on intro" description="Not show mXcomment on intro, run just on full content." >
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="disabledNativeVote" type="radio" default="0" label="Disabled Joomla Votes" description="Force disabled Joomla Voting function." >
+      <option value="0">No</option>
+      <option value="1">Yes</option>
+    </param>
+    <param name="@spacer" type="spacer" default="" label="Options availables with Joom!fish" description="Options below available only with Joom!fish, require installation of Joom!fish component." />	
+    <param name="disabledChoiceLang" type="radio" default="0" label="Disabled language choice comments" description="Disabled language choice on show comments. Require Joom!fish component." >
+      <option value="0">No</option>
+      <option value="1">Yes</option>	  
+    </param>
+    <param name="forceKeywordsLang" type="radio" default="1" label="Force original(s) keyword(s)" description="Force original(s) keyword(s) if not exists in content translation. Require Joom!fish component." >
+      <option value="0">No</option>
+      <option value="1">Yes</option>  
+    </param>			
+  </params>
+</mosinstall>

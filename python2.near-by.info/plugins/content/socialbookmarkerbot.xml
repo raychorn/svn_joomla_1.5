@@ -1,0 +1,337 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="2.1.5" type="mambot" group="content">
+	<name>Social Bookmarker Mambot</name>
+	<author>Patrick Swesey</author>
+	<creationDate>3/29/07</creationDate>
+	<copyright>(C)2007 Patrick Swesey. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>webmaster@patrickswesey.com</authorEmail>
+	<authorUrl>http://www.patrickswesey.com</authorUrl>
+	<version>2.1.5</version>
+	<description>Allows administrator to add popular social bookmarking website buttons to content items.</description>
+	<files>
+		<filename mambot="socialbookmarkerbot">socialbookmarkerbot.php</filename>
+		<filename>socialbookmarkerbot_images/digg.png</filename>
+		<filename>socialbookmarkerbot_images/delicious.png</filename>
+		<filename>socialbookmarkerbot_images/google.png</filename>
+		<filename>socialbookmarkerbot_images/live.png</filename>
+		<filename>socialbookmarkerbot_images/facebook.png</filename>
+		<filename>socialbookmarkerbot_images/slashdot.png</filename>
+		<filename>socialbookmarkerbot_images/netscape.png</filename>
+		<filename>socialbookmarkerbot_images/technorati.png</filename>
+		<filename>socialbookmarkerbot_images/stumbleupon.png</filename>
+		<filename>socialbookmarkerbot_images/spurl.png</filename>
+		<filename>socialbookmarkerbot_images/wists.png</filename>
+		<filename>socialbookmarkerbot_images/simpy.png</filename>
+		<filename>socialbookmarkerbot_images/newsvine.png</filename>
+		<filename>socialbookmarkerbot_images/blinklist.png</filename>
+		<filename>socialbookmarkerbot_images/furl.png</filename>
+		<filename>socialbookmarkerbot_images/reddit.png</filename>
+		<filename>socialbookmarkerbot_images/fark.png</filename>
+		<filename>socialbookmarkerbot_images/blogmarks.png</filename>
+		<filename>socialbookmarkerbot_images/yahoo.png</filename>
+		<filename>socialbookmarkerbot_images/smarking.png</filename>
+		<filename>socialbookmarkerbot_images/netvouz.png</filename>
+		<filename>socialbookmarkerbot_images/shadows.png</filename>
+		<filename>socialbookmarkerbot_images/rawsugar.png</filename>
+		<filename>socialbookmarkerbot_images/magnolia.png</filename>
+		<filename>socialbookmarkerbot_images/plugim.png</filename>
+		<filename>socialbookmarkerbot_images/squidoo.png</filename>
+		<filename>socialbookmarkerbot_images/blogmemes.png</filename>
+		<filename>socialbookmarkerbot_images/feedmelinks.png</filename>
+		<filename>socialbookmarkerbot_images/blinkbits.png</filename>
+		<filename>socialbookmarkerbot_images/tailrank.png</filename>
+		<filename>socialbookmarkerbot_images/linkagogo.png</filename>
+		<filename>socialbookmarkerbot_images/joomladigger.png</filename>
+	</files>
+	<params>
+		<param name="partialdisplay" type="list" default="vertical" label="Homepage" description="No to display nothing on the homepage, Vertical to display only the buttons in the upper-right, Horizontal to display only the buttons at the bottom, and All to display all buttons on the homepage. Caution! Do not use any advanced buttons for Del.icio.us on your homepage, the Del.icio.us website does not offer a smart button which supports linking to a page other than the current page. Please use the small Del.icio.us button if you want to use this plugin on your homepage.">
+			<option value="none">None</option>
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+			<option value="all">All</option>
+		</param>
+		<param name="staticcontent" type="list" default="all" label="Type of Content to Display With" description="Do you want the buttons to appear on regular content, static content, or all content?">
+			<option value="all">All Content</option>
+			<option value="static">Only Static Content</option>
+			<option value="content">Only Regular Content</option>
+		</param>
+		<param name="excludecategories" type="text" default="" label="Categories to Exclude" description="Comma-separated list of categories to exclude."/>
+		<param name="manualurl" type="list" default="no" label="Manual URLs" description="Select Yes if you manually declare any alternate URLs in your content, default is no for the sake of performance (see support page at http://www.patrickswesey.com for syntax details).">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</param>
+		<param name="currenturl" type="list" default="no" label="Use current URL (safe mode)" description="Select Yes if your website uses a complicated URL format that the SocialBookmarkerBot cannot recreate (set this to Yes if the generated URLs are incorrect). THIS WILL DISABLE ANY BUTTONS FROM DISPLAYING ON THE HOMEPAGE OR ANY PREVIEW PAGE.">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</param>
+		<param name="verticalfloat" type="list" default="right" label="Top Buttons Float" description="Float the top icons left or right.">
+			<option value="right">Right</option>
+			<option value="left">Left</option>
+		</param>
+		<param name="horizontalalign" type="list" default="left" label="Alignment of bottom buttons" description="Align the bottom buttons left, center or right.">
+			<option value="left">Left</option>
+			<option value="center">Center</option>
+			<option value="right">Right</option>
+		</param>
+		<param name="bordercolor" type="text" default="Gray" label="Border Color" description="Border color of small icons (example: Red or #ff0000)."/>
+		<param name="borderwidth" type="text" default="1" label="Border Width" description="Width of border (numbers only)."/>
+		<param name="removebaseurl" type="list" default="no" label="Remove duplicate base URL" description="Only set this to YES if the plugin is adding an extra base URL to your hyperlinks.">
+			<option value="no">No</option>
+			<option value="yes">Yes</option>
+		</param>
+		<param name="bookmarktext" type="text" default="" label="Bookmarker Text" description="The text to display above the small bookmarker icons."/>
+		<param name="digg" type="list" default="advanced" label="Digg" description="Add Digg button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+			<option value="advanced">Advanced Button</option>
+		</param>
+		<param name="diggalign" type="list" default="vertical" label="Digg Button Alignment" description="Digg button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="reddit" type="list" default="small" label="Reddit" description="Add Reddit button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+			<option value="wide">Short, Wide, Advanced Button</option>
+			<option value="diggstyle">Digg-Style Button</option>
+			<option value="redditlogo">Reddit Creature Logo Button</option>
+		</param>
+		<param name="redditalign" type="list" default="horizontal" label="Reddit Button Alignment" description="Reddit button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="delicious" type="list" default="small" label="Del.icio.us" description="Add Del.icio.us button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+			<option value="tallbadge">Tall Badge</option>
+			<option value="widebadge">Wide, One Line Badge</option>
+		</param>
+		<param name="deliciousalign" type="list" default="horizontal" label="Delicious Button Alignment" description="Delicious button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param><param name="google" type="list" default="no" label="Google" description="Add Google button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="googlealign" type="list" default="horizontal" label="Google Button Alignment" description="Google button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="live" type="list" default="no" label="Live" description="Add Live button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="livealign" type="list" default="horizontal" label="Live Button Alignment" description="Live button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param><param name="facebook" type="list" default="small" label="Facebook" description="Add Facebook button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="facebookalign" type="list" default="horizontal" label="Facebook Button Alignment" description="Facebook button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="slashdot" type="list" default="small" label="Slashdot" description="Add Slashdot button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="slashdotalign" type="list" default="horizontal" label="Slashdot Button Alignment" description="Slashdot button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="netscape" type="list" default="small" label="Netscape" description="Add Netscape button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="netscapealign" type="list" default="horizontal" label="Netscape Button Alignment" description="Netscape button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="technorati" type="list" default="small" label="Technorati" description="Add Technorati button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="technoratialign" type="list" default="horizontal" label="Technorati Button Alignment" description="Technorati button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="stumbleupon" type="list" default="small" label="StumbleUpon" description="Add StumbleUpon button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="stumbleuponalign" type="list" default="horizontal" label="StumbleUpon Button Alignment" description="StumbleUpon button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="newsvine" type="list" default="small" label="Newsvine" description="Add Newsvine button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="newsvinealign" type="list" default="horizontal" label="Newsvine Button Alignment" description="Newsvine button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="spurl" type="list" default="no" label="Spurl" description="Add Spurl button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="spurlalign" type="list" default="horizontal" label="Spurl Button Alignment" description="Spurl button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="wists" type="list" default="no" label="Wists" description="Add Wists button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="wistsalign" type="list" default="horizontal" label="Wists Button Alignment" description="Wists button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="simpy" type="list" default="no" label="Simpy" description="Add Simpy button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="simpyalign" type="list" default="horizontal" label="Simpy Button Alignment" description="Simpy button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="blinklist" type="list" default="no" label="BlinkList" description="Add BlinkList button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="blinklistalign" type="list" default="horizontal" label="Blinklist Button Alignment" description="Blinklist button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="furl" type="list" default="small" label="Furl" description="Add Furl button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="furlalign" type="list" default="horizontal" label="Furl Button Alignment" description="Furl button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="fark" type="list" default="no" label="Fark" description="Add Fark button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="farkalign" type="list" default="horizontal" label="Fark Button Alignment" description="Fark button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="blogmarks" type="list" default="no" label="Blogmarks" description="Add Blogmarks button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="blogmarksalign" type="list" default="horizontal" label="Blogmarks Button Alignment" description="Blogmarks button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="yahoo" type="list" default="small" label="Yahoo! Bookmarks" description="Add Yahoo! Bookmarks button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="yahooalign" type="list" default="horizontal" label="Yahoo! Button Alignment" description="Yahoo! button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="smarking" type="list" default="no" label="Smarking" description="Add Smarking button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="smarkingalign" type="list" default="horizontal" label="Smarking Button Alignment" description="Smarking button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="netvouz" type="list" default="no" label="Netvouz" description="Add Smarking button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="netvouzalign" type="list" default="horizontal" label="Netvouz Button Alignment" description="Netvouz button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="shadows" type="list" default="no" label="Shadows" description="Add Shadows button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="shadowsalign" type="list" default="horizontal" label="Shadows Button Alignment" description="Shadows button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="rawsugar" type="list" default="no" label="RawSugar" description="Add Raw Sugar button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="rawsugaralign" type="list" default="horizontal" label="RawSugar Button Alignment" description="RawSugar button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="magnolia" type="list" default="small" label="Ma.gnolia" description="Add Ma.gnolia button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="magnoliaalign" type="list" default="horizontal" label="Ma.gnolia Button Alignment" description="Ma.gnolia button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="plugim" type="list" default="no" label="Plugim" description="Add Plugim button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="plugimalign" type="list" default="horizontal" label="Plugim Button Alignment" description="Plugim button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="squidoo" type="list" default="no" label="Squidoo" description="Add Squidoo button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="squidooalign" type="list" default="horizontal" label="Squidoo Button Alignment" description="Squidoo button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="blogmemes" type="list" default="no" label="Blogmemes" description="Add Blogmemes button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="blogmemesalign" type="list" default="horizontal" label="Blogmemes Button Alignment" description="Blogmemes button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="feedmelinks" type="list" default="no" label="FeedMeLinks" description="Add FeedMeLinks button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="feedmelinksalign" type="list" default="horizontal" label="FeedMeLinks Button Alignment" description="FeedMeLinks button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="blinkbits" type="list" default="no" label="BlinkBits" description="Add BlinkBits button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="blinkbitsalign" type="list" default="horizontal" label="BlinkBits Button Alignment" description="BlinkBits button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="tailrank" type="list" default="no" label="TailRank" description="Add TailRank button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="tailrankalign" type="list" default="horizontal" label="TailRank Button Alignment" description="TailRank button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+		<param name="linkagogo" type="list" default="no" label="linkaGoGo" description="Add linkaGoGo button?">
+			<option value="no">No</option>
+			<option value="small">Small Button</option>
+		</param>
+		<param name="linkagogoalign" type="list" default="horizontal" label="linkaGoGo Button Alignment" description="linkaGoGo button vertically at top right or horizontally at bottom left?">
+			<option value="vertical">Vertical</option>
+			<option value="horizontal">Horizontal</option>
+		</param>
+	</params>
+</mosinstall>

@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module" version="1.0.0">
+	<name>mod_fireboard</name>
+	<author>MetZ</author>
+	<creationDate>February 2008</creationDate>
+	<copyright>(C) 2008 Open Source Matters. All rights reserved.</copyright>
+	<license>http://www.gnu.org/copyleft/gpl.html GNU/GPL</license>
+	<authorEmail>metz80@gmail.com</authorEmail>
+	<authorUrl>www.football-supporter.com</authorUrl>
+	<version>1.0.0</version>
+	<description>
+	<![CDATA[
+	<p>This is a rewrite of the Fireboard latest posts module by <a href="http://extensions.joomla.org/component/option,com_mtree/task,viewlink/link_id,2178/Itemid,35/" target="_blank">fuQaHa</a></p>
+	<p>This module will display latest posts, based on settings in module configuration.</p>
+	<ul>
+	<li>Number of posts to display</li>
+	<li>What categories to display posts from</li>
+	<li>What posts to display (first, last, all)</li>
+	<li>Display posts on user access</li>
+	<li>Link to CB profiles</li>
+	<li>Possibilty to style the module</li>
+	</ul>
+	<p><b>If you like this module, please make a Donation!</b></p>
+	<p><a href="http://www.webme.no/dl/download.php" target="_blank"><image src="https://www.paypal.com/en_US/i/btn/btn_donateCC_LG.gif" border="0" alt="Make donations with PayPal - it's fast, free and secure!" /></a></p>
+<p><br />Thanks <b>;)</b></p>]]>
+</description>
+	<files>
+		<filename module="mod_fireboard">mod_fireboard.php</filename>
+		<filename>mod_fireboard/new.gif</filename>
+		<filename>mod_fireboard/no_new.gif</filename>
+	</files>
+	<params>
+		<param name="@spacer" type="spacer" default="------------ General Settings -------------" label="" description="" />
+		<param name="num_posts" type="text" default="5" label="Number of posts" description="Number of posts to display" />
+		<param name="only_categories" type="text" default="" label="Only show categories" description="Only include posts from the specific categories (give IDs separated by commas, e.g. 1,2,3), leave blank to include all categories. Include -1 to indicate the currently viewed category." />
+		
+		<param name="child_categories" type="list" default="1" label="Include child categories" description="Include child categories of the above category">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		
+		<param name="within_thread" type="list" default="0" label="Show from each thread" description="Which posts to show from each thread">
+		<option value="0">All posts</option>
+		<option value="1">First only</option>
+		<option value="2">Last only</option>
+		</param>
+		
+		<param name="show_public" type="list" default="1" label="Show public access" description="Show posts in forums with public access">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		
+		<param name="show_registered" type="list" default="1" label="Show registered access" description="Show posts in forums with registered access">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		
+		<param name="show_special" type="list" default="0" label="Show special access" description="Show posts in forums with special access">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		
+		<param name="max_length" type="text" default="43" label="Shortened subject length" description="Maximum length of post title before truncation" />
+		<param name="date_format" type="text" default="d-m-y H:i" label="Date/time format" description="See PHP date() func for usage" />
+		
+		<param name="name_link" type="radio" default="0" label="Link To CB Profile" description="Link names to Community Builder profiles">
+		<option value="0">No</option>
+		<option value="1">Yes</option>
+		</param>
+		
+		<param name="@spacer" type="spacer" default="------------ Language Settings -------------" label="" description="" />
+		<param name="forum_header" type="text" default="Latest Forum Posts" label="Header Title" description="Header title text" />
+		<param name="topic_text" type="text" default="Topics" label="Topic Text" description="Topic table text" />
+		<param name="by_text" type="text" default="By" label="By Text" description="By table text" />
+		<param name="category_text" type="text" default="Category" label="Category Text" description="Category table text" />
+		<param name="date_text" type="text" default="Date" label="Date Text" description="Date table text" />
+		<param name="new_alt_text" type="text" default="New posts" label="Unread alt Text" description="UNREAD image alt text" />
+		<param name="@spacer" type="spacer" default="------------ General Styling -------------" label="" description="" />
+		<param name="border_color" type="text" default="#5388ce" label="Border Color" description="What border color do you want to use on the module" />
+		<param name="header_background" type="text" default="#5388ce" label="Header Background" description="What header background color do you want to use" />
+		<param name="header_text" type="text" default="#fff" label="Header Text Color" description="What header-text color do you want to use" />
+		<param name="@spacer" type="spacer" default="------------ Title Table Styling -------------" label="" description="" />
+		<param name="module_table_background" type="text" default="#b2cdee" label="Table Title Background" description="What background do you want to use on the table titles" />
+		<param name="module_table_text" type="text" default="#000" label="Table Text Color" description="What table title text color do you want to use" />
+		<param name="@spacer" type="spacer" default="------------ Module Styling -------------" label="" description="" />
+		<param name="module_background" type="text" default="#fff" label="Module Background" description="What module background color do you want to use" />
+		<param name="module_text" type="text" default="#000" label="Module Text Color" description="What module text color do you want to use" />
+	</params>
+</mosinstall>

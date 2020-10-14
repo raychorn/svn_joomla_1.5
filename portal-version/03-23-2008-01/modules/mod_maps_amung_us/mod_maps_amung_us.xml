@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall type="module">
+	<name>maps.amung.us Module</name>
+	<author>Patrick Swesey</author>
+	<creationDate>September 4, 2007</creationDate>
+	<copyright>Copyright Patrick Swesey 2007</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>webmaster@joomladigger.com</authorEmail>
+	<authorUrl>http://joomladigger.com</authorUrl>
+	<version>1.0</version>
+	<description><![CDATA[
+	<a>For questions or support, please visit: <a href="http://joomladigger.com" target="_blank" style="cursor:help;">JoomlaDigger.com</a>
+	]]></description>
+	<files>
+		<filename module="mod_maps_amung_us">mod_maps_amung_us.php</filename>
+	</files>
+	<params>
+		<param name="size" type="list" default="small" label="Size" description="Choose which size to display.">
+			<option value="small">Small</option>
+			<option value="large">Large</option>
+		</param>
+		<param name="mapstyle" type="list" default="neosat" label="Map Style" description="Choose style of map to display.">
+			<option value="neosat">Oceania</option>
+			<option value="green">Forester</option>
+			<option value="natural">Natural</option>
+			<option value="classic">Classic</option>
+			<option value="night">Moonlight</option>
+			<option value="red">Red Alert</option>
+			<option value="cart">Columbus</option>
+			<option value="textbook">Textbook</option>
+			<option value="girly">Girly</option>
+        </param>
+		<param name="pinstyle" type="list" default="default" label="Pin Style" description="Choose a pin style to display.">
+        	<option value="default">Circle</option>
+			<option value="cross">Cross</option>
+			<option value="diamond">Diamond</option>
+			<option value="heart">Heart</option>
+			<option value="spinner">Spinner</option>
+			<option value="square">Square</option>
+			<option value="star">Star</option>
+			<option value="target">Target</option>
+			<option value="triangle">Triangle</option>
+		</param>
+		<param name="pincolor" type="list" default="blue" label="Pin Color" description="Choose a pin color to display.">
+        	<option value="black">Black</option>
+			<option value="brown">Brown</option>
+			<option value="red">Red</option>
+			<option value="orange">Orange</option>
+			<option value="yellow">Yellow</option>
+			<option value="green">Green</option>
+			<option value="blue">Blue</option>
+			<option value="pink">Pink</option>
+		</param>
+		<param name="key" type="text" default="" label="8 Character Key" description="Your 8-character key from http://maps.amung.us."/>		
+		<param name="@spacer" type="spacer" default="" label="" description="" />
+		<param name="moduleclass_sfx" type="text" default="" label="Module Class Suffix" description="A suffix to be applied to the css class of the module. This allows individual module styling" />
+	</params>
+</mosinstall>

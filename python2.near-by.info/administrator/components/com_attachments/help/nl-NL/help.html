@@ -1,0 +1,387 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html>
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=us-ascii">
+    <title>Documentatie Joomla! extensie &rsquo;Attachments&rsquo;</title>
+    <link href="../../css/admin.css" type="text/css" rel="stylesheet">
+    <link href="help.css" type="text/css" rel="stylesheet">
+</head>
+<body><a name="top"></a>
+
+<h1>Documentatie Joomla! extensie &rsquo;Attachments&rsquo;</h1>
+<h3>Version 1.2 - 20 Februari 2008</h3>
+<h3>Nederlandse vertaling door
+<a href="mailto:parvus@operamail.com">Parvus</a></h3>
+
+<ol>
+    <li><a href="#intro">Inleiding</a></li>
+    <li><a href="#uploads">Beperkingen</a></li>
+    <li><a href="#options">Instellingen</a></li>
+    <li><a href="#display_filename">Bestandsnamen</a></li>
+    <li><a href="#styling">De lijst van bijlagen opmaken</a></li>
+    <li><a href="#icons">Pictogrammen</a></li>
+    <li><a href="#warnings">Tips</a></li>
+    <li><a href="#upgrading">Upgraden</a></li>
+    <li><a href="#acknowledgements">Dankwoord</a></li>
+</ol>
+
+<h2><a name="intro"></a>Inleiding</h2>
+Met de Joomla! extensie &rsquo;Attachments&rsquo; kan u bestanden als bijlage
+aan een artikel toevoegen. &rsquo;Attachments&rsquo; bevat twee plugins en een
+component. De plugins laten u toe bijlagen te tonen en toe te voegen; de
+component verzorgt zowel het verzenden van bestanden van uw PC naar de
+webserver als het beheer van de reeds verzonden bestanden op de webserver.
+Verschillende opties zorgen voor de nodige flexibiliteit en verhogen het
+gebruiksgemak. U kan ook zelf bepalen wie de bijlagen kan openen en wie
+bijlagen aan een artikel kan toevoegen. Alle opties zijn in te stellen in de
+component <b>Artikel Bijlagen</b> in de back-end.<br>
+<br>
+&rsquo;Attachments&rsquo; is alleen geschikt voor Joomla! 1.5 of hoger.<br>
+<br>
+&rsquo;Attachments&rsquo; kan gemakkelijk worden vertaald naar je eigen
+taal. De volgende talen zijn reeds beschikbaar:
+<ul>
+<li><em>Traditioneel en vereenvoudigd Chinees</em> Vertaald
+door <a href="http://www.joomlagate.com">Baijianpeng</a>.</li>
+<li><em>Nederlands</em> Vertaald door
+<a href="mailto:parvus@operamail.com">Parvus</a>.</li>
+<li><em>German:</em> Vertaald door Michael Scherer.</li>
+<li><em>Finnish:</em> Vertaald door Tapani Lehtonen.</li>
+<li><em>Norwegian:</em> Vertaald door Espen Gjelsvik.</li>
+<li><em>Portugees / Braziliaans</em> Vertaald door <a
+href="http://www.giacomitti.eng.br/">Arnaldo Giacomitti</a> en <a
+href="http://www.cauancabral.net/">Cauan Cabral</a>.</li>
+<li><em>Spanish:</em> Vertaald door Carlos Alfaro.</li>
+<li><em>Engels</em> Van de hand van de auteur
+<a href="mailto:jmcameron@jmcameron.net">Jonathan M. Cameron</a>.</li>
+</ul>
+Een woord van dank aan alle vertalers! Als u wilt helpen om uw eigen taal toe
+te voegen of te verbeteren, aarzel dan niet en neem contact op met
+<a href="mailto:jmcameron@jmcameron.net">Jonathan M. Cameron</a>.
+<span class="atop"><a href="#top">[Index]</a></span>
+
+<h2><a name="uploads"></a>Beperkingen</h2>
+Niet alle bestanden kunnen verzonden worden naar de webserver.
+&rsquo;Attachments&rsquo; weigert bestanden die niet zijn toegelaten door de
+<b>Media instellingen</b>. Deze zijn terug te vinden in de back-end via
+<b>Algemene instellingen</b> in de tab <b>systeem</b> (u heeft
+hier wel super-administrator rechten voor nodig). U kan daar de toegestane
+bestandstypen en MIME typen voor media bestanden inkijken en aanpassen.
+&rsquo;Attachments&rsquo; respecteert al deze instellingen, alleen de
+instelling <i>Toegestane afbeeldingsextensies (bestandstypen)</i> wordt
+genegeerd.
+<span class="atop"><a href="#top">[Index]</a></span>
+
+<h2><a name="options"></a>Instellingen</h2>
+Alle instellingen voor &rsquo;Attachments&rsquo; zijn ondergebracht bij de
+component <b>Artikel Bijlagen</b>. Deze zijn terug te vinden in de back-end
+via <b>pluginbeheer</b> onder het menu <b>Extensies</b>. Kies daarna voor het
+bewerken van de plugin <b>Content-Attachments</b>. Aan de rechterkant van de
+pagina vindt u dan de lijst van instellingen.
+<ul>
+<li><strong>Wie kan de bijlagen inkijken</strong><br>
+Hier kan u aangeven wie de bijlagen kan openen of bewaren op zijn PC. Er zijn
+twee mogelijkheden:
+<ul>
+<li><em>Iedereen</em>
+Iedereen kan de bijlagen inkijken door op de voorziene link klikken, ook al
+zijn ze niet aangemeld.</li>
+<li><em>Elke geregistreerde gebruiker</em>
+Alleen gebruikers die zich hebben aangemeld kunnen de bijlagen inkijken door
+op de voorziene link klikken.</li>
+</ul>
+</li>
+
+<li><strong>Wie kan bijlagen toevoegen</strong><br>
+Hier kan u aangeven wie bijlagen kan toevoegen aan een artikel. Er zijn twee
+mogelijkheden:
+<ul>
+<li><em>Alleen de auteur</em>
+Alleen de auteur van het artikel kan bijlagen toevoegen aan het artikel.</li>
+<li><em>Elke geregistreerde gebruiker</em>
+Elke gebruiker die zich heeft aangemeld kan een bijlage toevoegen aan het
+artikel.</li>
+</ul>
+</li>
+
+<li><strong>Automatisch publiceren</strong><br>
+Hier kan u aangeven of de bijlagen automatisch worden gepubliceerd zodra ze
+zijn toegevoegd aan een artikel. Niet-gepubliceerde bijlagen zijn voor niemand
+zichtbaar tot ze gepubliceerd worden door een administrator in the back-end.
+</li>
+
+<li><strong>Waarschuwing indien niet automatisch gepubliceerd</strong>
+Hier kan u aangeven of &rsquo;Attachments&rsquo; een waarschuwing moet geven
+indien een nieuwe bijlage niet automatisch wordt gepubliceerd. De waarschuwing
+kan u zelf opstellen, en deze mag HTML code bevatten.
+</li>
+
+<li><strong>Toon hoofding</strong><br>
+Hier kan u aangeven of de lijst van bijlagen een hoofding voor elke kolom
+bevat.
+</li>
+
+<li><strong>Toon beschrijving</strong><br>
+Hier kan u aangeven of de beschrijving van een bijlage wordt getoond in de
+lijst van bijlagen onderaan een artikel.
+</li>
+
+<li><strong>Toon grootte</strong><br>
+Hier kan u aangeven of de grootte in KB van elk bestand wordt getoond in de
+lijst van bijlagen onderaan een artikel.
+</li>
+
+<li><strong>Toon datum van laatste wijziging</strong><br>
+Hier kan u aangeven of de datum van laatste wijziging van elk bestand wordt
+getoond in de lijst van bijlagen onderaan een artikel. Indien u hier
+<code>Nee</code> kiest, wordt geen datum toegevoegd.
+</li>
+
+<li><strong>Formaat van datum van laatste wijziging</strong><br>
+Hier kan u opgeven hoe de datum getoond moet worden. Het formaat van de PHP
+functie <code>date()</code> wordt hiervoor gebruikt. Standaard is dit
+<code>M-j-Y&nbsp;g:ia</code> wat zich bijvoorbeeld vertaald tot
+<code>Sep-29-2007 5:05pm</code>. Indien u alleen <code>M-j-Y&nbsp;g:ia</code>
+opgeeft, wordt dit <code>Sep-29-2007</code>.
+</li>
+
+<li><strong>Voorvoegsel bij bestandsnaam</strong><br>
+Hier kan u aangeven welk voorvoegsel de verzonden bestanden krijgen. Er zijn 3
+mogelijkheden:
+<ul>
+<li><em>Artikel ID</em>
+Bestanden krijgen als voorvoegsel het artikel ID. Het vermindert de kans op
+gelijke bestandsnamen, en zorgt er voor dat in de folderlijsten de bestanden
+van eenzelfde artikel gegroepeerd weergegeven worden. Eenzelfde bestand kan
+meerdere malen worden verzonden, indien het telkens aan een ander artikel
+wordt toegevoegd.
+</li>
+<li><em>Bijlage ID</em>
+Bestanden krijgen als voorvoegsel het bijlage ID. Het elimineert de kans op
+gelijke bestandsnamen, en zorgt er voor dat in de folderlijsten de bestanden
+in volgorde van verzenden worden getoond. Eenzelfde bestand kan meerdere malen
+worden verzonden, zelfs aan hetzelfde artikel.</li>
+<li><em>Niets</em>
+Met deze optie worden de bestanden bewaard op de webserver zoals ze op uw PC
+stonden. <em>Deze optie verhoogt de kans op dubbele bestandsnamen.</em></li>
+</ul>
+</li>
+
+<li><strong>Folder voor bijlagen</strong><br>
+&rsquo;Attachments&rsquo; zal de verzonden bestanden bewaren in de opgegeven
+folder onder uw Joomla! website. <em>Opgepast: bij wijziging van deze folder,
+worden de reeds verzonden bestanden niet verplaatst en de bestaande bijlagen
+zullen nog steeds wijzen naar de oude folder.</em>
+</li>
+
+<li><strong>Aangepaste titels</strong><br>
+Standaard geeft &rsquo;Attachments&rsquo; de lijst van bijlagen de titel
+<em>Bijlagen</em> - maar uiteraard alleen indien er bijlagen zijn. Maar soms
+is een aangepaste titel te verkiezen. Hier kan u voor specifieke artikels deze
+aangepaste titel opgeven. Indien u bijvoorbeeld voor het artikel met ID 211
+een aantal formulieren als bijlage toevoegt, kan u hier
+<code>211&nbsp;Formulieren</code> plaatsen. Gebruik voor elke aangepaste
+titel een aparte lijn.
+</li>
+
+<li><strong>Verberg bijlagen voor:</strong> 
+Lijst van trefwoorden of ID's van secties en categoriëen waar de lijst van bijlagen niet getoond mag worden. Er zijn twee trefwoorden (zonder quotes) voorzien: 'frontpage' om de bijlagen te verbergen op de  voorpagina, en 'all_but_article_views' om de bijlagen alleen te tonen in een 'Weergave artikel' pagina. De ID's moeten ingegeven worden als het nummer van de sectie, of als het nummer van de sectie gevolgd door een schuine streep en het nummer van de categorie (dus: sectienummer/categorienummer). Bijvoorbeeld: 23/10, 23/11, 24, frontpage.
+</li>
+
+<li><strong><a name="secure_download"></a>Beveiligde toegang</strong><br>
+Standaard bewaart &rsquo;Attachments&rsquo; de verzonden bestanden in een
+folder die publiekelijk toegankelijk is. Dit wil zeggen dat iedereen die de
+volledige link kent naar een bestand, deze ook kan afhalen. Hij kan dit doen,
+zelfs indien hij geen rechten heeft om de bijlage te zien in het artikel
+waaraan het toegevoegd is. Maar met optie <em>beveiligde toegang</em>
+aangevinkt, zal nooit de rechtstreekse link naar een bestand getoond worden.
+Bovendien wordt de folder met bijlagen publiekelijk ontoegankelijk gemaakt.
+Een gebruiker zonder de juiste rechten die toch zo&rsquo;n link weet te
+bemachtigen, kan dan nog steeds niet het bestand afhalen.
+</li>
+
+<li><strong>Hoe bijlagen tonen</strong><br>
+Hier kan u aangeven hoe de bestanden getoond moeten worden, indien er
+<strong><a href="#secure_download">beveiligde toegang</a></strong> gebruikt
+wordt. Er zijn twee mogelijkheden:
+<ul>
+<li><em>inline</em> Bestanden die worden ondersteund door uw browser (zoals
+tekst of foto&rsquo;s) worden getoond in uw browser.</li>
+<li><em>link</em> Van alle bestanden (ook tekst en foto&rsquo;s) wordt alleen
+een link gegeven, en kunnen alleen worden ingekeken door er op te klikken.
+</li>
+</ul><br>
+Ongeacht deze instelling worden bestanden die uw browser niet ondersteunt,
+getoond als een link.
+</li>
+</ul>
+<span class="atop"><a href="#top">[Index]</a></span>
+
+<h2><a name="display_filename"></a>Bestandsnamen</h2>
+Standaard wordt de volledige bestandsnaam getoond in de lijst van bijlagen als
+link om het bestand af te halen. Indien gewenst kan u in het veld <b>Toon
+bestandsnaam</b> een andere naam of label opgeven die getoon moet worden in
+plaats van de volledige bestandsnaam. Dit kan ook aangepast worden in de
+back-end.
+<br>Indien de bestandsnamen te lang zijn, kan de tabel van bijlagen niet
+netjes worden getoond. U kan een bestandsnaam automatisch afkorten met de
+plugin optie <b>Maximum lengte van de bestandsnaam</b>. Dit heeft geen invloed
+op de naam waaronder ze worden bewaard: de naam wordt dan alleen verkort
+weergegeven. De waarde 0 schakelt het inkorten uit: de lengte wordt dan niet
+beperkt.
+<span class="atop"><a href="#top">[Back to top]</a></span>
+
+<h2><a name="styling"></a>De lijst van bijlagen opmaken</h2>
+De lijst van bijlagen die getoond worden bij een artikel maken gebruik van een
+specifieke <code>div</code> die een tabel bevat. Met deze tabel zijn een
+aantal CSS classes geassocieerd, om een administrator de flexibiliteit te
+geven de opmaak van de tabel aan te passen aan ieders eigen noden en wensen.
+<br> In de plugin van &rsquo;Attachments&rsquo; kan u een css bestand vinden
+waar de css class definitie terug te vinden is, zie <code>
+./plugins/content/attachments.css</code>.
+Om een eigen opmaak op te stellen, vertrekt u best van het voorbeeld wat u
+daar vindt. Het is ten sterkste aangeraden om de css class <code>
+attachmentsList</code> eerst te <strong>kopieren</strong>, dan te <strong>
+hernoemen</strong>, om tenslotte in de nieuwe css class uw wijzigingen aan te
+brengen. <br>
+In de component <b>Artikel Bijlagen</b> in de back-end kan u bij de instelling
+<i>Attachments table style</i> uw nieuwe css class opgeven. Als u de
+raadgeving hierboven opvolgt, is het gemakkelijk om terug te gaan naar de
+originele - en gegarandeerd werkende - toestand. U kan ook de css instructie
+@import gebruiken; dit maakt het gemakkelijker om een overzicht te bewaren
+over alle wijzigingen en bij een upgrade deze opnieuw aan te brengen. <br>
+<span class="atop"><a href="#top">[Index]</a></span>
+
+<h2><a name="icons"></a>Pictogrammen</h2>
+&rsquo;Attachments&rsquo; toont een pictogram bij elke bestand in de lijst van
+bijlagen. U kan aangeven welk pictogram u wenst te gebruiken voor een bepaald
+bestandstype:
+<ul>
+<li>Voeg het pictogram toe aan <code>./media/attachments/icons</code>, indien
+nodig.</li>
+<li>Bewerk het bestand <code>./components/com_attachments/file_types.php
+</code> door een extra lijn toe te voegen aan de static array <code>
+$attachments_icon_from_file_extension</code>, die bijhoudt welk pictogram
+er gebruikt moet worden voor elk bestandtype.</li>
+<li>Het kan zijn dat u ook een extra lijn moet toevoegen aan de array
+<code>$attachments_icon_from_mime_type.</code></li>
+<li>Wees er zeker van dat u van zowel het pictogram als de wijzigingen in het
+php bestand een kopie maakt, zodat de aanpassingen gemakkelijk opnieuw kunnen
+worden aangebracht na het upgraden van &rsquo;Attachments&rsquo;.</li>
+</ul>
+<span class="atop"><a href="#top">[Index]</a></span>
+
+<h2><a name="warnings"></a>Tips</h2>
+<ul>
+<li><strong>Als u bestanden toevoegt die priv&eacute; zijn of gevoelig van
+aard, beveilig dan zeker de toegang tot de bijlagen</strong>.<br>
+Zonder de optie <em>beveiligde toegang</em> worden alle bestanden bewaard in
+een publiekelijk toegankelijke folder, en wordt de rechtsreekse link geplaatst
+bij het artikel. Iedereen die deze link kent kan dan de bestanden inkijken.
+<br>
+Met de optie <em>beveiligde</em> toegang worden gebruikers zonder de juiste
+rechten de toegang versperd. Zie ook de uitleg bij de instelling
+<strong><a href="#secure_download">beveiligde toegang</a></strong> hierboven.
+</li>
+
+<li>Telkens u een bestand toevoegt, wordt nagekeken of de folder reeds
+bestaat. Indien nodig wordt er geprobeerd deze aan te maken. Het is altijd
+mogelijk dat deze poging mislukt. In dat geval moet u de folder zelf aanmaken.
+Zorg er dan voor de geschikte toegangsrechten toe te kennen. Op een Linux
+webserver betekent dit dat u de rechten <code>744</code> toekent.
+</li>
+
+<li>Indien u problemen heeft om een bepaald bestand toe te voegen, kijk dan na
+of het bestandstype toegelaten is. De beperkingen die de media instellingen
+opleggen zijn nodig om mogelijk gevaarlijke bestanden te weren, zoals HTML of
+PHP bestanden. Zie het hoofstuk
+<strong><a href="#uploads">Beperkingen</a></strong> hierboven.
+</li>
+
+<li>De tweede plugin &rsquo;Button - AddAttachment&rsquo; laat u toe om
+bijlagen toe te voegen terwijl u het artikel bewerkt. Inden deze plugin
+geactiveerd is, wordt de knop <b>Voeg bijlage toe</b> toegevoegd onder het
+tekstgebied waar u het artikel kan aanpassen.
+<br>
+Merk wel op dat de knop niet getoond kan worden wanneer het artikel aangemaakt
+wordt en nog niet bewaard is: in dat geval kunnen bijlagen nog niet gelinkt
+worden aan het artikel, omdat ze nog niet bekend is bij de achterliggende
+database.
+</li>
+
+<li>Deze versie lijkt goed te werken met SEF &amp; Joomla! 1.5 RC3 &amp; RC4. Er zijn
+wel problemen gekend met SEF &amp; 1.5 RC2.
+</li>
+
+</ul>
+<span class="atop"><a href="#top">[Index]</a></span>
+
+<h2><a name="upgrading"></a>Upgraden</h2>
+Indien u al bestanden heeft toegevoegd aan artikels, voor de installatie van
+een nieuwe versie, kunt u het volgende doen om deze bijlagen te behouden:
+<ul>
+<li>Bewaar de inhoud van de tabel <code>jos_attachments</code> (u kan hiervoor
+<code>Export</code> functie van
+<a href="http://www.phpmyadmin.net/home_page/index.php">phpMyAdmin</a>
+gebruiken, of een gelijkaardige functie in een ander MySQL programma).
+Opgelet! Vink bij de functie <code>Export</code> onder <code>data</code>
+zeker <code>Complete inserts</code> aan, en vink zeker <code>Extended inserts
+</code> uit.</li>
+<li>De&iuml;nstalleer de &rsquo;Attachments&rsquo; component.</li>
+<li>De&iuml;nstalleer de &rsquo;Attachments&rsquo; plugins.</li>
+<li>Installeer de nieuwe &rsquo;Attachments&rsquo; plugins.</li>
+<li>Installeer de nieuwe &rsquo;Attachments&rsquo; component.</li>
+<li>Activeer de &rsquo;Attachments&rsquo; plugins.</li>
+<li>Gebruik uw SQL programma om de data van de bewaarde tabel naar de nieuw
+aangemaakte tabel <code>jos_attachments</code> te kopieren.</li>
+<li>Indien u upgrade van een versie ouder dan 1.0, dient u de juiste
+verwijzingen naar de pictogrammen nog toe te voegen in de database. Dit kan u
+doen door in de back-end als super-administrator in te loggen en daarna de
+volgende URL in te geven: <a href=
+"./administrator/index.php?option=com_attachments&amp;task=add_icon_filenames"
+>/administrator/index.php?option=com_attachments&amp;task=add_icon_filenames
+</a>
+</li>
+</ul><br>
+Merk op dat het de&iuml;nstalleren van de &rsquo;Attachments&rsquo; extensie
+de bestanden zelf in de bijlage folder niet verwijderd, alleen de referenties
+er naar in de database. Alle referenties naar die bestanden worden bewaard in
+de tabel <code>jos_attachments</code>.<br>
+<br>
+Het kan ook zijn dat u niet wil dat tabel in de database weer hersteld wordt.
+De bijhorende bestanden zitten dan nog steeds in uw bijlage folder zitten.
+Vergeet dan zeker niet deze te verwijderen.
+<span class="atop"><a href="#top">[Index]</a></span>
+
+<h2><a name="acknowledgements"></a>Dankwoord</h2>
+Een woord van dank aan:
+<ul>
+<li>Het boek <i>Learning Joomla! 1.5 Extension Development: Creating Modules,
+Components, and Plugins with PHP</i>, door Joseph L. LeBlanc. Het was (is)
+zeer nuttige lectuur bij het maken van deze extensie.</li>
+<li>De pictogrammen zijn afgeleid van verschillende bronnen, waaronder:
+<ul>
+<li><a href="http://www.famfamfam.com/lab/icons/silk/">The Silk icons by Mark
+James</a></li>
+<li><a href="http://www.zap.org.au/documents/icons/file-icons/sample.html">
+File-Type Icons 1.2 by John Zaitseff</a></li>
+<li><a href=
+"http://www.brandspankingnew.net/archive/2006/06/doctype_icons_2.html">Doctype
+Icons 2 by Timothy Groves</a></li>
+<li><a href="http://www.catnip.co.uk/opendocument/icons/">OpenDocument icons
+proposed by Pete Harlow </a></li>
+</ul>
+De meeste pictogrammen die &rsquo;Attachments&rsquo; gebruikt zijn aangepast
+en verschillen van het origineel. Indien u de originele pictogrammen wilt,
+kunt u ze afhalen van de bovenvermelde websites.
+</li>
+</ul>
+
+<span class="atop"><a href="#top">[Back to top]</a></span>
+
+<br>&nbsp;<br>
+Fouten, opmerkingen en suggesties worden graag behandeld door
+<a href="mailto:jmcameron@jmcameron.net">jmcameron@jmcameron.net</a>.
+
+</body>
+</html>

@@ -1,0 +1,107 @@
+<?xml version="1.0" encoding="iso-8859-1"?>
+<mosinstall version="1.0.0" type="mambot" group="system">
+	<name>Joomlajax</name>
+	<author>Hamidreza Tavakoli</author>
+	<creationDate>April 2007</creationDate>
+	<copyright>Copyright (C) 2007 Hamidreza Tavakoli. All rights reserved.</copyright>
+	<license>GNU/GPL</license>
+	<authorEmail>hamidreza.tavakoli@gmail.com</authorEmail>
+	<authorUrl>http://www.web2coder.com</authorUrl>
+	<version>1.0.1</version>
+	<description><![CDATA[
+	<p>Is a plugin for Ajaxifying Joomla. It makes content of your website load faster 
+than ever without reloading the whole page.</p>
+<p>You can see the demo here :
+<a href="http://demo.web2coder.com" target="_blank">http://demo.web2coder.com</a>&nbsp;
+</p>
+<p>&nbsp;</p>
+<h2>Joomlajax has the following features:</h2>
+<p>&nbsp;</p>
+<ol style="list-style-position: inside">
+	<li>It is compatible with every Joomla templates. </li>
+	<li>It can dynamically include, execute and exclude third-party scripts that 
+	may exist inside components and plugins.</li>
+	<li>It has a Bookmarking button that you can book mark any page whenever you 
+	want!</li>
+	<li>You will be able to disable/enable ajax loading.</li>
+	<li>Pathway will be dynamically changed. <br />
+	</li>
+	<li>It is successfully tested by FireFox 2.0.0.3 and MSIE 7.</li>
+	<li>You can change the encoding system of loading your content (By default it 
+	is UTF-8)</li>
+	<li>In the case that any errors occurs it would automatically reload the page 
+	(or you can disable this feature).</li>
+	<li>It automatically recognize external links so that they would not get loaded.</li>
+</ol>
+<h2>Please make sure to follow the instruction below:</h2>
+<br />
+<ul style="list-style-type: disc; list-style-position: inside">
+	<li>Disable any SEF ( Search Engine Friendly ) or any SEO Components or Plugin 
+	that may exist in your joomla ( You can Disable SEO in Joomla Global Configuration 
+	area )</li>
+	<li>Do not use templates that use JavaScript Toolkit/Libraries. it makes joomlajax 
+	not work in some cases</li>
+	<li>We advice you to Disable component/mambots that includes any JavaScript 
+	Toolkit like jQuery, Mootools &amp; ... ( However if you want to use them. Check 
+	if it works correctly with Joomlajax )</li>
+	<li><strong style="color: #cc3300">Important!:</strong>If you want to have mosPathway
+	loads dynamically you can add these lines before &lt;?php mosMainBody(); ?&gt; in your index2.php:<br/>
+	Please note that doing this is at your own risk and you can revert it back by simply comment or deleting the following codes
+	in Index2.php
+	&lt;div id=&quot;pathway&quot;&gt;<br>
+	&lt;div id=&quot;pathway_text&quot;&gt;<br>
+	&lt;?php mosPathWay(); ?&gt;<br>
+	&lt;/div&gt;<br>
+	&lt;/div&gt;<br />
+	</li>
+	<li>In the case that any page doesn&#39;t get loaded correctly or the page doesn&#39;t 
+	get loaded dynamically it is because of third party scripts that interfere the 
+	work of Joomlajax. You can disable the &quot;redirection of page in the error case&quot; 
+	in Pajax.js script in: mambot-&gt;system-&gt;Joomlaxcore. Simply find &quot;redirect(rdurl);&quot; 
+	and comment it like &quot;//redirect(rdurl);&quot;<br />
+	</li>
+</ul>
+<p>For any problem or question please visit Joomlajax Dedicated forum at
+<a href="http://forum.web2coder.com" target="_blank">http://forum.web2coder.com</a>
+</p>
+<p><h2>Donation</h2></p>
+<p>This work is the result of one month and a half partially investing my time to 
+do all the coding and researching for making this happen. I hope that you enjoy 
+using the free Joomlajax. I would really appreciate it if you consider a donation 
+for supporting this work and making me happy and motivated for doing better works 
+and to ensure continued development of this work. (the donation amount is not important 
+at all!) By donating you will access to the documented source code of Joomlajax 
+and also you will be free to remove the footer note in the bottom of loaded content. 
+By the time you make a donation an email would be automatically sent to you in 24 
+hours containing a URL and Username &amp; Password for downloading Joomlajax. </p>
+<form action="https://www.paypal.com/cgi-bin/webscr" method="post">
+<input type="hidden" name="cmd" value="_xclick">
+<input type="hidden" name="business" value="hamidreza.tavakoli@gmail.com">
+<input type="hidden" name="item_name" value="Joomlajax Project Donation">
+<input type="hidden" name="no_shipping" value="1">
+<input type="hidden" name="return" value="http://www.web2coder.com/success">
+<input type="hidden" name="cancel_return" value="http://www.web2coder.com/fail">
+<input type="hidden" name="cn" value="Thank you for your donations!" />
+<input type="hidden" name="currency_code" value="USD">
+<input type="hidden" name="tax" value="0">
+<input type="hidden" name="lc" value="AE">
+<input type="hidden" name="bn" value="PP-DonationsBF">
+<input type="image" src="https://www.paypal.com/en_US/i/btn/x-click-but04.gif" border="0" name="submit" alt="Make payments with PayPal - it's fast, free and secure!">
+<img alt="" border="0" src="https://www.paypal.com/en_US/i/scr/pixel.gif" width="1" height="1">
+</form>
+		]]></description>
+	<files>
+<filename mambot="joomlajax">joomlajax.php</filename>	
+<filename>joomlajaxcore/prototype.js</filename>
+<filename>joomlajaxcore/scriptaculous.js</filename>
+<filename>joomlajaxcore/pajax.js</filename>
+<filename>joomlajaxcore/slider.js</filename>
+<filename>joomlajaxcore/effects.js</filename>
+<filename>joomlajaxcore/dragdrop.js</filename>
+<filename>joomlajaxcore/controls.js</filename>
+<filename>joomlajaxcore/builder.js</filename>
+<filename>joomlajaxcore/img/spinning_wheel_throbber.gif</filename>
+    </files>
+	<params>
+	</params>
+</mosinstall>

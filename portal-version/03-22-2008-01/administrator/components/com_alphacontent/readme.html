@@ -1,0 +1,213 @@
+<h2>ALPHACONTENT</h2>
+<p><a href="#presentation">Presentation</a> | <a href="#notes">Author's notes</a> | <a href="#install">Install instructions</a> | <a href="#upgrade">Upgrade instructions</a> | <a href="#sef">SEF instructions</a> | <a href="#license">License</a> | <a href="#changelog">Changelog</a> </p>
+<h2><strong><a name="presentation"></a>Presentation :</strong></h2>
+<p>AlphaContent is a component that creates a Yahoo style directory of content items (articles) in specified<br>
+  sections/categories of your Joomla! website. AlphaContent also makes it possible to sort this listing <br>
+  alphabetically based on the titles or intro of these articles. Many parameters
+  for the presentation<br>
+  and selection possible of the sections/catégories to be or not published.
+  This component will be <br>
+  appropriate more particularly for all those which use the articles 
+  like system of cards, or those which<br>
+  need a classification of their items alphabetically 
+or in the form of directory.</p>
+<h2>
+  <strong> <a name="notes"></a>Author's notes :
+      
+  </strong>
+
+</h2>
+<p>From version 2.5, it is possible to create various menus attached to the component
+  AlphaContent 
+  except <br>
+  in the case where you use a component such as Sef Advance, OpenSEF, Artio JoomSEF...
+  The problem comes owing to<br> 
+  the fact that these components they even seek to it Itemid
+  of the menu and thus take into account only the<br> 
+  first menu attached to the found component.
+  The menus can be parameterized in order to accept only certain<br> 
+  sections or specific 
+  categories what allows for example to <strong>create many distinct directories</strong>. 
+  
+  <br>
+  To parameterize correctly a menu, you must initially create new finely attached to the
+  AlphaContent component<br> 
+  then to record this one. Publish then the menu and type the parameters.<br>
+  These new parameters have priority with those published in the general configuration of the component. </p>
+<h2><strong><a name="install"></a>Installation Instructions : </strong></h2>
+<p>Installation of AlphaContent is easy, and is performed just like any other standard Joomla component installation.</p>
+<p>In Joomla's administrative interface, go to Components -&gt; Install/Uninstall. <br>
+  On the bottom, you will see something called &quot;Upload new component&quot; <br>
+  Click &quot;Browse&quot;, then locate the folder to which you've downloaded AlphaContent and select the file com_alphacontent.zip. <br>
+  Click the button &quot;Upload File &amp; Install&quot; to confirm upload and installation of the AlphaContent package file. <br>
+  Follow the instructions on the screen.  <br>
+Go to menu item Components -&gt; AlphaContent, and set the configuration. </p>
+<h2><strong><a name="upgrade"></a>Upgrade Instructions : </strong></h2>
+<p>
+  For upgrading from one version of AlphaContent to another version of AlphaContent, the only thing you need to do before uninstall<br> 
+  the old version is save the existing configuration file (named &quot;alphacontent_config.php&quot; in admininistrator&gt;components&gt;com_alphacontent) and install the new version.<br> 
+  After installing the new version, replace settings introduced in the new version by your &quot;alphacontent_config.php&quot; file.<br>
+ Go to menu item Components -&gt; AlphaContent, and set the configuration for apply new parameters.
+<h2>  <strong><a name="sef"></a>SEF instructions :</strong></h2>
+<p>
+
+  <em>Artio JoomSEF</em> : custom name (AlphaContent menu) = alphacontent
+<p><em>Sef Advance</em> : custom name (AlphaContent menu) = same custom name in settings Sef Advance component </p>
+<p><em>OpenSEF</em> : custom name (AlphaContent menu) = same custom name in settings OpenSEF component<br>
+  If error : edit the administrator\components\com_sef\core\sef.resolver.php line 390<br>
+  replace<br>
+  $this-&gt;output .= ($url[0] != '&amp;' ? '&amp;' . $url : $url);<br>
+  by<br>
+@$this-&gt;output .= ($url[0] != '&amp;' ? '&amp;' . $url : $url);</p>
+<h2><a name="license"></a>License :</h2>
+<p>AlphaContent version 3.x is released under <a href="http://en.wikipedia.org/wiki/Donationware">Donationware</a> license. All rights reserved. </p>
+<p>AlphaContent version 1.x and 2.x released under <a href="http://www.gnu.org/copyleft/gpl.html">GNU/GPL</a> license.</p>
+<h2>  <strong><a name="changelog"></a>Changelog :</strong></h2>
+<p>---------- version 3.0.3 released -------------</p>
+<p>- bug fix : style block (hr or fiedlset or normal)<br>
+  - bug fix : search first letter with alphabetical indexes<br>
+  - bug fix : search words with UTF-8 <br>
+  - bug fix : navigation with alphabetical letter selected<br>
+- added : link on x comment(s) in layout<br>
+- added : exclude specific ID content in setting of alphacontentbot<br>
+- additional languages : Dutch, Russian UTF-8<br>
+<br>
+<i>Important : For russian UTF-8, rename russianutf8.php to russian.php in languages directory component </i><br>
+</p>
+<p>---------- version 3.0.2 released -------------</p>
+<p>- bug fix : search paging<br>
+  - bug fix : on search alphabetical, new regexp (specials characters)<br>
+  - bug fix :
+  print, pdf, email and readmore link with Joomla 1.5 and SEF enabled <br>
+- added : Ajax rating system (IP testing and registered user testing)<br>
+- added : Location Google Maps<br>
+  - added : choice 5, 6, 7, 8, 9 or 10 stars for rating<br>
+  - added : choice field on search filter (title or introtext) <br>
+  - added : if no mosimage, detect image with the html tag &lt;img&gt; <br>
+  - added : show / hide button for search inputbox <br>
+  - added : choice show title or title alias in listing<br>
+  - W3C XHTML Validation<br>
+</p>
+<p>  ---------- version 3.0.1 released -------------</p>
+<p>- bug fix : set page title<br>
+  - bug fix : path for image new and hot in current language<br> 
+  - bug fix : on read more link<br>
+  - Prevent bug on save settings<br>
+</p>
+<p>---------- version 3.0.0 released -------------
+<p>- Compliance with Joomla! 1.5 (legacy mode)<br>
+  - Clean  and rewriting code<br>
+  - More layout flexible
+  <br>
+  - added com_weblinks as a section<br>
+  -  file for layout item listing<br>
+  - Rewriting SEF support for common SEF components<br>
+  - bug fix on Pathway<br>
+  - bug fix on section description <br>
+  - added install mambot content <br>
+  - added listing on one or two columns<br>
+  - added icon new and icon hot in language (example: new_english.gif, new_french.gif etc...) <br>
+  - added search on keywords<br>
+  - added default ordering
+  in sort listing<br>
+  - added image section in main directory<br>
+  - added link thumbnail (on 
+  com_weblinks as a section)<br>
+  - added print link<br>
+  - added pdf link<br>
+  - added email link
+  <br>
+  - Compliance with mamblog
+  <br>
+  <br>
+  - removed : Alphacont position module (not compatible with Joomla! 1.5)<br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Replaced by Insert Module  in general settings
+<p>- additional language : Finnish <br>
+  
+<p>---------- version 2.5.8 released -------------<br>
+  <br>
+- Bug fix: Content not display with Joomla! Internationale version<br>
+- added : Support mXcomment<br>
+- additional language : Turkish, Chinese (traditional), Czech<br>
+</p>
+<p> ---------- version 2.5.7 released -------------<br>
+  <br>
+  - Bug fix: show/hide Alphacont position module <br>
+- added : show/hide Readmore link</p>
+<p><br>
+  ---------- version 2.5.6 released -------------<br>
+  <br>
+  - added : show/hide AlphaContent Pathway <br>
+  - added : support OpenComment <br>
+  - added : link author to Community Builder <br>
+  - added : choice name or username for author <br>
+  - added : custom format date <br>
+  - added : show/hide section description <br>
+  - added : mode normal on display result (normal, in fieldset, separate by HR) <br>
+  - added : show related items after article if exists <br>
+  - added : choice field for intro (introtext, fullttext or introtext + fulltext) <br>
+  - additional language : Hungarian</p>
+</p>
+<p>---------- version 2.5.5 released -------------<br>
+  <br>
+  - added : show Item in current window or in popup or in Litbox  <br>
+  - added : search by alphabetical letter sorting in section or category selected into the directory<br>
+- added : choose first or last image of article<br>
+- added : support AkoComment<br>
+  - added : support AkoComment Tweaked<br>
+  - added : support AkoComment Tweaked Special Edition<br>
+  - added : support Jomcomment<br>
+  - added : support !JoomlaComment<br>
+  - added : support ComboLITE / ComboMAX<br>
+  - added : support index alphabetical iso-8859-2 : Hungarian<br>
+  - added : support index alphabetical iso-8859-2 : Slovenian / Croatian / Serbian<br>
+  <br>
+</p>
+<p>---------- version 2.5.4 released ------------</p>
+<p> - bug fix : sorting on category<br>
+  <br>
+  <br>
+  <br>
+---------- version 2.5.3 released ------------</p>
+<p> - bug fix : show section/category on result with full intro+mambots <br>
+  - 
+  bug fix : save setting for use module position alphacont <br>
+- added show readmore link</p>
+<p>&nbsp;</p>
+<p>---------- version 2.5.2 released ------------</p>
+<p>  - bug fix : save settings with register globals = Off </p>
+<p><br>  
+  <br>
+  ---------- version 2.5.1 released ------------</p>
+<p>- added  show item in AlphaContent component<br>
+  - 
+  changed function &lt;reductAlphaIMG&gt;<br>
+  - corrected sef_ext.php<br>
+  - bug fix :    static content<br>
+  - bug fix :    both content<br>
+  - 
+  bug fix : pathway<br>
+  - bug fix : counter item in section<br>
+  - 
+  bug fix : anchor &quot;top&quot;<br>
+  - bug fix : sorting selector
+  <br>
+  - bug fix : save settings <br>
+- added new char &lt;li&gt; between each cat on tree<br>
+- added  on uninstall : remove  menu
+attached on AlphaContent <br>
+  - added Turkisk alphabetical indexes<br>
+  - added Estonian alphabetical indexes<br>
+  <br>
+- additional language : estonian  </p>
+<p><br>
+  <br>
+  ---------- version 2.5 released ------------<br>
+  <br>
+  - added parameters for menu (possibility create many disctinct directory)<br>
+  - added pathway <br>
+  - bug fix : categories unpublished <br>
+  <br>
+  <br>
+  <br>
+  <em>Thank you for choosing AlphaContent ! </em></p>
